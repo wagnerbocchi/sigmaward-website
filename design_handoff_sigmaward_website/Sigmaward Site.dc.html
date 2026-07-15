@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  body{margin:0;background:#0A0F1A;font-family:'Manrope',system-ui,sans-serif;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  ::selection{background:rgba(32,221,201,0.28);color:#F2F6FC}
+  @keyframes sw-sweep{0%{transform:translateX(-130%)}100%{transform:translateX(360%)}}
+  @keyframes sw-blink{0%,100%{opacity:1}50%{opacity:.3}}
+  @keyframes sw-pulse{0%{transform:scale(.5);opacity:.7}100%{transform:scale(2.6);opacity:0}}
+  @keyframes sw-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+</style>
+</helmet>
+
+<div style="background:#0A0F1A;color:#C7D0E2;font-family:'Manrope',sans-serif;min-width:1080px">
+
+<!-- ====================== NAV ====================== -->
+<div style="position:sticky;top:0;z-index:50;background:rgba(10,15,26,0.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,0.07)">
+  <div style="max-width:1240px;margin:0 auto;padding:0 32px;height:66px;display:flex;align-items:center;justify-content:space-between">
+    <div style="display:flex;align-items:center;gap:38px">
+      <div onClick="{{ goHome }}" style="display:flex;align-items:center;gap:10px;cursor:pointer">
+        <div style="width:30px;height:30px"><svg viewBox="0 0 100 100" width="100%" height="100%" style="display:block"><defs><linearGradient id="nav-g" x1="24" y1="16" x2="78" y2="84" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#34F0DA"/><stop offset="1" stop-color="#8C7BFF"/></linearGradient></defs><polyline points="75,24 27,24 53,50 27,76 75,76" fill="none" stroke="url(#nav-g)" stroke-width="12.5" stroke-linejoin="miter" stroke-linecap="square"/></svg></div>
+        <span style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:19px;letter-spacing:-0.02em;color:#F2F6FC">Sigmaward</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:6px">
+        <span onClick="{{ goPlatform }}" style="font-size:14px;font-weight:500;color:#A6B3CA;padding:8px 12px;border-radius:8px;cursor:pointer" style-hover="color:#F2F6FC;background:rgba(255,255,255,0.04)">{{ nav.platform }}</span>
+        <span style="font-size:14px;font-weight:500;color:#A6B3CA;padding:8px 12px;border-radius:8px;cursor:pointer" style-hover="color:#F2F6FC;background:rgba(255,255,255,0.04)">{{ nav.solutions }}</span>
+        <span style="font-size:14px;font-weight:500;color:#A6B3CA;padding:8px 12px;border-radius:8px;cursor:pointer" style-hover="color:#F2F6FC;background:rgba(255,255,255,0.04)">{{ nav.pricing }}</span>
+        <span style="font-size:14px;font-weight:500;color:#A6B3CA;padding:8px 12px;border-radius:8px;cursor:pointer" style-hover="color:#F2F6FC;background:rgba(255,255,255,0.04)">{{ nav.resources }}</span>
+        <span style="font-size:14px;font-weight:500;color:#A6B3CA;padding:8px 12px;border-radius:8px;cursor:pointer" style-hover="color:#F2F6FC;background:rgba(255,255,255,0.04)">{{ nav.company }}</span>
+      </div>
+    </div>
+    <div style="display:flex;align-items:center;gap:14px">
+      <div style="display:flex;align-items:center;border:1px solid #243049;border-radius:8px;overflow:hidden;font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:600">
+        <span onClick="{{ setPt }}" style="padding:6px 10px;cursor:pointer;{{ ptBtnStyle }}">PT</span>
+        <span onClick="{{ setEn }}" style="padding:6px 10px;cursor:pointer;{{ enBtnStyle }}">EN</span>
+      </div>
+      <span style="font-size:14px;font-weight:500;color:#A6B3CA;cursor:pointer" style-hover="color:#F2F6FC">{{ nav.login }}</span>
+      <span onClick="{{ goPlatform }}" style="font-size:14px;font-weight:700;color:#062019;background:#20DDC9;padding:9px 17px;border-radius:9px;cursor:pointer;box-shadow:0 6px 20px -8px rgba(32,221,201,0.7)" style-hover="background:#3DE9D6">{{ nav.cta }}</span>
+    </div>
+  </div>
+</div>
+
+<!-- ====================== HOME ====================== -->
+<sc-if value="{{ isHome }}" hint-placeholder-val="{{ true }}">
+<div>
+
+  <!-- HERO -->
+  <section data-screen-label="Home Hero" style="position:relative;overflow:hidden;background:radial-gradient(1100px 560px at 78% -8%,rgba(140,123,255,0.16),transparent 58%),radial-gradient(900px 520px at 8% 4%,rgba(32,221,201,0.13),transparent 56%),#0A0F1A">
+    <div style="position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,0.02) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.02) 1px,transparent 1px);background-size:52px 52px;pointer-events:none"></div>
+    <div style="position:absolute;top:-10%;left:0;width:22%;height:130%;transform:skewX(-12deg);background:linear-gradient(90deg,transparent,rgba(43,231,210,0.06),transparent);filter:blur(12px);animation:sw-sweep 11s ease-in-out infinite;pointer-events:none"></div>
+
+    <div style="position:relative;max-width:1240px;margin:0 auto;padding:78px 32px 70px;display:grid;grid-template-columns:1.04fr 1.18fr;gap:54px;align-items:center">
+      <div>
+        <div style="display:inline-flex;align-items:center;gap:9px;font-family:'JetBrains Mono',monospace;font-size:11.5px;letter-spacing:0.06em;color:#9FE9DF;background:rgba(32,221,201,0.07);border:1px solid rgba(32,221,201,0.22);padding:7px 14px;border-radius:999px;margin-bottom:26px">
+          <span style="width:6px;height:6px;border-radius:50%;background:#20DDC9;box-shadow:0 0 8px #20DDC9"></span>{{ hero.badge }}
+        </div>
+        <h1 style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:55px;line-height:1.04;letter-spacing:-0.025em;color:#F2F6FC;margin:0 0 22px;text-wrap:balance">{{ hero.title }}</h1>
+        <p style="font-size:18px;line-height:1.6;color:#A6B3CA;margin:0 0 34px;max-width:540px">{{ hero.sub }}</p>
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:26px">
+          <span onClick="{{ goPlatform }}" style="display:inline-flex;align-items:center;gap:9px;font-size:15.5px;font-weight:700;color:#062019;background:#20DDC9;padding:13px 24px;border-radius:11px;cursor:pointer;box-shadow:0 10px 30px -10px rgba(32,221,201,0.7)" style-hover="background:#3DE9D6">{{ hero.ctaPrimary }} <span style="font-size:17px">&rarr;</span></span>
+          <span style="display:inline-flex;align-items:center;font-size:15.5px;font-weight:600;color:#E6ECF7;background:rgba(255,255,255,0.04);border:1px solid #2A3852;padding:13px 22px;border-radius:11px;cursor:pointer" style-hover="background:rgba(255,255,255,0.08);border-color:#3A4A66">{{ hero.ctaSecondary }}</span>
+        </div>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#5E6B84;letter-spacing:0.02em">{{ hero.note }}</div>
+      </div>
+
+      <!-- product shot: framed dashboard -->
+      <div style="position:relative">
+        <div style="position:absolute;inset:-12% -8% -18% -8%;background:radial-gradient(closest-side,rgba(32,221,201,0.12),transparent);filter:blur(20px)"></div>
+        <div style="position:relative;border:1px solid #283650;border-radius:14px;overflow:hidden;background:#0B111E;box-shadow:0 40px 90px -40px rgba(0,0,0,0.9),0 0 0 1px rgba(255,255,255,0.03)">
+          <div style="display:flex;align-items:center;gap:7px;padding:11px 14px;background:#0C1322;border-bottom:1px solid #1A2334">
+            <span style="width:10px;height:10px;border-radius:50%;background:#FF5F57"></span><span style="width:10px;height:10px;border-radius:50%;background:#FEBC2E"></span><span style="width:10px;height:10px;border-radius:50%;background:#28C840"></span>
+            <div style="margin-left:10px;height:21px;flex:1;max-width:230px;border-radius:6px;background:#0A0F1A;border:1px solid #243049;display:flex;align-items:center;padding:0 10px;font-family:'JetBrains Mono',monospace;font-size:10px;color:#5E6B84"><span style="color:#34D27A;margin-right:6px">&#9679;</span>app.sigmaward.io</div>
+          </div>
+          <div style="display:flex;height:330px">
+            <div style="width:52px;flex-shrink:0;background:#0A0F1A;border-right:1px solid #1A2334;display:flex;flex-direction:column;align-items:center;padding:14px 0;gap:16px">
+              <div style="width:22px;height:22px"><svg viewBox="0 0 100 100" width="100%" height="100%" style="display:block"><polyline points="75,24 27,24 53,50 27,76 75,76" fill="none" stroke="#20DDC9" stroke-width="13" stroke-linejoin="miter" stroke-linecap="square"/></svg></div>
+              <div style="width:24px;height:24px;border-radius:7px;background:rgba(32,221,201,0.12);display:flex;align-items:center;justify-content:center;color:#20DDC9"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/></svg></div>
+              <div style="color:#4A576E"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="8.5" opacity="0.6"/></svg></div>
+              <div style="color:#4A576E"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/></svg></div>
+              <div style="color:#4A576E"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="1.6" fill="currentColor"/></svg></div>
+            </div>
+            <div style="flex:1;padding:15px 17px;display:flex;flex-direction:column;gap:12px;overflow:hidden">
+              <div style="display:flex;align-items:center;justify-content:space-between">
+                <span style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:14px;color:#F2F6FC">Threat Overview</span>
+                <span style="display:flex;align-items:center;gap:6px;font-family:'JetBrains Mono',monospace;font-size:9.5px;color:#34D27A"><span style="position:relative;width:6px;height:6px"><span style="position:absolute;inset:0;border-radius:50%;background:#34D27A"></span><span style="position:absolute;inset:0;border-radius:50%;background:#34D27A;animation:sw-pulse 2s ease-out infinite"></span></span>LIVE</span>
+              </div>
+              <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:9px">
+                <div style="background:#101826;border:1px solid #243049;border-radius:9px;padding:10px 11px"><div style="font-family:'JetBrains Mono',monospace;font-size:8px;letter-spacing:0.1em;color:#76849E;text-transform:uppercase;margin-bottom:5px">Events/24h</div><div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:17px;color:#F2F6FC">4.2M</div></div>
+                <div style="background:#101826;border:1px solid #243049;border-radius:9px;padding:10px 11px"><div style="font-family:'JetBrains Mono',monospace;font-size:8px;letter-spacing:0.1em;color:#76849E;text-transform:uppercase;margin-bottom:5px">Findings</div><div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:17px;color:#F2F6FC">318</div></div>
+                <div style="background:#101826;border:1px solid #243049;border-radius:9px;padding:10px 11px"><div style="font-family:'JetBrains Mono',monospace;font-size:8px;letter-spacing:0.1em;color:#76849E;text-transform:uppercase;margin-bottom:5px">Cases</div><div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:17px;color:#FF8A3D">7</div></div>
+              </div>
+              <div style="background:#101826;border:1px solid #243049;border-radius:9px;overflow:hidden">
+                <div style="display:flex;align-items:center;gap:9px;padding:9px 11px;border-bottom:1px solid #1A2334"><span style="font-family:'JetBrains Mono',monospace;font-size:8px;font-weight:700;color:#0A0F1A;background:#FF3B5C;padding:2px 6px;border-radius:4px">CRIT</span><span style="flex:1;font-size:11.5px;color:#E6ECF7">LSASS memory access</span><span style="font-family:'JetBrains Mono',monospace;font-size:9px;color:#76849E">DC-02</span></div>
+                <div style="display:flex;align-items:center;gap:9px;padding:9px 11px;border-bottom:1px solid #1A2334"><span style="font-family:'JetBrains Mono',monospace;font-size:8px;font-weight:700;color:#0A0F1A;background:#FF8A3D;padding:2px 6px;border-radius:4px">HIGH</span><span style="flex:1;font-size:11.5px;color:#E6ECF7">Encoded PowerShell exec</span><span style="font-family:'JetBrains Mono',monospace;font-size:9px;color:#76849E">LT-118</span></div>
+                <div style="display:flex;align-items:center;gap:9px;padding:9px 11px"><span style="font-family:'JetBrains Mono',monospace;font-size:8px;font-weight:700;color:#0A0F1A;background:#FFC53D;padding:2px 6px;border-radius:4px">MED</span><span style="flex:1;font-size:11.5px;color:#E6ECF7">Impossible travel login</span><span style="font-family:'JetBrains Mono',monospace;font-size:9px;color:#76849E">azure-ad</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST STRIP -->
+  <section style="border-top:1px solid #161E2C;border-bottom:1px solid #161E2C;background:#0B111C">
+    <div style="max-width:1240px;margin:0 auto;padding:30px 32px">
+      <div style="text-align:center;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#5E6B84;margin-bottom:22px">{{ trust.label }}</div>
+      <div style="display:flex;align-items:center;justify-content:center;gap:46px;flex-wrap:wrap;margin-bottom:30px;opacity:0.62">
+        <span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:18px;letter-spacing:0.04em;color:#8392AD">NORTHWIND</span>
+        <span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:18px;letter-spacing:0.04em;color:#8392AD">VERTEX</span>
+        <span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:18px;letter-spacing:0.04em;color:#8392AD">MERIDIAN</span>
+        <span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:18px;letter-spacing:0.04em;color:#8392AD">QUANTLY</span>
+        <span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:18px;letter-spacing:0.04em;color:#8392AD">AONDA</span>
+        <span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:18px;letter-spacing:0.04em;color:#8392AD">HELIX</span>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:18px;border-top:1px solid #161E2C;padding-top:26px">
+        <sc-for list="{{ trust.stats }}" as="s" hint-placeholder-count="4">
+          <div style="text-align:center">
+            <div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:30px;color:#F2F6FC;letter-spacing:-0.01em">{{ s.v }}</div>
+            <div style="font-size:13px;color:#76849E;margin-top:3px">{{ s.l }}</div>
+          </div>
+        </sc-for>
+      </div>
+      <div style="text-align:center;font-size:10.5px;color:#3F4A60;margin-top:16px;font-style:italic">{{ trust.disclaimer }}</div>
+    </div>
+  </section>
+
+  <!-- HOME BODY SECTIONS GET INSERTED HERE -->
+  <!-- PROBLEM -->
+  <section data-screen-label="Problem" style="padding:88px 32px;background:#0B111C;border-top:1px solid #161E2C">
+    <div style="max-width:1180px;margin:0 auto">
+      <div style="max-width:780px;margin-bottom:44px">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11.5px;letter-spacing:0.22em;text-transform:uppercase;color:#FF8A3D;margin-bottom:16px">{{ problem.eyebrow }}</div>
+        <h2 style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:39px;line-height:1.1;letter-spacing:-0.02em;color:#F2F6FC;margin:0 0 18px;text-wrap:balance">{{ problem.title }}</h2>
+        <p style="font-size:17.5px;line-height:1.6;color:#A6B3CA;margin:0">{{ problem.body }}</p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:18px">
+        <sc-for list="{{ problem.points }}" as="pp" hint-placeholder-count="3">
+          <div style="background:#101826;border:1px solid #243049;border-radius:16px;padding:24px 26px">
+            <div style="width:36px;height:36px;border-radius:9px;background:rgba(255,138,61,0.1);border:1px solid rgba(255,138,61,0.22);display:flex;align-items:center;justify-content:center;margin-bottom:15px;color:#FF8A3D"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.7 3.86a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg></div>
+            <div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:17.5px;color:#F2F6FC;margin-bottom:8px">{{ pp.t }}</div>
+            <div style="font-size:14px;color:#8392AD;line-height:1.55">{{ pp.d }}</div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <!-- PILLAR 1 · Detection -->
+  <section data-screen-label="Detection" style="padding:94px 32px;background:#0A0F1A;border-top:1px solid #161E2C">
+    <div style="max-width:1180px;margin:0 auto;display:grid;grid-template-columns:1fr 1.06fr;gap:60px;align-items:center">
+      <div>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11.5px;letter-spacing:0.22em;text-transform:uppercase;color:#20DDC9;margin-bottom:16px">{{ p1.eyebrow }}</div>
+        <h2 style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:36px;line-height:1.12;letter-spacing:-0.02em;color:#F2F6FC;margin:0 0 16px;text-wrap:balance">{{ p1.title }}</h2>
+        <p style="font-size:16.5px;line-height:1.62;color:#A6B3CA;margin:0 0 26px;max-width:460px">{{ p1.body }}</p>
+        <div>
+          <sc-for list="{{ p1.bullets }}" as="b" hint-placeholder-count="3">
+            <div style="display:flex;gap:11px;align-items:flex-start;margin-bottom:12px">
+              <span style="flex-shrink:0;width:20px;height:20px;border-radius:6px;background:rgba(32,221,201,0.12);display:flex;align-items:center;justify-content:center;margin-top:1px"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#20DDC9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+              <span style="font-size:14.5px;color:#C7D0E2;line-height:1.5">{{ b }}</span>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+      <div style="position:relative">
+        <div style="position:absolute;inset:-8% -6%;background:radial-gradient(closest-side,rgba(32,221,201,0.1),transparent);filter:blur(20px)"></div>
+        <div style="position:relative;background:#0B111E;border:1px solid #283650;border-radius:14px;overflow:hidden;box-shadow:0 30px 70px -36px rgba(0,0,0,0.85)">
+          <div style="display:flex;align-items:center;justify-content:space-between;padding:12px 15px;border-bottom:1px solid #1A2334;background:#0C1322">
+            <span style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:13px;color:#F2F6FC">Sigma Rule</span>
+            <span style="font-family:'JetBrains Mono',monospace;font-size:9.5px;color:#20DDC9;background:rgba(32,221,201,0.1);padding:3px 8px;border-radius:5px">active</span>
+          </div>
+          <div style="padding:16px 17px;font-family:'JetBrains Mono',monospace;font-size:11.5px;line-height:1.85">
+            <div><span style="color:#7C8AA6">title:</span> <span style="color:#E6ECF7">Suspicious Encoded PowerShell</span></div>
+            <div><span style="color:#7C8AA6">logsource:</span> <span style="color:#9FE9DF">windows/process_creation</span></div>
+            <div><span style="color:#7C8AA6">detection:</span></div>
+            <div style="padding-left:16px"><span style="color:#7C8AA6">selection:</span></div>
+            <div style="padding-left:32px"><span style="color:#8C7BFF">CommandLine|contains:</span> <span style="color:#9FE9DF">'-enc'</span></div>
+            <div style="padding-left:16px"><span style="color:#7C8AA6">condition:</span> <span style="color:#E6ECF7">selection</span></div>
+            <div><span style="color:#7C8AA6">level:</span> <span style="color:#FF8A3D">high</span></div>
+          </div>
+          <div style="display:flex;align-items:center;gap:11px;padding:13px 17px;border-top:1px solid #1A2334;background:#0C1322">
+            <span style="font-family:'JetBrains Mono',monospace;font-size:9px;font-weight:700;color:#0A0F1A;background:#FF8A3D;padding:3px 7px;border-radius:5px">HIGH</span>
+            <span style="flex:1;font-size:12.5px;color:#E6ECF7;font-weight:500">Match · powershell.exe -enc …</span>
+            <span style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#8C7BFF">T1059.001</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PILLAR 2 · Automation -->
+  <section data-screen-label="Automation" style="padding:94px 32px;background:#0B111C;border-top:1px solid #161E2C">
+    <div style="max-width:1180px;margin:0 auto;display:grid;grid-template-columns:1.06fr 1fr;gap:60px;align-items:center">
+      <div style="position:relative;order:2">
+        <div style="position:absolute;inset:-8% -6%;background:radial-gradient(closest-side,rgba(140,123,255,0.12),transparent);filter:blur(20px)"></div>
+        <div style="position:relative;background:#0B111E;border:1px solid #283650;border-radius:14px;overflow:hidden;box-shadow:0 30px 70px -36px rgba(0,0,0,0.85)">
+          <div style="display:flex;align-items:center;justify-content:space-between;padding:12px 15px;border-bottom:1px solid #1A2334;background:#0C1322">
+            <span style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:13px;color:#F2F6FC">Playbook · Auto-respond</span>
+            <span style="font-family:'JetBrains Mono',monospace;font-size:9.5px;color:#34D27A;background:rgba(52,210,122,0.1);padding:3px 8px;border-radius:5px">running</span>
+          </div>
+          <div style="padding:18px 20px">
+            <div style="display:flex;align-items:center;gap:12px;background:#101826;border:1px solid #2A3852;border-radius:11px;padding:12px 14px">
+              <span style="width:30px;height:30px;border-radius:8px;background:rgba(32,221,201,0.12);color:#20DDC9;display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7z"/></svg></span>
+              <div><div style="font-size:12.5px;font-weight:600;color:#F2F6FC">Trigger</div><div style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#76849E">Critical finding raised</div></div>
+            </div>
+            <div style="display:flex;justify-content:center;padding:4px 0"><svg width="14" height="16" viewBox="0 0 24 24" fill="none" stroke="#3A4A66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v16M6 14l6 6 6-6"/></svg></div>
+            <div style="display:flex;align-items:center;gap:12px;background:#101826;border:1px solid #243049;border-radius:11px;padding:12px 14px">
+              <span style="width:30px;height:30px;border-radius:8px;background:rgba(32,221,201,0.12);color:#20DDC9;display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></span>
+              <div><div style="font-size:12.5px;font-weight:600;color:#F2F6FC">Enrich</div><div style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#76849E">Extract &amp; look up IOCs</div></div>
+            </div>
+            <div style="display:flex;justify-content:center;padding:4px 0"><svg width="14" height="16" viewBox="0 0 24 24" fill="none" stroke="#3A4A66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v16M6 14l6 6 6-6"/></svg></div>
+            <div style="display:flex;align-items:center;gap:12px;background:#101826;border:1px solid #243049;border-radius:11px;padding:12px 14px">
+              <span style="width:30px;height:30px;border-radius:8px;background:rgba(140,123,255,0.14);color:#8C7BFF;display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3v12M6 21a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM18 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM18 9c0 6-12 3-12 9"/></svg></span>
+              <div><div style="font-size:12.5px;font-weight:600;color:#F2F6FC">Decide</div><div style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#76849E">Severity ≥ High?</div></div>
+            </div>
+            <div style="display:flex;justify-content:center;padding:4px 0"><svg width="14" height="16" viewBox="0 0 24 24" fill="none" stroke="#3A4A66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v16M6 14l6 6 6-6"/></svg></div>
+            <div style="display:flex;align-items:center;gap:12px;background:rgba(52,210,122,0.06);border:1px solid rgba(52,210,122,0.28);border-radius:11px;padding:12px 14px">
+              <span style="width:30px;height:30px;border-radius:8px;background:rgba(52,210,122,0.14);color:#34D27A;display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
+              <div><div style="font-size:12.5px;font-weight:600;color:#F2F6FC">Contain</div><div style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#76849E">Isolate host · notify on-call</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="order:1">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11.5px;letter-spacing:0.22em;text-transform:uppercase;color:#20DDC9;margin-bottom:16px">{{ p2.eyebrow }}</div>
+        <h2 style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:36px;line-height:1.12;letter-spacing:-0.02em;color:#F2F6FC;margin:0 0 16px;text-wrap:balance">{{ p2.title }}</h2>
+        <p style="font-size:16.5px;line-height:1.62;color:#A6B3CA;margin:0 0 26px;max-width:460px">{{ p2.body }}</p>
+        <div>
+          <sc-for list="{{ p2.bullets }}" as="b" hint-placeholder-count="3">
+            <div style="display:flex;gap:11px;align-items:flex-start;margin-bottom:12px">
+              <span style="flex-shrink:0;width:20px;height:20px;border-radius:6px;background:rgba(32,221,201,0.12);display:flex;align-items:center;justify-content:center;margin-top:1px"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#20DDC9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+              <span style="font-size:14.5px;color:#C7D0E2;line-height:1.5">{{ b }}</span>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PILLAR 3 · Cases -->
+  <section data-screen-label="Cases" style="padding:94px 32px;background:#0A0F1A;border-top:1px solid #161E2C">
+    <div style="max-width:1180px;margin:0 auto;display:grid;grid-template-columns:1fr 1.06fr;gap:60px;align-items:center">
+      <div>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11.5px;letter-spacing:0.22em;text-transform:uppercase;color:#20DDC9;margin-bottom:16px">{{ p3.eyebrow }}</div>
+        <h2 style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:36px;line-height:1.12;letter-spacing:-0.02em;color:#F2F6FC;margin:0 0 16px;text-wrap:balance">{{ p3.title }}</h2>
+        <p style="font-size:16.5px;line-height:1.62;color:#A6B3CA;margin:0 0 26px;max-width:460px">{{ p3.body }}</p>
+        <div>
+          <sc-for list="{{ p3.bullets }}" as="b" hint-placeholder-count="3">
+            <div style="display:flex;gap:11px;align-items:flex-start;margin-bottom:12px">
+              <span style="flex-shrink:0;width:20px;height:20px;border-radius:6px;background:rgba(32,221,201,0.12);display:flex;align-items:center;justify-content:center;margin-top:1px"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#20DDC9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+              <span style="font-size:14.5px;color:#C7D0E2;line-height:1.5">{{ b }}</span>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+      <div style="position:relative">
+        <div style="position:absolute;inset:-8% -6%;background:radial-gradient(closest-side,rgba(32,221,201,0.1),transparent);filter:blur(20px)"></div>
+        <div style="position:relative;background:#0B111E;border:1px solid #283650;border-radius:14px;overflow:hidden;box-shadow:0 30px 70px -36px rgba(0,0,0,0.85)">
+          <div style="display:flex;align-items:center;justify-content:space-between;padding:14px 16px;border-bottom:1px solid #1A2334;background:#0C1322">
+            <div style="display:flex;align-items:center;gap:10px">
+              <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#76849E">CASE-1042</span>
+              <span style="font-family:'JetBrains Mono',monospace;font-size:9px;font-weight:700;color:#0A0F1A;background:#FF8A3D;padding:3px 7px;border-radius:5px">HIGH</span>
+            </div>
+            <span style="width:24px;height:24px;border-radius:50%;background:#16202F;border:1px solid #2A3852;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:#A6B3CA">JD</span>
+          </div>
+          <div style="padding:16px 18px">
+            <div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:15px;color:#F2F6FC;margin-bottom:18px">Encoded PowerShell on HR-LT-118</div>
+            <div style="display:flex;flex-direction:column;gap:0">
+              <div style="display:flex;gap:13px">
+                <div style="display:flex;flex-direction:column;align-items:center"><span style="width:11px;height:11px;border-radius:50%;background:#20DDC9;border:2px solid #0B111E;box-shadow:0 0 0 2px #20DDC9"></span><span style="width:2px;flex:1;background:#243049"></span></div>
+                <div style="padding-bottom:16px"><div style="font-size:13px;color:#E6ECF7;font-weight:500">Finding detected</div><div style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#76849E">09:41:02 · Sigma engine</div></div>
+              </div>
+              <div style="display:flex;gap:13px">
+                <div style="display:flex;flex-direction:column;align-items:center"><span style="width:11px;height:11px;border-radius:50%;background:#16202F;border:2px solid #3A4A66"></span><span style="width:2px;flex:1;background:#243049"></span></div>
+                <div style="padding-bottom:16px"><div style="font-size:13px;color:#E6ECF7;font-weight:500">IOCs enriched</div><div style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#76849E">09:41:04 · 3 indicators</div></div>
+              </div>
+              <div style="display:flex;gap:13px">
+                <div style="display:flex;flex-direction:column;align-items:center"><span style="width:11px;height:11px;border-radius:50%;background:#16202F;border:2px solid #3A4A66"></span><span style="width:2px;flex:1;background:#243049"></span></div>
+                <div style="padding-bottom:16px"><div style="font-size:13px;color:#E6ECF7;font-weight:500">Promoted to case</div><div style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#76849E">09:41:05 · auto-rule</div></div>
+              </div>
+              <div style="display:flex;gap:13px">
+                <div style="display:flex;flex-direction:column;align-items:center"><span style="width:11px;height:11px;border-radius:50%;background:#34D27A;border:2px solid #0B111E;box-shadow:0 0 0 2px #34D27A"></span></div>
+                <div><div style="font-size:13px;color:#E6ECF7;font-weight:500">Host contained</div><div style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#34D27A">09:41:12 · playbook</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PILLAR 4 · Threat Intel -->
+  <section data-screen-label="Threat Intel" style="padding:94px 32px;background:#0B111C;border-top:1px solid #161E2C">
+    <div style="max-width:1180px;margin:0 auto;display:grid;grid-template-columns:1.06fr 1fr;gap:60px;align-items:center">
+      <div style="position:relative;order:2">
+        <div style="position:absolute;inset:-8% -6%;background:radial-gradient(closest-side,rgba(140,123,255,0.12),transparent);filter:blur(20px)"></div>
+        <div style="position:relative;background:#0B111E;border:1px solid #283650;border-radius:14px;overflow:hidden;box-shadow:0 30px 70px -36px rgba(0,0,0,0.85)">
+          <div style="display:flex;align-items:center;justify-content:space-between;padding:13px 16px;border-bottom:1px solid #1A2334;background:#0C1322">
+            <span style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:13px;color:#F2F6FC">Extracted IOCs</span>
+            <span style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#76849E">128 total</span>
+          </div>
+          <div style="display:grid;grid-template-columns:78px 1fr 84px;padding:9px 16px;border-bottom:1px solid #1A2334;font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:0.1em;text-transform:uppercase;color:#5E6B84">
+            <span>Type</span><span>Indicator</span><span style="text-align:right">Status</span>
+          </div>
+          <div style="display:grid;grid-template-columns:78px 1fr 84px;align-items:center;padding:11px 16px;border-bottom:1px solid #141D2B"><span><span style="font-family:'JetBrains Mono',monospace;font-size:9px;color:#8C7BFF;background:rgba(140,123,255,0.12);padding:2px 7px;border-radius:5px">hash</span></span><span style="font-family:'JetBrains Mono',monospace;font-size:11.5px;color:#C7D0E2">a3f9c1…e21c</span><span style="text-align:right"><span style="font-family:'JetBrains Mono',monospace;font-size:9px;color:#FF6B82;background:rgba(255,59,92,0.1);padding:2px 7px;border-radius:5px">blocked</span></span></div>
+          <div style="display:grid;grid-template-columns:78px 1fr 84px;align-items:center;padding:11px 16px;border-bottom:1px solid #141D2B"><span><span style="font-family:'JetBrains Mono',monospace;font-size:9px;color:#20DDC9;background:rgba(32,221,201,0.1);padding:2px 7px;border-radius:5px">ip</span></span><span style="font-family:'JetBrains Mono',monospace;font-size:11.5px;color:#C7D0E2">185.12.4.9</span><span style="text-align:right"><span style="font-family:'JetBrains Mono',monospace;font-size:9px;color:#FFC53D;background:rgba(255,197,61,0.1);padding:2px 7px;border-radius:5px">watch</span></span></div>
+          <div style="display:grid;grid-template-columns:78px 1fr 84px;align-items:center;padding:11px 16px;border-bottom:1px solid #141D2B"><span><span style="font-family:'JetBrains Mono',monospace;font-size:9px;color:#FF8A3D;background:rgba(255,138,61,0.1);padding:2px 7px;border-radius:5px">domain</span></span><span style="font-family:'JetBrains Mono',monospace;font-size:11.5px;color:#C7D0E2">evil-c2.net</span><span style="text-align:right"><span style="font-family:'JetBrains Mono',monospace;font-size:9px;color:#FF6B82;background:rgba(255,59,92,0.1);padding:2px 7px;border-radius:5px">blocked</span></span></div>
+          <div style="display:grid;grid-template-columns:78px 1fr 84px;align-items:center;padding:11px 16px"><span><span style="font-family:'JetBrains Mono',monospace;font-size:9px;color:#4D8DF7;background:rgba(77,141,247,0.1);padding:2px 7px;border-radius:5px">url</span></span><span style="font-family:'JetBrains Mono',monospace;font-size:11.5px;color:#C7D0E2">hxxp://evil-c2…</span><span style="text-align:right"><span style="font-family:'JetBrains Mono',monospace;font-size:9px;color:#FFC53D;background:rgba(255,197,61,0.1);padding:2px 7px;border-radius:5px">watch</span></span></div>
+        </div>
+      </div>
+      <div style="order:1">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11.5px;letter-spacing:0.22em;text-transform:uppercase;color:#20DDC9;margin-bottom:16px">{{ p4.eyebrow }}</div>
+        <h2 style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:36px;line-height:1.12;letter-spacing:-0.02em;color:#F2F6FC;margin:0 0 16px;text-wrap:balance">{{ p4.title }}</h2>
+        <p style="font-size:16.5px;line-height:1.62;color:#A6B3CA;margin:0 0 26px;max-width:460px">{{ p4.body }}</p>
+        <div>
+          <sc-for list="{{ p4.bullets }}" as="b" hint-placeholder-count="3">
+            <div style="display:flex;gap:11px;align-items:flex-start;margin-bottom:12px">
+              <span style="flex-shrink:0;width:20px;height:20px;border-radius:6px;background:rgba(32,221,201,0.12);display:flex;align-items:center;justify-content:center;margin-top:1px"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#20DDC9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+              <span style="font-size:14.5px;color:#C7D0E2;line-height:1.5">{{ b }}</span>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CAPABILITIES -->
+  <section data-screen-label="Capabilities" style="padding:92px 32px;background:#0A0F1A;border-top:1px solid #161E2C">
+    <div style="max-width:1180px;margin:0 auto">
+      <div style="text-align:center;max-width:660px;margin:0 auto 46px">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11.5px;letter-spacing:0.22em;text-transform:uppercase;color:#20DDC9;margin-bottom:14px">{{ capsHead.eyebrow }}</div>
+        <h2 style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:38px;letter-spacing:-0.02em;color:#F2F6FC;margin:0 0 13px;text-wrap:balance">{{ capsHead.title }}</h2>
+        <p style="font-size:16.5px;color:#A6B3CA;margin:0;line-height:1.55">{{ capsHead.sub }}</p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:18px">
+        <div style="background:#101826;border:1px solid #243049;border-radius:16px;padding:26px" style-hover="border-color:#2E6E66;background:#121C2C">
+          <div style="width:42px;height:42px;border-radius:11px;background:rgba(32,221,201,0.1);border:1px solid rgba(32,221,201,0.18);display:flex;align-items:center;justify-content:center;color:#20DDC9;margin-bottom:18px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+          <div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:18px;color:#F2F6FC;margin-bottom:8px">{{ c1.t }}</div>
+          <div style="font-size:14px;color:#8392AD;line-height:1.55">{{ c1.d }}</div>
+        </div>
+        <div style="background:#101826;border:1px solid #243049;border-radius:16px;padding:26px" style-hover="border-color:#2E6E66;background:#121C2C">
+          <div style="width:42px;height:42px;border-radius:11px;background:rgba(32,221,201,0.1);border:1px solid rgba(32,221,201,0.18);display:flex;align-items:center;justify-content:center;color:#20DDC9;margin-bottom:18px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><path d="m3.3 7 8.7 5 8.7-5M12 22V12"/></svg></div>
+          <div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:18px;color:#F2F6FC;margin-bottom:8px">{{ c2.t }}</div>
+          <div style="font-size:14px;color:#8392AD;line-height:1.55">{{ c2.d }}</div>
+        </div>
+        <div style="background:#101826;border:1px solid #243049;border-radius:16px;padding:26px" style-hover="border-color:#2E6E66;background:#121C2C">
+          <div style="width:42px;height:42px;border-radius:11px;background:rgba(32,221,201,0.1);border:1px solid rgba(32,221,201,0.18);display:flex;align-items:center;justify-content:center;color:#20DDC9;margin-bottom:18px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 16v-4M12 16V8M17 16v-7"/></svg></div>
+          <div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:18px;color:#F2F6FC;margin-bottom:8px">{{ c3.t }}</div>
+          <div style="font-size:14px;color:#8392AD;line-height:1.55">{{ c3.d }}</div>
+        </div>
+        <div style="background:#101826;border:1px solid #243049;border-radius:16px;padding:26px" style-hover="border-color:#2E6E66;background:#121C2C">
+          <div style="width:42px;height:42px;border-radius:11px;background:rgba(32,221,201,0.1);border:1px solid rgba(32,221,201,0.18);display:flex;align-items:center;justify-content:center;color:#20DDC9;margin-bottom:18px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div>
+          <div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:18px;color:#F2F6FC;margin-bottom:8px">{{ c4.t }}</div>
+          <div style="font-size:14px;color:#8392AD;line-height:1.55">{{ c4.d }}</div>
+        </div>
+        <div style="background:#101826;border:1px solid #243049;border-radius:16px;padding:26px" style-hover="border-color:#2E6E66;background:#121C2C">
+          <div style="width:42px;height:42px;border-radius:11px;background:rgba(32,221,201,0.1);border:1px solid rgba(32,221,201,0.18);display:flex;align-items:center;justify-content:center;color:#20DDC9;margin-bottom:18px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="7" width="10" height="10" rx="2"/><path d="M9 3v4M15 3v4M9 17v4M15 17v4M3 9h4M3 15h4M17 9h4M17 15h4"/></svg></div>
+          <div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:18px;color:#F2F6FC;margin-bottom:8px">{{ c5.t }}</div>
+          <div style="font-size:14px;color:#8392AD;line-height:1.55">{{ c5.d }}</div>
+        </div>
+        <div style="background:#101826;border:1px solid #243049;border-radius:16px;padding:26px" style-hover="border-color:#2E6E66;background:#121C2C">
+          <div style="width:42px;height:42px;border-radius:11px;background:rgba(32,221,201,0.1);border:1px solid rgba(32,221,201,0.18);display:flex;align-items:center;justify-content:center;color:#20DDC9;margin-bottom:18px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M17 7h4v4"/></svg></div>
+          <div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:18px;color:#F2F6FC;margin-bottom:8px">{{ c6.t }}</div>
+          <div style="font-size:14px;color:#8392AD;line-height:1.55">{{ c6.d }}</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPARISON -->
+  <section data-screen-label="Comparison" style="padding:90px 32px;background:#0B111C;border-top:1px solid #161E2C">
+    <div style="max-width:980px;margin:0 auto">
+      <div style="text-align:center;margin-bottom:40px">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11.5px;letter-spacing:0.22em;text-transform:uppercase;color:#20DDC9;margin-bottom:14px">{{ compare.eyebrow }}</div>
+        <h2 style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:38px;letter-spacing:-0.02em;color:#F2F6FC;margin:0">{{ compare.title }}</h2>
+      </div>
+      <div style="border:1px solid #243049;border-radius:18px;overflow:hidden;background:#0A0F1A">
+        <div style="display:grid;grid-template-columns:1.6fr 1fr 1fr;align-items:stretch">
+          <div style="padding:20px 24px"></div>
+          <div style="padding:18px 22px;text-align:center;background:rgba(32,221,201,0.07);border-left:1px solid rgba(32,221,201,0.22);border-right:1px solid rgba(32,221,201,0.22)">
+            <div style="display:flex;align-items:center;justify-content:center;gap:8px"><div style="width:18px;height:18px"><svg viewBox="0 0 100 100" width="100%" height="100%" style="display:block"><polyline points="75,24 27,24 53,50 27,76 75,76" fill="none" stroke="#20DDC9" stroke-width="13" stroke-linejoin="miter" stroke-linecap="square"/></svg></div><span style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:15px;color:#F2F6FC">{{ compare.colA }}</span></div>
+          </div>
+          <div style="padding:18px 22px;text-align:center;display:flex;align-items:center;justify-content:center"><span style="font-size:12.5px;color:#76849E;font-weight:600">{{ compare.colB }}</span></div>
+        </div>
+        <sc-for list="{{ compareRows }}" as="r" hint-placeholder-count="7">
+          <div style="display:grid;grid-template-columns:1.6fr 1fr 1fr;border-top:1px solid #161E2C">
+            <div style="padding:15px 24px;font-size:14px;color:#C7D0E2;font-weight:500;display:flex;align-items:center">{{ r.f }}</div>
+            <div style="padding:15px 22px;text-align:center;background:rgba(32,221,201,0.04);border-left:1px solid rgba(32,221,201,0.14);border-right:1px solid rgba(32,221,201,0.14);display:flex;align-items:center;justify-content:center">
+              <sc-if value="{{ r.aText }}"><span style="font-size:13.5px;color:#E6ECF7;font-weight:600">{{ r.aText }}</span></sc-if>
+              <sc-if value="{{ r.aBool }}"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#20DDC9" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></sc-if>
+            </div>
+            <div style="padding:15px 22px;text-align:center;display:flex;align-items:center;justify-content:center">
+              <sc-if value="{{ r.bText }}"><span style="font-size:13.5px;color:#8392AD">{{ r.bText }}</span></sc-if>
+              <sc-if value="{{ r.bBool }}"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#56627B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg></sc-if>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <!-- MSSP -->
+  <section data-screen-label="MSSP" style="padding:94px 32px;background:#0A0F1A;border-top:1px solid #161E2C">
+    <div style="max-width:1180px;margin:0 auto;display:grid;grid-template-columns:1fr 0.92fr;gap:60px;align-items:center">
+      <div>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11.5px;letter-spacing:0.22em;text-transform:uppercase;color:#8C7BFF;margin-bottom:16px">{{ mssp.eyebrow }}</div>
+        <h2 style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:36px;line-height:1.12;letter-spacing:-0.02em;color:#F2F6FC;margin:0 0 16px;text-wrap:balance">{{ mssp.title }}</h2>
+        <p style="font-size:16.5px;line-height:1.62;color:#A6B3CA;margin:0 0 26px;max-width:470px">{{ mssp.body }}</p>
+        <div>
+          <sc-for list="{{ mssp.bullets }}" as="b" hint-placeholder-count="4">
+            <div style="display:flex;gap:11px;align-items:flex-start;margin-bottom:12px">
+              <span style="flex-shrink:0;width:20px;height:20px;border-radius:6px;background:rgba(140,123,255,0.14);display:flex;align-items:center;justify-content:center;margin-top:1px"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#8C7BFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+              <span style="font-size:14.5px;color:#C7D0E2;line-height:1.5">{{ b }}</span>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+      <div style="position:relative">
+        <div style="position:absolute;inset:-8% -6%;background:radial-gradient(closest-side,rgba(140,123,255,0.12),transparent);filter:blur(20px)"></div>
+        <div style="position:relative;background:#0B111E;border:1px solid #283650;border-radius:14px;overflow:hidden;box-shadow:0 30px 70px -36px rgba(0,0,0,0.85)">
+          <div style="display:flex;align-items:center;justify-content:space-between;padding:13px 16px;border-bottom:1px solid #1A2334;background:#0C1322">
+            <span style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:13px;color:#F2F6FC">Tenants</span>
+            <span style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#34D27A">6 active</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:12px;padding:13px 16px;border-bottom:1px solid #141D2B"><span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:12px;color:#8392AD;width:88px">NORTHWIND</span><span style="flex:1;font-family:'JetBrains Mono',monospace;font-size:11px;color:#76849E">1.2M evt/day</span><span style="display:flex;align-items:center;gap:6px;font-family:'JetBrains Mono',monospace;font-size:10px;color:#34D27A"><span style="width:6px;height:6px;border-radius:50%;background:#34D27A"></span>healthy</span></div>
+          <div style="display:flex;align-items:center;gap:12px;padding:13px 16px;border-bottom:1px solid #141D2B"><span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:12px;color:#8392AD;width:88px">VERTEX</span><span style="flex:1;font-family:'JetBrains Mono',monospace;font-size:11px;color:#76849E">840k evt/day</span><span style="display:flex;align-items:center;gap:6px;font-family:'JetBrains Mono',monospace;font-size:10px;color:#34D27A"><span style="width:6px;height:6px;border-radius:50%;background:#34D27A"></span>healthy</span></div>
+          <div style="display:flex;align-items:center;gap:12px;padding:13px 16px;border-bottom:1px solid #141D2B"><span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:12px;color:#8392AD;width:88px">MERIDIAN</span><span style="flex:1;font-family:'JetBrains Mono',monospace;font-size:11px;color:#76849E">2 open cases</span><span style="display:flex;align-items:center;gap:6px;font-family:'JetBrains Mono',monospace;font-size:10px;color:#FF6B82"><span style="width:6px;height:6px;border-radius:50%;background:#FF3B5C"></span>critical</span></div>
+          <div style="display:flex;align-items:center;gap:12px;padding:13px 16px"><span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:12px;color:#8392AD;width:88px">QUANTLY</span><span style="flex:1;font-family:'JetBrains Mono',monospace;font-size:11px;color:#76849E">410k evt/day</span><span style="display:flex;align-items:center;gap:6px;font-family:'JetBrains Mono',monospace;font-size:10px;color:#34D27A"><span style="width:6px;height:6px;border-radius:50%;background:#34D27A"></span>healthy</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPLIANCE -->
+  <section data-screen-label="Compliance" style="padding:90px 32px;background:#0B111C;border-top:1px solid #161E2C">
+    <div style="max-width:860px;margin:0 auto;text-align:center">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:11.5px;letter-spacing:0.22em;text-transform:uppercase;color:#20DDC9;margin-bottom:14px">{{ compliance.eyebrow }}</div>
+      <h2 style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:38px;letter-spacing:-0.02em;color:#F2F6FC;margin:0 0 14px;text-wrap:balance">{{ compliance.title }}</h2>
+      <p style="font-size:16.5px;color:#A6B3CA;margin:0 auto 32px;line-height:1.6;max-width:600px">{{ compliance.body }}</p>
+      <div style="display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap">
+        <sc-for list="{{ compliance.badges }}" as="bg" hint-placeholder-count="4">
+          <div style="display:inline-flex;align-items:center;gap:9px;background:#101826;border:1px solid #243049;border-radius:11px;padding:12px 18px">
+            <span style="color:#20DDC9"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></span>
+            <span style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:14px;color:#E6ECF7">{{ bg }}</span>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE -->
+  <section style="padding:92px 32px;background:#0A0F1A;border-top:1px solid #161E2C">
+    <div style="max-width:840px;margin:0 auto;text-align:center">
+      <div style="font-family:'Space Grotesk',sans-serif;font-size:64px;color:#20DDC9;line-height:0.4;height:34px;opacity:0.85">&ldquo;</div>
+      <p style="font-family:'Space Grotesk',sans-serif;font-weight:500;font-size:29px;line-height:1.4;letter-spacing:-0.012em;color:#F2F6FC;margin:0 0 26px;text-wrap:balance">{{ quote.text }}</p>
+      <div style="display:flex;align-items:center;justify-content:center;gap:12px">
+        <span style="width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,#16202F,#0C1322);border:1px solid #2A3852;display:flex;align-items:center;justify-content:center;color:#76849E;font-size:15px;font-weight:700">&#9679;</span>
+        <div style="text-align:left"><div style="font-weight:700;color:#E6ECF7;font-size:14.5px">{{ quote.author }}</div><div style="font-size:12.5px;color:#76849E">{{ quote.role }}</div></div>
+      </div>
+      <div style="margin-top:16px;font-size:10.5px;color:#3F4A60;font-style:italic">{{ quote.note }}</div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section style="padding:24px 32px 92px;background:#0A0F1A">
+    <div style="max-width:1180px;margin:0 auto;position:relative;overflow:hidden;border:1px solid #243049;border-radius:24px;background:radial-gradient(720px 320px at 26% -20%,rgba(32,221,201,0.16),transparent 60%),radial-gradient(640px 320px at 92% 130%,rgba(140,123,255,0.18),transparent 60%),#0C1322;padding:66px 56px;text-align:center">
+      <div style="position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,0.02) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.02) 1px,transparent 1px);background-size:46px 46px;pointer-events:none"></div>
+      <div style="position:relative">
+        <h2 style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:43px;letter-spacing:-0.022em;color:#F2F6FC;margin:0 0 14px;text-wrap:balance">{{ cta.title }}</h2>
+        <p style="font-size:17.5px;color:#A6B3CA;margin:0 auto 32px;max-width:520px;line-height:1.55">{{ cta.sub }}</p>
+        <div style="display:flex;align-items:center;justify-content:center;gap:14px">
+          <span onClick="{{ goPlatform }}" style="display:inline-flex;align-items:center;gap:9px;font-size:15.5px;font-weight:700;color:#062019;background:#20DDC9;padding:14px 26px;border-radius:11px;cursor:pointer;box-shadow:0 10px 30px -10px rgba(32,221,201,0.7)" style-hover="background:#3DE9D6">{{ cta.primary }} <span style="font-size:17px">&rarr;</span></span>
+          <span style="display:inline-flex;align-items:center;font-size:15.5px;font-weight:600;color:#E6ECF7;background:rgba(255,255,255,0.05);border:1px solid #2A3852;padding:14px 24px;border-radius:11px;cursor:pointer" style-hover="background:rgba(255,255,255,0.1)">{{ cta.secondary }}</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--HOME_BODY-->
+
+</div>
+</sc-if>
+
+<!-- ====================== PLATFORM ====================== -->
+<sc-if value="{{ isPlatform }}">
+<div>
+  <!-- PLATFORM HERO -->
+  <section data-screen-label="Platform Hero" style="position:relative;overflow:hidden;background:radial-gradient(1000px 520px at 72% -12%,rgba(140,123,255,0.15),transparent 58%),radial-gradient(820px 460px at 8% -2%,rgba(32,221,201,0.12),transparent 56%),#0A0F1A">
+    <div style="position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,0.02) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.02) 1px,transparent 1px);background-size:52px 52px;pointer-events:none"></div>
+    <div style="position:relative;max-width:920px;margin:0 auto;padding:92px 32px 78px;text-align:center">
+      <div style="display:inline-flex;align-items:center;gap:9px;font-family:'JetBrains Mono',monospace;font-size:11.5px;letter-spacing:0.16em;text-transform:uppercase;color:#9FE9DF;background:rgba(32,221,201,0.07);border:1px solid rgba(32,221,201,0.22);padding:7px 14px;border-radius:999px;margin-bottom:26px">{{ pf.badge }}</div>
+      <h1 style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:50px;line-height:1.06;letter-spacing:-0.025em;color:#F2F6FC;margin:0 0 20px;text-wrap:balance">{{ pf.heroTitle }}</h1>
+      <p style="font-size:18px;line-height:1.6;color:#A6B3CA;margin:0 auto 32px;max-width:600px">{{ pf.heroSub }}</p>
+      <div style="display:flex;align-items:center;justify-content:center;gap:14px">
+        <span style="display:inline-flex;align-items:center;gap:9px;font-size:15.5px;font-weight:700;color:#062019;background:#20DDC9;padding:13px 24px;border-radius:11px;cursor:pointer;box-shadow:0 10px 30px -10px rgba(32,221,201,0.7)" style-hover="background:#3DE9D6">{{ pf.ctaPrimary }} <span style="font-size:17px">&rarr;</span></span>
+        <span style="display:inline-flex;align-items:center;font-size:15.5px;font-weight:600;color:#E6ECF7;background:rgba(255,255,255,0.04);border:1px solid #2A3852;padding:13px 22px;border-radius:11px;cursor:pointer" style-hover="background:rgba(255,255,255,0.08)">{{ pf.ctaSecondary }}</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PIPELINE -->
+  <section data-screen-label="Pipeline" style="padding:90px 32px;background:#0B111C;border-top:1px solid #161E2C">
+    <div style="max-width:1180px;margin:0 auto">
+      <div style="text-align:center;max-width:680px;margin:0 auto 50px">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11.5px;letter-spacing:0.22em;text-transform:uppercase;color:#20DDC9;margin-bottom:14px">{{ pfPipeHead.eyebrow }}</div>
+        <h2 style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:38px;letter-spacing:-0.02em;color:#F2F6FC;margin:0 0 13px;text-wrap:balance">{{ pfPipeHead.title }}</h2>
+        <p style="font-size:16.5px;color:#A6B3CA;margin:0;line-height:1.55">{{ pfPipeHead.sub }}</p>
+      </div>
+      <div style="position:relative">
+        <div style="position:absolute;top:25px;left:9%;right:9%;height:2px;background:linear-gradient(90deg,transparent,#26344C 8%,#26344C 92%,transparent)"></div>
+        <div style="position:relative;display:grid;grid-template-columns:repeat(6,1fr);gap:12px">
+          <sc-for list="{{ pfPipe }}" as="step" hint-placeholder-count="6">
+            <div style="text-align:center;padding:0 4px">
+              <div style="width:50px;height:50px;border-radius:50%;background:#0B111C;border:1px solid #2E6E66;color:#20DDC9;font-family:'JetBrains Mono',monospace;font-size:14px;font-weight:600;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;box-shadow:0 0 0 5px #0B111C">{{ step.n }}</div>
+              <div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:15px;color:#F2F6FC;margin-bottom:6px">{{ step.title }}</div>
+              <div style="font-size:12px;color:#76849E;line-height:1.5">{{ step.desc }}</div>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODULES -->
+  <section data-screen-label="Modules" style="padding:90px 32px;background:#0A0F1A;border-top:1px solid #161E2C">
+    <div style="max-width:1180px;margin:0 auto">
+      <div style="text-align:center;max-width:640px;margin:0 auto 46px">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11.5px;letter-spacing:0.22em;text-transform:uppercase;color:#20DDC9;margin-bottom:14px">{{ pfModHead.eyebrow }}</div>
+        <h2 style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:38px;letter-spacing:-0.02em;color:#F2F6FC;margin:0;text-wrap:balance">{{ pfModHead.title }}</h2>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:18px">
+        <sc-for list="{{ pfMods }}" as="m" hint-placeholder-count="6">
+          <div style="background:#101826;border:1px solid #243049;border-radius:16px;padding:26px" style-hover="border-color:#2E6E66;background:#121C2C">
+            <div style="display:flex;align-items:center;gap:11px;margin-bottom:10px">
+              <span style="flex-shrink:0;width:28px;height:28px;border-radius:8px;background:rgba(32,221,201,0.1);border:1px solid rgba(32,221,201,0.2);display:flex;align-items:center;justify-content:center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#20DDC9" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+              <div style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:17px;color:#F2F6FC">{{ m.title }}</div>
+            </div>
+            <div style="font-size:14px;color:#8392AD;line-height:1.55">{{ m.desc }}</div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTEGRATIONS -->
+  <section data-screen-label="Integrations" style="padding:90px 32px;background:#0B111C;border-top:1px solid #161E2C">
+    <div style="max-width:1100px;margin:0 auto">
+      <div style="text-align:center;max-width:640px;margin:0 auto 44px">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11.5px;letter-spacing:0.22em;text-transform:uppercase;color:#20DDC9;margin-bottom:14px">{{ pfIntegHead.eyebrow }}</div>
+        <h2 style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:38px;letter-spacing:-0.02em;color:#F2F6FC;margin:0 0 13px;text-wrap:balance">{{ pfIntegHead.title }}</h2>
+        <p style="font-size:16.5px;color:#A6B3CA;margin:0;line-height:1.55">{{ pfIntegHead.sub }}</p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:14px">
+        <sc-for list="{{ pfInteg }}" as="name" hint-placeholder-count="12">
+          <div style="background:#101826;border:1px solid #243049;border-radius:12px;padding:18px;display:flex;align-items:center;justify-content:center;gap:10px;min-height:56px" style-hover="border-color:#2E6E66">
+            <span style="width:9px;height:9px;border-radius:3px;background:linear-gradient(135deg,#20DDC9,#8C7BFF)"></span>
+            <span style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:14px;color:#B7C2D6">{{ name }}</span>
+          </div>
+        </sc-for>
+      </div>
+      <div style="text-align:center;font-size:10.5px;color:#3F4A60;margin-top:18px;font-style:italic">Integrações ilustrativas para demonstração.</div>
+    </div>
+  </section>
+
+  <!-- ARCHITECTURE -->
+  <section data-screen-label="Architecture" style="padding:94px 32px;background:#0A0F1A;border-top:1px solid #161E2C">
+    <div style="max-width:1180px;margin:0 auto;display:grid;grid-template-columns:1fr 0.95fr;gap:60px;align-items:center">
+      <div>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11.5px;letter-spacing:0.22em;text-transform:uppercase;color:#20DDC9;margin-bottom:16px">{{ pfArch.eyebrow }}</div>
+        <h2 style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:36px;line-height:1.12;letter-spacing:-0.02em;color:#F2F6FC;margin:0 0 16px;text-wrap:balance">{{ pfArch.title }}</h2>
+        <p style="font-size:16.5px;line-height:1.62;color:#A6B3CA;margin:0 0 24px;max-width:460px">{{ pfArch.body }}</p>
+        <div>
+          <sc-for list="{{ pfArch.points }}" as="b" hint-placeholder-count="4">
+            <div style="display:flex;gap:11px;align-items:flex-start;margin-bottom:12px">
+              <span style="flex-shrink:0;width:20px;height:20px;border-radius:6px;background:rgba(32,221,201,0.12);display:flex;align-items:center;justify-content:center;margin-top:1px"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#20DDC9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+              <span style="font-size:14.5px;color:#C7D0E2;line-height:1.5">{{ b }}</span>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+      <div>
+        <div style="background:#101826;border:1px solid #243049;border-radius:12px;padding:15px 18px;text-align:center"><div style="font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:0.14em;color:#5E6B84;text-transform:uppercase;margin-bottom:4px">Sources</div><div style="font-size:13px;color:#C7D0E2">Endpoints · Cloud · Identity · Network</div></div>
+        <div style="display:flex;justify-content:center;padding:7px 0"><svg width="15" height="17" viewBox="0 0 24 24" fill="none" stroke="#3A4A66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v16M6 14l6 6 6-6"/></svg></div>
+        <div style="background:#101826;border:1px solid #2A3852;border-radius:12px;padding:15px 18px;text-align:center"><div style="font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:0.14em;color:#8C7BFF;text-transform:uppercase;margin-bottom:4px">Open core</div><div style="font-size:13px;color:#C7D0E2">Wazuh agents &amp; indexer</div></div>
+        <div style="display:flex;justify-content:center;padding:7px 0"><svg width="15" height="17" viewBox="0 0 24 24" fill="none" stroke="#3A4A66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v16M6 14l6 6 6-6"/></svg></div>
+        <div style="background:rgba(32,221,201,0.06);border:1px solid rgba(32,221,201,0.32);border-radius:12px;padding:18px;text-align:center;box-shadow:0 0 0 1px rgba(32,221,201,0.06),0 16px 40px -24px rgba(32,221,201,0.5)"><div style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:6px"><div style="width:16px;height:16px"><svg viewBox="0 0 100 100" width="100%" height="100%" style="display:block"><polyline points="75,24 27,24 53,50 27,76 75,76" fill="none" stroke="#20DDC9" stroke-width="13" stroke-linejoin="miter" stroke-linecap="square"/></svg></div><span style="font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:0.14em;color:#20DDC9;text-transform:uppercase">Sigmaward</span></div><div style="font-size:13px;color:#E6ECF7;font-weight:500">Sigma detection · SOAR · Cases · Threat intel</div></div>
+        <div style="display:flex;justify-content:center;padding:7px 0"><svg width="15" height="17" viewBox="0 0 24 24" fill="none" stroke="#3A4A66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v16M6 14l6 6 6-6"/></svg></div>
+        <div style="background:#101826;border:1px solid #243049;border-radius:12px;padding:15px 18px;text-align:center"><div style="font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:0.14em;color:#5E6B84;text-transform:uppercase;margin-bottom:4px">Response</div><div style="font-size:13px;color:#C7D0E2">Playbooks · Integrations · Reports</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLATFORM FINAL CTA -->
+  <section style="padding:24px 32px 92px;background:#0A0F1A;border-top:1px solid #161E2C">
+    <div style="max-width:1180px;margin:0 auto;position:relative;overflow:hidden;border:1px solid #243049;border-radius:24px;background:radial-gradient(720px 320px at 26% -20%,rgba(32,221,201,0.16),transparent 60%),radial-gradient(640px 320px at 92% 130%,rgba(140,123,255,0.18),transparent 60%),#0C1322;padding:64px 56px;text-align:center">
+      <div style="position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,0.02) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.02) 1px,transparent 1px);background-size:46px 46px;pointer-events:none"></div>
+      <div style="position:relative">
+        <h2 style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:42px;letter-spacing:-0.022em;color:#F2F6FC;margin:0 0 14px;text-wrap:balance">{{ cta.title }}</h2>
+        <p style="font-size:17.5px;color:#A6B3CA;margin:0 auto 30px;max-width:520px;line-height:1.55">{{ cta.sub }}</p>
+        <div style="display:flex;align-items:center;justify-content:center;gap:14px">
+          <span onClick="{{ goHome }}" style="display:inline-flex;align-items:center;gap:9px;font-size:15.5px;font-weight:700;color:#062019;background:#20DDC9;padding:14px 26px;border-radius:11px;cursor:pointer;box-shadow:0 10px 30px -10px rgba(32,221,201,0.7)" style-hover="background:#3DE9D6">{{ cta.primary }} <span style="font-size:17px">&rarr;</span></span>
+          <span style="display:inline-flex;align-items:center;font-size:15.5px;font-weight:600;color:#E6ECF7;background:rgba(255,255,255,0.05);border:1px solid #2A3852;padding:14px 24px;border-radius:11px;cursor:pointer" style-hover="background:rgba(255,255,255,0.1)">{{ cta.secondary }}</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+</sc-if>
+
+<!-- ====================== FOOTER ====================== -->
+<footer style="border-top:1px solid #161E2C;background:#080C14">
+  <div style="max-width:1240px;margin:0 auto;padding:56px 32px 34px">
+    <div style="display:grid;grid-template-columns:1.5fr repeat(4,1fr);gap:34px;margin-bottom:44px">
+      <div>
+        <div onClick="{{ goHome }}" style="display:flex;align-items:center;gap:10px;margin-bottom:16px;cursor:pointer">
+          <div style="width:28px;height:28px"><svg viewBox="0 0 100 100" width="100%" height="100%" style="display:block"><polyline points="75,24 27,24 53,50 27,76 75,76" fill="none" stroke="#20DDC9" stroke-width="13" stroke-linejoin="miter" stroke-linecap="square"/></svg></div>
+          <span style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:18px;color:#F2F6FC;letter-spacing:-0.02em">Sigmaward</span>
+        </div>
+        <p style="font-size:13px;color:#5E6B84;line-height:1.6;max-width:240px;margin:0 0 16px">{{ footer.tagline }}</p>
+        <div style="display:flex;gap:10px">
+          <span style="width:30px;height:30px;border-radius:8px;border:1px solid #243049;display:flex;align-items:center;justify-content:center;color:#76849E;cursor:pointer" style-hover="color:#F2F6FC;border-color:#3A4A66"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></span>
+          <span style="width:30px;height:30px;border-radius:8px;border:1px solid #243049;display:flex;align-items:center;justify-content:center;color:#76849E;cursor:pointer" style-hover="color:#F2F6FC;border-color:#3A4A66"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.22.79 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></span>
+          <span style="width:30px;height:30px;border-radius:8px;border:1px solid #243049;display:flex;align-items:center;justify-content:center;color:#76849E;cursor:pointer" style-hover="color:#F2F6FC;border-color:#3A4A66"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.37.5 0 5.78 0 12.29c0 5.21 3.44 9.63 8.2 11.19.6.1.82-.25.82-.56v-2.1c-3.34.71-4.04-1.58-4.04-1.58-.55-1.36-1.33-1.73-1.33-1.73-1.09-.73.08-.72.08-.72 1.2.08 1.84 1.21 1.84 1.21 1.07 1.8 2.81 1.28 3.5.98.11-.76.42-1.28.76-1.57-2.67-.3-5.47-1.31-5.47-5.83 0-1.29.47-2.34 1.24-3.17-.12-.3-.54-1.5.12-3.14 0 0 1.01-.32 3.3 1.21a11.6 11.6 0 0 1 6 0c2.28-1.53 3.29-1.21 3.29-1.21.66 1.64.24 2.84.12 3.14.77.83 1.23 1.88 1.23 3.17 0 4.53-2.81 5.53-5.49 5.82.43.37.81 1.1.81 2.22v3.29c0 .31.22.67.83.56A12.02 12.02 0 0 0 24 12.29C24 5.78 18.63.5 12 .5z"/></svg></span>
+        </div>
+      </div>
+      <sc-for list="{{ footer.cols }}" as="col" hint-placeholder-count="4">
+        <div>
+          <div style="font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.14em;text-transform:uppercase;color:#76849E;margin-bottom:15px">{{ col.title }}</div>
+          <div style="display:flex;flex-direction:column;gap:10px">
+            <sc-for list="{{ col.links }}" as="link" hint-placeholder-count="4">
+              <span style="font-size:13.5px;color:#A6B3CA;cursor:pointer" style-hover="color:#20DDC9">{{ link }}</span>
+            </sc-for>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+    <div style="border-top:1px solid #161E2C;padding-top:22px;display:flex;align-items:center;justify-content:space-between">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:11.5px;color:#3F4A60">© 2026 Sigmaward — {{ footer.rights }}</span>
+      <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#3F4A60;letter-spacing:0.06em">{{ footer.built }}</span>
+    </div>
+  </div>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{
+  &quot;$preview&quot;: { &quot;width&quot;: 1280, &quot;height&quot;: 860 }
+}">
+class Component extends DCLogic {
+  state = { page: 'home', lang: 'pt' };
+
+  data = {
+    pt: {
+      nav: { platform:"Plataforma", solutions:"Soluções", pricing:"Preços", resources:"Recursos", company:"Empresa", login:"Entrar", cta:"Ver o produto" },
+      hero: {
+        badge:"SIEM · SOAR · SOC — construído sobre Wazuh",
+        title:"O SOC moderno, sem o peso do SIEM legado.",
+        sub:"A Sigmaward transforma regras Sigma em detecções, promove findings em casos e automatiza a resposta — a uma fração do custo e da complexidade de Splunk, QRadar ou Microsoft Sentinel.",
+        ctaPrimary:"Ver o produto", ctaSecondary:"Falar com especialista",
+        note:"Sigma-native · Multi-tenant para MSSPs · Fundação aberta"
+      },
+      trust: {
+        label:"Times de segurança e MSSPs operam o dia a dia na Sigmaward",
+        stats:[{v:"4.2M",l:"eventos analisados/dia"},{v:"−63%",l:"MTTR médio"},{v:"1.284",l:"regras Sigma ativas"},{v:"24/7",l:"vigilância contínua"}],
+        disclaimer:"Logos e métricas ilustrativos para fins de demonstração."
+      },
+      problem: {
+        eyebrow:"O problema",
+        title:"SIEM legado custa caro, demora a entregar valor e afoga o analista.",
+        body:"Licenciamento por volume imprevisível, meses de implantação, regras proprietárias e automação vendida à parte. O analista vive no triício — não na caça à ameaça.",
+        points:[{t:"Custo que explode",d:"Preço por ingestão imprevisível no fim do mês."},{t:"Lento para entregar",d:"Semanas até a primeira detecção realmente útil."},{t:"Preso ao fornecedor",d:"Regras e dados aprisionados em formato proprietário."}]
+      },
+      pillars:[
+        { eyebrow:"Detecção", title:"Regras Sigma viram detecção em tempo real.", body:"Importe qualquer regra Sigma e a Sigmaward a mapeia sobre sua telemetria ao vivo — sem reescrever queries proprietárias.", bullets:["Conversão Sigma → query automática","1.200+ regras prontas, ou use as suas","Findings com contexto MITRE ATT&CK"] },
+        { eyebrow:"Automação", title:"Resposta automatizada com playbooks visuais.", body:"Promova, enriqueça e responda sem sair da plataforma. Playbooks conectam detecção e ação em minutos.", bullets:["Playbooks visuais, sem código","Enriquecimento automático de IOCs","Ações de contenção integradas"] },
+        { eyebrow:"Casos", title:"De finding a caso investigável, em um clique.", body:"A Sigmaward agrupa findings correlacionados em casos com linha do tempo, evidências e responsáveis.", bullets:["Promoção automática de findings","Linha do tempo e cadeia de evidências","Colaboração e SLA por caso"] },
+        { eyebrow:"Threat Intel", title:"IOCs extraídos e correlacionados sozinhos.", body:"Hashes, IPs, domínios e URLs são extraídos, deduplicados e cruzados com inteligência de ameaças.", bullets:["Extração automática de IOCs","Correlação com threat intel","Watchlists e bloqueio proativo"] }
+      ],
+      caps:[
+        { t:"Multi-tenant para MSSPs", d:"Isole clientes, gerencie todos num painel e fature por uso. Feito para operações gerenciadas." },
+        { t:"Construído sobre Wazuh", d:"Fundação aberta e madura. Sem lock-in: seus dados e suas regras continuam seus." },
+        { t:"Dashboards & relatórios", d:"Visão executiva e operacional, com relatórios prontos para auditoria." },
+        { t:"Conformidade", d:"Controles e evidências para ISO 27001, SOC 2 e LGPD desde o primeiro dia." },
+        { t:"Integrações nativas", d:"Conecte nuvem, identidade, endpoints e SaaS em minutos." },
+        { t:"Escala sem surpresa", d:"Preço previsível por nó — não por volume de ingestão." }
+      ],
+      compare: {
+        eyebrow:"Por que trocar", title:"Sigmaward vs. SIEM legado", colA:"Sigmaward", colB:"Splunk · QRadar · Sentinel",
+        rows:[
+          { f:"Tempo até a 1ª detecção", a:"Horas", b:"Semanas a meses" },
+          { f:"Modelo de preço", a:"Por nó, previsível", b:"Por volume de ingestão" },
+          { f:"Regras Sigma nativas", a:true, b:false },
+          { f:"Automação SOAR inclusa", a:true, b:"Módulo à parte" },
+          { f:"Multi-tenant para MSSP", a:true, b:"Limitado / caro" },
+          { f:"Fundação aberta (Wazuh)", a:true, b:false },
+          { f:"Implantação", a:"Cloud ou self-hosted", b:"Complexa, longa" }
+        ]
+      },
+      mssp: {
+        eyebrow:"Para MSSPs", title:"Opere dezenas de clientes de um só lugar.",
+        body:"Isolamento por tenant, visão consolidada, playbooks reutilizáveis e faturamento por uso. A Sigmaward foi desenhada para quem entrega segurança como serviço.",
+        bullets:["Isolamento total de dados por cliente","Painel consolidado multi-tenant","Faturamento por uso e por nó","Playbooks e regras reutilizáveis entre clientes"]
+      },
+      compliance: {
+        eyebrow:"Confiança", title:"Segurança e conformidade no núcleo.",
+        body:"Criptografia de ponta a ponta, RBAC granular, trilha de auditoria completa e evidências prontas para o seu programa de conformidade.",
+        badges:["ISO 27001","SOC 2 Tipo II","LGPD","GDPR"]
+      },
+      quote: { text:"Migramos de um SIEM legado e cortamos o tempo de resposta pela metade já na primeira semana.", author:"CISO", role:"Empresa de médio porte", note:"Depoimento ilustrativo" },
+      cta: { title:"Veja a Sigmaward em ação.", sub:"Um tour guiado pela plataforma — detecção, casos e automação em poucos minutos.", primary:"Ver o produto", secondary:"Falar com vendas" },
+      footer: {
+        tagline:"O guardião movido a regras Sigma para o seu SOC.",
+        rights:"Todos os direitos reservados.", built:"SIEM · SOAR · SOC — construído sobre Wazuh",
+        cols:[
+          { title:"Produto", links:["Plataforma","Detecção Sigma","Automação SOAR","Gestão de casos","Preços"] },
+          { title:"Soluções", links:["Para MSSPs","Blue teams","Gestão de risco","Conformidade"] },
+          { title:"Recursos", links:["Documentação","Blog","Biblioteca de regras","Status"] },
+          { title:"Empresa", links:["Sobre","Carreiras","Contato","Segurança"] }
+        ]
+      },
+      platform: { heroTitle:"A plataforma Sigmaward", heroSub:"Em breve: o detalhamento completo da plataforma." }
+    },
+
+    en: {
+      nav: { platform:"Platform", solutions:"Solutions", pricing:"Pricing", resources:"Resources", company:"Company", login:"Log in", cta:"See the product" },
+      hero: {
+        badge:"SIEM · SOAR · SOC — built on Wazuh",
+        title:"The modern SOC, without the legacy SIEM weight.",
+        sub:"Sigmaward turns Sigma rules into detections, promotes findings into cases and automates response — at a fraction of the cost and complexity of Splunk, QRadar or Microsoft Sentinel.",
+        ctaPrimary:"See the product", ctaSecondary:"Talk to an expert",
+        note:"Sigma-native · Multi-tenant for MSSPs · Open foundation"
+      },
+      trust: {
+        label:"Security teams and MSSPs run their day-to-day on Sigmaward",
+        stats:[{v:"4.2M",l:"events analyzed/day"},{v:"−63%",l:"average MTTR"},{v:"1,284",l:"active Sigma rules"},{v:"24/7",l:"continuous watch"}],
+        disclaimer:"Illustrative logos and metrics for demonstration purposes."
+      },
+      problem: {
+        eyebrow:"The problem",
+        title:"Legacy SIEM is expensive, slow to deliver value, and buries the analyst.",
+        body:"Unpredictable volume-based licensing, months of deployment, proprietary rules and automation sold separately. The analyst lives in triage — not in the threat hunt.",
+        points:[{t:"Cost that explodes",d:"Unpredictable per-ingestion pricing at month's end."},{t:"Slow to deliver",d:"Weeks before the first genuinely useful detection."},{t:"Vendor lock-in",d:"Rules and data trapped in proprietary formats."}]
+      },
+      pillars:[
+        { eyebrow:"Detection", title:"Sigma rules become real-time detection.", body:"Import any Sigma rule and Sigmaward maps it onto your live telemetry — no rewriting proprietary queries.", bullets:["Automatic Sigma → query conversion","1,200+ rules out of the box, or bring your own","Findings with MITRE ATT&CK context"] },
+        { eyebrow:"Automation", title:"Automated response with visual playbooks.", body:"Promote, enrich and respond without leaving the platform. Playbooks connect detection to action in minutes.", bullets:["Visual, no-code playbooks","Automatic IOC enrichment","Built-in containment actions"] },
+        { eyebrow:"Cases", title:"From finding to investigable case, in one click.", body:"Sigmaward groups correlated findings into cases with a timeline, evidence and owners.", bullets:["Automatic finding promotion","Timeline and chain of evidence","Per-case collaboration and SLA"] },
+        { eyebrow:"Threat Intel", title:"IOCs extracted and correlated on their own.", body:"Hashes, IPs, domains and URLs are extracted, deduplicated and cross-checked against threat intelligence.", bullets:["Automatic IOC extraction","Threat-intel correlation","Watchlists and proactive blocking"] }
+      ],
+      caps:[
+        { t:"Multi-tenant for MSSPs", d:"Isolate clients, manage them all in one pane and bill by usage. Built for managed operations." },
+        { t:"Built on Wazuh", d:"An open, mature foundation. No lock-in: your data and your rules stay yours." },
+        { t:"Dashboards & reporting", d:"Executive and operational views, with audit-ready reports." },
+        { t:"Compliance", d:"Controls and evidence for ISO 27001, SOC 2 and LGPD from day one." },
+        { t:"Native integrations", d:"Connect cloud, identity, endpoints and SaaS in minutes." },
+        { t:"Scale without surprises", d:"Predictable per-node pricing — not per ingestion volume." }
+      ],
+      compare: {
+        eyebrow:"Why switch", title:"Sigmaward vs. legacy SIEM", colA:"Sigmaward", colB:"Splunk · QRadar · Sentinel",
+        rows:[
+          { f:"Time to first detection", a:"Hours", b:"Weeks to months" },
+          { f:"Pricing model", a:"Per node, predictable", b:"Per ingestion volume" },
+          { f:"Native Sigma rules", a:true, b:false },
+          { f:"SOAR automation included", a:true, b:"Separate module" },
+          { f:"Multi-tenant for MSSP", a:true, b:"Limited / costly" },
+          { f:"Open foundation (Wazuh)", a:true, b:false },
+          { f:"Deployment", a:"Cloud or self-hosted", b:"Complex, lengthy" }
+        ]
+      },
+      mssp: {
+        eyebrow:"For MSSPs", title:"Run dozens of clients from one place.",
+        body:"Per-tenant isolation, a consolidated view, reusable playbooks and usage-based billing. Sigmaward is designed for those who deliver security as a service.",
+        bullets:["Full per-client data isolation","Consolidated multi-tenant pane","Usage- and node-based billing","Playbooks and rules reused across clients"]
+      },
+      compliance: {
+        eyebrow:"Trust", title:"Security and compliance at the core.",
+        body:"End-to-end encryption, granular RBAC, a complete audit trail and evidence ready for your compliance program.",
+        badges:["ISO 27001","SOC 2 Type II","LGPD","GDPR"]
+      },
+      quote: { text:"We migrated off a legacy SIEM and cut our response time in half in the very first week.", author:"CISO", role:"Mid-sized enterprise", note:"Illustrative testimonial" },
+      cta: { title:"See Sigmaward in action.", sub:"A guided tour of the platform — detection, cases and automation in minutes.", primary:"See the product", secondary:"Talk to sales" },
+      footer: {
+        tagline:"The Sigma-rule-powered guardian for your SOC.",
+        rights:"All rights reserved.", built:"SIEM · SOAR · SOC — built on Wazuh",
+        cols:[
+          { title:"Product", links:["Platform","Sigma detection","SOAR automation","Case management","Pricing"] },
+          { title:"Solutions", links:["For MSSPs","Blue teams","Risk management","Compliance"] },
+          { title:"Resources", links:["Documentation","Blog","Rule library","Status"] },
+          { title:"Company", links:["About","Careers","Contact","Security"] }
+        ]
+      },
+      platform: { heroTitle:"The Sigmaward platform", heroSub:"Coming soon: the full platform breakdown." }
+    }
+  };
+
+  renderVals() {
+    const lang = this.state.lang;
+    const t = this.data[lang];
+    const active = "color:#0A0F1A;background:#20DDC9";
+    const idle = "color:#8392AD;background:transparent";
+    const P = t.pillars, C = t.caps;
+    const capsHead = lang === 'pt'
+      ? { eyebrow:"Plataforma completa", title:"Tudo que um SOC moderno precisa.", sub:"Da detecção à resposta, num só lugar — sem módulos vendidos à parte." }
+      : { eyebrow:"Complete platform", title:"Everything a modern SOC needs.", sub:"From detection to response, in one place — no modules sold separately." };
+    const compareRows = t.compare.rows.map(r => ({
+      f: r.f,
+      aBool: typeof r.a === 'boolean', aOn: r.a === true, aText: typeof r.a === 'string' ? r.a : '',
+      bBool: typeof r.b === 'boolean', bOn: r.b === true, bText: typeof r.b === 'string' ? r.b : ''
+    }));
+    const pfData = {
+      pt: {
+        badge:"A plataforma",
+        heroTitle:"Uma plataforma. Todo o ciclo de detecção e resposta.",
+        heroSub:"Da ingestão de telemetria à contenção automatizada — a Sigmaward unifica SIEM, SOAR e gestão de SOC sobre uma fundação aberta.",
+        ctaPrimary:"Ver uma demo", ctaSecondary:"Ler a documentação",
+        pipelineHead:{ eyebrow:"Como funciona", title:"Do evento bruto ao caso resolvido.", sub:"Um pipeline contínuo — sem ferramentas desconexas costuradas na mão." },
+        pipeline:[
+          { n:"01", title:"Fontes", desc:"Endpoints, nuvem, identidade e rede enviam telemetria." },
+          { n:"02", title:"Agentes Wazuh", desc:"Coletam, normalizam e enriquecem os eventos na borda." },
+          { n:"03", title:"Motor Sigma", desc:"Regras Sigma viram queries e avaliam tudo em tempo real." },
+          { n:"04", title:"Findings", desc:"Detecções com contexto MITRE ATT&CK e severidade." },
+          { n:"05", title:"Casos", desc:"Findings correlacionados viram casos investigáveis." },
+          { n:"06", title:"Resposta", desc:"Playbooks enriquecem, contêm e notificam — automático." }
+        ],
+        modulesHead:{ eyebrow:"Módulos", title:"Tudo incluído, nada vendido à parte." },
+        modules:[
+          { title:"Motor de detecção Sigma", desc:"Biblioteca de 1.200+ regras, editor próprio e conversão automática para queries." },
+          { title:"Automação SOAR", desc:"Playbooks visuais com enriquecimento, decisão e ações de contenção." },
+          { title:"Gestão de casos", desc:"Correlação, linha do tempo, cadeia de evidências, SLA e colaboração." },
+          { title:"Threat intelligence", desc:"Extração de IOCs, deduplicação, watchlists e correlação com feeds." },
+          { title:"Dashboards & relatórios", desc:"Painéis executivos e operacionais, com exportação pronta para auditoria." },
+          { title:"Multi-tenant", desc:"Isolamento por cliente, gestão consolidada e faturamento por uso." }
+        ],
+        integrationsHead:{ eyebrow:"Integrações", title:"Conecta com todo o seu stack.", sub:"Nuvem, identidade, endpoints e rede — em minutos, não em meses." },
+        integrations:["AWS","Microsoft Azure","Google Cloud","Microsoft 365","Okta","CrowdStrike","Palo Alto","Cloudflare","Linux","Windows","Kubernetes","Elastic"],
+        arch:{ eyebrow:"Arquitetura", title:"Construído sobre Wazuh — aberto por princípio.", body:"A Sigmaward estende a fundação open-source do Wazuh com detecção Sigma, SOAR e gestão de SOC de nível enterprise. Sem lock-in: seus dados, regras e integrações continuam portáveis.", points:["Cloud gerenciada ou self-hosted","Escala horizontal por nós, preço previsível","Dados e regras em formatos abertos","API completa e webhooks"] }
+      },
+      en: {
+        badge:"The platform",
+        heroTitle:"One platform. The entire detection-and-response cycle.",
+        heroSub:"From telemetry ingestion to automated containment — Sigmaward unifies SIEM, SOAR and SOC management on an open foundation.",
+        ctaPrimary:"See a demo", ctaSecondary:"Read the docs",
+        pipelineHead:{ eyebrow:"How it works", title:"From raw event to resolved case.", sub:"One continuous pipeline — no disconnected tools stitched together by hand." },
+        pipeline:[
+          { n:"01", title:"Sources", desc:"Endpoints, cloud, identity and network send telemetry." },
+          { n:"02", title:"Wazuh agents", desc:"Collect, normalize and enrich events at the edge." },
+          { n:"03", title:"Sigma engine", desc:"Sigma rules become queries and evaluate everything in real time." },
+          { n:"04", title:"Findings", desc:"Detections with MITRE ATT&CK context and severity." },
+          { n:"05", title:"Cases", desc:"Correlated findings become investigable cases." },
+          { n:"06", title:"Response", desc:"Playbooks enrich, contain and notify — automatically." }
+        ],
+        modulesHead:{ eyebrow:"Modules", title:"Everything included, nothing sold separately." },
+        modules:[
+          { title:"Sigma detection engine", desc:"A 1,200+ rule library, a native editor and automatic conversion to queries." },
+          { title:"SOAR automation", desc:"Visual playbooks with enrichment, decisioning and containment actions." },
+          { title:"Case management", desc:"Correlation, timeline, chain of evidence, SLA and collaboration." },
+          { title:"Threat intelligence", desc:"IOC extraction, deduplication, watchlists and feed correlation." },
+          { title:"Dashboards & reporting", desc:"Executive and operational views, with audit-ready exports." },
+          { title:"Multi-tenant", desc:"Per-client isolation, consolidated management and usage-based billing." }
+        ],
+        integrationsHead:{ eyebrow:"Integrations", title:"Connects with your entire stack.", sub:"Cloud, identity, endpoints and network — in minutes, not months." },
+        integrations:["AWS","Microsoft Azure","Google Cloud","Microsoft 365","Okta","CrowdStrike","Palo Alto","Cloudflare","Linux","Windows","Kubernetes","Elastic"],
+        arch:{ eyebrow:"Architecture", title:"Built on Wazuh — open by principle.", body:"Sigmaward extends Wazuh's open-source foundation with Sigma detection, SOAR and enterprise-grade SOC management. No lock-in: your data, rules and integrations stay portable.", points:["Managed cloud or self-hosted","Horizontal scale per node, predictable pricing","Data and rules in open formats","Full API and webhooks"] }
+      }
+    };
+    const pf = pfData[lang];
+    return {
+      lang,
+      isHome: this.state.page === 'home',
+      isPlatform: this.state.page === 'platform',
+      goHome: () => { this.setState({ page: 'home' }); if (typeof window !== 'undefined') window.scrollTo(0, 0); },
+      goPlatform: () => { this.setState({ page: 'platform' }); if (typeof window !== 'undefined') window.scrollTo(0, 0); },
+      setPt: () => this.setState({ lang: 'pt' }),
+      setEn: () => this.setState({ lang: 'en' }),
+      ptBtnStyle: lang === 'pt' ? active : idle,
+      enBtnStyle: lang === 'en' ? active : idle,
+      nav: t.nav, hero: t.hero, trust: t.trust, problem: t.problem,
+      p1: P[0], p2: P[1], p3: P[2], p4: P[3],
+      c1: C[0], c2: C[1], c3: C[2], c4: C[3], c5: C[4], c6: C[5],
+      capsHead, compare: t.compare, compareRows,
+      mssp: t.mssp, compliance: t.compliance, quote: t.quote, cta: t.cta, footer: t.footer,
+      platform: t.platform,
+      pf, pfPipeHead: pf.pipelineHead, pfPipe: pf.pipeline, pfModHead: pf.modulesHead, pfMods: pf.modules,
+      pfIntegHead: pf.integrationsHead, pfInteg: pf.integrations, pfArch: pf.arch
+    };
+  }
+}
+</script>
+</body>
+</html>
