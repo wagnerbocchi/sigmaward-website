@@ -52,7 +52,7 @@ export default function ArchStack() {
 
       <StackArrow />
 
-      {/* Open core / Wazuh */}
+      {/* Collection — Sigmaward agents */}
       <div
         style={{
           background: "#101826",
@@ -72,10 +72,10 @@ export default function ArchStack() {
             marginBottom: 4,
           }}
         >
-          Open core
+          Collection
         </div>
         <div style={{ fontSize: 13, color: "#C7D0E2" }}>
-          Wazuh agents &amp; indexer
+          Sigmaward agents · multi-OS
         </div>
       </div>
 

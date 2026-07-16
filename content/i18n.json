@@ -3,7 +3,7 @@
   "pt": {
     "nav": { "platform": "Plataforma", "solutions": "Soluções", "pricing": "Preços", "resources": "Recursos", "company": "Empresa", "login": "Entrar", "cta": "Ver o produto" },
     "hero": {
-      "badge": "SIEM · SOAR · SOC — construído sobre Wazuh",
+      "badge": "SIEM · SOAR · SOC — agentes próprios, Sigma-native",
       "title": "O SOC moderno, sem o peso do SIEM legado.",
       "sub": "A Sigmaward transforma regras Sigma em detecções, promove findings em casos e automatiza a resposta — a uma fração do custo e da complexidade de Splunk, QRadar ou Microsoft Sentinel.",
       "ctaPrimary": "Ver o produto",
@@ -40,7 +40,7 @@
     "capsHead": { "eyebrow": "Plataforma completa", "title": "Tudo que um SOC moderno precisa.", "sub": "Da detecção à resposta, num só lugar — sem módulos vendidos à parte." },
     "caps": [
       { "t": "Multi-tenant para MSSPs", "d": "Isole clientes, gerencie todos num painel e fature por uso. Feito para operações gerenciadas." },
-      { "t": "Construído sobre Wazuh", "d": "Fundação aberta e madura. Sem lock-in: seus dados e suas regras continuam seus." },
+      { "t": "Agente Sigmaward multi-OS", "d": "Coleta de telemetria pelos agentes próprios da Sigmaward — Windows, Linux e macOS." },
       { "t": "Dashboards & relatórios", "d": "Visão executiva e operacional, com relatórios prontos para auditoria." },
       { "t": "Conformidade", "d": "Controles e evidências para ISO 27001, SOC 2 e LGPD desde o primeiro dia." },
       { "t": "Integrações nativas", "d": "Conecte nuvem, identidade, endpoints e SaaS em minutos." },
@@ -54,7 +54,7 @@
         { "f": "Regras Sigma nativas", "a": true, "b": false },
         { "f": "Automação SOAR inclusa", "a": true, "b": "Módulo à parte" },
         { "f": "Multi-tenant para MSSP", "a": true, "b": "Limitado / caro" },
-        { "f": "Fundação aberta (Wazuh)", "a": true, "b": false },
+        { "f": "Sem lock-in de fornecedor", "a": true, "b": false },
         { "f": "Implantação", "a": "Cloud ou self-hosted", "b": "Complexa, longa" }
       ]
     },
@@ -73,7 +73,7 @@
     "footer": {
       "tagline": "O guardião movido a regras Sigma para o seu SOC.",
       "rights": "Todos os direitos reservados.",
-      "built": "SIEM · SOAR · SOC — construído sobre Wazuh",
+      "built": "SIEM · SOAR · SOC — agentes próprios, Sigma-native",
       "cols": [
         { "title": "Produto", "links": ["Plataforma", "Detecção Sigma", "Automação SOAR", "Gestão de casos", "Preços"] },
         { "title": "Soluções", "links": ["Para MSSPs", "Blue teams", "Gestão de risco", "Conformidade"] },
@@ -89,7 +89,7 @@
       "pipelineHead": { "eyebrow": "Como funciona", "title": "Do evento bruto ao caso resolvido.", "sub": "Um pipeline contínuo — sem ferramentas desconexas costuradas na mão." },
       "pipeline": [
         { "n": "01", "title": "Fontes", "desc": "Endpoints, nuvem, identidade e rede enviam telemetria." },
-        { "n": "02", "title": "Agentes Wazuh", "desc": "Coletam, normalizam e enriquecem os eventos na borda." },
+        { "n": "02", "title": "Agente Sigmaward", "desc": "Coleta, normaliza e enriquece os eventos na borda." },
         { "n": "03", "title": "Motor Sigma", "desc": "Regras Sigma viram queries e avaliam tudo em tempo real." },
         { "n": "04", "title": "Findings", "desc": "Detecções com contexto MITRE ATT&CK e severidade." },
         { "n": "05", "title": "Casos", "desc": "Findings correlacionados viram casos investigáveis." },
@@ -106,7 +106,7 @@
       ],
       "integrationsHead": { "eyebrow": "Integrações", "title": "Conecta com todo o seu stack.", "sub": "Nuvem, identidade, endpoints e rede — em minutos, não em meses." },
       "integrations": ["AWS", "Microsoft Azure", "Google Cloud", "Microsoft 365", "Okta", "CrowdStrike", "Palo Alto", "Cloudflare", "Linux", "Windows", "Kubernetes", "Elastic"],
-      "arch": { "eyebrow": "Arquitetura", "title": "Construído sobre Wazuh — aberto por princípio.", "body": "A Sigmaward estende a fundação open-source do Wazuh com detecção Sigma, SOAR e gestão de SOC de nível enterprise. Sem lock-in: seus dados, regras e integrações continuam portáveis.", "points": ["Cloud gerenciada ou self-hosted", "Escala horizontal por nós, preço previsível", "Dados e regras em formatos abertos", "API completa e webhooks"] }
+      "arch": { "eyebrow": "Arquitetura", "title": "Agentes próprios, padrões abertos.", "body": "A Sigmaward coleta telemetria com seus próprios agentes (Windows, Linux e macOS) e detecta no padrão aberto Sigma. Sem lock-in: seus dados, regras e integrações continuam portáveis.", "points": ["Cloud gerenciada ou self-hosted", "Escala horizontal por nós, preço previsível", "Dados e regras em formatos abertos", "API completa e webhooks"] }
     },
     "solutions": {
       "badge": "Soluções",
@@ -145,7 +145,7 @@
       "cardsHead": { "eyebrow": "Materiais", "title": "Tudo para começar." },
       "cards": [
         { "icon": "shield-check", "title": "Biblioteca de regras Sigma", "desc": "A Sigmaward já vem com mais de mil regras da comunidade SigmaHQ — e você adiciona as suas.", "cta": "Ver o SigmaHQ", "href": "https://github.com/SigmaHQ/sigma", "external": true },
-        { "icon": "git-branch", "title": "Fundação aberta", "desc": "Construída sobre o Wazuh, mantendo seus dados e regras em formatos abertos.", "cta": "Sobre o Wazuh", "href": "https://wazuh.com", "external": true },
+        { "icon": "box", "title": "Agente Sigmaward", "desc": "Telemetria coletada pelos agentes próprios da Sigmaward — Windows, Linux e macOS.", "cta": "Conheça a plataforma", "href": "/platform/", "external": false },
         { "icon": "grid", "title": "Ver a plataforma", "desc": "Um tour pelo ciclo completo — detecção, casos e automação.", "cta": "Ver o produto", "href": "/platform/", "external": false },
         { "icon": "folder", "title": "Documentação", "desc": "Guias de instalação, arquitetura e operação da plataforma.", "cta": "Em breve", "href": "", "external": false },
         { "icon": "bar-chart", "title": "Blog & novidades", "desc": "Boas práticas de detecção, casos de uso e novidades do produto.", "cta": "Em breve", "href": "", "external": false },
@@ -183,7 +183,7 @@
   "en": {
     "nav": { "platform": "Platform", "solutions": "Solutions", "pricing": "Pricing", "resources": "Resources", "company": "Company", "login": "Log in", "cta": "See the product" },
     "hero": {
-      "badge": "SIEM · SOAR · SOC — built on Wazuh",
+      "badge": "SIEM · SOAR · SOC — own agents, Sigma-native",
       "title": "The modern SOC, without the legacy SIEM weight.",
       "sub": "Sigmaward turns Sigma rules into detections, promotes findings into cases and automates response — at a fraction of the cost and complexity of Splunk, QRadar or Microsoft Sentinel.",
       "ctaPrimary": "See the product",
@@ -220,7 +220,7 @@
     "capsHead": { "eyebrow": "Complete platform", "title": "Everything a modern SOC needs.", "sub": "From detection to response, in one place — no modules sold separately." },
     "caps": [
       { "t": "Multi-tenant for MSSPs", "d": "Isolate clients, manage them all in one pane and bill by usage. Built for managed operations." },
-      { "t": "Built on Wazuh", "d": "An open, mature foundation. No lock-in: your data and your rules stay yours." },
+      { "t": "Sigmaward multi-OS agent", "d": "Telemetry collected by Sigmaward's own agents — Windows, Linux and macOS." },
       { "t": "Dashboards & reporting", "d": "Executive and operational views, with audit-ready reports." },
       { "t": "Compliance", "d": "Controls and evidence for ISO 27001, SOC 2 and LGPD from day one." },
       { "t": "Native integrations", "d": "Connect cloud, identity, endpoints and SaaS in minutes." },
@@ -234,7 +234,7 @@
         { "f": "Native Sigma rules", "a": true, "b": false },
         { "f": "SOAR automation included", "a": true, "b": "Separate module" },
         { "f": "Multi-tenant for MSSP", "a": true, "b": "Limited / costly" },
-        { "f": "Open foundation (Wazuh)", "a": true, "b": false },
+        { "f": "No vendor lock-in", "a": true, "b": false },
         { "f": "Deployment", "a": "Cloud or self-hosted", "b": "Complex, lengthy" }
       ]
     },
@@ -253,7 +253,7 @@
     "footer": {
       "tagline": "The Sigma-rule-powered guardian for your SOC.",
       "rights": "All rights reserved.",
-      "built": "SIEM · SOAR · SOC — built on Wazuh",
+      "built": "SIEM · SOAR · SOC — own agents, Sigma-native",
       "cols": [
         { "title": "Product", "links": ["Platform", "Sigma detection", "SOAR automation", "Case management", "Pricing"] },
         { "title": "Solutions", "links": ["For MSSPs", "Blue teams", "Risk management", "Compliance"] },
@@ -269,7 +269,7 @@
       "pipelineHead": { "eyebrow": "How it works", "title": "From raw event to resolved case.", "sub": "One continuous pipeline — no disconnected tools stitched together by hand." },
       "pipeline": [
         { "n": "01", "title": "Sources", "desc": "Endpoints, cloud, identity and network send telemetry." },
-        { "n": "02", "title": "Wazuh agents", "desc": "Collect, normalize and enrich events at the edge." },
+        { "n": "02", "title": "Sigmaward agent", "desc": "Collects, normalizes and enriches events at the edge." },
         { "n": "03", "title": "Sigma engine", "desc": "Sigma rules become queries and evaluate everything in real time." },
         { "n": "04", "title": "Findings", "desc": "Detections with MITRE ATT&CK context and severity." },
         { "n": "05", "title": "Cases", "desc": "Correlated findings become investigable cases." },
@@ -286,7 +286,7 @@
       ],
       "integrationsHead": { "eyebrow": "Integrations", "title": "Connects with your entire stack.", "sub": "Cloud, identity, endpoints and network — in minutes, not months." },
       "integrations": ["AWS", "Microsoft Azure", "Google Cloud", "Microsoft 365", "Okta", "CrowdStrike", "Palo Alto", "Cloudflare", "Linux", "Windows", "Kubernetes", "Elastic"],
-      "arch": { "eyebrow": "Architecture", "title": "Built on Wazuh — open by principle.", "body": "Sigmaward extends Wazuh's open-source foundation with Sigma detection, SOAR and enterprise-grade SOC management. No lock-in: your data, rules and integrations stay portable.", "points": ["Managed cloud or self-hosted", "Horizontal scale per node, predictable pricing", "Data and rules in open formats", "Full API and webhooks"] }
+      "arch": { "eyebrow": "Architecture", "title": "Own agents, open standards.", "body": "Sigmaward collects telemetry with its own agents (Windows, Linux and macOS) and detects with the open Sigma standard. No lock-in: your data, rules and integrations stay portable.", "points": ["Managed cloud or self-hosted", "Horizontal scale per node, predictable pricing", "Data and rules in open formats", "Full API and webhooks"] }
     },
     "solutions": {
       "badge": "Solutions",
@@ -325,7 +325,7 @@
       "cardsHead": { "eyebrow": "Materials", "title": "Everything to get started." },
       "cards": [
         { "icon": "shield-check", "title": "Sigma rule library", "desc": "Sigmaward ships with over a thousand SigmaHQ community rules — and you add your own.", "cta": "See SigmaHQ", "href": "https://github.com/SigmaHQ/sigma", "external": true },
-        { "icon": "git-branch", "title": "Open foundation", "desc": "Built on Wazuh, keeping your data and rules in open formats.", "cta": "About Wazuh", "href": "https://wazuh.com", "external": true },
+        { "icon": "box", "title": "Sigmaward agent", "desc": "Telemetry collected by Sigmaward's own agents — Windows, Linux and macOS.", "cta": "Explore the platform", "href": "/platform/", "external": false },
         { "icon": "grid", "title": "See the platform", "desc": "A tour of the full cycle — detection, cases and automation.", "cta": "See the product", "href": "/platform/", "external": false },
         { "icon": "folder", "title": "Documentation", "desc": "Installation, architecture and operations guides for the platform.", "cta": "Coming soon", "href": "", "external": false },
         { "icon": "bar-chart", "title": "Blog & updates", "desc": "Detection best practices, use cases and product news.", "cta": "Coming soon", "href": "", "external": false },

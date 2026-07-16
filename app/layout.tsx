@@ -8,7 +8,7 @@ const sans = Manrope({ subsets: ["latin"], weight: ["400","500","600","700"], va
 const mono = JetBrains_Mono({ subsets: ["latin"], weight: ["400","500","600"], variable: "--font-jetbrains", display: "swap" });
 
 const defaultTitle = "Sigmaward";
-const defaultDescription = "SIEM · SOAR · SOC — built on Wazuh";
+const defaultDescription = "SIEM · SOAR · SOC — own agents, Sigma-native";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

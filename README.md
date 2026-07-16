@@ -1,6 +1,6 @@
 # Sigmaward Website
 
-Marketing website for **Sigmaward**, a commercial SIEM/SOAR/SOC platform built on Wazuh. This is a bilingual (pt-BR default + English) [Next.js 15](https://nextjs.org/) static site — Home, Platform, and coming-soon placeholder pages for the remaining nav links — built to a pixel-accurate dark "big-tech security" aesthetic from a Claude Design handoff, and exported as static HTML for deployment on Hostinger shared hosting.
+Marketing website for **Sigmaward**, a commercial SIEM/SOAR/SOC platform with its own multi-OS agents. This is a bilingual (pt-BR default + English) [Next.js 15](https://nextjs.org/) static site — Home, Platform, Solutions, Pricing, Resources, Company and Login — built to a pixel-accurate dark "big-tech security" aesthetic from a Claude Design handoff, and exported as static HTML for deployment on Hostinger shared hosting.
 
 ## Tech stack
 
