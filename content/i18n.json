@@ -24,7 +24,7 @@
     "problem": {
       "eyebrow": "O problema",
       "title": "SIEM legado custa caro, demora a entregar valor e afoga o analista.",
-      "body": "Licenciamento por volume imprevisível, meses de implantação, regras proprietárias e automação vendida à parte. O analista vive no triício — não na caça à ameaça.",
+      "body": "Licenciamento por volume imprevisível, meses de implantação, regras proprietárias e automação vendida à parte. O analista vive na triagem — não na caça à ameaça.",
       "points": [
         { "t": "Custo que explode", "d": "Preço por ingestão imprevisível no fim do mês." },
         { "t": "Lento para entregar", "d": "Semanas até a primeira detecção realmente útil." },
