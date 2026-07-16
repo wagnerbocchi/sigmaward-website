@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
-import ComingSoonPage from "@/components/pages/ComingSoonPage";
+import LoginPage from "@/components/pages/LoginPage";
+import { getDictionary } from "@/lib/i18n";
 
 export const metadata: Metadata = {
   title: "Entrar — Sigmaward",
+  description: getDictionary("pt").login.heroSub,
 };
 
 export default function Page() {
-  return <ComingSoonPage locale="pt" titleKey="login" />;
+  return <LoginPage locale="pt" />;
 }

@@ -1,0 +1,17 @@
+# dependências
+/node_modules
+
+# build / export do Next.js
+/.next/
+/out/
+
+# artefatos de TypeScript / Next
+next-env.d.ts
+*.tsbuildinfo
+
+# logs e ambiente
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.env*.local
+.DS_Store
