@@ -58,7 +58,10 @@ export default function FinalCta({
             >
               {dict.cta.primary}
             </Button>
-            <Button href="#" variant="secondary">
+            <Button
+              href={`${localizePath("/company/", locale)}#contato`}
+              variant="secondary"
+            >
               {dict.cta.secondary}
             </Button>
           </div>

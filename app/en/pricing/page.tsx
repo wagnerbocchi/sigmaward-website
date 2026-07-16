@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
-import ComingSoonPage from "@/components/pages/ComingSoonPage";
+import PricingPage from "@/components/pages/PricingPage";
+import { getDictionary } from "@/lib/i18n";
 
 export const metadata: Metadata = {
   title: "Pricing — Sigmaward",
+  description: getDictionary("en").pricing.heroSub,
 };
 
 export default function Page() {
-  return <ComingSoonPage locale="en" titleKey="pricing" />;
+  return <PricingPage locale="en" />;
 }

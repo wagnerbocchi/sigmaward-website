@@ -24,7 +24,7 @@
     "problem": {
       "eyebrow": "O problema",
       "title": "SIEM legado custa caro, demora a entregar valor e afoga o analista.",
-      "body": "Licenciamento por volume imprevisível, meses de implantação, regras proprietárias e automação vendida à parte. O analista vive no triício — não na caça à ameaça.",
+      "body": "Licenciamento por volume imprevisível, meses de implantação, regras proprietárias e automação vendida à parte. O analista vive na triagem — não na caça à ameaça.",
       "points": [
         { "t": "Custo que explode", "d": "Preço por ingestão imprevisível no fim do mês." },
         { "t": "Lento para entregar", "d": "Semanas até a primeira detecção realmente útil." },
@@ -107,6 +107,77 @@
       "integrationsHead": { "eyebrow": "Integrações", "title": "Conecta com todo o seu stack.", "sub": "Nuvem, identidade, endpoints e rede — em minutos, não em meses." },
       "integrations": ["AWS", "Microsoft Azure", "Google Cloud", "Microsoft 365", "Okta", "CrowdStrike", "Palo Alto", "Cloudflare", "Linux", "Windows", "Kubernetes", "Elastic"],
       "arch": { "eyebrow": "Arquitetura", "title": "Construído sobre Wazuh — aberto por princípio.", "body": "A Sigmaward estende a fundação open-source do Wazuh com detecção Sigma, SOAR e gestão de SOC de nível enterprise. Sem lock-in: seus dados, regras e integrações continuam portáveis.", "points": ["Cloud gerenciada ou self-hosted", "Escala horizontal por nós, preço previsível", "Dados e regras em formatos abertos", "API completa e webhooks"] }
+    },
+    "solutions": {
+      "badge": "Soluções",
+      "heroTitle": "Uma plataforma, moldada ao seu tipo de operação.",
+      "heroSub": "MSSP, blue team interno, gestão de risco ou conformidade — a Sigmaward entrega o ciclo completo de detecção e resposta para cada um.",
+      "blocks": [
+        { "eyebrow": "Para MSSPs", "title": "Entregue segurança como serviço, em escala.", "body": "Opere dezenas de clientes de um só painel, com isolamento total de dados e faturamento por uso.", "bullets": ["Isolamento total por cliente com RLS no banco", "Portfólio cross-tenant consolidado", "Provisionamento e realm Keycloak por cliente", "Playbooks e regras reutilizáveis entre tenants"] },
+        { "eyebrow": "Blue teams", "title": "Do evento à resposta, sem trocar de ferramenta.", "body": "Detecção Sigma, investigação e contenção no mesmo lugar — o analista para de costurar ferramentas.", "bullets": ["Detecção Sigma-native sobre sua telemetria", "Casos com linha do tempo e cadeia de evidências", "Hunting workbench para caça guiada", "Contenção integrada: isolar host, bloquear IP"] },
+        { "eyebrow": "Gestão de risco", "title": "Priorize por risco, não por volume de alertas.", "body": "O risco se acumula por entidade e sobe à tona sozinho — o time foca no que importa.", "bullets": ["Risk-Based Alerting por entidade, com decaimento", "Correlação multi-estágio de eventos", "Detecção de anomalia por baseline estatística", "Entidades canônicas de ativo e identidade"] },
+        { "eyebrow": "Conformidade", "title": "Evidência pronta para auditoria, desde o dia um.", "body": "Trilha imutável, relatórios agendados e controles de acesso que o auditor entende.", "bullets": ["Trilha de auditoria à prova de adulteração (hash-chain HMAC)", "Relatórios agendados e export em PDF", "RBAC granular e SSO via Keycloak", "Controles para ISO 27001, SOC 2 e LGPD"] }
+      ]
+    },
+    "pricing": {
+      "badge": "Preços",
+      "heroTitle": "Preço previsível. Sem surpresa de ingestão.",
+      "heroSub": "Diferente do SIEM legado, a Sigmaward não cobra por volume de dados. Você paga por nó — e sabe a conta no fim do mês.",
+      "tiersHead": { "eyebrow": "Planos", "title": "Um plano para cada estágio da sua operação." },
+      "tiers": [
+        { "name": "Team", "tagline": "Para o blue team interno.", "price": "Sob consulta", "featured": false, "features": ["Motor de detecção Sigma + 1.200+ regras", "Gestão de casos e observáveis", "Automação SOAR com playbooks", "Dashboards e relatórios", "SSO via Keycloak e RBAC"], "cta": "Falar com vendas" },
+        { "name": "MSSP", "tagline": "Para quem entrega segurança como serviço.", "price": "Sob consulta", "featured": true, "features": ["Tudo do Team, em modo multi-tenant", "Isolamento total por cliente (RLS)", "Portfólio cross-tenant consolidado", "Provisionamento e realm por cliente", "Faturamento por uso e por nó"], "cta": "Falar com vendas" },
+        { "name": "Enterprise", "tagline": "Self-hosted, no seu ambiente.", "price": "Sob consulta", "featured": false, "features": ["Deploy self-hosted (Helm/Kubernetes)", "TLS interno e hardening de produção", "Trilha de auditoria à prova de adulteração", "SSO corporativo e RBAC granular", "Suporte e SLA dedicados"], "cta": "Falar com vendas" }
+      ],
+      "note": "Sem cobrança por volume de ingestão. Escala horizontal por nós, com preço previsível.",
+      "faqHead": { "eyebrow": "Dúvidas", "title": "Perguntas frequentes." },
+      "faq": [
+        { "q": "Vocês cobram por volume de dados?", "a": "Não. O preço é por nó — o volume de eventos não muda a sua conta." },
+        { "q": "Posso rodar self-hosted?", "a": "Sim. O plano Enterprise roda no seu ambiente via Helm/Kubernetes, com os mesmos recursos." },
+        { "q": "Como funciona para MSSP?", "a": "Você opera múltiplos clientes isolados num só painel e fatura por uso e por nó." },
+        { "q": "Existe ambiente de avaliação?", "a": "Sim. Fale com o nosso time para uma demo guiada e um ambiente de teste." }
+      ]
+    },
+    "resources": {
+      "badge": "Recursos",
+      "heroTitle": "Aprenda, implante e opere com a Sigmaward.",
+      "heroSub": "Documentação, biblioteca de regras e materiais para tirar o máximo da plataforma.",
+      "cardsHead": { "eyebrow": "Materiais", "title": "Tudo para começar." },
+      "cards": [
+        { "icon": "shield-check", "title": "Biblioteca de regras Sigma", "desc": "A Sigmaward já vem com mais de mil regras da comunidade SigmaHQ — e você adiciona as suas.", "cta": "Ver o SigmaHQ", "href": "https://github.com/SigmaHQ/sigma", "external": true },
+        { "icon": "git-branch", "title": "Fundação aberta", "desc": "Construída sobre o Wazuh, mantendo seus dados e regras em formatos abertos.", "cta": "Sobre o Wazuh", "href": "https://wazuh.com", "external": true },
+        { "icon": "grid", "title": "Ver a plataforma", "desc": "Um tour pelo ciclo completo — detecção, casos e automação.", "cta": "Ver o produto", "href": "/platform/", "external": false },
+        { "icon": "folder", "title": "Documentação", "desc": "Guias de instalação, arquitetura e operação da plataforma.", "cta": "Em breve", "href": "", "external": false },
+        { "icon": "bar-chart", "title": "Blog & novidades", "desc": "Boas práticas de detecção, casos de uso e novidades do produto.", "cta": "Em breve", "href": "", "external": false },
+        { "icon": "dot-circle", "title": "Status", "desc": "Disponibilidade e incidentes da plataforma gerenciada.", "cta": "Em breve", "href": "", "external": false }
+      ]
+    },
+    "company": {
+      "badge": "Empresa",
+      "heroTitle": "Segurança de nível enterprise não deveria custar uma fortuna.",
+      "heroSub": "A Sigmaward nasceu para dar a times de todos os tamanhos um SOC moderno — Sigma-native, aberto e acessível.",
+      "missionHead": { "eyebrow": "Missão", "title": "Por que existimos." },
+      "missionBody": "O SIEM legado prendeu a detecção em formatos proprietários, preços por volume e implantações de meses. Construímos a Sigmaward sobre uma fundação aberta e o padrão Sigma para devolver ao time de segurança o controle: detecção que você entende, dados que continuam seus e um preço que você prevê.",
+      "valuesHead": { "eyebrow": "Princípios", "title": "No que acreditamos." },
+      "values": [
+        { "icon": "git-branch", "title": "Aberto por princípio", "desc": "Fundação open-source e padrões abertos. Sem lock-in — seus dados e regras são seus." },
+        { "icon": "trending-up", "title": "Acessível de verdade", "desc": "Preço previsível por nó, não por volume. Segurança séria ao alcance de times menores." },
+        { "icon": "target", "title": "Foco no analista", "desc": "Menos triagem manual, mais caça à ameaça. A plataforma trabalha para quem opera." }
+      ],
+      "contactHead": { "eyebrow": "Contato", "title": "Vamos conversar." },
+      "contactBody": "Quer ver a Sigmaward no seu ambiente ou tirar dúvidas? Fale com o nosso time.",
+      "contactCta": "Falar com vendas"
+    },
+    "login": {
+      "badge": "Entrar",
+      "heroTitle": "Acesse o seu console Sigmaward.",
+      "heroSub": "O acesso à plataforma é feito no console da sua organização, com SSO.",
+      "cardTitle": "Ir para o console",
+      "cardBody": "Você será direcionado ao login SSO da sua organização.",
+      "cardCta": "Abrir o console",
+      "noAccountTitle": "Ainda não tem acesso?",
+      "noAccountBody": "Fale com o nosso time para uma demo ou um ambiente de avaliação.",
+      "noAccountCta": "Falar com vendas"
     }
   },
   "en": {
@@ -216,6 +287,77 @@
       "integrationsHead": { "eyebrow": "Integrations", "title": "Connects with your entire stack.", "sub": "Cloud, identity, endpoints and network — in minutes, not months." },
       "integrations": ["AWS", "Microsoft Azure", "Google Cloud", "Microsoft 365", "Okta", "CrowdStrike", "Palo Alto", "Cloudflare", "Linux", "Windows", "Kubernetes", "Elastic"],
       "arch": { "eyebrow": "Architecture", "title": "Built on Wazuh — open by principle.", "body": "Sigmaward extends Wazuh's open-source foundation with Sigma detection, SOAR and enterprise-grade SOC management. No lock-in: your data, rules and integrations stay portable.", "points": ["Managed cloud or self-hosted", "Horizontal scale per node, predictable pricing", "Data and rules in open formats", "Full API and webhooks"] }
+    },
+    "solutions": {
+      "badge": "Solutions",
+      "heroTitle": "One platform, shaped to how you operate.",
+      "heroSub": "MSSP, in-house blue team, risk management or compliance — Sigmaward delivers the full detection-and-response cycle for each.",
+      "blocks": [
+        { "eyebrow": "For MSSPs", "title": "Deliver security as a service, at scale.", "body": "Run dozens of clients from a single pane, with full data isolation and usage-based billing.", "bullets": ["Full per-client isolation with database RLS", "Consolidated cross-tenant portfolio", "Per-client provisioning and Keycloak realm", "Playbooks and rules reused across tenants"] },
+        { "eyebrow": "Blue teams", "title": "From event to response, without switching tools.", "body": "Sigma detection, investigation and containment in one place — the analyst stops stitching tools together.", "bullets": ["Sigma-native detection over your telemetry", "Cases with timeline and chain of evidence", "A hunting workbench for guided threat hunts", "Built-in containment: isolate host, block IP"] },
+        { "eyebrow": "Risk management", "title": "Prioritize by risk, not by alert volume.", "body": "Risk accumulates per entity and surfaces on its own — the team focuses on what matters.", "bullets": ["Per-entity Risk-Based Alerting with decay", "Multi-stage event correlation", "Statistical-baseline anomaly detection", "Canonical asset and identity entities"] },
+        { "eyebrow": "Compliance", "title": "Audit-ready evidence, from day one.", "body": "An immutable trail, scheduled reports and access controls your auditor understands.", "bullets": ["Tamper-evident audit trail (HMAC hash-chain)", "Scheduled reports and PDF export", "Granular RBAC and SSO via Keycloak", "Controls for ISO 27001, SOC 2 and LGPD"] }
+      ]
+    },
+    "pricing": {
+      "badge": "Pricing",
+      "heroTitle": "Predictable pricing. No ingestion surprises.",
+      "heroSub": "Unlike legacy SIEM, Sigmaward doesn't charge by data volume. You pay per node — and you know the bill at month's end.",
+      "tiersHead": { "eyebrow": "Plans", "title": "A plan for every stage of your operation." },
+      "tiers": [
+        { "name": "Team", "tagline": "For the in-house blue team.", "price": "Custom", "featured": false, "features": ["Sigma detection engine + 1,200+ rules", "Case and observable management", "SOAR automation with playbooks", "Dashboards and reporting", "SSO via Keycloak and RBAC"], "cta": "Talk to sales" },
+        { "name": "MSSP", "tagline": "For those who deliver security as a service.", "price": "Custom", "featured": true, "features": ["Everything in Team, multi-tenant", "Full per-client isolation (RLS)", "Consolidated cross-tenant portfolio", "Per-client provisioning and realm", "Usage- and node-based billing"], "cta": "Talk to sales" },
+        { "name": "Enterprise", "tagline": "Self-hosted, in your environment.", "price": "Custom", "featured": false, "features": ["Self-hosted deploy (Helm/Kubernetes)", "Internal TLS and production hardening", "Tamper-evident audit trail", "Corporate SSO and granular RBAC", "Dedicated support and SLA"], "cta": "Talk to sales" }
+      ],
+      "note": "No charge by ingestion volume. Horizontal scale per node, with predictable pricing.",
+      "faqHead": { "eyebrow": "Questions", "title": "Frequently asked." },
+      "faq": [
+        { "q": "Do you charge by data volume?", "a": "No. Pricing is per node — event volume doesn't change your bill." },
+        { "q": "Can I run self-hosted?", "a": "Yes. The Enterprise plan runs in your environment via Helm/Kubernetes, with the same features." },
+        { "q": "How does it work for MSSPs?", "a": "You operate multiple isolated clients in one pane and bill by usage and by node." },
+        { "q": "Is there a trial environment?", "a": "Yes. Talk to our team for a guided demo and a trial environment." }
+      ]
+    },
+    "resources": {
+      "badge": "Resources",
+      "heroTitle": "Learn, deploy and operate with Sigmaward.",
+      "heroSub": "Documentation, a rule library and materials to get the most out of the platform.",
+      "cardsHead": { "eyebrow": "Materials", "title": "Everything to get started." },
+      "cards": [
+        { "icon": "shield-check", "title": "Sigma rule library", "desc": "Sigmaward ships with over a thousand SigmaHQ community rules — and you add your own.", "cta": "See SigmaHQ", "href": "https://github.com/SigmaHQ/sigma", "external": true },
+        { "icon": "git-branch", "title": "Open foundation", "desc": "Built on Wazuh, keeping your data and rules in open formats.", "cta": "About Wazuh", "href": "https://wazuh.com", "external": true },
+        { "icon": "grid", "title": "See the platform", "desc": "A tour of the full cycle — detection, cases and automation.", "cta": "See the product", "href": "/platform/", "external": false },
+        { "icon": "folder", "title": "Documentation", "desc": "Installation, architecture and operations guides for the platform.", "cta": "Coming soon", "href": "", "external": false },
+        { "icon": "bar-chart", "title": "Blog & updates", "desc": "Detection best practices, use cases and product news.", "cta": "Coming soon", "href": "", "external": false },
+        { "icon": "dot-circle", "title": "Status", "desc": "Availability and incidents for the managed platform.", "cta": "Coming soon", "href": "", "external": false }
+      ]
+    },
+    "company": {
+      "badge": "Company",
+      "heroTitle": "Enterprise-grade security shouldn't cost a fortune.",
+      "heroSub": "Sigmaward was born to give teams of every size a modern SOC — Sigma-native, open and affordable.",
+      "missionHead": { "eyebrow": "Mission", "title": "Why we exist." },
+      "missionBody": "Legacy SIEM locked detection into proprietary formats, volume-based pricing and months-long deployments. We built Sigmaward on an open foundation and the Sigma standard to give the security team back control: detection you understand, data that stays yours and a price you can predict.",
+      "valuesHead": { "eyebrow": "Principles", "title": "What we believe." },
+      "values": [
+        { "icon": "git-branch", "title": "Open by principle", "desc": "Open-source foundation and open standards. No lock-in — your data and rules are yours." },
+        { "icon": "trending-up", "title": "Genuinely affordable", "desc": "Predictable per-node pricing, not per volume. Serious security within reach of smaller teams." },
+        { "icon": "target", "title": "Analyst-focused", "desc": "Less manual triage, more threat hunting. The platform works for whoever operates it." }
+      ],
+      "contactHead": { "eyebrow": "Contact", "title": "Let's talk." },
+      "contactBody": "Want to see Sigmaward in your environment or have questions? Talk to our team.",
+      "contactCta": "Talk to sales"
+    },
+    "login": {
+      "badge": "Log in",
+      "heroTitle": "Access your Sigmaward console.",
+      "heroSub": "Platform access happens in your organization's console, with SSO.",
+      "cardTitle": "Go to the console",
+      "cardBody": "You'll be directed to your organization's SSO login.",
+      "cardCta": "Open the console",
+      "noAccountTitle": "Don't have access yet?",
+      "noAccountBody": "Talk to our team for a demo or a trial environment.",
+      "noAccountCta": "Talk to sales"
     }
   }
 }
