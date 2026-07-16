@@ -1,7 +1,7 @@
 import CheckBullet from "@/components/ui/CheckBullet";
 import EyebrowLabel from "@/components/ui/EyebrowLabel";
 import SectionShell from "@/components/ui/SectionShell";
-import TenantsPanel from "@/components/mocks/TenantsPanel";
+import PlatformShot from "@/components/mocks/PlatformShot";
 import { Dictionary } from "@/lib/i18n";
 
 export default function Mssp({ dict }: { dict: Dictionary }) {
@@ -48,9 +48,12 @@ export default function Mssp({ dict }: { dict: Dictionary }) {
           </div>
         </div>
 
-        {/* Right: mock (glow rendered internally by TenantsPanel) */}
+        {/* Right: screenshot real da plataforma (portfólio MSSP) */}
         <div className="relative">
-          <TenantsPanel />
+          <PlatformShot
+            src="/screenshots/mssp.png"
+            alt="Sigmaward — portfólio MSSP cross-tenant"
+          />
         </div>
       </div>
     </SectionShell>

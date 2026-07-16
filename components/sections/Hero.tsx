@@ -1,6 +1,6 @@
 import Button from "@/components/ui/Button";
 import GridOverlay from "@/components/ui/GridOverlay";
-import DashboardMock from "@/components/mocks/DashboardMock";
+import PlatformShot from "@/components/mocks/PlatformShot";
 import { Dictionary, Locale, localizePath } from "@/lib/i18n";
 
 export default function Hero({
@@ -133,8 +133,12 @@ export default function Hero({
           </div>
         </div>
 
-        {/* Right column — dashboard mock */}
-        <DashboardMock />
+        {/* Right column — screenshot real da plataforma (Watchfloor) */}
+        <PlatformShot
+          src="/screenshots/watchfloor.png"
+          alt="Sigmaward — Watchfloor (visão geral do SOC)"
+          priority
+        />
       </div>
     </section>
   );

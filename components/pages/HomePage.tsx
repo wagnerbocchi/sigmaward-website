@@ -10,10 +10,7 @@ import Mssp from "@/components/sections/Mssp";
 import Compliance from "@/components/sections/Compliance";
 import Quote from "@/components/sections/Quote";
 import FinalCta from "@/components/sections/FinalCta";
-import SigmaRuleCard from "@/components/mocks/SigmaRuleCard";
-import PlaybookFlow from "@/components/mocks/PlaybookFlow";
-import CaseTimeline from "@/components/mocks/CaseTimeline";
-import IocTable from "@/components/mocks/IocTable";
+import PlatformShot from "@/components/mocks/PlatformShot";
 import { getDictionary } from "@/lib/i18n";
 import type { Locale } from "@/lib/i18n";
 
@@ -29,25 +26,45 @@ export default function HomePage({ locale }: { locale: Locale }) {
         <Problem dict={dict} />
         <Pillar
           data={dict.pillars[0]}
-          mock={<SigmaRuleCard />}
+          mock={
+            <PlatformShot
+              src="/screenshots/detections.png"
+              alt="Sigmaward — detecção Sigma com query e YAML"
+            />
+          }
           mockSide="right"
           bg="bg"
         />
         <Pillar
           data={dict.pillars[1]}
-          mock={<PlaybookFlow />}
+          mock={
+            <PlatformShot
+              src="/screenshots/playbooks.png"
+              alt="Sigmaward — playbooks de automação SOAR"
+            />
+          }
           mockSide="left"
           bg="bg-alt"
         />
         <Pillar
           data={dict.pillars[2]}
-          mock={<CaseTimeline />}
+          mock={
+            <PlatformShot
+              src="/screenshots/case-detail-timeline.png"
+              alt="Sigmaward — linha do tempo do caso"
+            />
+          }
           mockSide="right"
           bg="bg"
         />
         <Pillar
           data={dict.pillars[3]}
-          mock={<IocTable />}
+          mock={
+            <PlatformShot
+              src="/screenshots/threat-intel.png"
+              alt="Sigmaward — inteligência de ameaças e IOCs"
+            />
+          }
           mockSide="left"
           bg="bg-alt"
         />
