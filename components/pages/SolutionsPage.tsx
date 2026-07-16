@@ -3,19 +3,21 @@ import Footer from "@/components/layout/Footer";
 import PageHero from "@/components/sections/PageHero";
 import Pillar from "@/components/sections/Pillar";
 import FinalCta from "@/components/sections/FinalCta";
-import TenantsPanel from "@/components/mocks/TenantsPanel";
-import CaseTimeline from "@/components/mocks/CaseTimeline";
-import DashboardMock from "@/components/mocks/DashboardMock";
-import IocTable from "@/components/mocks/IocTable";
+import PlatformShot from "@/components/mocks/PlatformShot";
 import { getDictionary } from "@/lib/i18n";
 import type { Locale } from "@/lib/i18n";
 
-// Um mock por bloco de solução (ordem espelha dict.solutions.blocks).
+// Um screenshot real por bloco de solução (ordem espelha dict.solutions.blocks:
+// MSSP · Blue teams · Gestão de risco · Conformidade).
 const MOCKS = [
-  <TenantsPanel key="mssp" />,
-  <CaseTimeline key="blue" />,
-  <DashboardMock key="risk" />,
-  <IocTable key="compliance" />,
+  <PlatformShot key="mssp" src="/screenshots/mssp.png" alt="Sigmaward — portfólio MSSP" />,
+  <PlatformShot
+    key="blue"
+    src="/screenshots/case-detail.png"
+    alt="Sigmaward — investigação de caso"
+  />,
+  <PlatformShot key="risk" src="/screenshots/watchfloor.png" alt="Sigmaward — Watchfloor" />,
+  <PlatformShot key="compliance" src="/screenshots/cases.png" alt="Sigmaward — casos e SLA" />,
 ];
 
 export default function SolutionsPage({ locale }: { locale: Locale }) {
