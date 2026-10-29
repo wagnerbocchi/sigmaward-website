@@ -3,6 +3,7 @@ import Footer from "@/components/layout/Footer";
 import PlatformHero from "@/components/sections/PlatformHero";
 import Pipeline from "@/components/sections/Pipeline";
 import Modules from "@/components/sections/Modules";
+import AiCopilot from "@/components/sections/AiCopilot";
 import Integrations from "@/components/sections/Integrations";
 import Architecture from "@/components/sections/Architecture";
 import FinalCta from "@/components/sections/FinalCta";
@@ -19,6 +20,7 @@ export default function PlatformPage({ locale }: { locale: Locale }) {
         <PlatformHero dict={dict} />
         <Pipeline dict={dict} />
         <Modules dict={dict} />
+        <AiCopilot dict={dict} />
         <Integrations dict={dict} locale={locale} />
         <Architecture dict={dict} />
         <FinalCta dict={dict} locale={locale} />

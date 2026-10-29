@@ -5,6 +5,7 @@ import TrustStrip from "@/components/sections/TrustStrip";
 import Problem from "@/components/sections/Problem";
 import Pillar from "@/components/sections/Pillar";
 import Capabilities from "@/components/sections/Capabilities";
+import NocSoc from "@/components/sections/NocSoc";
 import Comparison from "@/components/sections/Comparison";
 import Mssp from "@/components/sections/Mssp";
 import Compliance from "@/components/sections/Compliance";
@@ -29,7 +30,7 @@ export default function HomePage({ locale }: { locale: Locale }) {
           mock={
             <PlatformShot
               src="/screenshots/detections.png"
-              alt="Sigmaward — detecção Sigma com query e YAML"
+              alt="Sigmaward — catálogo de detecções Sigma (SigmaHQ) com detalhe da regra, query e YAML"
             />
           }
           mockSide="right"
@@ -40,7 +41,7 @@ export default function HomePage({ locale }: { locale: Locale }) {
           mock={
             <PlatformShot
               src="/screenshots/playbooks.png"
-              alt="Sigmaward — playbooks de automação SOAR"
+              alt="Sigmaward — playbooks SOAR em DAG com gatilho, passos ordenados e estado"
             />
           }
           mockSide="left"
@@ -51,7 +52,7 @@ export default function HomePage({ locale }: { locale: Locale }) {
           mock={
             <PlatformShot
               src="/screenshots/case-detail-timeline.png"
-              alt="Sigmaward — linha do tempo do caso"
+              alt="Sigmaward — caso com linha do tempo, observáveis e tags (ransomware, TLP, SLA)"
             />
           }
           mockSide="right"
@@ -61,14 +62,15 @@ export default function HomePage({ locale }: { locale: Locale }) {
           data={dict.pillars[3]}
           mock={
             <PlatformShot
-              src="/screenshots/threat-intel.png"
-              alt="Sigmaward — inteligência de ameaças e IOCs"
+              src="/screenshots/ai-copilot.svg"
+              alt="Sigmaward — Copiloto de IA (AI Assist) respondendo sobre o contexto do SOC"
             />
           }
           mockSide="left"
           bg="bg-alt"
         />
         <Capabilities dict={dict} />
+        <NocSoc dict={dict} />
         <Comparison dict={dict} locale={locale} />
         <Mssp dict={dict} />
         <Compliance dict={dict} />
