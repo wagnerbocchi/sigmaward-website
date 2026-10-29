@@ -8,16 +8,16 @@ import { getDictionary } from "@/lib/i18n";
 import type { Locale } from "@/lib/i18n";
 
 // Um screenshot real por bloco de solução (ordem espelha dict.solutions.blocks:
-// MSSP · Blue teams · Gestão de risco · Conformidade).
+// MSSP · SOC/Blue teams · NOC · Conformidade).
 const MOCKS = [
-  <PlatformShot key="mssp" src="/screenshots/mssp.png" alt="Sigmaward — portfólio MSSP" />,
+  <PlatformShot key="mssp" src="/screenshots/mssp.png" alt="Sigmaward — console MSSP com portfólio cross-tenant" />,
   <PlatformShot
-    key="blue"
+    key="soc"
     src="/screenshots/case-detail.png"
-    alt="Sigmaward — investigação de caso"
+    alt="Sigmaward — detalhe do caso de segurança (overview, observáveis e timeline)"
   />,
-  <PlatformShot key="risk" src="/screenshots/watchfloor.png" alt="Sigmaward — Watchfloor" />,
-  <PlatformShot key="compliance" src="/screenshots/cases.png" alt="Sigmaward — casos e SLA" />,
+  <PlatformShot key="noc" src="/screenshots/monitoring.svg" alt="Sigmaward — monitoramento NOC (saúde da frota, métricas e triggers)" />,
+  <PlatformShot key="compliance" src="/screenshots/cases.png" alt="Sigmaward — gestão de casos com SLA e status" />,
 ];
 
 export default function SolutionsPage({ locale }: { locale: Locale }) {

@@ -136,7 +136,7 @@ export default function Hero({
         {/* Right column — screenshot real da plataforma (Watchfloor) */}
         <PlatformShot
           src="/screenshots/watchfloor.png"
-          alt="Sigmaward — Watchfloor (visão geral do SOC)"
+          alt="Sigmaward — Watchfloor: centro de comando do SOC em tempo real com métricas, alertas e casos"
           priority
         />
       </div>

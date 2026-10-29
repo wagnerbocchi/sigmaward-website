@@ -76,7 +76,7 @@ export default function Footer({ locale }: { locale: Locale }) {
 
               {/* GitHub */}
               <a
-                href="https://github.com/sigmaward"
+                href="https://github.com/wagnerbocchi/sigmaward"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Sigmaward on GitHub"
@@ -102,15 +102,68 @@ export default function Footer({ locale }: { locale: Locale }) {
                 {col.title}
               </div>
               <div className="flex flex-col gap-[10px]">
-                {col.links.map((label) => (
-                  <a
-                    key={label}
-                    href="#"
-                    className="text-[13.5px] text-text-body hover:text-brand transition-colors"
-                  >
-                    {label}
-                  </a>
-                ))}
+                {col.links.map((label) => {
+                  // Map footer labels to real destinations when one exists.
+                  const hrefs: Record<string, string> = {
+                    Plataforma: "/platform/",
+                    Platform: "/platform/",
+                    Preços: "/pricing/",
+                    Pricing: "/pricing/",
+                    "Para MSSPs": "/solutions/",
+                    "For MSSPs": "/solutions/",
+                    "Blue teams": "/solutions/",
+                    "Gestão de risco": "/solutions/",
+                    "Risk management": "/solutions/",
+                    Conformidade: "/solutions/",
+                    Compliance: "/solutions/",
+                    "Biblioteca de regras SigmaHQ": "https://github.com/SigmaHQ/sigma",
+                    "SigmaHQ rule library": "https://github.com/SigmaHQ/sigma",
+                    "Agente Sigmaward": "https://github.com/wagnerbocchi/sigmaward",
+                    "Sigmaward agent": "https://github.com/wagnerbocchi/sigmaward",
+                    Sobre: "/company/",
+                    About: "/company/",
+                    Contato: "/company/#contato",
+                    Contact: "/company/#contato",
+                    GitHub: "https://github.com/wagnerbocchi/sigmaward",
+                  };
+                  const href = hrefs[label];
+                  const external = href ? href.startsWith("http") : false;
+                  const localized = href && !external
+                    ? localizePath(href, locale)
+                    : href;
+                  if (!localized) {
+                    return (
+                      <span
+                        key={label}
+                        className="text-[13.5px] text-text-faintest cursor-default"
+                      >
+                        {label}
+                      </span>
+                    );
+                  }
+                  if (external) {
+                    return (
+                      <a
+                        key={label}
+                        href={localized}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[13.5px] text-text-body hover:text-brand transition-colors"
+                      >
+                        {label}
+                      </a>
+                    );
+                  }
+                  return (
+                    <Link
+                      key={label}
+                      href={localized}
+                      className="text-[13.5px] text-text-body hover:text-brand transition-colors"
+                    >
+                      {label}
+                    </Link>
+                  );
+                })}
               </div>
             </div>
           ))}

@@ -52,7 +52,7 @@ export default function Mssp({ dict }: { dict: Dictionary }) {
         <div className="relative">
           <PlatformShot
             src="/screenshots/mssp.png"
-            alt="Sigmaward — portfólio MSSP cross-tenant"
+            alt="Sigmaward — console MSSP com métricas globais e portfólio cross-tenant de clientes"
           />
         </div>
       </div>

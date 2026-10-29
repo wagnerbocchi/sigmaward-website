@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2160" height="1350" viewBox="0 0 2160 1350">
+  <rect width="2160" height="1350" fill="#0B111E"/>
+  <rect x="0" y="0" width="360" height="1350" fill="#0A0F1A"/>
+  <rect x="40" y="40" width="180" height="28" rx="8" fill="#20DDC9" opacity="0.9"/>
+  <g fill="#243049">
+    <rect x="40" y="120" width="280" height="22" rx="6"/>
+    <rect x="40" y="170" width="240" height="22" rx="6"/>
+    <rect x="40" y="220" width="260" height="22" rx="6"/>
+    <rect x="40" y="270" width="220" height="22" rx="6"/>
+    <rect x="40" y="320" width="270" height="22" rx="6"/>
+    <rect x="40" y="370" width="230" height="22" rx="6"/>
+    <rect x="40" y="420" width="250" height="22" rx="6"/>
+  </g>
+  <g font-family="monospace" fill="#8392AD" font-size="30">
+    <text x="440" y="150">AI Assist</text>
+    <text x="440" y="230" font-size="24" fill="#5E6B84">Copiloto SOC (read-only) · contexto do tenant em tempo real</text>
+  </g>
+  <rect x="440" y="280" width="1640" height="300" rx="16" fill="#101826" stroke="#243049"/>
+  <rect x="480" y="320" width="900" height="26" rx="6" fill="#1B2740"/>
+  <rect x="480" y="370" width="1100" height="26" rx="6" fill="#1B2740"/>
+  <rect x="480" y="420" width="700" height="26" rx="6" fill="#1B2740"/>
+  <rect x="440" y="620" width="1640" height="420" rx="16" fill="#101826" stroke="#243049"/>
+  <g font-family="monospace" fill="#20DDC9" font-size="26">
+    <text x="480" y="690">tool_traces: fleet_health · active_cases · mitre_coverage · events_index.search</text>
+  </g>
+  <g font-family="monospace" fill="#C7D0E2" font-size="24">
+    <text x="480" y="750">follow_ups: "Quais hosts estão com CPU acima de 90% nas últimas 24h?"</text>
+    <text x="480" y="800">          "Gere uma regra Sigma para credential dumping via LSASS."</text>
+  </g>
+  <rect x="440" y="1080" width="1640" height="90" rx="14" fill="#101826" stroke="#283650"/>
+  <text x="480" y="1138" font-family="monospace" font-size="26" fill="#5E6B84">Pergunte algo sobre o seu SOC…  (placeholder — substituir por screenshot real: ai-copilot.png)</text>
+  <text x="440" y="1290" font-family="monospace" font-size="34" fill="#FFC53D">⚠ PLACEHOLDER — trocar por captura real de /ai-assist (salvar como public/screenshots/ai-copilot.png)</text>
+</svg>

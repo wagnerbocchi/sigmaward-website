@@ -11,8 +11,8 @@ export default function Integrations({
 }) {
   const disclaimer =
     locale === "pt"
-      ? "Integrações ilustrativas para demonstração."
-      : "Illustrative integrations for demonstration.";
+      ? "Componentes reais da stack Sigmaward — a telemetria entra sempre pelo Agente Sigmaward (sem coletor de terceiros)."
+      : "Real Sigmaward stack components — telemetry always enters via the Sigmaward Agent (no third-party collector).";
 
   return (
     <SectionShell bg="bg-alt" topBorder label="Integrations">

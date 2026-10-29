@@ -21,7 +21,7 @@ export default function Modules({ dict }: { dict: Dictionary }) {
       </div>
 
       {/* 3×2 module grid */}
-      <div className="grid grid-cols-3 max-[900px]:grid-cols-2 max-[600px]:grid-cols-1 gap-[18px]">
+      <div className="grid grid-cols-3 max-[1100px]:grid-cols-2 max-[640px]:grid-cols-1 gap-[18px]">
         {dict.platform.modules.map((m, i) => (
           <Card key={i} hover className="p-[26px]">
             <div className="flex items-center gap-[11px] mb-[10px]">
