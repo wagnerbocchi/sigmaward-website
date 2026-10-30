@@ -3,7 +3,7 @@ import HomePage from "@/components/pages/HomePage";
 import { getDictionary } from "@/lib/i18n";
 
 export const metadata: Metadata = {
-  title: "Sigmaward — The modern SOC, without the legacy SIEM weight",
+  title: "Sigmaward | SIEM, SOAR, EDR and NOC",
   description: getDictionary("en").hero.sub,
 };
 

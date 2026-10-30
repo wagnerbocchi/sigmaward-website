@@ -7,8 +7,7 @@ import Icon from "@/components/ui/Icon";
 import { getDictionary, localizePath } from "@/lib/i18n";
 import type { Locale } from "@/lib/i18n";
 
-// URL do console da aplicação — placeholder no domínio do produto (como o
-// SITE_URL em lib/site.ts). Trocar pelo endereço real antes do deploy.
+// Production console confirmed by the product owner.
 const CONSOLE_URL = "https://app.sigmaward.com";
 
 export default function LoginPage({ locale }: { locale: Locale }) {
@@ -17,7 +16,7 @@ export default function LoginPage({ locale }: { locale: Locale }) {
   return (
     <>
       <Nav locale={locale} />
-      <main>
+      <main id="main-content">
         <PageHero
           badge={dict.login.badge}
           title={dict.login.heroTitle}

@@ -1,14 +1,12 @@
 import type { Metadata } from "next";
-import { Space_Grotesk, Manrope, JetBrains_Mono } from "next/font/google";
+import "@fontsource-variable/manrope";
+import "@fontsource-variable/jetbrains-mono";
 import { SITE_URL } from "@/lib/site";
 import "./globals.css";
 
-const display = Space_Grotesk({ subsets: ["latin"], weight: ["500","600","700"], variable: "--font-space-grotesk", display: "swap" });
-const sans = Manrope({ subsets: ["latin"], weight: ["400","500","600","700"], variable: "--font-manrope", display: "swap" });
-const mono = JetBrains_Mono({ subsets: ["latin"], weight: ["400","500","600"], variable: "--font-jetbrains", display: "swap" });
-
 const defaultTitle = "Sigmaward";
-const defaultDescription = "SIEM · SOAR · SOC — own agents, Sigma-native";
+const defaultDescription =
+  "Detecção Sigma, investigação, resposta e monitoramento de endpoints em uma plataforma.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -19,6 +17,12 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
+    images: [
+      {
+        url: "/screenshots/current/watchfloor.jpg",
+        alt: "Sigmaward Watchfloor",
+      },
+    ],
     siteName: "Sigmaward",
     title: defaultTitle,
     description: defaultDescription,
@@ -38,9 +42,13 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <html lang="pt" className={`${display.variable} ${sans.variable} ${mono.variable}`}>
+    <html lang="pt">
       <body>{children}</body>
     </html>
   );

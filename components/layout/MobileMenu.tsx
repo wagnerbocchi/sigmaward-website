@@ -1,110 +1,75 @@
 "use client";
-
-import { useState } from "react";
-import { createPortal } from "react-dom";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import Logo from "@/components/ui/Logo";
-import Button from "@/components/ui/Button";
 import LocaleToggle from "@/components/layout/LocaleToggle";
-import { getDictionary, localizePath } from "@/lib/i18n";
-import type { Locale } from "@/lib/i18n";
-
-const NAV_LINKS = [
-  { key: "platform" as const, href: "/platform/" },
-  { key: "solutions" as const, href: "/solutions/" },
-  { key: "pricing" as const, href: "/pricing/" },
-  { key: "resources" as const, href: "/resources/" },
-  { key: "company" as const, href: "/company/" },
-] as const;
-
+import { getDictionary, localizePath, type Locale } from "@/lib/i18n";
 export default function MobileMenu({ locale }: { locale: Locale }) {
-  const [open, setOpen] = useState(false);
-  const dict = getDictionary(locale);
-
+  const [open, setOpen] = useState(false),
+    root = useRef<HTMLDivElement>(null),
+    trigger = useRef<HTMLButtonElement>(null);
+  const d = getDictionary(locale);
+  useEffect(() => {
+    if (!open) return;
+    const escape = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        setOpen(false);
+        trigger.current?.focus();
+      }
+    };
+    const outside = (e: PointerEvent) => {
+      if (!root.current?.contains(e.target as Node)) setOpen(false);
+    };
+    document.addEventListener("keydown", escape);
+    document.addEventListener("pointerdown", outside);
+    return () => {
+      document.removeEventListener("keydown", escape);
+      document.removeEventListener("pointerdown", outside);
+    };
+  }, [open]);
   return (
-    <div className="lg:hidden">
-      {/* Hamburger button */}
+    <div className="mobile-navigation" ref={root}>
       <button
+        ref={trigger}
         type="button"
-        aria-label={locale === "pt" ? (open ? "Fechar menu" : "Abrir menu") : (open ? "Close menu" : "Open menu")}
+        className="menu-trigger"
         aria-expanded={open}
+        aria-controls="mobile-nav"
         onClick={() => setOpen(!open)}
-        className="flex items-center justify-center w-10 h-10 text-text-body hover:text-text-bright"
       >
-        {open ? (
-          /* X icon */
-          <svg
-            width="22"
-            height="22"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            aria-hidden="true"
-          >
-            <line x1="18" y1="6" x2="6" y2="18" />
-            <line x1="6" y1="6" x2="18" y2="18" />
-          </svg>
-        ) : (
-          /* Hamburger icon */
-          <svg
-            width="22"
-            height="22"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            aria-hidden="true"
-          >
-            <line x1="3" y1="6" x2="21" y2="6" />
-            <line x1="3" y1="12" x2="21" y2="12" />
-            <line x1="3" y1="18" x2="21" y2="18" />
-          </svg>
-        )}
+        {open ? d.product.closeMenu : d.product.menu}
       </button>
-
-      {/* Drawer — portaled to <body> so `position:fixed` is viewport-relative
-          (the Nav's backdrop-filter would otherwise be its containing block). */}
-      {open && typeof document !== "undefined" && createPortal(
-        <div
-          className="fixed inset-x-0 top-[66px] bottom-0 z-40 bg-bg flex flex-col gap-2 p-6 overflow-y-auto"
-          role="dialog"
-          aria-modal="true"
-          aria-label={locale === "pt" ? "Menu de navegação" : "Navigation menu"}
+      {open && (
+        <nav
+          id="mobile-nav"
+          aria-label={d.product.navigation}
+          className="mobile-panel"
+          onBlur={(e) => {
+            if (
+              !e.currentTarget.parentElement?.contains(e.relatedTarget as Node)
+            )
+              setOpen(false);
+          }}
         >
-          <nav className="flex flex-col gap-1">
-            {NAV_LINKS.map(({ key, href }) => (
-              <Link
-                key={key}
-                href={localizePath(href, locale)}
-                onClick={() => setOpen(false)}
-                className="text-[16px] font-medium text-text-body hover:text-text-bright px-3 py-3 rounded-lg hover:bg-white/[0.04]"
-              >
-                {dict.nav[key]}
-              </Link>
-            ))}
-          </nav>
-
-          <div className="mt-2 border-t border-border pt-4 flex flex-col gap-4">
+          {(
+            [
+              "platform",
+              "solutions",
+              "pricing",
+              "resources",
+              "company",
+              "login",
+            ] as const
+          ).map((k) => (
             <Link
-              href={localizePath("/login/", locale)}
+              key={k}
               onClick={() => setOpen(false)}
-              className="text-[15px] font-medium text-text-body hover:text-text-bright px-3 py-2"
+              href={localizePath(`/${k}/`, locale)}
             >
-              {dict.nav.login}
+              {d.nav[k]}
             </Link>
-            <Button href={localizePath("/platform/", locale)} variant="primary">
-              {dict.nav.cta}
-            </Button>
-          </div>
-
-          <div className="mt-4 px-3">
-            <LocaleToggle />
-          </div>
-        </div>,
-        document.body
+          ))}
+          <LocaleToggle />
+        </nav>
       )}
     </div>
   );

@@ -18,7 +18,7 @@ export default function ComingSoonPage({
   return (
     <>
       <Nav locale={locale} />
-      <main>
+      <main id="main-content">
         <section
           data-screen-label="Coming Soon"
           className="relative overflow-hidden flex items-center"

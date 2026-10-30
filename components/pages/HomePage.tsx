@@ -1,78 +1,70 @@
 import Nav from "@/components/layout/Nav";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/sections/Hero";
-import TrustStrip from "@/components/sections/TrustStrip";
-import Problem from "@/components/sections/Problem";
-import Pillar from "@/components/sections/Pillar";
-import Capabilities from "@/components/sections/Capabilities";
-import Comparison from "@/components/sections/Comparison";
-import Mssp from "@/components/sections/Mssp";
-import Compliance from "@/components/sections/Compliance";
-import Quote from "@/components/sections/Quote";
+import ProductOverview from "@/components/sections/ProductOverview";
 import FinalCta from "@/components/sections/FinalCta";
 import PlatformShot from "@/components/mocks/PlatformShot";
-import { getDictionary } from "@/lib/i18n";
-import type { Locale } from "@/lib/i18n";
+import Button from "@/components/ui/Button";
+import { getDictionary, localizePath, type Locale } from "@/lib/i18n";
 
 export default function HomePage({ locale }: { locale: Locale }) {
-  const dict = getDictionary(locale);
-
+  const dict = getDictionary(locale),
+    p = dict.product;
   return (
     <>
       <Nav locale={locale} />
-      <main>
+      <main id="main-content">
         <Hero dict={dict} locale={locale} />
-        <TrustStrip dict={dict} />
-        <Problem dict={dict} />
-        <Pillar
-          data={dict.pillars[0]}
-          mock={
-            <PlatformShot
-              src="/screenshots/detections.png"
-              alt="Sigmaward — detecção Sigma com query e YAML"
-            />
-          }
-          mockSide="right"
-          bg="bg"
-        />
-        <Pillar
-          data={dict.pillars[1]}
-          mock={
-            <PlatformShot
-              src="/screenshots/playbooks.png"
-              alt="Sigmaward — playbooks de automação SOAR"
-            />
-          }
-          mockSide="left"
-          bg="bg-alt"
-        />
-        <Pillar
-          data={dict.pillars[2]}
-          mock={
-            <PlatformShot
-              src="/screenshots/case-detail-timeline.png"
-              alt="Sigmaward — linha do tempo do caso"
-            />
-          }
-          mockSide="right"
-          bg="bg"
-        />
-        <Pillar
-          data={dict.pillars[3]}
-          mock={
-            <PlatformShot
-              src="/screenshots/threat-intel.png"
-              alt="Sigmaward — inteligência de ameaças e IOCs"
-            />
-          }
-          mockSide="left"
-          bg="bg-alt"
-        />
-        <Capabilities dict={dict} />
-        <Comparison dict={dict} locale={locale} />
-        <Mssp dict={dict} />
-        <Compliance dict={dict} />
-        <Quote dict={dict} />
+        <section className="site-container editorial-intro">
+          <h2>{p.workflowTitle}</h2>
+          <div>
+            <h3>{p.workflow[0].title}</h3>
+            <p>{p.workflow[0].body}</p>
+          </div>
+          <div>
+            <h3>{p.workflow[1].title}</h3>
+            <p>{p.workflow[1].body}</p>
+          </div>
+        </section>
+        <ProductOverview dict={dict} locale={locale} />
+        <section className="surface-section">
+          <div className="site-container feature-split">
+            <div>
+              <p className="eyebrow">{p.agentLabel}</p>
+              <h2>{p.agentTitle}</h2>
+              <p>{p.agentBody}</p>
+              <ul className="detail-list">
+                {p.agentFacts.map((f) => (
+                  <li key={f}>{f}</li>
+                ))}
+              </ul>
+              <Button
+                href={`${localizePath("/platform/", locale)}#monitoring`}
+                variant="secondary"
+                withArrow
+              >
+                {p.primary}
+              </Button>
+            </div>
+            <div>
+              <PlatformShot
+                src="/screenshots/current/monitoring.jpg"
+                alt={p.features[3].title}
+              />
+              <p className="capture-caption">{p.captureNote}</p>
+            </div>
+          </div>
+        </section>
+        <section className="site-container governance">
+          <p className="eyebrow">{p.governanceLabel}</p>
+          <h2>{p.governanceTitle}</h2>
+          <p>{p.governanceBody}</p>
+          <div className="governance-facts">
+            {p.features[5].details.map((f) => (
+              <p key={f}>{f}</p>
+            ))}
+          </div>
+        </section>
         <FinalCta dict={dict} locale={locale} />
       </main>
       <Footer locale={locale} />
