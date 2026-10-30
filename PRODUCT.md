@@ -70,6 +70,11 @@ Preserve the Sigmaward name, existing logo assets, and real anonymized product
 captures. Maintain factual, product-grounded communication in both languages.
 The user confirmed these commitments on 2026-10-30.
 
+On the same date, the owner authorized the color palette of
+`https://github.com/wagnerbocchi/sigmaward` as an optional reference for website
+design work. This permits using the application's colors without requiring a
+palette change on every refinement.
+
 ## Evidence on Hand
 
 - `docs/website-content-and-captures.md`: provenance and claim boundaries, updated

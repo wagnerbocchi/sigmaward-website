@@ -1,0 +1,378 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-30T13:56:37.906197+00:00",
+  "title": "Design System: Sigmaward",
+  "extensions": {
+    "colorMeta": {
+      "brand": {
+        "role": "primary",
+        "displayName": "Turquesa de sinal",
+        "canonical": "#40c6c3",
+        "tonalRamp": [
+          "oklch(15.0% 0.0424 192.85)",
+          "oklch(25.0% 0.0707 192.85)",
+          "oklch(36.0% 0.1018 192.85)",
+          "oklch(48.0% 0.1131 192.85)",
+          "oklch(60.0% 0.1131 192.85)",
+          "oklch(73.0% 0.1018 192.85)",
+          "oklch(85.0% 0.0565 192.85)",
+          "oklch(95.0% 0.0188 192.85)"
+        ]
+      },
+      "brand-hover": {
+        "role": "primary",
+        "displayName": "Brand hover",
+        "canonical": "#73dad4",
+        "tonalRamp": [
+          "oklch(15.0% 0.0363 190.48)",
+          "oklch(25.0% 0.0605 190.48)",
+          "oklch(36.0% 0.0872 190.48)",
+          "oklch(48.0% 0.0968 190.48)",
+          "oklch(60.0% 0.0968 190.48)",
+          "oklch(73.0% 0.0872 190.48)",
+          "oklch(85.0% 0.0484 190.48)",
+          "oklch(95.0% 0.0161 190.48)"
+        ]
+      },
+      "brand-ink": {
+        "role": "primary",
+        "displayName": "Brand ink",
+        "canonical": "#071c1d",
+        "tonalRamp": [
+          "oklch(15.0% 0.0101 199.49)",
+          "oklch(25.0% 0.0169 199.49)",
+          "oklch(36.0% 0.0243 199.49)",
+          "oklch(48.0% 0.0270 199.49)",
+          "oklch(60.0% 0.0270 199.49)",
+          "oklch(73.0% 0.0243 199.49)",
+          "oklch(85.0% 0.0135 199.49)",
+          "oklch(95.0% 0.0045 199.49)"
+        ]
+      },
+      "violet": {
+        "role": "secondary",
+        "displayName": "Violet",
+        "canonical": "#9fcac6",
+        "tonalRamp": [
+          "oklch(15.0% 0.0171 189.26)",
+          "oklch(25.0% 0.0286 189.26)",
+          "oklch(36.0% 0.0411 189.26)",
+          "oklch(48.0% 0.0457 189.26)",
+          "oklch(60.0% 0.0457 189.26)",
+          "oklch(73.0% 0.0411 189.26)",
+          "oklch(85.0% 0.0228 189.26)",
+          "oklch(95.0% 0.0076 189.26)"
+        ]
+      },
+      "bg": {
+        "role": "neutral",
+        "displayName": "Grafite esverdeado",
+        "canonical": "#101719",
+        "tonalRamp": [
+          "oklch(15.0% 0.0042 217.07)",
+          "oklch(25.0% 0.0070 217.07)",
+          "oklch(36.0% 0.0101 217.07)",
+          "oklch(48.0% 0.0113 217.07)",
+          "oklch(60.0% 0.0113 217.07)",
+          "oklch(73.0% 0.0101 217.07)",
+          "oklch(85.0% 0.0056 217.07)",
+          "oklch(95.0% 0.0019 217.07)"
+        ]
+      },
+      "bg-alt": {
+        "role": "neutral",
+        "displayName": "Bg alt",
+        "canonical": "#141e21",
+        "tonalRamp": [
+          "oklch(15.0% 0.0058 218.19)",
+          "oklch(25.0% 0.0097 218.19)",
+          "oklch(36.0% 0.0139 218.19)",
+          "oklch(48.0% 0.0155 218.19)",
+          "oklch(60.0% 0.0155 218.19)",
+          "oklch(73.0% 0.0139 218.19)",
+          "oklch(85.0% 0.0077 218.19)",
+          "oklch(95.0% 0.0026 218.19)"
+        ]
+      },
+      "bg-footer": {
+        "role": "neutral",
+        "displayName": "Bg footer",
+        "canonical": "#0d1416",
+        "tonalRamp": [
+          "oklch(15.0% 0.0043 217.14)",
+          "oklch(25.0% 0.0071 217.14)",
+          "oklch(36.0% 0.0103 217.14)",
+          "oklch(48.0% 0.0114 217.14)",
+          "oklch(60.0% 0.0114 217.14)",
+          "oklch(73.0% 0.0103 217.14)",
+          "oklch(85.0% 0.0057 217.14)",
+          "oklch(95.0% 0.0019 217.14)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Surface",
+        "canonical": "#172125",
+        "tonalRamp": [
+          "oklch(15.0% 0.0061 224.39)",
+          "oklch(25.0% 0.0101 224.39)",
+          "oklch(36.0% 0.0145 224.39)",
+          "oklch(48.0% 0.0162 224.39)",
+          "oklch(60.0% 0.0162 224.39)",
+          "oklch(73.0% 0.0145 224.39)",
+          "oklch(85.0% 0.0081 224.39)",
+          "oklch(95.0% 0.0027 224.39)"
+        ]
+      },
+      "border": {
+        "role": "neutral",
+        "displayName": "Border",
+        "canonical": "#334246",
+        "tonalRamp": [
+          "oklch(15.0% 0.0077 215.79)",
+          "oklch(25.0% 0.0128 215.79)",
+          "oklch(36.0% 0.0185 215.79)",
+          "oklch(48.0% 0.0205 215.79)",
+          "oklch(60.0% 0.0205 215.79)",
+          "oklch(73.0% 0.0185 215.79)",
+          "oklch(85.0% 0.0103 215.79)",
+          "oklch(95.0% 0.0034 215.79)"
+        ]
+      },
+      "border-soft": {
+        "role": "neutral",
+        "displayName": "Border soft",
+        "canonical": "#27363a",
+        "tonalRamp": [
+          "oklch(15.0% 0.0079 215.92)",
+          "oklch(25.0% 0.0131 215.92)",
+          "oklch(36.0% 0.0189 215.92)",
+          "oklch(48.0% 0.0210 215.92)",
+          "oklch(60.0% 0.0210 215.92)",
+          "oklch(73.0% 0.0189 215.92)",
+          "oklch(85.0% 0.0105 215.92)",
+          "oklch(95.0% 0.0035 215.92)"
+        ]
+      },
+      "border-strong": {
+        "role": "neutral",
+        "displayName": "Border strong",
+        "canonical": "#52666c",
+        "tonalRamp": [
+          "oklch(15.0% 0.0097 217.94)",
+          "oklch(25.0% 0.0162 217.94)",
+          "oklch(36.0% 0.0233 217.94)",
+          "oklch(48.0% 0.0259 217.94)",
+          "oklch(60.0% 0.0259 217.94)",
+          "oklch(73.0% 0.0233 217.94)",
+          "oklch(85.0% 0.0129 217.94)",
+          "oklch(95.0% 0.0043 217.94)"
+        ]
+      },
+      "text-bright": {
+        "role": "neutral",
+        "displayName": "Branco nevoa",
+        "canonical": "#f3f5f4",
+        "tonalRamp": [
+          "oklch(15.0% 0.0009 165.08)",
+          "oklch(25.0% 0.0016 165.08)",
+          "oklch(36.0% 0.0022 165.08)",
+          "oklch(48.0% 0.0025 165.08)",
+          "oklch(60.0% 0.0025 165.08)",
+          "oklch(73.0% 0.0022 165.08)",
+          "oklch(85.0% 0.0012 165.08)",
+          "oklch(95.0% 0.0004 165.08)"
+        ]
+      },
+      "text": {
+        "role": "neutral",
+        "displayName": "Text",
+        "canonical": "#c6d0d2",
+        "tonalRamp": [
+          "oklch(15.0% 0.0042 211.04)",
+          "oklch(25.0% 0.0071 211.04)",
+          "oklch(36.0% 0.0102 211.04)",
+          "oklch(48.0% 0.0113 211.04)",
+          "oklch(60.0% 0.0113 211.04)",
+          "oklch(73.0% 0.0102 211.04)",
+          "oklch(85.0% 0.0056 211.04)",
+          "oklch(95.0% 0.0019 211.04)"
+        ]
+      },
+      "text-body": {
+        "role": "neutral",
+        "displayName": "Text body",
+        "canonical": "#b7c2c5",
+        "tonalRamp": [
+          "oklch(15.0% 0.0048 215.84)",
+          "oklch(25.0% 0.0081 215.84)",
+          "oklch(36.0% 0.0116 215.84)",
+          "oklch(48.0% 0.0129 215.84)",
+          "oklch(60.0% 0.0129 215.84)",
+          "oklch(73.0% 0.0116 215.84)",
+          "oklch(85.0% 0.0064 215.84)",
+          "oklch(95.0% 0.0021 215.84)"
+        ]
+      },
+      "text-muted": {
+        "role": "neutral",
+        "displayName": "Text muted",
+        "canonical": "#a8b7bb",
+        "tonalRamp": [
+          "oklch(15.0% 0.0066 215.49)",
+          "oklch(25.0% 0.0110 215.49)",
+          "oklch(36.0% 0.0159 215.49)",
+          "oklch(48.0% 0.0176 215.49)",
+          "oklch(60.0% 0.0176 215.49)",
+          "oklch(73.0% 0.0159 215.49)",
+          "oklch(85.0% 0.0088 215.49)",
+          "oklch(95.0% 0.0029 215.49)"
+        ]
+      },
+      "text-faint": {
+        "role": "neutral",
+        "displayName": "Text faint",
+        "canonical": "#a0b0b5",
+        "tonalRamp": [
+          "oklch(15.0% 0.0072 218.44)",
+          "oklch(25.0% 0.0120 218.44)",
+          "oklch(36.0% 0.0174 218.44)",
+          "oklch(48.0% 0.0193 218.44)",
+          "oklch(60.0% 0.0193 218.44)",
+          "oklch(73.0% 0.0174 218.44)",
+          "oklch(85.0% 0.0096 218.44)",
+          "oklch(95.0% 0.0032 218.44)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display"
+      },
+      "headline": {
+        "displayName": "Headline"
+      },
+      "title": {
+        "displayName": "Title"
+      },
+      "body": {
+        "displayName": "Body"
+      },
+      "eyebrow": {
+        "displayName": "Eyebrow"
+      },
+      "technical-label": {
+        "displayName": "Technical Label"
+      },
+      "button": {
+        "displayName": "Button"
+      }
+    },
+    "shadows": [
+      {
+        "name": "internal-action",
+        "value": "0 10px 30px -10px rgba(32,221,201,0.7)",
+        "purpose": "Existing local contact/login action exception."
+      }
+    ],
+    "motion": [
+      {
+        "name": "color-transition",
+        "value": "0.18s ease",
+        "purpose": "Color, background, and border transitions; disabled for reduced motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "compact-desktop",
+        "value": "1100px"
+      },
+      {
+        "name": "mobile-navigation",
+        "value": "900px"
+      },
+      {
+        "name": "single-column",
+        "value": "600px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Shared filled action with restrained rounding.",
+      "html": "<a class=\"ds-button ds-primary\" href=\"#\">Conheca a plataforma <span aria-hidden=\"true\">&rarr;</span></a>",
+      "css": ".ds-button {display:inline-flex;align-items:center;justify-content:center;gap:24px;min-height:54px;padding:16px 28px;border:1px solid transparent;border-radius:6px;font-family:var(--font-sans);font-size:15px;font-weight:700;text-align:center;text-decoration:none;transition:color .18s ease,background-color .18s ease,border-color .18s ease;} .ds-button:active {transform:translateY(1px);} .ds-button:focus-visible { outline:2px solid var(--color-brand); outline-offset:2px; border-radius:2px; } @media(prefers-reduced-motion:reduce){.ds-button{transition:none;}} .ds-primary{background:var(--color-brand);color:var(--color-brand-ink);} .ds-primary:hover{background:var(--color-brand-hover);}"
+    },
+    {
+      "name": "Secondary button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Outlined action with surface hover.",
+      "html": "<a class=\"ds-button ds-secondary\" href=\"#\">Explorar <span aria-hidden=\"true\">&rarr;</span></a>",
+      "css": ".ds-button {display:inline-flex;align-items:center;justify-content:center;gap:24px;min-height:54px;padding:16px 28px;border:1px solid transparent;border-radius:6px;font-family:var(--font-sans);font-size:15px;font-weight:700;text-align:center;text-decoration:none;transition:color .18s ease,background-color .18s ease,border-color .18s ease;} .ds-button:active {transform:translateY(1px);} .ds-button:focus-visible { outline:2px solid var(--color-brand); outline-offset:2px; border-radius:2px; } @media(prefers-reduced-motion:reduce){.ds-button{transition:none;}} .ds-secondary{border-color:var(--color-border-strong);color:var(--color-text-bright);background:transparent;} .ds-secondary:hover{background:var(--color-surface);}"
+    },
+    {
+      "name": "Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "Existing shared hover card; sample uses 24px page-owned padding.",
+      "html": "<div class=\"ds-card\"><strong>Contexto compartilhado</strong><p>Deteccao, investigacao e resposta.</p></div>",
+      "css": ".ds-card{background:var(--color-surface);color:var(--color-text);border:1px solid var(--color-border);border-radius:16px;padding:24px;font-family:var(--font-sans);transition:background-color .15s,border-color .15s;} .ds-card:hover{border-color:#2E6E66;background:#121C2C;} .ds-card p{margin:12px 0 0;} @media(prefers-reduced-motion:reduce){.ds-card{transition:none;}}"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "refersTo": "navigation",
+      "description": "Desktop navigation links; the full header also includes locale and mobile controls.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Navegacao\"><a href=\"#\">Plataforma</a><a href=\"#\">Solucoes</a><a href=\"#\">Empresa</a></nav>",
+      "css": ".ds-nav{display:flex;align-items:center;gap:32px;min-height:80px;background:#101719f5;font:15px var(--font-sans);} .ds-nav a{color:var(--color-text);text-decoration:none;transition:color .18s ease;} .ds-nav a:hover{color:var(--color-brand);} .ds-nav a:focus-visible { outline:2px solid var(--color-brand); outline-offset:2px; border-radius:2px; } @media(prefers-reduced-motion:reduce){.ds-nav a{transition:none;}}"
+    },
+    {
+      "name": "Technical label",
+      "kind": "custom",
+      "refersTo": "technical-label",
+      "description": "Non-interactive uppercase mono annotation.",
+      "html": "<span class=\"ds-label\">Plataforma</span>",
+      "css": ".ds-label{font-family:var(--font-mono);font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--color-brand);}"
+    },
+    {
+      "name": "Capability link",
+      "kind": "custom",
+      "description": "Numbered, divided editorial row from the homepage.",
+      "html": "<a class=\"ds-capability\" href=\"#\"><span class=\"ds-eyebrow\">01 / DETECTAR</span><h3>Deteccao com contexto.</h3><p>Sinais conectados para orientar a investigacao.</p><span class=\"ds-arrow\" aria-hidden=\"true\">&rarr;</span></a>",
+      "css": ".ds-capability{display:block;position:relative;padding:32px 36px 38px 0;border-top:1px solid var(--color-border);font-family:var(--font-sans);color:var(--color-text);text-decoration:none;} .ds-eyebrow{display:block;margin-bottom:18px;color:var(--color-brand);font-size:10px;font-weight:600;letter-spacing:.17em;} .ds-capability h3{font-size:22px;line-height:1.3;letter-spacing:-.025em;font-weight:650;color:var(--color-text-bright);margin:0 0 15px;} .ds-capability p{font-size:15px;line-height:1.8;max-width:490px;margin:0;} .ds-arrow{position:absolute;right:0;top:30px;color:var(--color-brand);} .ds-capability:hover h3{color:var(--color-brand);} .ds-capability:focus-visible { outline:2px solid var(--color-brand); outline-offset:2px; border-radius:2px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Observatorio de seguranca",
+    "overview": "Editorial, precise, and restrained: the real product leads the presentation.\nLarge typography, open spacing, quiet dark surfaces, and authentic interface\ncaptures give the security platform a clear and inspectable presence.\n\nComponents are precise and restrained, with softened corners and clear actions.\nDepth comes primarily from tonal surfaces and dividing lines, with isolated\nshadows on internal pages. These descriptions were confirmed by the owner on\n2026-10-30; they describe the existing website rather than a replacement design.",
+    "keyCharacteristics": [
+      "Dark graphite surfaces with a restrained signal accent.",
+      "Manrope for narrative and JetBrains Mono for technical labels.",
+      "Generous editorial spacing and strong typographic hierarchy.",
+      "Real product imagery with visible provenance captions."
+    ],
+    "rules": [
+      {
+        "name": "The Effective Token Rule",
+        "body": "Use the final theme values recorded above, not\nthe superseded neon turquoise and navy definitions earlier in the stylesheet.",
+        "section": "colors"
+      }
+    ],
+    "dos": [
+      "Do use the effective theme tokens and the self-hosted font families.",
+      "Do preserve real captures, their proportions, captions, and full-size access.",
+      "Do use typography, spacing, and quiet dividers to establish hierarchy.",
+      "Do preserve keyboard focus, reduced-motion support, and mobile navigation."
+    ],
+    "donts": [
+      "Don't revive superseded theme values by extracting only the first CSS block.",
+      "Don't treat colors inside product screenshots as website tokens.",
+      "Don't spread local glow or legacy hover colors across unrelated components.",
+      "Don't invent input, chip, or modal patterns that the website does not contain."
+    ]
+  }
+}
