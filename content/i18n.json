@@ -1,170 +1,552 @@
 {
   "_note": "Sigmaward marketing site copy. Default locale: pt-BR. Mirror keys 1:1 between locales. Product-UI labels inside screenshots/mock components (e.g. 'Threat Overview', 'Sigma Rule', 'Playbook') stay in English by convention and are NOT in this file.",
   "pt": {
-    "nav": { "platform": "Plataforma", "solutions": "Soluções", "pricing": "Preços", "resources": "Recursos", "company": "Empresa", "login": "Entrar", "cta": "Ver o produto" },
+    "nav": {
+      "platform": "Plataforma",
+      "solutions": "Soluções",
+      "pricing": "Preços",
+      "resources": "Recursos",
+      "company": "Empresa",
+      "login": "Entrar",
+      "cta": "Ver o produto"
+    },
     "hero": {
-      "badge": "SIEM · SOAR · SOC — agentes próprios, Sigma-native",
-      "title": "O SOC moderno, sem o peso do SIEM legado.",
-      "sub": "A Sigmaward transforma regras Sigma em detecções, promove findings em casos e automatiza a resposta — a uma fração do custo e da complexidade de Splunk, QRadar ou Microsoft Sentinel.",
-      "ctaPrimary": "Ver o produto",
-      "ctaSecondary": "Falar com especialista",
-      "note": "Sigma-native · Multi-tenant para MSSPs · Fundação aberta"
+      "badge": "Segurança e operação, conectadas",
+      "title": "Toda a operação. Uma visão de segurança.",
+      "sub": "Detecção Sigma, investigação, resposta e saúde dos endpoints no mesmo ambiente.",
+      "ctaPrimary": "Explorar a plataforma",
+      "ctaSecondary": "Conversar com a equipe",
+      "note": "SIEM / SOAR / EDR / NOC / IA assistiva"
     },
     "trust": {
       "label": "Times de segurança e MSSPs operam o dia a dia na Sigmaward",
       "stats": [
-        { "v": "4.2M", "l": "eventos analisados/dia" },
-        { "v": "−63%", "l": "MTTR médio" },
-        { "v": "1.284", "l": "regras Sigma ativas" },
-        { "v": "24/7", "l": "vigilância contínua" }
+        {
+          "v": "4.2M",
+          "l": "eventos analisados/dia"
+        },
+        {
+          "v": "−63%",
+          "l": "MTTR médio"
+        },
+        {
+          "v": "1.284",
+          "l": "regras Sigma ativas"
+        },
+        {
+          "v": "24/7",
+          "l": "vigilância contínua"
+        }
       ],
       "disclaimer": "Logos e métricas ilustrativos para fins de demonstração.",
-      "logos": ["NORTHWIND", "VERTEX", "MERIDIAN", "QUANTLY", "AONDA", "HELIX"]
+      "logos": [
+        "NORTHWIND",
+        "VERTEX",
+        "MERIDIAN",
+        "QUANTLY",
+        "AONDA",
+        "HELIX"
+      ]
     },
     "problem": {
       "eyebrow": "O problema",
       "title": "SIEM legado custa caro, demora a entregar valor e afoga o analista.",
       "body": "Licenciamento por volume imprevisível, meses de implantação, regras proprietárias e automação vendida à parte. O analista vive na triagem — não na caça à ameaça.",
       "points": [
-        { "t": "Custo que explode", "d": "Preço por ingestão imprevisível no fim do mês." },
-        { "t": "Lento para entregar", "d": "Semanas até a primeira detecção realmente útil." },
-        { "t": "Preso ao fornecedor", "d": "Regras e dados aprisionados em formato proprietário." }
+        {
+          "t": "Custo que explode",
+          "d": "Preço por ingestão imprevisível no fim do mês."
+        },
+        {
+          "t": "Lento para entregar",
+          "d": "Semanas até a primeira detecção realmente útil."
+        },
+        {
+          "t": "Preso ao fornecedor",
+          "d": "Regras e dados aprisionados em formato proprietário."
+        }
       ]
     },
     "pillars": [
-      { "eyebrow": "Detecção", "title": "Regras Sigma viram detecção em tempo real.", "body": "Importe qualquer regra Sigma e a Sigmaward a mapeia sobre sua telemetria ao vivo — sem reescrever queries proprietárias.", "bullets": ["Conversão Sigma → query automática", "1.200+ regras prontas, ou use as suas", "Findings com contexto MITRE ATT&CK"] },
-      { "eyebrow": "Automação", "title": "Resposta automatizada com playbooks visuais.", "body": "Promova, enriqueça e responda sem sair da plataforma. Playbooks conectam detecção e ação em minutos.", "bullets": ["Playbooks visuais, sem código", "Enriquecimento automático de IOCs", "Ações de contenção integradas"] },
-      { "eyebrow": "Casos", "title": "De finding a caso investigável, em um clique.", "body": "A Sigmaward agrupa findings correlacionados em casos com linha do tempo, evidências e responsáveis.", "bullets": ["Promoção automática de findings", "Linha do tempo e cadeia de evidências", "Colaboração e SLA por caso"] },
-      { "eyebrow": "Threat Intel", "title": "IOCs extraídos e correlacionados sozinhos.", "body": "Hashes, IPs, domínios e URLs são extraídos, deduplicados e cruzados com inteligência de ameaças.", "bullets": ["Extração automática de IOCs", "Correlação com threat intel", "Watchlists e bloqueio proativo"] }
+      {
+        "eyebrow": "Detecção",
+        "title": "Regras Sigma viram detecção em tempo real.",
+        "body": "Importe qualquer regra Sigma e a Sigmaward a mapeia sobre sua telemetria ao vivo — sem reescrever queries proprietárias.",
+        "bullets": [
+          "Conversão Sigma → query automática",
+          "1.200+ regras prontas, ou use as suas",
+          "Findings com contexto MITRE ATT&CK"
+        ]
+      },
+      {
+        "eyebrow": "Automação",
+        "title": "Resposta automatizada com playbooks visuais.",
+        "body": "Promova, enriqueça e responda sem sair da plataforma. Playbooks conectam detecção e ação em minutos.",
+        "bullets": [
+          "Playbooks visuais, sem código",
+          "Enriquecimento automático de IOCs",
+          "Ações de contenção integradas"
+        ]
+      },
+      {
+        "eyebrow": "Casos",
+        "title": "De finding a caso investigável, em um clique.",
+        "body": "A Sigmaward agrupa findings correlacionados em casos com linha do tempo, evidências e responsáveis.",
+        "bullets": [
+          "Promoção automática de findings",
+          "Linha do tempo e cadeia de evidências",
+          "Colaboração e SLA por caso"
+        ]
+      },
+      {
+        "eyebrow": "Threat Intel",
+        "title": "IOCs extraídos e correlacionados sozinhos.",
+        "body": "Hashes, IPs, domínios e URLs são extraídos, deduplicados e cruzados com inteligência de ameaças.",
+        "bullets": [
+          "Extração automática de IOCs",
+          "Correlação com threat intel",
+          "Watchlists e bloqueio proativo"
+        ]
+      }
     ],
-    "capsHead": { "eyebrow": "Plataforma completa", "title": "Tudo que um SOC moderno precisa.", "sub": "Da detecção à resposta, num só lugar — sem módulos vendidos à parte." },
+    "capsHead": {
+      "eyebrow": "Plataforma completa",
+      "title": "Tudo que um SOC moderno precisa.",
+      "sub": "Da detecção à resposta, num só lugar — sem módulos vendidos à parte."
+    },
     "caps": [
-      { "t": "Multi-tenant para MSSPs", "d": "Isole clientes, gerencie todos num painel e fature por uso. Feito para operações gerenciadas." },
-      { "t": "Agente Sigmaward multi-OS", "d": "Coleta de telemetria pelos agentes próprios da Sigmaward — Windows, Linux e macOS." },
-      { "t": "Dashboards & relatórios", "d": "Visão executiva e operacional, com relatórios prontos para auditoria." },
-      { "t": "Conformidade", "d": "Controles e evidências para ISO 27001, SOC 2 e LGPD desde o primeiro dia." },
-      { "t": "Integrações nativas", "d": "Conecte nuvem, identidade, endpoints e SaaS em minutos." },
-      { "t": "Escala sem surpresa", "d": "Preço previsível por nó — não por volume de ingestão." }
+      {
+        "t": "Multi-tenant para MSSPs",
+        "d": "Isole clientes, gerencie todos num painel e fature por uso. Feito para operações gerenciadas."
+      },
+      {
+        "t": "Agente Sigmaward multi-OS",
+        "d": "Coleta de telemetria pelos agentes próprios da Sigmaward — Windows, Linux e macOS."
+      },
+      {
+        "t": "Dashboards & relatórios",
+        "d": "Visão executiva e operacional, com relatórios prontos para auditoria."
+      },
+      {
+        "t": "Conformidade",
+        "d": "Controles e evidências para ISO 27001, SOC 2 e LGPD desde o primeiro dia."
+      },
+      {
+        "t": "Integrações nativas",
+        "d": "Conecte nuvem, identidade, endpoints e SaaS em minutos."
+      },
+      {
+        "t": "Escala sem surpresa",
+        "d": "Preço previsível por nó — não por volume de ingestão."
+      }
     ],
     "compare": {
-      "eyebrow": "Por que trocar", "title": "Sigmaward vs. SIEM legado", "colA": "Sigmaward", "colB": "Splunk · QRadar · Sentinel",
+      "eyebrow": "Por que trocar",
+      "title": "Sigmaward vs. SIEM legado",
+      "colA": "Sigmaward",
+      "colB": "Splunk · QRadar · Sentinel",
       "rows": [
-        { "f": "Tempo até a 1ª detecção", "a": "Horas", "b": "Semanas a meses" },
-        { "f": "Modelo de preço", "a": "Por nó, previsível", "b": "Por volume de ingestão" },
-        { "f": "Regras Sigma nativas", "a": true, "b": false },
-        { "f": "Automação SOAR inclusa", "a": true, "b": "Módulo à parte" },
-        { "f": "Multi-tenant para MSSP", "a": true, "b": "Limitado / caro" },
-        { "f": "Sem lock-in de fornecedor", "a": true, "b": false },
-        { "f": "Implantação", "a": "Cloud ou self-hosted", "b": "Complexa, longa" }
+        {
+          "f": "Tempo até a 1ª detecção",
+          "a": "Horas",
+          "b": "Semanas a meses"
+        },
+        {
+          "f": "Modelo de preço",
+          "a": "Por nó, previsível",
+          "b": "Por volume de ingestão"
+        },
+        {
+          "f": "Regras Sigma nativas",
+          "a": true,
+          "b": false
+        },
+        {
+          "f": "Automação SOAR inclusa",
+          "a": true,
+          "b": "Módulo à parte"
+        },
+        {
+          "f": "Multi-tenant para MSSP",
+          "a": true,
+          "b": "Limitado / caro"
+        },
+        {
+          "f": "Sem lock-in de fornecedor",
+          "a": true,
+          "b": false
+        },
+        {
+          "f": "Implantação",
+          "a": "Cloud ou self-hosted",
+          "b": "Complexa, longa"
+        }
       ]
     },
     "mssp": {
-      "eyebrow": "Para MSSPs", "title": "Opere dezenas de clientes de um só lugar.",
+      "eyebrow": "Para MSSPs",
+      "title": "Opere dezenas de clientes de um só lugar.",
       "body": "Isolamento por tenant, visão consolidada, playbooks reutilizáveis e faturamento por uso. A Sigmaward foi desenhada para quem entrega segurança como serviço.",
-      "bullets": ["Isolamento total de dados por cliente", "Painel consolidado multi-tenant", "Faturamento por uso e por nó", "Playbooks e regras reutilizáveis entre clientes"]
+      "bullets": [
+        "Isolamento total de dados por cliente",
+        "Painel consolidado multi-tenant",
+        "Faturamento por uso e por nó",
+        "Playbooks e regras reutilizáveis entre clientes"
+      ]
     },
     "compliance": {
-      "eyebrow": "Confiança", "title": "Segurança e conformidade no núcleo.",
+      "eyebrow": "Confiança",
+      "title": "Segurança e conformidade no núcleo.",
       "body": "Criptografia de ponta a ponta, RBAC granular, trilha de auditoria completa e evidências prontas para o seu programa de conformidade.",
-      "badges": ["ISO 27001", "SOC 2 Tipo II", "LGPD", "GDPR"]
+      "badges": [
+        "ISO 27001",
+        "SOC 2 Tipo II",
+        "LGPD",
+        "GDPR"
+      ]
     },
-    "quote": { "text": "Migramos de um SIEM legado e cortamos o tempo de resposta pela metade já na primeira semana.", "author": "CISO", "role": "Empresa de médio porte", "note": "Depoimento ilustrativo" },
-    "cta": { "title": "Veja a Sigmaward em ação.", "sub": "Um tour guiado pela plataforma — detecção, casos e automação em poucos minutos.", "primary": "Ver o produto", "secondary": "Falar com vendas" },
+    "quote": {
+      "text": "Migramos de um SIEM legado e cortamos o tempo de resposta pela metade já na primeira semana.",
+      "author": "CISO",
+      "role": "Empresa de médio porte",
+      "note": "Depoimento ilustrativo"
+    },
+    "cta": {
+      "title": "Conheça o Sigmaward no seu contexto.",
+      "sub": "Converse sobre sua operação, seus ativos e os fluxos que sua equipe precisa conectar.",
+      "primary": "Ver o produto",
+      "secondary": "Falar com vendas"
+    },
     "footer": {
-      "tagline": "O guardião movido a regras Sigma para o seu SOC.",
+      "tagline": "Um produto da Bocchi Company",
       "rights": "Todos os direitos reservados.",
-      "built": "SIEM · SOAR · SOC — agentes próprios, Sigma-native",
+      "built": "SIEM / SOAR / EDR / NOC / IA assistiva",
       "cols": [
-        { "title": "Produto", "links": ["Plataforma", "Detecção Sigma", "Automação SOAR", "Gestão de casos", "Preços"] },
-        { "title": "Soluções", "links": ["Para MSSPs", "Blue teams", "Gestão de risco", "Conformidade"] },
-        { "title": "Recursos", "links": ["Documentação", "Blog", "Biblioteca de regras", "Status"] },
-        { "title": "Empresa", "links": ["Sobre", "Carreiras", "Contato", "Segurança"] }
+        {
+          "title": "Produto",
+          "links": [
+            "Plataforma",
+            "Detecção Sigma",
+            "Automação SOAR",
+            "Gestão de casos",
+            "Preços"
+          ]
+        },
+        {
+          "title": "Soluções",
+          "links": [
+            "Para MSSPs",
+            "Blue teams",
+            "Gestão de risco",
+            "Conformidade"
+          ]
+        },
+        {
+          "title": "Recursos",
+          "links": [
+            "Documentação",
+            "Blog",
+            "Biblioteca de regras",
+            "Status"
+          ]
+        },
+        {
+          "title": "Empresa",
+          "links": [
+            "Sobre",
+            "Carreiras",
+            "Contato",
+            "Segurança"
+          ]
+        }
       ]
     },
     "platform": {
       "badge": "A plataforma",
       "heroTitle": "Uma plataforma. Todo o ciclo de detecção e resposta.",
-      "heroSub": "Da ingestão de telemetria à contenção automatizada — a Sigmaward unifica SIEM, SOAR e gestão de SOC sobre uma fundação aberta.",
-      "ctaPrimary": "Ver uma demo", "ctaSecondary": "Ler a documentação",
-      "pipelineHead": { "eyebrow": "Como funciona", "title": "Do evento bruto ao caso resolvido.", "sub": "Um pipeline contínuo — sem ferramentas desconexas costuradas na mão." },
+      "heroSub": "Detecção Sigma, investigação, resposta e saúde dos endpoints no mesmo ambiente. Do primeiro sinal à decisão do analista, mantenha o contexto.",
+      "ctaPrimary": "Ver uma demo",
+      "ctaSecondary": "Ler a documentação",
+      "pipelineHead": {
+        "eyebrow": "Como funciona",
+        "title": "Do evento bruto ao caso resolvido.",
+        "sub": "Um pipeline contínuo — sem ferramentas desconexas costuradas na mão."
+      },
       "pipeline": [
-        { "n": "01", "title": "Fontes", "desc": "Endpoints, nuvem, identidade e rede enviam telemetria." },
-        { "n": "02", "title": "Agente Sigmaward", "desc": "Coleta, normaliza e enriquece os eventos na borda." },
-        { "n": "03", "title": "Motor Sigma", "desc": "Regras Sigma viram queries e avaliam tudo em tempo real." },
-        { "n": "04", "title": "Findings", "desc": "Detecções com contexto MITRE ATT&CK e severidade." },
-        { "n": "05", "title": "Casos", "desc": "Findings correlacionados viram casos investigáveis." },
-        { "n": "06", "title": "Resposta", "desc": "Playbooks enriquecem, contêm e notificam — automático." }
+        {
+          "n": "01",
+          "title": "Fontes",
+          "desc": "Endpoints, nuvem, identidade e rede enviam telemetria."
+        },
+        {
+          "n": "02",
+          "title": "Agente Sigmaward",
+          "desc": "Coleta, normaliza e enriquece os eventos na borda."
+        },
+        {
+          "n": "03",
+          "title": "Motor Sigma",
+          "desc": "Regras Sigma viram queries e avaliam tudo em tempo real."
+        },
+        {
+          "n": "04",
+          "title": "Findings",
+          "desc": "Detecções com contexto MITRE ATT&CK e severidade."
+        },
+        {
+          "n": "05",
+          "title": "Casos",
+          "desc": "Findings correlacionados viram casos investigáveis."
+        },
+        {
+          "n": "06",
+          "title": "Resposta",
+          "desc": "Playbooks enriquecem, contêm e notificam — automático."
+        }
       ],
-      "modulesHead": { "eyebrow": "Módulos", "title": "Tudo incluído, nada vendido à parte." },
+      "modulesHead": {
+        "eyebrow": "Módulos",
+        "title": "Menos distância entre o sinal e a resposta."
+      },
       "modules": [
-        { "title": "Motor de detecção Sigma", "desc": "Biblioteca de 1.200+ regras, editor próprio e conversão automática para queries." },
-        { "title": "Automação SOAR", "desc": "Playbooks visuais com enriquecimento, decisão e ações de contenção." },
-        { "title": "Gestão de casos", "desc": "Correlação, linha do tempo, cadeia de evidências, SLA e colaboração." },
-        { "title": "Threat intelligence", "desc": "Extração de IOCs, deduplicação, watchlists e correlação com feeds." },
-        { "title": "Dashboards & relatórios", "desc": "Painéis executivos e operacionais, com exportação pronta para auditoria." },
-        { "title": "Multi-tenant", "desc": "Isolamento por cliente, gestão consolidada e faturamento por uso." }
+        {
+          "title": "Detecção com contexto, não apenas volume.",
+          "desc": "Regras Sigma, correlação multiestágio e análise comportamental ajudam a priorizar sinais. O risco por entidade conecta eventos que isoladamente poderiam passar despercebidos."
+        },
+        {
+          "title": "Siga a evidência. Preserve a história.",
+          "desc": "Conecte alertas a casos, explore relações no grafo e organize hunting por hipótese. Observáveis, responsáveis e prazos permanecem no contexto da investigação."
+        },
+        {
+          "title": "Automação com controle do analista.",
+          "desc": "Organize a resposta com gatilhos, condições e passos ordenados. A aprovação humana dá controle sobre ações críticas, como isolamento de host e coleta de triagem pelo agente."
+        },
+        {
+          "title": "Saúde da infraestrutura. Contexto de segurança.",
+          "desc": "Relacione CPU, memória, disco e rede com alertas e casos do mesmo ativo. Políticas de monitoramento acompanham falhas e recuperação."
+        },
+        {
+          "title": "IA para apoiar a investigação.",
+          "desc": "O copiloto reúne contexto operacional do tenant e assistência para investigação e engenharia de detecção. A interface também oferece ações para criar casos e regras, além de gerar consultas Lucene."
+        },
+        {
+          "title": "Operações separadas. Gestão coordenada.",
+          "desc": "Gerencie clientes em um console MSSP com isolamento por tenant, acesso por função e trilha de auditoria verificável."
+        }
       ],
-      "integrationsHead": { "eyebrow": "Integrações", "title": "Conecta com todo o seu stack.", "sub": "Nuvem, identidade, endpoints e rede — em minutos, não em meses." },
-      "integrations": ["AWS", "Microsoft Azure", "Google Cloud", "Microsoft 365", "Okta", "CrowdStrike", "Palo Alto", "Cloudflare", "Linux", "Windows", "Kubernetes", "Elastic"],
-      "arch": { "eyebrow": "Arquitetura", "title": "Agentes próprios, padrões abertos.", "body": "A Sigmaward coleta telemetria com seus próprios agentes (Windows, Linux e macOS) e detecta no padrão aberto Sigma. Sem lock-in: seus dados, regras e integrações continuam portáveis.", "points": ["Cloud gerenciada ou self-hosted", "Escala horizontal por nós, preço previsível", "Dados e regras em formatos abertos", "API completa e webhooks"] }
+      "integrationsHead": {
+        "eyebrow": "Integrações",
+        "title": "Integrações com papéis claros.",
+        "sub": "MISP para inteligência de ameaças, Keycloak para identidade e canais de notificação. A telemetria é coletada pelo agente próprio."
+      },
+      "integrations": [
+        "MISP",
+        "Keycloak",
+        "E-mail",
+        "Webhooks",
+        "Slack",
+        "Discord",
+        "Microsoft Teams"
+      ],
+      "arch": {
+        "eyebrow": "Arquitetura",
+        "title": "Agentes próprios, padrões abertos.",
+        "body": "A Sigmaward coleta telemetria com seus próprios agentes (Windows, Linux e macOS) e detecta no padrão aberto Sigma. Sem lock-in: seus dados, regras e integrações continuam portáveis.",
+        "points": [
+          "Cloud gerenciada ou self-hosted",
+          "Escala horizontal por nós, preço previsível",
+          "Dados e regras em formatos abertos",
+          "API completa e webhooks"
+        ]
+      }
     },
     "solutions": {
       "badge": "Soluções",
       "heroTitle": "Uma plataforma, moldada ao seu tipo de operação.",
       "heroSub": "MSSP, blue team interno, gestão de risco ou conformidade — a Sigmaward entrega o ciclo completo de detecção e resposta para cada um.",
       "blocks": [
-        { "eyebrow": "Para MSSPs", "title": "Entregue segurança como serviço, em escala.", "body": "Opere dezenas de clientes de um só painel, com isolamento total de dados e faturamento por uso.", "bullets": ["Isolamento total por cliente com RLS no banco", "Portfólio cross-tenant consolidado", "Provisionamento e realm Keycloak por cliente", "Playbooks e regras reutilizáveis entre tenants"] },
-        { "eyebrow": "Blue teams", "title": "Do evento à resposta, sem trocar de ferramenta.", "body": "Detecção Sigma, investigação e contenção no mesmo lugar — o analista para de costurar ferramentas.", "bullets": ["Detecção Sigma-native sobre sua telemetria", "Casos com linha do tempo e cadeia de evidências", "Hunting workbench para caça guiada", "Contenção integrada: isolar host, bloquear IP"] },
-        { "eyebrow": "Gestão de risco", "title": "Priorize por risco, não por volume de alertas.", "body": "O risco se acumula por entidade e sobe à tona sozinho — o time foca no que importa.", "bullets": ["Risk-Based Alerting por entidade, com decaimento", "Correlação multi-estágio de eventos", "Detecção de anomalia por baseline estatística", "Entidades canônicas de ativo e identidade"] },
-        { "eyebrow": "Conformidade", "title": "Evidência pronta para auditoria, desde o dia um.", "body": "Trilha imutável, relatórios agendados e controles de acesso que o auditor entende.", "bullets": ["Trilha de auditoria à prova de adulteração (hash-chain HMAC)", "Relatórios agendados e export em PDF", "RBAC granular e SSO via Keycloak", "Controles para ISO 27001, SOC 2 e LGPD"] }
+        {
+          "eyebrow": "Para MSSPs",
+          "title": "Entregue segurança como serviço, em escala.",
+          "body": "Gerencie clientes em um console MSSP com isolamento por tenant, acesso por função e trilha de auditoria verificável.",
+          "bullets": [
+            "RLS, índice de eventos e realm por tenant",
+            "Backups criptografados e acesso de suporte auditado",
+            "Relatórios executivos, técnicos e de conformidade"
+          ]
+        },
+        {
+          "eyebrow": "Blue teams",
+          "title": "Do evento à resposta, sem trocar de ferramenta.",
+          "body": "Detecção Sigma, investigação e contenção no mesmo lugar — o analista para de costurar ferramentas.",
+          "bullets": [
+            "Casos, linha do tempo e SLAs",
+            "Grafo de investigação e threat hunting",
+            "Threat intelligence com MISP e watchlists",
+            "Isolamento de host e encerramento de processos"
+          ]
+        },
+        {
+          "eyebrow": "Gestão de risco",
+          "title": "Priorize por risco, não por volume de alertas.",
+          "body": "O risco se acumula por entidade e sobe à tona sozinho — o time foca no que importa.",
+          "bullets": [
+            "Catálogo SigmaHQ e estúdio de regras",
+            "UEBA e Risk-Based Alerting",
+            "Cobertura efetiva MITRE ATT&CK"
+          ]
+        },
+        {
+          "eyebrow": "Conformidade",
+          "title": "Rastreabilidade para apoiar sua auditoria.",
+          "body": "SSO e controle de acesso, segregação de tenants e auditoria com cadeia HMAC. Evidências para apoiar seu programa de conformidade, sem equivaler a uma certificação do produto.",
+          "bullets": [
+            "Auditoria verificável com cadeia HMAC",
+            "Relatórios de conformidade",
+            "SSO e controle de acesso por função"
+          ]
+        }
       ]
     },
     "pricing": {
       "badge": "Preços",
-      "heroTitle": "Preço previsível. Sem surpresa de ingestão.",
-      "heroSub": "Diferente do SIEM legado, a Sigmaward não cobra por volume de dados. Você paga por nó — e sabe a conta no fim do mês.",
-      "tiersHead": { "eyebrow": "Planos", "title": "Um plano para cada estágio da sua operação." },
+      "heroTitle": "Dimensione a plataforma para sua operação.",
+      "heroSub": "Converse com a equipe sobre endpoints, tenants, infraestrutura e requisitos de suporte. Condições comerciais sob consulta.",
+      "tiersHead": {
+        "eyebrow": "Planos",
+        "title": "Conte o que sua operação precisa."
+      },
       "tiers": [
-        { "name": "Team", "tagline": "Para o blue team interno.", "price": "Sob consulta", "featured": false, "features": ["Motor de detecção Sigma + 1.200+ regras", "Gestão de casos e observáveis", "Automação SOAR com playbooks", "Dashboards e relatórios", "SSO via Keycloak e RBAC"], "cta": "Falar com vendas" },
-        { "name": "MSSP", "tagline": "Para quem entrega segurança como serviço.", "price": "Sob consulta", "featured": true, "features": ["Tudo do Team, em modo multi-tenant", "Isolamento total por cliente (RLS)", "Portfólio cross-tenant consolidado", "Provisionamento e realm por cliente", "Faturamento por uso e por nó"], "cta": "Falar com vendas" },
-        { "name": "Enterprise", "tagline": "Self-hosted, no seu ambiente.", "price": "Sob consulta", "featured": false, "features": ["Deploy self-hosted (Helm/Kubernetes)", "TLS interno e hardening de produção", "Trilha de auditoria à prova de adulteração", "SSO corporativo e RBAC granular", "Suporte e SLA dedicados"], "cta": "Falar com vendas" }
+        {
+          "name": "Team",
+          "tagline": "Para o blue team interno.",
+          "price": "Sob consulta",
+          "featured": false,
+          "features": [
+            "Detecção com contexto, não apenas volume.",
+            "Siga a evidência. Preserve a história.",
+            "Automação com controle do analista.",
+            "Saúde da infraestrutura. Contexto de segurança.",
+            "IA para apoiar a investigação."
+          ],
+          "cta": "Falar com vendas"
+        },
+        {
+          "name": "MSSP",
+          "tagline": "Para quem entrega segurança como serviço.",
+          "price": "Sob consulta",
+          "featured": true,
+          "features": [
+            "RLS, índice de eventos e realm por tenant",
+            "Backups criptografados e acesso de suporte auditado",
+            "Relatórios executivos, técnicos e de conformidade"
+          ],
+          "cta": "Falar com vendas"
+        },
+        {
+          "name": "Enterprise",
+          "tagline": "Self-hosted, no seu ambiente.",
+          "price": "Sob consulta",
+          "featured": false,
+          "features": [
+            "Telemetria normalizada em ECS",
+            "Buffer local para falhas de conexão",
+            "Atualizações verificadas com assinatura",
+            "RLS, índice de eventos e realm por tenant",
+            "Backups criptografados e acesso de suporte auditado"
+          ],
+          "cta": "Falar com vendas"
+        }
       ],
-      "note": "Sem cobrança por volume de ingestão. Escala horizontal por nós, com preço previsível.",
-      "faqHead": { "eyebrow": "Dúvidas", "title": "Perguntas frequentes." },
+      "note": "Os cenários abaixo orientam a conversa comercial; não representam pacotes ou SLAs contratados.",
+      "faqHead": {
+        "eyebrow": "Dúvidas",
+        "title": "Perguntas frequentes."
+      },
       "faq": [
-        { "q": "Vocês cobram por volume de dados?", "a": "Não. O preço é por nó — o volume de eventos não muda a sua conta." },
-        { "q": "Posso rodar self-hosted?", "a": "Sim. O plano Enterprise roda no seu ambiente via Helm/Kubernetes, com os mesmos recursos." },
-        { "q": "Como funciona para MSSP?", "a": "Você opera múltiplos clientes isolados num só painel e fatura por uso e por nó." },
-        { "q": "Existe ambiente de avaliação?", "a": "Sim. Fale com o nosso time para uma demo guiada e um ambiente de teste." }
+        {
+          "q": "Como é definida a proposta?",
+          "a": "Converse com a equipe sobre endpoints, tenants, infraestrutura e requisitos de suporte. Condições comerciais sob consulta."
+        },
+        {
+          "q": "Há suporte a múltiplos clientes?",
+          "a": "Gerencie clientes em um console MSSP com isolamento por tenant, acesso por função e trilha de auditoria verificável."
+        },
+        {
+          "q": "Quais sistemas o agente suporta?",
+          "a": "Windows, Linux e macOS. Inventário, eventos de segurança e métricas de infraestrutura em um agente com entrega durável, identidade autenticada e atualizações assinadas. Os coletores disponíveis variam por sistema operacional."
+        }
       ]
     },
     "resources": {
       "badge": "Recursos",
       "heroTitle": "Aprenda, implante e opere com a Sigmaward.",
       "heroSub": "Documentação, biblioteca de regras e materiais para tirar o máximo da plataforma.",
-      "cardsHead": { "eyebrow": "Materiais", "title": "Tudo para começar." },
+      "cardsHead": {
+        "eyebrow": "Materiais",
+        "title": "Tudo para começar."
+      },
       "cards": [
-        { "icon": "shield-check", "title": "Biblioteca de regras Sigma", "desc": "A Sigmaward já vem com mais de mil regras da comunidade SigmaHQ — e você adiciona as suas.", "cta": "Ver o SigmaHQ", "href": "https://github.com/SigmaHQ/sigma", "external": true },
-        { "icon": "box", "title": "Agente Sigmaward", "desc": "Telemetria coletada pelos agentes próprios da Sigmaward — Windows, Linux e macOS.", "cta": "Conheça a plataforma", "href": "/platform/", "external": false },
-        { "icon": "grid", "title": "Ver a plataforma", "desc": "Um tour pelo ciclo completo — detecção, casos e automação.", "cta": "Ver o produto", "href": "/platform/", "external": false },
-        { "icon": "folder", "title": "Documentação", "desc": "Guias de instalação, arquitetura e operação da plataforma.", "cta": "Em breve", "href": "", "external": false },
-        { "icon": "bar-chart", "title": "Blog & novidades", "desc": "Boas práticas de detecção, casos de uso e novidades do produto.", "cta": "Em breve", "href": "", "external": false },
-        { "icon": "dot-circle", "title": "Status", "desc": "Disponibilidade e incidentes da plataforma gerenciada.", "cta": "Em breve", "href": "", "external": false }
+        {
+          "icon": "shield-check",
+          "title": "Biblioteca de regras Sigma",
+          "desc": "Importe e sincronize regras da comunidade SigmaHQ, além das suas regras customizadas.",
+          "cta": "Ver o SigmaHQ",
+          "href": "https://github.com/SigmaHQ/sigma",
+          "external": true
+        },
+        {
+          "icon": "box",
+          "title": "Agente Sigmaward",
+          "desc": "Telemetria coletada pelos agentes próprios da Sigmaward — Windows, Linux e macOS.",
+          "cta": "Conheça a plataforma",
+          "href": "/platform/",
+          "external": false
+        },
+        {
+          "icon": "grid",
+          "title": "Ver a plataforma",
+          "desc": "Um tour pelo ciclo completo — detecção, casos e automação.",
+          "cta": "Ver o produto",
+          "href": "/platform/",
+          "external": false
+        }
       ]
     },
     "company": {
       "badge": "Empresa",
-      "heroTitle": "Segurança de nível enterprise não deveria custar uma fortuna.",
-      "heroSub": "A Sigmaward nasceu para dar a times de todos os tamanhos um SOC moderno — Sigma-native, aberto e acessível.",
-      "missionHead": { "eyebrow": "Missão", "title": "Por que existimos." },
-      "missionBody": "O SIEM legado prendeu a detecção em formatos proprietários, preços por volume e implantações de meses. Construímos a Sigmaward sobre uma fundação aberta e o padrão Sigma para devolver ao time de segurança o controle: detecção que você entende, dados que continuam seus e um preço que você prevê.",
-      "valuesHead": { "eyebrow": "Princípios", "title": "No que acreditamos." },
+      "heroTitle": "Tecnologia para quem opera segurança.",
+      "heroSub": "Um produto da Bocchi Company. Detecção Sigma, investigação, resposta e saúde dos endpoints no mesmo ambiente. Do primeiro sinal à decisão do analista, mantenha o contexto.",
+      "missionHead": {
+        "eyebrow": "Missão",
+        "title": "Por que existimos."
+      },
+      "missionBody": "Conecte o trabalho do SOC à realidade da infraestrutura. O agente Sigmaward reúne telemetria de segurança e saúde dos ativos para alimentar detecções, investigações e ações.",
+      "valuesHead": {
+        "eyebrow": "Princípios",
+        "title": "No que acreditamos."
+      },
       "values": [
-        { "icon": "git-branch", "title": "Aberto por princípio", "desc": "Fundação open-source e padrões abertos. Sem lock-in — seus dados e regras são seus." },
-        { "icon": "trending-up", "title": "Acessível de verdade", "desc": "Preço previsível por nó, não por volume. Segurança séria ao alcance de times menores." },
-        { "icon": "target", "title": "Foco no analista", "desc": "Menos triagem manual, mais caça à ameaça. A plataforma trabalha para quem opera." }
+        {
+          "icon": "git-branch",
+          "title": "Padrões abertos",
+          "desc": "Produto comercial com regras Sigma e telemetria ECS, apoiado em padrões abertos."
+        },
+        {
+          "icon": "trending-up",
+          "title": "Contexto compartilhado",
+          "desc": "Conecte o trabalho do SOC à realidade da infraestrutura. O agente Sigmaward reúne telemetria de segurança e saúde dos ativos para alimentar detecções, investigações e ações."
+        },
+        {
+          "icon": "target",
+          "title": "Foco no analista",
+          "desc": "Menos triagem manual, mais caça à ameaça. A plataforma trabalha para quem opera."
+        }
       ],
-      "contactHead": { "eyebrow": "Contato", "title": "Vamos conversar." },
+      "contactHead": {
+        "eyebrow": "Contato",
+        "title": "Vamos conversar."
+      },
       "contactBody": "Quer ver a Sigmaward no seu ambiente ou tirar dúvidas? Fale com o nosso time.",
       "contactCta": "Falar com vendas"
     },
@@ -178,173 +560,690 @@
       "noAccountTitle": "Ainda não tem acesso?",
       "noAccountBody": "Fale com o nosso time para uma demo ou um ambiente de avaliação.",
       "noAccountCta": "Falar com vendas"
+    },
+    "product": {
+      "eyebrow": "Segurança e operação, conectadas",
+      "title": "Toda a operação.\nUma visão de segurança.",
+      "sub": "Detecção Sigma, investigação, resposta e saúde dos endpoints no mesmo ambiente.",
+      "primary": "Conheça a plataforma",
+      "secondary": "Conversar com a equipe",
+      "note": "SIEM / SOAR / EDR / NOC / IA assistiva",
+      "overviewLabel": "Uma plataforma, contexto compartilhado",
+      "overviewTitle": "Menos distância entre o sinal e a resposta.",
+      "overviewBody": "Conecte o trabalho do SOC à realidade da infraestrutura. O agente Sigmaward reúne telemetria de segurança e saúde dos ativos para alimentar detecções, investigações e ações.",
+      "captureNote": "Interface real. Identificadores anonimizados.",
+      "galleryLabel": "Dentro do Sigmaward",
+      "galleryTitle": "O contexto acompanha cada investigação.",
+      "galleryBody": "Explore as telas de detecção, automação e gestão de casos. As imagens abrem em tamanho original.",
+      "gallery": [
+        {
+          "title": "Visão operacional",
+          "desc": "Alertas, casos e cobertura em um ponto de partida.",
+          "src": "watchfloor.png"
+        },
+        {
+          "title": "Engenharia de detecção",
+          "desc": "Regras Sigma e contexto para investigar o sinal.",
+          "src": "detections.png"
+        },
+        {
+          "title": "Resposta orquestrada",
+          "desc": "Playbooks para organizar as etapas de resposta.",
+          "src": "playbooks.png"
+        },
+        {
+          "title": "Investigação de casos",
+          "desc": "Evidências e linha do tempo para acompanhar decisões.",
+          "src": "case-detail-timeline.png"
+        }
+      ],
+      "features": [
+        {
+          "id": "detection",
+          "tag": "01 / DETECTAR",
+          "title": "Detecção com contexto, não apenas volume.",
+          "desc": "Regras Sigma, correlação multiestágio e análise comportamental ajudam a priorizar sinais. O risco por entidade conecta eventos que isoladamente poderiam passar despercebidos.",
+          "details": [
+            "Catálogo SigmaHQ e estúdio de regras",
+            "UEBA e Risk-Based Alerting",
+            "Cobertura efetiva MITRE ATT&CK"
+          ]
+        },
+        {
+          "id": "investigation",
+          "tag": "02 / INVESTIGAR",
+          "title": "Siga a evidência. Preserve a história.",
+          "desc": "Conecte alertas a casos, explore relações no grafo e organize hunting por hipótese. Observáveis, responsáveis e prazos permanecem no contexto da investigação.",
+          "details": [
+            "Casos, linha do tempo e SLAs",
+            "Grafo de investigação e threat hunting",
+            "Threat intelligence com MISP e watchlists"
+          ]
+        },
+        {
+          "id": "response",
+          "tag": "03 / RESPONDER",
+          "title": "Automação com controle do analista.",
+          "desc": "Organize a resposta com gatilhos, condições e passos ordenados. A aprovação humana dá controle sobre ações críticas, como isolamento de host e coleta de triagem pelo agente.",
+          "details": [
+            "Playbooks com condições e aprovação humana",
+            "Isolamento de host e encerramento de processos",
+            "Coleta de triagem forense no endpoint"
+          ]
+        },
+        {
+          "id": "monitoring",
+          "tag": "04 / OBSERVAR",
+          "title": "Saúde da infraestrutura. Contexto de segurança.",
+          "desc": "Relacione CPU, memória, disco e rede com alertas e casos do mesmo ativo. Políticas de monitoramento acompanham falhas e recuperação.",
+          "details": [
+            "Monitoramento NOC integrado ao SOC",
+            "Limiares, tempo de sustentação e recuperação",
+            "Dashboards pessoais com widgets e séries históricas"
+          ]
+        },
+        {
+          "id": "ai",
+          "tag": "05 / ASSISTIR",
+          "title": "IA para apoiar a investigação.",
+          "desc": "O copiloto reúne contexto operacional do tenant e assistência para investigação e engenharia de detecção. A interface também oferece ações para criar casos e regras, além de gerar consultas Lucene.",
+          "details": [
+            "Chat contextual para operações SOC",
+            "Criação, explicação e ajuste de regras Sigma",
+            "Anthropic, OpenAI, Gemini e APIs compatíveis"
+          ]
+        },
+        {
+          "id": "governance",
+          "tag": "06 / GOVERNAR",
+          "title": "Operações separadas. Gestão coordenada.",
+          "desc": "Gerencie clientes em um console MSSP com isolamento por tenant, acesso por função e trilha de auditoria verificável.",
+          "details": [
+            "RLS, índice de eventos e realm por tenant",
+            "Backups criptografados e acesso de suporte auditado",
+            "Relatórios executivos, técnicos e de conformidade"
+          ]
+        }
+      ],
+      "agentLabel": "Agente Sigmaward",
+      "agentTitle": "Um sensor próprio. Segurança e telemetria juntas.",
+      "agentBody": "Windows, Linux e macOS. Inventário, eventos de segurança e métricas de infraestrutura em um agente com entrega durável, identidade autenticada e atualizações assinadas. Os coletores disponíveis variam por sistema operacional.",
+      "agentFacts": [
+        "Telemetria normalizada em ECS",
+        "Buffer local para falhas de conexão",
+        "Atualizações verificadas com assinatura"
+      ],
+      "governanceLabel": "Confiança por arquitetura",
+      "governanceTitle": "Controles que você pode avaliar.",
+      "governanceBody": "SSO e controle de acesso, segregação de tenants e auditoria com cadeia HMAC. Evidências para apoiar seu programa de conformidade, sem equivaler a uma certificação do produto.",
+      "companyLink": "Um produto da Bocchi Company",
+      "openImage": "Abrir captura em tamanho original",
+      "skip": "Pular para o conteúdo",
+      "fleetCaption": "Gestão da frota. Interface real com identificadores anonimizados.",
+      "workflowTitle": "Do sinal à resposta, com contexto.",
+      "workflow": [
+        {
+          "title": "Detecção Sigma",
+          "body": "Aplique regras Sigma e correlacione sinais da telemetria dos seus endpoints."
+        },
+        {
+          "title": "Investigação",
+          "body": "Conecte alertas, evidências e decisões em um só lugar para orientar a resposta da equipe."
+        }
+      ],
+      "navigation": "Navegação principal",
+      "footerNavigation": "Navegação do rodapé",
+      "menu": "Menu",
+      "closeMenu": "Fechar"
     }
   },
   "en": {
-    "nav": { "platform": "Platform", "solutions": "Solutions", "pricing": "Pricing", "resources": "Resources", "company": "Company", "login": "Log in", "cta": "See the product" },
+    "nav": {
+      "platform": "Platform",
+      "solutions": "Solutions",
+      "pricing": "Pricing",
+      "resources": "Resources",
+      "company": "Company",
+      "login": "Log in",
+      "cta": "See the product"
+    },
     "hero": {
-      "badge": "SIEM · SOAR · SOC — own agents, Sigma-native",
-      "title": "The modern SOC, without the legacy SIEM weight.",
-      "sub": "Sigmaward turns Sigma rules into detections, promotes findings into cases and automates response — at a fraction of the cost and complexity of Splunk, QRadar or Microsoft Sentinel.",
-      "ctaPrimary": "See the product",
-      "ctaSecondary": "Talk to an expert",
-      "note": "Sigma-native · Multi-tenant for MSSPs · Open foundation"
+      "badge": "Security and operations, connected",
+      "title": "Every operation. One security perspective.",
+      "sub": "Sigma detection, investigation, response and endpoint health in one environment.",
+      "ctaPrimary": "Explore the platform",
+      "ctaSecondary": "Talk to the team",
+      "note": "SIEM / SOAR / EDR / NOC / ASSISTIVE AI"
     },
     "trust": {
       "label": "Security teams and MSSPs run their day-to-day on Sigmaward",
       "stats": [
-        { "v": "4.2M", "l": "events analyzed/day" },
-        { "v": "−63%", "l": "average MTTR" },
-        { "v": "1,284", "l": "active Sigma rules" },
-        { "v": "24/7", "l": "continuous watch" }
+        {
+          "v": "4.2M",
+          "l": "events analyzed/day"
+        },
+        {
+          "v": "−63%",
+          "l": "average MTTR"
+        },
+        {
+          "v": "1,284",
+          "l": "active Sigma rules"
+        },
+        {
+          "v": "24/7",
+          "l": "continuous watch"
+        }
       ],
       "disclaimer": "Illustrative logos and metrics for demonstration purposes.",
-      "logos": ["NORTHWIND", "VERTEX", "MERIDIAN", "QUANTLY", "AONDA", "HELIX"]
+      "logos": [
+        "NORTHWIND",
+        "VERTEX",
+        "MERIDIAN",
+        "QUANTLY",
+        "AONDA",
+        "HELIX"
+      ]
     },
     "problem": {
       "eyebrow": "The problem",
       "title": "Legacy SIEM is expensive, slow to deliver value, and buries the analyst.",
       "body": "Unpredictable volume-based licensing, months of deployment, proprietary rules and automation sold separately. The analyst lives in triage — not in the threat hunt.",
       "points": [
-        { "t": "Cost that explodes", "d": "Unpredictable per-ingestion pricing at month's end." },
-        { "t": "Slow to deliver", "d": "Weeks before the first genuinely useful detection." },
-        { "t": "Vendor lock-in", "d": "Rules and data trapped in proprietary formats." }
+        {
+          "t": "Cost that explodes",
+          "d": "Unpredictable per-ingestion pricing at month's end."
+        },
+        {
+          "t": "Slow to deliver",
+          "d": "Weeks before the first genuinely useful detection."
+        },
+        {
+          "t": "Vendor lock-in",
+          "d": "Rules and data trapped in proprietary formats."
+        }
       ]
     },
     "pillars": [
-      { "eyebrow": "Detection", "title": "Sigma rules become real-time detection.", "body": "Import any Sigma rule and Sigmaward maps it onto your live telemetry — no rewriting proprietary queries.", "bullets": ["Automatic Sigma → query conversion", "1,200+ rules out of the box, or bring your own", "Findings with MITRE ATT&CK context"] },
-      { "eyebrow": "Automation", "title": "Automated response with visual playbooks.", "body": "Promote, enrich and respond without leaving the platform. Playbooks connect detection to action in minutes.", "bullets": ["Visual, no-code playbooks", "Automatic IOC enrichment", "Built-in containment actions"] },
-      { "eyebrow": "Cases", "title": "From finding to investigable case, in one click.", "body": "Sigmaward groups correlated findings into cases with a timeline, evidence and owners.", "bullets": ["Automatic finding promotion", "Timeline and chain of evidence", "Per-case collaboration and SLA"] },
-      { "eyebrow": "Threat Intel", "title": "IOCs extracted and correlated on their own.", "body": "Hashes, IPs, domains and URLs are extracted, deduplicated and cross-checked against threat intelligence.", "bullets": ["Automatic IOC extraction", "Threat-intel correlation", "Watchlists and proactive blocking"] }
+      {
+        "eyebrow": "Detection",
+        "title": "Sigma rules become real-time detection.",
+        "body": "Import any Sigma rule and Sigmaward maps it onto your live telemetry — no rewriting proprietary queries.",
+        "bullets": [
+          "Automatic Sigma → query conversion",
+          "1,200+ rules out of the box, or bring your own",
+          "Findings with MITRE ATT&CK context"
+        ]
+      },
+      {
+        "eyebrow": "Automation",
+        "title": "Automated response with visual playbooks.",
+        "body": "Promote, enrich and respond without leaving the platform. Playbooks connect detection to action in minutes.",
+        "bullets": [
+          "Visual, no-code playbooks",
+          "Automatic IOC enrichment",
+          "Built-in containment actions"
+        ]
+      },
+      {
+        "eyebrow": "Cases",
+        "title": "From finding to investigable case, in one click.",
+        "body": "Sigmaward groups correlated findings into cases with a timeline, evidence and owners.",
+        "bullets": [
+          "Automatic finding promotion",
+          "Timeline and chain of evidence",
+          "Per-case collaboration and SLA"
+        ]
+      },
+      {
+        "eyebrow": "Threat Intel",
+        "title": "IOCs extracted and correlated on their own.",
+        "body": "Hashes, IPs, domains and URLs are extracted, deduplicated and cross-checked against threat intelligence.",
+        "bullets": [
+          "Automatic IOC extraction",
+          "Threat-intel correlation",
+          "Watchlists and proactive blocking"
+        ]
+      }
     ],
-    "capsHead": { "eyebrow": "Complete platform", "title": "Everything a modern SOC needs.", "sub": "From detection to response, in one place — no modules sold separately." },
+    "capsHead": {
+      "eyebrow": "Complete platform",
+      "title": "Everything a modern SOC needs.",
+      "sub": "From detection to response, in one place — no modules sold separately."
+    },
     "caps": [
-      { "t": "Multi-tenant for MSSPs", "d": "Isolate clients, manage them all in one pane and bill by usage. Built for managed operations." },
-      { "t": "Sigmaward multi-OS agent", "d": "Telemetry collected by Sigmaward's own agents — Windows, Linux and macOS." },
-      { "t": "Dashboards & reporting", "d": "Executive and operational views, with audit-ready reports." },
-      { "t": "Compliance", "d": "Controls and evidence for ISO 27001, SOC 2 and LGPD from day one." },
-      { "t": "Native integrations", "d": "Connect cloud, identity, endpoints and SaaS in minutes." },
-      { "t": "Scale without surprises", "d": "Predictable per-node pricing — not per ingestion volume." }
+      {
+        "t": "Multi-tenant for MSSPs",
+        "d": "Isolate clients, manage them all in one pane and bill by usage. Built for managed operations."
+      },
+      {
+        "t": "Sigmaward multi-OS agent",
+        "d": "Telemetry collected by Sigmaward's own agents — Windows, Linux and macOS."
+      },
+      {
+        "t": "Dashboards & reporting",
+        "d": "Executive and operational views, with audit-ready reports."
+      },
+      {
+        "t": "Compliance",
+        "d": "Controls and evidence for ISO 27001, SOC 2 and LGPD from day one."
+      },
+      {
+        "t": "Native integrations",
+        "d": "Connect cloud, identity, endpoints and SaaS in minutes."
+      },
+      {
+        "t": "Scale without surprises",
+        "d": "Predictable per-node pricing — not per ingestion volume."
+      }
     ],
     "compare": {
-      "eyebrow": "Why switch", "title": "Sigmaward vs. legacy SIEM", "colA": "Sigmaward", "colB": "Splunk · QRadar · Sentinel",
+      "eyebrow": "Why switch",
+      "title": "Sigmaward vs. legacy SIEM",
+      "colA": "Sigmaward",
+      "colB": "Splunk · QRadar · Sentinel",
       "rows": [
-        { "f": "Time to first detection", "a": "Hours", "b": "Weeks to months" },
-        { "f": "Pricing model", "a": "Per node, predictable", "b": "Per ingestion volume" },
-        { "f": "Native Sigma rules", "a": true, "b": false },
-        { "f": "SOAR automation included", "a": true, "b": "Separate module" },
-        { "f": "Multi-tenant for MSSP", "a": true, "b": "Limited / costly" },
-        { "f": "No vendor lock-in", "a": true, "b": false },
-        { "f": "Deployment", "a": "Cloud or self-hosted", "b": "Complex, lengthy" }
+        {
+          "f": "Time to first detection",
+          "a": "Hours",
+          "b": "Weeks to months"
+        },
+        {
+          "f": "Pricing model",
+          "a": "Per node, predictable",
+          "b": "Per ingestion volume"
+        },
+        {
+          "f": "Native Sigma rules",
+          "a": true,
+          "b": false
+        },
+        {
+          "f": "SOAR automation included",
+          "a": true,
+          "b": "Separate module"
+        },
+        {
+          "f": "Multi-tenant for MSSP",
+          "a": true,
+          "b": "Limited / costly"
+        },
+        {
+          "f": "No vendor lock-in",
+          "a": true,
+          "b": false
+        },
+        {
+          "f": "Deployment",
+          "a": "Cloud or self-hosted",
+          "b": "Complex, lengthy"
+        }
       ]
     },
     "mssp": {
-      "eyebrow": "For MSSPs", "title": "Run dozens of clients from one place.",
+      "eyebrow": "For MSSPs",
+      "title": "Run dozens of clients from one place.",
       "body": "Per-tenant isolation, a consolidated view, reusable playbooks and usage-based billing. Sigmaward is designed for those who deliver security as a service.",
-      "bullets": ["Full per-client data isolation", "Consolidated multi-tenant pane", "Usage- and node-based billing", "Playbooks and rules reused across clients"]
+      "bullets": [
+        "Full per-client data isolation",
+        "Consolidated multi-tenant pane",
+        "Usage- and node-based billing",
+        "Playbooks and rules reused across clients"
+      ]
     },
     "compliance": {
-      "eyebrow": "Trust", "title": "Security and compliance at the core.",
+      "eyebrow": "Trust",
+      "title": "Security and compliance at the core.",
       "body": "End-to-end encryption, granular RBAC, a complete audit trail and evidence ready for your compliance program.",
-      "badges": ["ISO 27001", "SOC 2 Type II", "LGPD", "GDPR"]
+      "badges": [
+        "ISO 27001",
+        "SOC 2 Type II",
+        "LGPD",
+        "GDPR"
+      ]
     },
-    "quote": { "text": "We migrated off a legacy SIEM and cut our response time in half in the very first week.", "author": "CISO", "role": "Mid-sized enterprise", "note": "Illustrative testimonial" },
-    "cta": { "title": "See Sigmaward in action.", "sub": "A guided tour of the platform — detection, cases and automation in minutes.", "primary": "See the product", "secondary": "Talk to sales" },
+    "quote": {
+      "text": "We migrated off a legacy SIEM and cut our response time in half in the very first week.",
+      "author": "CISO",
+      "role": "Mid-sized enterprise",
+      "note": "Illustrative testimonial"
+    },
+    "cta": {
+      "title": "Explore Sigmaward in your context.",
+      "sub": "Discuss your operation, assets and the workflows your team needs to connect.",
+      "primary": "See the product",
+      "secondary": "Talk to sales"
+    },
     "footer": {
-      "tagline": "The Sigma-rule-powered guardian for your SOC.",
+      "tagline": "A Bocchi Company product",
       "rights": "All rights reserved.",
-      "built": "SIEM · SOAR · SOC — own agents, Sigma-native",
+      "built": "SIEM / SOAR / EDR / NOC / ASSISTIVE AI",
       "cols": [
-        { "title": "Product", "links": ["Platform", "Sigma detection", "SOAR automation", "Case management", "Pricing"] },
-        { "title": "Solutions", "links": ["For MSSPs", "Blue teams", "Risk management", "Compliance"] },
-        { "title": "Resources", "links": ["Documentation", "Blog", "Rule library", "Status"] },
-        { "title": "Company", "links": ["About", "Careers", "Contact", "Security"] }
+        {
+          "title": "Product",
+          "links": [
+            "Platform",
+            "Sigma detection",
+            "SOAR automation",
+            "Case management",
+            "Pricing"
+          ]
+        },
+        {
+          "title": "Solutions",
+          "links": [
+            "For MSSPs",
+            "Blue teams",
+            "Risk management",
+            "Compliance"
+          ]
+        },
+        {
+          "title": "Resources",
+          "links": [
+            "Documentation",
+            "Blog",
+            "Rule library",
+            "Status"
+          ]
+        },
+        {
+          "title": "Company",
+          "links": [
+            "About",
+            "Careers",
+            "Contact",
+            "Security"
+          ]
+        }
       ]
     },
     "platform": {
       "badge": "The platform",
       "heroTitle": "One platform. The entire detection-and-response cycle.",
-      "heroSub": "From telemetry ingestion to automated containment — Sigmaward unifies SIEM, SOAR and SOC management on an open foundation.",
-      "ctaPrimary": "See a demo", "ctaSecondary": "Read the docs",
-      "pipelineHead": { "eyebrow": "How it works", "title": "From raw event to resolved case.", "sub": "One continuous pipeline — no disconnected tools stitched together by hand." },
+      "heroSub": "Sigma detection, investigation, response and endpoint health in one environment. Keep the context from the first signal to the analyst’s decision.",
+      "ctaPrimary": "See a demo",
+      "ctaSecondary": "Read the docs",
+      "pipelineHead": {
+        "eyebrow": "How it works",
+        "title": "From raw event to resolved case.",
+        "sub": "One continuous pipeline — no disconnected tools stitched together by hand."
+      },
       "pipeline": [
-        { "n": "01", "title": "Sources", "desc": "Endpoints, cloud, identity and network send telemetry." },
-        { "n": "02", "title": "Sigmaward agent", "desc": "Collects, normalizes and enriches events at the edge." },
-        { "n": "03", "title": "Sigma engine", "desc": "Sigma rules become queries and evaluate everything in real time." },
-        { "n": "04", "title": "Findings", "desc": "Detections with MITRE ATT&CK context and severity." },
-        { "n": "05", "title": "Cases", "desc": "Correlated findings become investigable cases." },
-        { "n": "06", "title": "Response", "desc": "Playbooks enrich, contain and notify — automatically." }
+        {
+          "n": "01",
+          "title": "Sources",
+          "desc": "Endpoints, cloud, identity and network send telemetry."
+        },
+        {
+          "n": "02",
+          "title": "Sigmaward agent",
+          "desc": "Collects, normalizes and enriches events at the edge."
+        },
+        {
+          "n": "03",
+          "title": "Sigma engine",
+          "desc": "Sigma rules become queries and evaluate everything in real time."
+        },
+        {
+          "n": "04",
+          "title": "Findings",
+          "desc": "Detections with MITRE ATT&CK context and severity."
+        },
+        {
+          "n": "05",
+          "title": "Cases",
+          "desc": "Correlated findings become investigable cases."
+        },
+        {
+          "n": "06",
+          "title": "Response",
+          "desc": "Playbooks enrich, contain and notify — automatically."
+        }
       ],
-      "modulesHead": { "eyebrow": "Modules", "title": "Everything included, nothing sold separately." },
+      "modulesHead": {
+        "eyebrow": "Modules",
+        "title": "Bring the signal closer to the response."
+      },
       "modules": [
-        { "title": "Sigma detection engine", "desc": "A 1,200+ rule library, a native editor and automatic conversion to queries." },
-        { "title": "SOAR automation", "desc": "Visual playbooks with enrichment, decisioning and containment actions." },
-        { "title": "Case management", "desc": "Correlation, timeline, chain of evidence, SLA and collaboration." },
-        { "title": "Threat intelligence", "desc": "IOC extraction, deduplication, watchlists and feed correlation." },
-        { "title": "Dashboards & reporting", "desc": "Executive and operational views, with audit-ready exports." },
-        { "title": "Multi-tenant", "desc": "Per-client isolation, consolidated management and usage-based billing." }
+        {
+          "title": "Detection with context, beyond volume.",
+          "desc": "Sigma rules, multistage correlation and behavioral analytics help prioritize signals. Entity risk connects events that might otherwise go unnoticed."
+        },
+        {
+          "title": "Follow the evidence. Preserve the history.",
+          "desc": "Link alerts to cases, explore relationships in the graph and organize hypothesis-driven hunting. Observables, owners and deadlines stay with the investigation."
+        },
+        {
+          "title": "Automation with analyst control.",
+          "desc": "Organize response through triggers, conditions and ordered steps. Human approval provides control over critical actions such as host isolation and agent-based triage collection."
+        },
+        {
+          "title": "Infrastructure health. Security context.",
+          "desc": "Connect CPU, memory, disk and network metrics to alerts and cases on the same asset. Monitoring policies track problems and recovery."
+        },
+        {
+          "title": "AI to support the investigation.",
+          "desc": "The copilot brings together tenant operational context and assistance for investigation and detection engineering. The interface also offers actions to create cases and rules, and to generate Lucene queries."
+        },
+        {
+          "title": "Separate operations. Coordinated management.",
+          "desc": "Manage customers through an MSSP console with tenant isolation, role-based access and a verifiable audit trail."
+        }
       ],
-      "integrationsHead": { "eyebrow": "Integrations", "title": "Connects with your entire stack.", "sub": "Cloud, identity, endpoints and network — in minutes, not months." },
-      "integrations": ["AWS", "Microsoft Azure", "Google Cloud", "Microsoft 365", "Okta", "CrowdStrike", "Palo Alto", "Cloudflare", "Linux", "Windows", "Kubernetes", "Elastic"],
-      "arch": { "eyebrow": "Architecture", "title": "Own agents, open standards.", "body": "Sigmaward collects telemetry with its own agents (Windows, Linux and macOS) and detects with the open Sigma standard. No lock-in: your data, rules and integrations stay portable.", "points": ["Managed cloud or self-hosted", "Horizontal scale per node, predictable pricing", "Data and rules in open formats", "Full API and webhooks"] }
+      "integrationsHead": {
+        "eyebrow": "Integrations",
+        "title": "Integrations with clear roles.",
+        "sub": "MISP for threat intelligence, Keycloak for identity and notification channels. Telemetry comes from the native agent."
+      },
+      "integrations": [
+        "MISP",
+        "Keycloak",
+        "E-mail",
+        "Webhooks",
+        "Slack",
+        "Discord",
+        "Microsoft Teams"
+      ],
+      "arch": {
+        "eyebrow": "Architecture",
+        "title": "Own agents, open standards.",
+        "body": "Sigmaward collects telemetry with its own agents (Windows, Linux and macOS) and detects with the open Sigma standard. No lock-in: your data, rules and integrations stay portable.",
+        "points": [
+          "Managed cloud or self-hosted",
+          "Horizontal scale per node, predictable pricing",
+          "Data and rules in open formats",
+          "Full API and webhooks"
+        ]
+      }
     },
     "solutions": {
       "badge": "Solutions",
       "heroTitle": "One platform, shaped to how you operate.",
       "heroSub": "MSSP, in-house blue team, risk management or compliance — Sigmaward delivers the full detection-and-response cycle for each.",
       "blocks": [
-        { "eyebrow": "For MSSPs", "title": "Deliver security as a service, at scale.", "body": "Run dozens of clients from a single pane, with full data isolation and usage-based billing.", "bullets": ["Full per-client isolation with database RLS", "Consolidated cross-tenant portfolio", "Per-client provisioning and Keycloak realm", "Playbooks and rules reused across tenants"] },
-        { "eyebrow": "Blue teams", "title": "From event to response, without switching tools.", "body": "Sigma detection, investigation and containment in one place — the analyst stops stitching tools together.", "bullets": ["Sigma-native detection over your telemetry", "Cases with timeline and chain of evidence", "A hunting workbench for guided threat hunts", "Built-in containment: isolate host, block IP"] },
-        { "eyebrow": "Risk management", "title": "Prioritize by risk, not by alert volume.", "body": "Risk accumulates per entity and surfaces on its own — the team focuses on what matters.", "bullets": ["Per-entity Risk-Based Alerting with decay", "Multi-stage event correlation", "Statistical-baseline anomaly detection", "Canonical asset and identity entities"] },
-        { "eyebrow": "Compliance", "title": "Audit-ready evidence, from day one.", "body": "An immutable trail, scheduled reports and access controls your auditor understands.", "bullets": ["Tamper-evident audit trail (HMAC hash-chain)", "Scheduled reports and PDF export", "Granular RBAC and SSO via Keycloak", "Controls for ISO 27001, SOC 2 and LGPD"] }
+        {
+          "eyebrow": "For MSSPs",
+          "title": "Deliver security as a service, at scale.",
+          "body": "Manage customers through an MSSP console with tenant isolation, role-based access and a verifiable audit trail.",
+          "bullets": [
+            "RLS, event index and realm per tenant",
+            "Encrypted backups and audited support access",
+            "Executive, technical and compliance reports"
+          ]
+        },
+        {
+          "eyebrow": "Blue teams",
+          "title": "From event to response, without switching tools.",
+          "body": "Sigma detection, investigation and containment in one place — the analyst stops stitching tools together.",
+          "bullets": [
+            "Cases, timelines and SLAs",
+            "Investigation graph and threat hunting",
+            "MISP threat intelligence and watchlists",
+            "Host isolation and process termination"
+          ]
+        },
+        {
+          "eyebrow": "Risk management",
+          "title": "Prioritize by risk, not by alert volume.",
+          "body": "Risk accumulates per entity and surfaces on its own — the team focuses on what matters.",
+          "bullets": [
+            "SigmaHQ catalog and rule studio",
+            "UEBA and Risk-Based Alerting",
+            "Effective MITRE ATT&CK coverage"
+          ]
+        },
+        {
+          "eyebrow": "Compliance",
+          "title": "Traceability to support your audit.",
+          "body": "SSO and access controls, tenant separation and HMAC-chained auditing. Evidence to support your compliance program, not a product certification.",
+          "bullets": [
+            "Verifiable HMAC-chained auditing",
+            "Compliance reports",
+            "SSO and role-based access"
+          ]
+        }
       ]
     },
     "pricing": {
       "badge": "Pricing",
-      "heroTitle": "Predictable pricing. No ingestion surprises.",
-      "heroSub": "Unlike legacy SIEM, Sigmaward doesn't charge by data volume. You pay per node — and you know the bill at month's end.",
-      "tiersHead": { "eyebrow": "Plans", "title": "A plan for every stage of your operation." },
+      "heroTitle": "Scope the platform for your operation.",
+      "heroSub": "Discuss endpoints, tenants, infrastructure and support requirements with the team. Commercial terms are available on request.",
+      "tiersHead": {
+        "eyebrow": "Plans",
+        "title": "Tell us what your operation needs."
+      },
       "tiers": [
-        { "name": "Team", "tagline": "For the in-house blue team.", "price": "Custom", "featured": false, "features": ["Sigma detection engine + 1,200+ rules", "Case and observable management", "SOAR automation with playbooks", "Dashboards and reporting", "SSO via Keycloak and RBAC"], "cta": "Talk to sales" },
-        { "name": "MSSP", "tagline": "For those who deliver security as a service.", "price": "Custom", "featured": true, "features": ["Everything in Team, multi-tenant", "Full per-client isolation (RLS)", "Consolidated cross-tenant portfolio", "Per-client provisioning and realm", "Usage- and node-based billing"], "cta": "Talk to sales" },
-        { "name": "Enterprise", "tagline": "Self-hosted, in your environment.", "price": "Custom", "featured": false, "features": ["Self-hosted deploy (Helm/Kubernetes)", "Internal TLS and production hardening", "Tamper-evident audit trail", "Corporate SSO and granular RBAC", "Dedicated support and SLA"], "cta": "Talk to sales" }
+        {
+          "name": "Team",
+          "tagline": "For the in-house blue team.",
+          "price": "Custom",
+          "featured": false,
+          "features": [
+            "Detection with context, beyond volume.",
+            "Follow the evidence. Preserve the history.",
+            "Automation with analyst control.",
+            "Infrastructure health. Security context.",
+            "AI to support the investigation."
+          ],
+          "cta": "Talk to sales"
+        },
+        {
+          "name": "MSSP",
+          "tagline": "For those who deliver security as a service.",
+          "price": "Custom",
+          "featured": true,
+          "features": [
+            "RLS, event index and realm per tenant",
+            "Encrypted backups and audited support access",
+            "Executive, technical and compliance reports"
+          ],
+          "cta": "Talk to sales"
+        },
+        {
+          "name": "Enterprise",
+          "tagline": "Self-hosted, in your environment.",
+          "price": "Custom",
+          "featured": false,
+          "features": [
+            "ECS-normalized telemetry",
+            "Local buffering for connection failures",
+            "Cryptographically verified updates",
+            "RLS, event index and realm per tenant",
+            "Encrypted backups and audited support access"
+          ],
+          "cta": "Talk to sales"
+        }
       ],
-      "note": "No charge by ingestion volume. Horizontal scale per node, with predictable pricing.",
-      "faqHead": { "eyebrow": "Questions", "title": "Frequently asked." },
+      "note": "These scenarios guide the commercial discussion; they do not represent contracted packages or SLAs.",
+      "faqHead": {
+        "eyebrow": "Questions",
+        "title": "Frequently asked."
+      },
       "faq": [
-        { "q": "Do you charge by data volume?", "a": "No. Pricing is per node — event volume doesn't change your bill." },
-        { "q": "Can I run self-hosted?", "a": "Yes. The Enterprise plan runs in your environment via Helm/Kubernetes, with the same features." },
-        { "q": "How does it work for MSSPs?", "a": "You operate multiple isolated clients in one pane and bill by usage and by node." },
-        { "q": "Is there a trial environment?", "a": "Yes. Talk to our team for a guided demo and a trial environment." }
+        {
+          "q": "How is a proposal scoped?",
+          "a": "Discuss endpoints, tenants, infrastructure and support requirements with the team. Commercial terms are available on request."
+        },
+        {
+          "q": "Does the platform support multiple customers?",
+          "a": "Manage customers through an MSSP console with tenant isolation, role-based access and a verifiable audit trail."
+        },
+        {
+          "q": "Which operating systems does the agent support?",
+          "a": "Windows, Linux and macOS. Inventory, security events and infrastructure metrics in an agent with durable delivery, authenticated identity and signed updates. Available collectors vary by operating system."
+        }
       ]
     },
     "resources": {
       "badge": "Resources",
       "heroTitle": "Learn, deploy and operate with Sigmaward.",
       "heroSub": "Documentation, a rule library and materials to get the most out of the platform.",
-      "cardsHead": { "eyebrow": "Materials", "title": "Everything to get started." },
+      "cardsHead": {
+        "eyebrow": "Materials",
+        "title": "Everything to get started."
+      },
       "cards": [
-        { "icon": "shield-check", "title": "Sigma rule library", "desc": "Sigmaward ships with over a thousand SigmaHQ community rules — and you add your own.", "cta": "See SigmaHQ", "href": "https://github.com/SigmaHQ/sigma", "external": true },
-        { "icon": "box", "title": "Sigmaward agent", "desc": "Telemetry collected by Sigmaward's own agents — Windows, Linux and macOS.", "cta": "Explore the platform", "href": "/platform/", "external": false },
-        { "icon": "grid", "title": "See the platform", "desc": "A tour of the full cycle — detection, cases and automation.", "cta": "See the product", "href": "/platform/", "external": false },
-        { "icon": "folder", "title": "Documentation", "desc": "Installation, architecture and operations guides for the platform.", "cta": "Coming soon", "href": "", "external": false },
-        { "icon": "bar-chart", "title": "Blog & updates", "desc": "Detection best practices, use cases and product news.", "cta": "Coming soon", "href": "", "external": false },
-        { "icon": "dot-circle", "title": "Status", "desc": "Availability and incidents for the managed platform.", "cta": "Coming soon", "href": "", "external": false }
+        {
+          "icon": "shield-check",
+          "title": "Sigma rule library",
+          "desc": "Import and sync SigmaHQ community rules alongside your custom rules.",
+          "cta": "See SigmaHQ",
+          "href": "https://github.com/SigmaHQ/sigma",
+          "external": true
+        },
+        {
+          "icon": "box",
+          "title": "Sigmaward agent",
+          "desc": "Telemetry collected by Sigmaward's own agents — Windows, Linux and macOS.",
+          "cta": "Explore the platform",
+          "href": "/platform/",
+          "external": false
+        },
+        {
+          "icon": "grid",
+          "title": "See the platform",
+          "desc": "A tour of the full cycle — detection, cases and automation.",
+          "cta": "See the product",
+          "href": "/platform/",
+          "external": false
+        }
       ]
     },
     "company": {
       "badge": "Company",
-      "heroTitle": "Enterprise-grade security shouldn't cost a fortune.",
-      "heroSub": "Sigmaward was born to give teams of every size a modern SOC — Sigma-native, open and affordable.",
-      "missionHead": { "eyebrow": "Mission", "title": "Why we exist." },
-      "missionBody": "Legacy SIEM locked detection into proprietary formats, volume-based pricing and months-long deployments. We built Sigmaward on an open foundation and the Sigma standard to give the security team back control: detection you understand, data that stays yours and a price you can predict.",
-      "valuesHead": { "eyebrow": "Principles", "title": "What we believe." },
+      "heroTitle": "Technology for security operators.",
+      "heroSub": "A Bocchi Company product. Sigma detection, investigation, response and endpoint health in one environment. Keep the context from the first signal to the analyst’s decision.",
+      "missionHead": {
+        "eyebrow": "Mission",
+        "title": "Why we exist."
+      },
+      "missionBody": "Connect SOC workflows to infrastructure health. The Sigmaward agent collects security and operational telemetry to inform detections, investigations and actions.",
+      "valuesHead": {
+        "eyebrow": "Principles",
+        "title": "What we believe."
+      },
       "values": [
-        { "icon": "git-branch", "title": "Open by principle", "desc": "Open-source foundation and open standards. No lock-in — your data and rules are yours." },
-        { "icon": "trending-up", "title": "Genuinely affordable", "desc": "Predictable per-node pricing, not per volume. Serious security within reach of smaller teams." },
-        { "icon": "target", "title": "Analyst-focused", "desc": "Less manual triage, more threat hunting. The platform works for whoever operates it." }
+        {
+          "icon": "git-branch",
+          "title": "Open standards",
+          "desc": "A commercial product with Sigma rules and ECS telemetry, built on open standards."
+        },
+        {
+          "icon": "trending-up",
+          "title": "Shared context",
+          "desc": "Connect SOC workflows to infrastructure health. The Sigmaward agent collects security and operational telemetry to inform detections, investigations and actions."
+        },
+        {
+          "icon": "target",
+          "title": "Analyst-focused",
+          "desc": "Less manual triage, more threat hunting. The platform works for whoever operates it."
+        }
       ],
-      "contactHead": { "eyebrow": "Contact", "title": "Let's talk." },
+      "contactHead": {
+        "eyebrow": "Contact",
+        "title": "Let's talk."
+      },
       "contactBody": "Want to see Sigmaward in your environment or have questions? Talk to our team.",
       "contactCta": "Talk to sales"
     },
@@ -358,6 +1257,141 @@
       "noAccountTitle": "Don't have access yet?",
       "noAccountBody": "Talk to our team for a demo or a trial environment.",
       "noAccountCta": "Talk to sales"
+    },
+    "product": {
+      "eyebrow": "Security and operations, connected",
+      "title": "Every operation.\nOne security perspective.",
+      "sub": "Sigma detection, investigation, response and endpoint health in one environment.",
+      "primary": "Explore the platform",
+      "secondary": "Talk to the team",
+      "note": "SIEM / SOAR / EDR / NOC / ASSISTIVE AI",
+      "overviewLabel": "One platform, shared context",
+      "overviewTitle": "Bring the signal closer to the response.",
+      "overviewBody": "Connect SOC workflows to infrastructure health. The Sigmaward agent collects security and operational telemetry to inform detections, investigations and actions.",
+      "captureNote": "Actual interface. Identifiers anonymized.",
+      "galleryLabel": "Inside Sigmaward",
+      "galleryTitle": "Context follows every investigation.",
+      "galleryBody": "Explore detection, automation and case management. Open images at their original size.",
+      "gallery": [
+        {
+          "title": "Operational overview",
+          "desc": "Alerts, cases and coverage in one starting point.",
+          "src": "watchfloor.png"
+        },
+        {
+          "title": "Detection engineering",
+          "desc": "Sigma rules and the context behind each signal.",
+          "src": "detections.png"
+        },
+        {
+          "title": "Orchestrated response",
+          "desc": "Playbooks to organize response steps.",
+          "src": "playbooks.png"
+        },
+        {
+          "title": "Case investigation",
+          "desc": "Evidence and a timeline to track decisions.",
+          "src": "case-detail-timeline.png"
+        }
+      ],
+      "features": [
+        {
+          "id": "detection",
+          "tag": "01 / DETECT",
+          "title": "Detection with context, beyond volume.",
+          "desc": "Sigma rules, multistage correlation and behavioral analytics help prioritize signals. Entity risk connects events that might otherwise go unnoticed.",
+          "details": [
+            "SigmaHQ catalog and rule studio",
+            "UEBA and Risk-Based Alerting",
+            "Effective MITRE ATT&CK coverage"
+          ]
+        },
+        {
+          "id": "investigation",
+          "tag": "02 / INVESTIGATE",
+          "title": "Follow the evidence. Preserve the history.",
+          "desc": "Link alerts to cases, explore relationships in the graph and organize hypothesis-driven hunting. Observables, owners and deadlines stay with the investigation.",
+          "details": [
+            "Cases, timelines and SLAs",
+            "Investigation graph and threat hunting",
+            "MISP threat intelligence and watchlists"
+          ]
+        },
+        {
+          "id": "response",
+          "tag": "03 / RESPOND",
+          "title": "Automation with analyst control.",
+          "desc": "Organize response through triggers, conditions and ordered steps. Human approval provides control over critical actions such as host isolation and agent-based triage collection.",
+          "details": [
+            "Conditional playbooks and human approval",
+            "Host isolation and process termination",
+            "Endpoint forensic triage collection"
+          ]
+        },
+        {
+          "id": "monitoring",
+          "tag": "04 / OBSERVE",
+          "title": "Infrastructure health. Security context.",
+          "desc": "Connect CPU, memory, disk and network metrics to alerts and cases on the same asset. Monitoring policies track problems and recovery.",
+          "details": [
+            "NOC monitoring integrated with the SOC",
+            "Thresholds, sustain periods and recovery",
+            "Personal dashboards with widgets and historical series"
+          ]
+        },
+        {
+          "id": "ai",
+          "tag": "05 / ASSIST",
+          "title": "AI to support the investigation.",
+          "desc": "The copilot brings together tenant operational context and assistance for investigation and detection engineering. The interface also offers actions to create cases and rules, and to generate Lucene queries.",
+          "details": [
+            "Contextual chat for SOC operations",
+            "Sigma rule creation, explanation and tuning",
+            "Anthropic, OpenAI, Gemini and compatible APIs"
+          ]
+        },
+        {
+          "id": "governance",
+          "tag": "06 / GOVERN",
+          "title": "Separate operations. Coordinated management.",
+          "desc": "Manage customers through an MSSP console with tenant isolation, role-based access and a verifiable audit trail.",
+          "details": [
+            "RLS, event index and realm per tenant",
+            "Encrypted backups and audited support access",
+            "Executive, technical and compliance reports"
+          ]
+        }
+      ],
+      "agentLabel": "Sigmaward agent",
+      "agentTitle": "One native sensor. Security and telemetry together.",
+      "agentBody": "Windows, Linux and macOS. Inventory, security events and infrastructure metrics in an agent with durable delivery, authenticated identity and signed updates. Available collectors vary by operating system.",
+      "agentFacts": [
+        "ECS-normalized telemetry",
+        "Local buffering for connection failures",
+        "Cryptographically verified updates"
+      ],
+      "governanceLabel": "Trust through architecture",
+      "governanceTitle": "Controls you can evaluate.",
+      "governanceBody": "SSO and access controls, tenant separation and HMAC-chained auditing. Evidence to support your compliance program, not a product certification.",
+      "companyLink": "A Bocchi Company product",
+      "openImage": "Open full-size screenshot",
+      "skip": "Skip to content",
+      "fleetCaption": "Fleet management. Actual interface with anonymized identifiers.",
+      "workflowTitle": "From signal to response, with context.",
+      "workflow": [
+        {
+          "title": "Sigma detection",
+          "body": "Apply Sigma rules and correlate signals from your endpoint telemetry."
+        },
+        {
+          "title": "Investigation",
+          "body": "Connect alerts, evidence and decisions in one place to guide your team’s response."
+        }
+      ],
+      "navigation": "Main navigation",
+      "footerNavigation": "Footer navigation",
+      "menu": "Menu",
+      "closeMenu": "Close"
     }
   }
 }

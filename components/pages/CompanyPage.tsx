@@ -11,8 +11,7 @@ import type { Locale } from "@/lib/i18n";
 
 type IconName = React.ComponentProps<typeof Icon>["name"];
 
-// Endereço placeholder no próprio domínio do produto (como o SITE_URL em
-// lib/site.ts) — trocar pelo canal real antes do deploy.
+// Production contact confirmed by the product owner.
 const CONTACT_EMAIL = "contato@sigmaward.com";
 
 export default function CompanyPage({ locale }: { locale: Locale }) {
@@ -21,7 +20,7 @@ export default function CompanyPage({ locale }: { locale: Locale }) {
   return (
     <>
       <Nav locale={locale} />
-      <main>
+      <main id="main-content">
         <PageHero
           badge={dict.company.badge}
           title={dict.company.heroTitle}

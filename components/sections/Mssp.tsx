@@ -51,7 +51,7 @@ export default function Mssp({ dict }: { dict: Dictionary }) {
         {/* Right: screenshot real da plataforma (portfólio MSSP) */}
         <div className="relative">
           <PlatformShot
-            src="/screenshots/mssp.png"
+            src="/screenshots/current/fleet.jpg"
             alt="Sigmaward — portfólio MSSP cross-tenant"
           />
         </div>

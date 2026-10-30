@@ -56,7 +56,7 @@ export default function ResourcesPage({ locale }: { locale: Locale }) {
   return (
     <>
       <Nav locale={locale} />
-      <main>
+      <main id="main-content">
         <PageHero
           badge={dict.resources.badge}
           title={dict.resources.heroTitle}

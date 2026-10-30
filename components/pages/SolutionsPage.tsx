@@ -10,14 +10,14 @@ import type { Locale } from "@/lib/i18n";
 // Um screenshot real por bloco de solução (ordem espelha dict.solutions.blocks:
 // MSSP · Blue teams · Gestão de risco · Conformidade).
 const MOCKS = [
-  <PlatformShot key="mssp" src="/screenshots/mssp.png" alt="Sigmaward — portfólio MSSP" />,
+  <PlatformShot key="mssp" src="/screenshots/current/fleet.jpg" alt="Sigmaward — gestão de agentes com identificadores anonimizados" />,
   <PlatformShot
     key="blue"
-    src="/screenshots/case-detail.png"
+    src="/screenshots/current/case-detail.jpg"
     alt="Sigmaward — investigação de caso"
   />,
-  <PlatformShot key="risk" src="/screenshots/watchfloor.png" alt="Sigmaward — Watchfloor" />,
-  <PlatformShot key="compliance" src="/screenshots/cases.png" alt="Sigmaward — casos e SLA" />,
+  <PlatformShot key="risk" src="/screenshots/current/watchfloor.jpg" alt="Sigmaward — Watchfloor" />,
+  <PlatformShot key="compliance" src="/screenshots/current/cases.jpg" alt="Sigmaward — casos e SLA" />,
 ];
 
 export default function SolutionsPage({ locale }: { locale: Locale }) {
@@ -26,7 +26,7 @@ export default function SolutionsPage({ locale }: { locale: Locale }) {
   return (
     <>
       <Nav locale={locale} />
-      <main>
+      <main id="main-content">
         <PageHero
           badge={dict.solutions.badge}
           title={dict.solutions.heroTitle}

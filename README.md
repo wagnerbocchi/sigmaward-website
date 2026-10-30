@@ -1,13 +1,13 @@
 # Sigmaward Website
 
-Marketing website for **Sigmaward**, a commercial SIEM/SOAR/SOC platform with its own multi-OS agents. This is a bilingual (pt-BR default + English) [Next.js 15](https://nextjs.org/) static site — Home, Platform, Solutions, Pricing, Resources, Company and Login — built to a pixel-accurate dark "big-tech security" aesthetic from a Claude Design handoff, and exported as static HTML for deployment on Hostinger shared hosting.
+Marketing website for **Sigmaward**, a commercial SIEM/SOAR/SOC platform with its own multi-OS agents. This is a bilingual (pt-BR default + English) [Next.js 15](https://nextjs.org/) static site — Home, Platform, Solutions, Pricing, Resources, Company and Login — with an editorial dark theme, the original product identity and anonymized screenshots from the live interface, and exported as static HTML for deployment on Hostinger shared hosting.
 
 ## Tech stack
 
 - **Next.js 15** (App Router), static export (`output: "export"`)
 - **TypeScript** (strict)
 - **Tailwind CSS v4** (`@theme` tokens in `app/globals.css`)
-- **next/font** — Space Grotesk (display), Manrope (body), JetBrains Mono (mono/code)
+- **Fontsource** - self-hosted variable Manrope and JetBrains Mono fonts (no build-time Google Fonts request)
 - **Vitest** for unit tests (i18n path helpers)
 
 ## Requirements
@@ -36,7 +36,7 @@ npm test              # vitest run (i18n unit tests)
 
 ## Before deploying — set the production domain
 
-`lib/site.ts` exports `SITE_URL`, which feeds `metadataBase`, Open Graph tags, `sitemap.xml`, and `robots.txt`. It currently holds a placeholder domain. Before shipping:
+`lib/site.ts` exports `SITE_URL`, which feeds `metadataBase`, Open Graph tags, `sitemap.xml`, and `robots.txt`. It is configured as `https://sigmaward.com`. If the production domain changes:
 
 1. Edit `SITE_URL` in `lib/site.ts` to the real production domain.
 2. Rebuild: `npm run build`.
@@ -60,7 +60,7 @@ The site is a static export (no server, no middleware, no server actions) — it
 app/                    # Next.js App Router routes
   page.tsx              # pt Home
   platform/page.tsx     # pt Platform
-  solutions|pricing|resources|company|login/page.tsx  # pt coming-soon placeholders
+  solutions|pricing|resources|company|login/page.tsx  # pt product and company pages
   en/                    # English routes, mirrors the above
   layout.tsx, globals.css, sitemap.ts, robots.ts
 
@@ -68,7 +68,7 @@ components/
   layout/                # Nav, Footer, MobileMenu, LocaleToggle
   sections/               # Page sections (Hero, Problem, Pillar, Capabilities, Architecture, ...)
   pages/                  # Top-level page compositions (HomePage, PlatformPage, ComingSoonPage)
-  mocks/                  # Product-UI mock components (dashboard, Sigma rule, playbook, case, IOC, tenants, arch)
+  mocks/                  # Screenshot renderer and retained legacy mock components
   ui/                     # Reusable primitives (Button, Card, Icon, Logo, SectionShell, ...)
 
 lib/
@@ -81,3 +81,7 @@ content/
 
 public/                    # Static assets (favicon, logo marks, etc.)
 ```
+
+## Current product content and captures
+
+See [capture provenance](docs/website-content-and-captures.md) and [design QA](design-qa.md). Current marketing pages use `public/screenshots/current/`; archived mock components and older screenshots are not the source for current product claims.

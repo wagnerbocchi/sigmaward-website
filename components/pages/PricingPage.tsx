@@ -18,7 +18,7 @@ export default function PricingPage({ locale }: { locale: Locale }) {
   return (
     <>
       <Nav locale={locale} />
-      <main>
+      <main id="main-content">
         <PageHero
           badge={dict.pricing.badge}
           title={dict.pricing.heroTitle}
