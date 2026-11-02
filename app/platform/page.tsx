@@ -1,11 +1,8 @@
 import type { Metadata } from "next";
 import PlatformPage from "@/components/pages/PlatformPage";
-import { getDictionary } from "@/lib/i18n";
+import { toMetadata } from "@/lib/routes";
 
-export const metadata: Metadata = {
-  title: "Plataforma — Sigmaward",
-  description: getDictionary("pt").platform.heroSub,
-};
+export const metadata: Metadata = toMetadata("/platform/", "pt");
 
 export default function Page() {
   return <PlatformPage locale="pt" />;

@@ -1,11 +1,8 @@
 import type { Metadata } from "next";
 import PricingPage from "@/components/pages/PricingPage";
-import { getDictionary } from "@/lib/i18n";
+import { toMetadata } from "@/lib/routes";
 
-export const metadata: Metadata = {
-  title: "Preços — Sigmaward",
-  description: getDictionary("pt").pricing.heroSub,
-};
+export const metadata: Metadata = toMetadata("/pricing/", "pt");
 
 export default function Page() {
   return <PricingPage locale="pt" />;
