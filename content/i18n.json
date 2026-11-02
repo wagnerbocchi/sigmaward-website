@@ -10,14 +10,6 @@
       "login": "Entrar",
       "cta": "Ver o produto"
     },
-    "hero": {
-      "badge": "Segurança e operação, conectadas",
-      "title": "Toda a operação. Uma visão de segurança.",
-      "sub": "Detecção Sigma, investigação, resposta e saúde dos endpoints no mesmo ambiente.",
-      "ctaPrimary": "Explorar a plataforma",
-      "ctaSecondary": "Conversar com a equipe",
-      "note": "SIEM / SOAR / EDR / NOC / IA assistiva"
-    },
     "trust": {
       "label": "Times de segurança e MSSPs operam o dia a dia na Sigmaward",
       "stats": [
@@ -67,48 +59,6 @@
         }
       ]
     },
-    "pillars": [
-      {
-        "eyebrow": "Detecção",
-        "title": "Regras Sigma viram detecção em tempo real.",
-        "body": "Importe qualquer regra Sigma e a Sigmaward a mapeia sobre sua telemetria ao vivo — sem reescrever queries proprietárias.",
-        "bullets": [
-          "Conversão Sigma → query automática",
-          "1.200+ regras prontas, ou use as suas",
-          "Findings com contexto MITRE ATT&CK"
-        ]
-      },
-      {
-        "eyebrow": "Automação",
-        "title": "Resposta automatizada com playbooks visuais.",
-        "body": "Promova, enriqueça e responda sem sair da plataforma. Playbooks conectam detecção e ação em minutos.",
-        "bullets": [
-          "Playbooks visuais, sem código",
-          "Enriquecimento automático de IOCs",
-          "Ações de contenção integradas"
-        ]
-      },
-      {
-        "eyebrow": "Casos",
-        "title": "De finding a caso investigável, em um clique.",
-        "body": "A Sigmaward agrupa findings correlacionados em casos com linha do tempo, evidências e responsáveis.",
-        "bullets": [
-          "Promoção automática de findings",
-          "Linha do tempo e cadeia de evidências",
-          "Colaboração e SLA por caso"
-        ]
-      },
-      {
-        "eyebrow": "Threat Intel",
-        "title": "IOCs extraídos e correlacionados sozinhos.",
-        "body": "Hashes, IPs, domínios e URLs são extraídos, deduplicados e cruzados com inteligência de ameaças.",
-        "bullets": [
-          "Extração automática de IOCs",
-          "Correlação com threat intel",
-          "Watchlists e bloqueio proativo"
-        ]
-      }
-    ],
     "capsHead": {
       "eyebrow": "Plataforma completa",
       "title": "Tudo que um SOC moderno precisa.",
@@ -220,120 +170,12 @@
     "footer": {
       "tagline": "Um produto da Bocchi Company",
       "rights": "Todos os direitos reservados.",
-      "built": "SIEM / SOAR / EDR / NOC / IA assistiva",
-      "cols": [
-        {
-          "title": "Produto",
-          "links": [
-            "Plataforma",
-            "Detecção Sigma",
-            "Automação SOAR",
-            "Gestão de casos",
-            "Preços"
-          ]
-        },
-        {
-          "title": "Soluções",
-          "links": [
-            "Para MSSPs",
-            "Blue teams",
-            "Gestão de risco",
-            "Conformidade"
-          ]
-        },
-        {
-          "title": "Recursos",
-          "links": [
-            "Documentação",
-            "Blog",
-            "Biblioteca de regras",
-            "Status"
-          ]
-        },
-        {
-          "title": "Empresa",
-          "links": [
-            "Sobre",
-            "Carreiras",
-            "Contato",
-            "Segurança"
-          ]
-        }
-      ]
+      "built": "SIEM / SOAR / EDR / NOC / IA assistiva"
     },
     "platform": {
       "badge": "A plataforma",
       "heroTitle": "Uma plataforma. Todo o ciclo de detecção e resposta.",
       "heroSub": "Detecção Sigma, investigação, resposta e saúde dos endpoints no mesmo ambiente. Do primeiro sinal à decisão do analista, mantenha o contexto.",
-      "ctaPrimary": "Ver uma demo",
-      "ctaSecondary": "Ler a documentação",
-      "pipelineHead": {
-        "eyebrow": "Como funciona",
-        "title": "Do evento bruto ao caso resolvido.",
-        "sub": "Um pipeline contínuo — sem ferramentas desconexas costuradas na mão."
-      },
-      "pipeline": [
-        {
-          "n": "01",
-          "title": "Fontes",
-          "desc": "Endpoints, nuvem, identidade e rede enviam telemetria."
-        },
-        {
-          "n": "02",
-          "title": "Agente Sigmaward",
-          "desc": "Coleta, normaliza e enriquece os eventos na borda."
-        },
-        {
-          "n": "03",
-          "title": "Motor Sigma",
-          "desc": "Regras Sigma viram queries e avaliam tudo em tempo real."
-        },
-        {
-          "n": "04",
-          "title": "Findings",
-          "desc": "Detecções com contexto MITRE ATT&CK e severidade."
-        },
-        {
-          "n": "05",
-          "title": "Casos",
-          "desc": "Findings correlacionados viram casos investigáveis."
-        },
-        {
-          "n": "06",
-          "title": "Resposta",
-          "desc": "Playbooks enriquecem, contêm e notificam — automático."
-        }
-      ],
-      "modulesHead": {
-        "eyebrow": "Módulos",
-        "title": "Menos distância entre o sinal e a resposta."
-      },
-      "modules": [
-        {
-          "title": "Detecção com contexto, não apenas volume.",
-          "desc": "Regras Sigma, correlação multiestágio e análise comportamental ajudam a priorizar sinais. O risco por entidade conecta eventos que isoladamente poderiam passar despercebidos."
-        },
-        {
-          "title": "Siga a evidência. Preserve a história.",
-          "desc": "Conecte alertas a casos, explore relações no grafo e organize hunting por hipótese. Observáveis, responsáveis e prazos permanecem no contexto da investigação."
-        },
-        {
-          "title": "Automação com controle do analista.",
-          "desc": "Organize a resposta com gatilhos, condições e passos ordenados. A aprovação humana dá controle sobre ações críticas, como isolamento de host e coleta de triagem pelo agente."
-        },
-        {
-          "title": "Saúde da infraestrutura. Contexto de segurança.",
-          "desc": "Relacione CPU, memória, disco e rede com alertas e casos do mesmo ativo. Políticas de monitoramento acompanham falhas e recuperação."
-        },
-        {
-          "title": "IA para apoiar a investigação.",
-          "desc": "O copiloto reúne contexto operacional do tenant e assistência para investigação e engenharia de detecção. A interface também oferece ações para criar casos e regras, além de gerar consultas Lucene."
-        },
-        {
-          "title": "Operações separadas. Gestão coordenada.",
-          "desc": "Gerencie clientes em um console MSSP com isolamento por tenant, acesso por função e trilha de auditoria verificável."
-        }
-      ],
       "integrationsHead": {
         "eyebrow": "Integrações",
         "title": "Integrações com papéis claros.",
@@ -347,18 +189,7 @@
         "Slack",
         "Discord",
         "Microsoft Teams"
-      ],
-      "arch": {
-        "eyebrow": "Arquitetura",
-        "title": "Agentes próprios, padrões abertos.",
-        "body": "A Sigmaward coleta telemetria com seus próprios agentes (Windows, Linux e macOS) e detecta no padrão aberto Sigma. Sem lock-in: seus dados, regras e integrações continuam portáveis.",
-        "points": [
-          "Cloud gerenciada ou self-hosted",
-          "Escala horizontal por nós, preço previsível",
-          "Dados e regras em formatos abertos",
-          "API completa e webhooks"
-        ]
-      }
+      ]
     },
     "solutions": {
       "badge": "Soluções",
@@ -707,14 +538,6 @@
       "login": "Log in",
       "cta": "See the product"
     },
-    "hero": {
-      "badge": "Security and operations, connected",
-      "title": "Every operation. One security perspective.",
-      "sub": "Sigma detection, investigation, response and endpoint health in one environment.",
-      "ctaPrimary": "Explore the platform",
-      "ctaSecondary": "Talk to the team",
-      "note": "SIEM / SOAR / EDR / NOC / ASSISTIVE AI"
-    },
     "trust": {
       "label": "Security teams and MSSPs run their day-to-day on Sigmaward",
       "stats": [
@@ -764,48 +587,6 @@
         }
       ]
     },
-    "pillars": [
-      {
-        "eyebrow": "Detection",
-        "title": "Sigma rules become real-time detection.",
-        "body": "Import any Sigma rule and Sigmaward maps it onto your live telemetry — no rewriting proprietary queries.",
-        "bullets": [
-          "Automatic Sigma → query conversion",
-          "1,200+ rules out of the box, or bring your own",
-          "Findings with MITRE ATT&CK context"
-        ]
-      },
-      {
-        "eyebrow": "Automation",
-        "title": "Automated response with visual playbooks.",
-        "body": "Promote, enrich and respond without leaving the platform. Playbooks connect detection to action in minutes.",
-        "bullets": [
-          "Visual, no-code playbooks",
-          "Automatic IOC enrichment",
-          "Built-in containment actions"
-        ]
-      },
-      {
-        "eyebrow": "Cases",
-        "title": "From finding to investigable case, in one click.",
-        "body": "Sigmaward groups correlated findings into cases with a timeline, evidence and owners.",
-        "bullets": [
-          "Automatic finding promotion",
-          "Timeline and chain of evidence",
-          "Per-case collaboration and SLA"
-        ]
-      },
-      {
-        "eyebrow": "Threat Intel",
-        "title": "IOCs extracted and correlated on their own.",
-        "body": "Hashes, IPs, domains and URLs are extracted, deduplicated and cross-checked against threat intelligence.",
-        "bullets": [
-          "Automatic IOC extraction",
-          "Threat-intel correlation",
-          "Watchlists and proactive blocking"
-        ]
-      }
-    ],
     "capsHead": {
       "eyebrow": "Complete platform",
       "title": "Everything a modern SOC needs.",
@@ -917,120 +698,12 @@
     "footer": {
       "tagline": "A Bocchi Company product",
       "rights": "All rights reserved.",
-      "built": "SIEM / SOAR / EDR / NOC / ASSISTIVE AI",
-      "cols": [
-        {
-          "title": "Product",
-          "links": [
-            "Platform",
-            "Sigma detection",
-            "SOAR automation",
-            "Case management",
-            "Pricing"
-          ]
-        },
-        {
-          "title": "Solutions",
-          "links": [
-            "For MSSPs",
-            "Blue teams",
-            "Risk management",
-            "Compliance"
-          ]
-        },
-        {
-          "title": "Resources",
-          "links": [
-            "Documentation",
-            "Blog",
-            "Rule library",
-            "Status"
-          ]
-        },
-        {
-          "title": "Company",
-          "links": [
-            "About",
-            "Careers",
-            "Contact",
-            "Security"
-          ]
-        }
-      ]
+      "built": "SIEM / SOAR / EDR / NOC / ASSISTIVE AI"
     },
     "platform": {
       "badge": "The platform",
       "heroTitle": "One platform. The entire detection-and-response cycle.",
       "heroSub": "Sigma detection, investigation, response and endpoint health in one environment. Keep the context from the first signal to the analyst’s decision.",
-      "ctaPrimary": "See a demo",
-      "ctaSecondary": "Read the docs",
-      "pipelineHead": {
-        "eyebrow": "How it works",
-        "title": "From raw event to resolved case.",
-        "sub": "One continuous pipeline — no disconnected tools stitched together by hand."
-      },
-      "pipeline": [
-        {
-          "n": "01",
-          "title": "Sources",
-          "desc": "Endpoints, cloud, identity and network send telemetry."
-        },
-        {
-          "n": "02",
-          "title": "Sigmaward agent",
-          "desc": "Collects, normalizes and enriches events at the edge."
-        },
-        {
-          "n": "03",
-          "title": "Sigma engine",
-          "desc": "Sigma rules become queries and evaluate everything in real time."
-        },
-        {
-          "n": "04",
-          "title": "Findings",
-          "desc": "Detections with MITRE ATT&CK context and severity."
-        },
-        {
-          "n": "05",
-          "title": "Cases",
-          "desc": "Correlated findings become investigable cases."
-        },
-        {
-          "n": "06",
-          "title": "Response",
-          "desc": "Playbooks enrich, contain and notify — automatically."
-        }
-      ],
-      "modulesHead": {
-        "eyebrow": "Modules",
-        "title": "Bring the signal closer to the response."
-      },
-      "modules": [
-        {
-          "title": "Detection with context, beyond volume.",
-          "desc": "Sigma rules, multistage correlation and behavioral analytics help prioritize signals. Entity risk connects events that might otherwise go unnoticed."
-        },
-        {
-          "title": "Follow the evidence. Preserve the history.",
-          "desc": "Link alerts to cases, explore relationships in the graph and organize hypothesis-driven hunting. Observables, owners and deadlines stay with the investigation."
-        },
-        {
-          "title": "Automation with analyst control.",
-          "desc": "Organize response through triggers, conditions and ordered steps. Human approval provides control over critical actions such as host isolation and agent-based triage collection."
-        },
-        {
-          "title": "Infrastructure health. Security context.",
-          "desc": "Connect CPU, memory, disk and network metrics to alerts and cases on the same asset. Monitoring policies track problems and recovery."
-        },
-        {
-          "title": "AI to support the investigation.",
-          "desc": "The copilot brings together tenant operational context and assistance for investigation and detection engineering. The interface also offers actions to create cases and rules, and to generate Lucene queries."
-        },
-        {
-          "title": "Separate operations. Coordinated management.",
-          "desc": "Manage customers through an MSSP console with tenant isolation, role-based access and a verifiable audit trail."
-        }
-      ],
       "integrationsHead": {
         "eyebrow": "Integrations",
         "title": "Integrations with clear roles.",
@@ -1044,18 +717,7 @@
         "Slack",
         "Discord",
         "Microsoft Teams"
-      ],
-      "arch": {
-        "eyebrow": "Architecture",
-        "title": "Own agents, open standards.",
-        "body": "Sigmaward collects telemetry with its own agents (Windows, Linux and macOS) and detects with the open Sigma standard. No lock-in: your data, rules and integrations stay portable.",
-        "points": [
-          "Managed cloud or self-hosted",
-          "Horizontal scale per node, predictable pricing",
-          "Data and rules in open formats",
-          "Full API and webhooks"
-        ]
-      }
+      ]
     },
     "solutions": {
       "badge": "Solutions",

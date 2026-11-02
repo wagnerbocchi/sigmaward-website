@@ -1,11 +1,8 @@
 import type { Metadata } from "next";
 import CompanyPage from "@/components/pages/CompanyPage";
-import { getDictionary } from "@/lib/i18n";
+import { toMetadata } from "@/lib/routes";
 
-export const metadata: Metadata = {
-  title: "Company — Sigmaward",
-  description: getDictionary("en").company.heroSub,
-};
+export const metadata: Metadata = toMetadata("/company/", "en");
 
 export default function Page() {
   return <CompanyPage locale="en" />;

@@ -1,11 +1,8 @@
 import type { Metadata } from "next";
 import SolutionsPage from "@/components/pages/SolutionsPage";
-import { getDictionary } from "@/lib/i18n";
+import { toMetadata } from "@/lib/routes";
 
-export const metadata: Metadata = {
-  title: "Soluções — Sigmaward",
-  description: getDictionary("pt").solutions.heroSub,
-};
+export const metadata: Metadata = toMetadata("/solutions/", "pt");
 
 export default function Page() {
   return <SolutionsPage locale="pt" />;

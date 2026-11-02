@@ -1,11 +1,8 @@
 import type { Metadata } from "next";
 import LoginPage from "@/components/pages/LoginPage";
-import { getDictionary } from "@/lib/i18n";
+import { toMetadata } from "@/lib/routes";
 
-export const metadata: Metadata = {
-  title: "Log in — Sigmaward",
-  description: getDictionary("en").login.heroSub,
-};
+export const metadata: Metadata = toMetadata("/login/", "en");
 
 export default function Page() {
   return <LoginPage locale="en" />;

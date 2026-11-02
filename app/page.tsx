@@ -1,11 +1,8 @@
 import type { Metadata } from "next";
 import HomePage from "@/components/pages/HomePage";
-import { getDictionary } from "@/lib/i18n";
+import { toMetadata } from "@/lib/routes";
 
-export const metadata: Metadata = {
-  title: "Sigmaward | SIEM, SOAR, EDR e NOC",
-  description: getDictionary("pt").hero.sub,
-};
+export const metadata: Metadata = toMetadata("/", "pt");
 
 export default function Page() {
   return <HomePage locale="pt" />;
