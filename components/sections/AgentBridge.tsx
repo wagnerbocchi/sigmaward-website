@@ -35,7 +35,7 @@ export default function AgentBridge({
           aria-hidden="true"
         >
           <g fill="none" stroke="currentColor" strokeWidth="1.2">
-            <path d="M365 146H408Q421 146 426 134L446 60Q450 48 463 48H515M365 146H515M365 146H408Q421 146 426 158L446 212Q450 224 463 224H515M365 146H398Q411 146 416 161L446 270Q450 282 463 282H515" />
+            <path d="M275 146H408Q421 146 426 134L446 60Q450 48 463 48H497M275 146H497M275 146H408Q421 146 426 158L446 212Q450 224 463 224H497M275 146H398Q411 146 416 161L446 270Q450 282 463 282H497" />
           </g>
         </svg>
         <div className="agent-capabilities">

@@ -1,6 +1,6 @@
 "use client";
 
-import { useId, useRef, useState } from "react";
+import { useEffect, useId, useRef, useState } from "react";
 import Button from "@/components/ui/Button";
 import Icon from "@/components/ui/Icon";
 import { Dictionary, Locale, localizePath } from "@/lib/i18n";
@@ -17,8 +17,44 @@ export default function Hero({
   const copy = dict.site.signal;
   const [active, setActive] = useState(2);
   const [eventIndex, setEventIndex] = useState(2);
+  const layout = useRef<HTMLDivElement | null>(null);
+  const panel = useRef<HTMLDivElement | null>(null);
+  const [connection, setConnection] = useState("");
   const tabs = useRef<(HTMLButtonElement | null)[]>([]);
   const id = useId();
+  useEffect(() => {
+    const root = layout.current;
+    if (!root || !panel.current) return;
+    const update = () => {
+      const node = tabs.current[active]?.querySelector(".signal-node");
+      if (!node || !panel.current || window.innerWidth <= 1000) {
+        setConnection("");
+        return;
+      }
+      const origin = root.getBoundingClientRect();
+      const start = node.getBoundingClientRect();
+      const end = panel.current.getBoundingClientRect();
+      const x = start.left - origin.left + 5;
+      const y = start.bottom - origin.top - 5;
+      const lane = start.left - origin.left - 12;
+      const endX = Math.max(
+        end.left - origin.left + 24,
+        Math.min(
+          start.left - origin.left + start.width / 2,
+          end.right - origin.left - 24,
+        ),
+      );
+      const endY = end.top - origin.top;
+      setConnection(
+        `M${x} ${y} Q${lane} ${y} ${lane} ${y + 20} V${endY - 34} Q${lane} ${endY - 14} ${endX} ${endY - 14} V${endY}`,
+      );
+    };
+    const observer = new ResizeObserver(update);
+    observer.observe(root);
+    observer.observe(panel.current);
+    update();
+    return () => observer.disconnect();
+  }, [active]);
   const scene = copy.scenes[active];
   const event = scene.rows[eventIndex];
   const evidence = [
@@ -36,7 +72,10 @@ export default function Hero({
 
   return (
     <section className="signal-hero" aria-labelledby={`${id}-title`}>
-      <div className="signal-layout">
+      <div className="signal-layout" ref={layout}>
+        <svg className="stage-panel-connection" aria-hidden="true">
+          <path d={connection} />
+        </svg>
         <div className="signal-copy">
           <h1 id={`${id}-title`}>{copy.title}</h1>
           <p>{copy.intro}</p>
@@ -171,6 +210,10 @@ export default function Hero({
             ))}
           </div>
           <div className="pipeline-rules" aria-hidden="true">
+            <svg viewBox="0 0 120 144" preserveAspectRatio="none">
+              <path d="M60 2 118 30V114L60 142 2 114V30Z" />
+              <path d="M60 12 110 36V108L60 132 10 108V36Z" />
+            </svg>
             {copy.pipeline.map((item) => (
               <span key={item}>{item}</span>
             ))}
@@ -186,6 +229,7 @@ export default function Hero({
 
         <div
           className="signal-panel"
+          ref={panel}
           role="tabpanel"
           id={`${id}-panel`}
           aria-labelledby={`${id}-tab-${active}`}

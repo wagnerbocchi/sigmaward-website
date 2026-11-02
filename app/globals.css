@@ -1140,14 +1140,16 @@ a {
   background: #101923;
   z-index: 2;
 }
-.signal-panel::before {
-  content: "";
+.stage-panel-connection {
   position: absolute;
-  height: 30px;
-  width: 1px;
-  background: #358aff;
-  top: -31px;
-  left: 48%;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  pointer-events: none;
+  fill: none;
+  stroke: #3f93ff;
+  stroke-width: 1.4;
 }
 .signal-panel-heading {
   display: flex;
@@ -1334,15 +1336,24 @@ a {
 .pipeline-rules {
   position: absolute;
   left: 62%;
-  top: 37%;
-  width: 110px;
-  padding: 14px 12px;
-  border: 1px solid #34516c;
-  border-radius: 12px;
-  background: var(--color-bg);
+  top: 30%;
+  isolation: isolate;
+  width: 120px;
+  padding: 25px 16px;
   color: var(--color-text-body);
   font-size: 10px;
   line-height: 2.7;
+  background: transparent;
+}
+.pipeline-rules > svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  fill: var(--color-bg);
+  stroke: #34516c;
+  stroke-width: 1;
+  z-index: -1;
 }
 .pipeline-rules span {
   display: block;
@@ -1408,13 +1419,13 @@ a {
   min-width: 0;
   display: flex;
   align-items: center;
-  min-height: 280px;
+  min-height: 258px;
 }
 .agent-bridge-visual > img {
   position: relative;
-  width: 75%;
+  width: 65%;
   height: auto;
-  margin: -5% 0 -5% -4%;
+  margin: -9% 0;
 }
 .agent-connections {
   position: absolute;
@@ -1425,10 +1436,10 @@ a {
 }
 .agent-capabilities {
   display: grid;
-  gap: 14px;
+  gap: 8px;
   position: relative;
-  margin-left: -2%;
-  width: 30%;
+  margin-left: auto;
+  width: 29%;
 }
 .agent-capabilities a {
   display: flex;
@@ -1438,7 +1449,7 @@ a {
   border: 1px solid #34516c;
   border-radius: 8px;
   min-height: 48px;
-  padding: 10px 12px;
+  padding: 7px 12px;
 }
 .agent-capabilities a:hover {
   border-color: var(--color-brand);
