@@ -1,5 +1,62 @@
 # Design QA
 
+## Approved operation-flow version, 2026-11-02
+
+The owner approved `.impeccable/mocks/flow-dark/approved.png` and explicitly authorized implementation and GitHub push. Hostinger deployment remains owner-operated. This revision supersedes the centered homepage reviewed below.
+
+### Current implementation and validation
+
+- Left-led dark Home with semantic stage tabs, measured selected-stage connector, double-hexagon processing node, selectable illustrative timeline/evidence and a transparent conceptual laptop illustration. Real product screenshots remain on detailed Platform pages.
+- Production static build passed under Node.js 24.21.0; all 14 localized marketing routes exported. Typecheck and all 6 unit tests passed.
+- 28 route/viewport checks passed at 1440px and 390px. Another 10 Home viewport/language checks passed at 360, 768, 1024, 1101 and 1540px. No horizontal overflow.
+- Arrow/Home/End stage selection and focus, previous/next wrapping, event detail selection, English mobile content and dynamic connector changes passed in-browser.
+- 545 local asset/link/anchor references resolved; PT/EN dictionary shapes match.
+- Ten valid screenshots are retained under `.impeccable/review/flow-dark/`. The final compact-desktop correction was recaptured at 1101px: all three processing labels occupy exactly one 27px line.
+- Independent review: connector, hexagonal node, laptop footprint and compact-desktop labels resolved. No visual or functional fixes remain from that review.
+
+### Formal comparison limitation
+
+Final full-viewport comparison score: 0.7216, above the 0.72 overall threshold, while the comparison still classifies regional differences as drift. The laptop raster check passed. The Impeccable phase chain remains open because its separate component-plan approval record is absent; it refused to record the hero gate for this reason. The owner's explicit composition approval and push authorization are preserved, and no duplicate confirmation or fabricated approval record was introduced. Actual finish disposition: `fix`, procedural only. This is not a claim that every automated fidelity phase passed.
+
+The latest manual verdict is `.impeccable/review/flow-dark/finish-review.md`; functional evidence is in that directory. Standalone legacy `next lint`, exhaustive assistive-technology/cross-browser checks and production hosting were not executed.
+
+## Previous centered redesign, 2026-11-02
+
+Implementation and functional checks passed. The automated Impeccable comp-reproduction gate remains open; it is not a passing pixel-fidelity result.
+
+Preview: http://127.0.0.1:3000/. Production export: `out/`.
+
+### Approved direction and product adaptations
+
+The user selected `.impeccable/mocks/decision/canon.png` combined with the first proposal's agent-to-response flow: "gostei dessa opção com a primeira. fundo escuro". They also explicitly requested the official logo, product colors, and actual application information, with a concise Home and additional detail on separate pages.
+
+The implementation uses the original Sigma mark and wordmark, the application's pale blue action color, existing anonymized screenshots, and a keyboard-accessible four-step operation flow. The generated fictional dashboard is replaced with a labeled crop of the real Watchfloor. The full screenshot remains linked. This changes the image density and palette from the generated reference intentionally.
+
+### Current evidence
+
+Captures under `.impeccable/review/`: `hero-repro.png` at 1536 x 1024; full Home at 1440, 1101 and 390px; Platform and Company at desktop/mobile; English Home mobile; Solutions desktop. All lazy images were scrolled into view and decoded before the final full-page captures.
+
+- `npm run build`: passed, static export generated.
+- `npm run typecheck`: passed.
+- `npm test`: 6 tests passed.
+- `git diff --check`: passed.
+- 14 localized routes checked at 1440px and 390px: no horizontal overflow or clipped headings/controls, correct page language, one H1 and loaded above-fold images. Results: `.impeccable/review/browser-checks.json`.
+- All local links, fragment targets and assets resolved in the exported marketing pages. PT/EN dictionary structure matches.
+- Workflow arrow/End keyboard navigation, mobile menu Escape/focus return, FAQ disclosure, and locale switch retaining the Platform route were checked in-browser.
+- Original screenshot pixels were compared with the previous commit: unchanged; metadata records provenance only.
+
+### Independent finish review
+
+The reviewer confirmed all ten captures valid. The spacing correction, concise-flow contract and actual asset/font records are resolved; no visual regressions or further visual changes were requested. Final disposition: `fix`, solely because the procedural phase chain remains open. `build-phase finish --disposition ship` refused the open plates, hero, sections, motion and responsive phases. This limitation is disclosed rather than bypassed.
+
+### Remaining limits
+
+After the review correction, the final comp-diff score is 0.7176 (drift), below the skill's 0.72 reproduction threshold. The raster-plate check was executed during the completion pass and failed for two concrete reasons: it only decodes PNG while the preserved Watchfloor capture is JPEG, and its separate component-plan approval record is absent. The state remains open at `plates`; no fabricated screenshot or forced passing score was substituted. The actual final disposition was recorded with `build-phase finish --disposition fix` on 2026-11-02. Functional and responsive evidence is separate from this unresolved automated mockup-fidelity gate.
+
+No mail was sent, authenticated console action executed, push, deployment or publication performed. No exhaustive screen-reader or cross-browser audit was performed. The standalone legacy `next lint` script was not used; no separate lint pass is claimed.
+
+## Previous design review (historical, superseded)
+
 final result: passed
 
 ## Evidence and state

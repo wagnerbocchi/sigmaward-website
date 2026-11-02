@@ -1,0 +1,501 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-02T03:15:21.513149+00:00",
+  "title": "Design System: Sigmaward",
+  "extensions": {
+    "colorMeta": {
+      "brand": {
+        "role": "primary",
+        "displayName": "Pale application blue",
+        "tonalRamp": [
+          "oklch(15% 0.0291 258.65)",
+          "oklch(25% 0.0485 258.65)",
+          "oklch(36% 0.0728 258.65)",
+          "oklch(48% 0.0970 258.65)",
+          "oklch(60% 0.0970 258.65)",
+          "oklch(73% 0.0728 258.65)",
+          "oklch(85% 0.0388 258.65)",
+          "oklch(95% 0.0116 258.65)"
+        ]
+      },
+      "brand-hover": {
+        "role": "primary",
+        "displayName": "Pale blue hover",
+        "tonalRamp": [
+          "oklch(15% 0.0189 260.28)",
+          "oklch(25% 0.0316 260.28)",
+          "oklch(36% 0.0474 260.28)",
+          "oklch(48% 0.0632 260.28)",
+          "oklch(60% 0.0632 260.28)",
+          "oklch(73% 0.0474 260.28)",
+          "oklch(85% 0.0253 260.28)",
+          "oklch(95% 0.0076 260.28)"
+        ]
+      },
+      "brand-ink": {
+        "role": "primary",
+        "displayName": "Dark action ink",
+        "tonalRamp": [
+          "oklch(15% 0.0019 271.04)",
+          "oklch(25% 0.0032 271.04)",
+          "oklch(36% 0.0048 271.04)",
+          "oklch(48% 0.0064 271.04)",
+          "oklch(60% 0.0064 271.04)",
+          "oklch(73% 0.0048 271.04)",
+          "oklch(85% 0.0025 271.04)",
+          "oklch(95% 0.0008 271.04)"
+        ]
+      },
+      "bg": {
+        "role": "neutral",
+        "displayName": "Graphite",
+        "tonalRamp": [
+          "oklch(15% 0.0036 254.12)",
+          "oklch(25% 0.0060 254.12)",
+          "oklch(36% 0.0090 254.12)",
+          "oklch(48% 0.0120 254.12)",
+          "oklch(60% 0.0120 254.12)",
+          "oklch(73% 0.0090 254.12)",
+          "oklch(85% 0.0048 254.12)",
+          "oklch(95% 0.0014 254.12)"
+        ]
+      },
+      "bg-alt": {
+        "role": "neutral",
+        "displayName": "Bg alt",
+        "tonalRamp": [
+          "oklch(15% 0.0042 253.14)",
+          "oklch(25% 0.0071 253.14)",
+          "oklch(36% 0.0106 253.14)",
+          "oklch(48% 0.0141 253.14)",
+          "oklch(60% 0.0141 253.14)",
+          "oklch(73% 0.0106 253.14)",
+          "oklch(85% 0.0057 253.14)",
+          "oklch(95% 0.0017 253.14)"
+        ]
+      },
+      "bg-footer": {
+        "role": "neutral",
+        "displayName": "Bg footer",
+        "tonalRamp": [
+          "oklch(15% 0.0032 248.44)",
+          "oklch(25% 0.0053 248.44)",
+          "oklch(36% 0.0079 248.44)",
+          "oklch(48% 0.0105 248.44)",
+          "oklch(60% 0.0105 248.44)",
+          "oklch(73% 0.0079 248.44)",
+          "oklch(85% 0.0042 248.44)",
+          "oklch(95% 0.0013 248.44)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Surface",
+        "tonalRamp": [
+          "oklch(15% 0.0032 260.69)",
+          "oklch(25% 0.0053 260.69)",
+          "oklch(36% 0.0079 260.69)",
+          "oklch(48% 0.0106 260.69)",
+          "oklch(60% 0.0106 260.69)",
+          "oklch(73% 0.0079 260.69)",
+          "oklch(85% 0.0042 260.69)",
+          "oklch(95% 0.0013 260.69)"
+        ]
+      },
+      "border": {
+        "role": "neutral",
+        "displayName": "Border",
+        "tonalRamp": [
+          "oklch(15% 0.0080 255.11)",
+          "oklch(25% 0.0133 255.11)",
+          "oklch(36% 0.0199 255.11)",
+          "oklch(48% 0.0265 255.11)",
+          "oklch(60% 0.0265 255.11)",
+          "oklch(73% 0.0199 255.11)",
+          "oklch(85% 0.0106 255.11)",
+          "oklch(95% 0.0032 255.11)"
+        ]
+      },
+      "border-soft": {
+        "role": "neutral",
+        "displayName": "Border soft",
+        "tonalRamp": [
+          "oklch(15% 0.0065 254.17)",
+          "oklch(25% 0.0108 254.17)",
+          "oklch(36% 0.0161 254.17)",
+          "oklch(48% 0.0215 254.17)",
+          "oklch(60% 0.0215 254.17)",
+          "oklch(73% 0.0161 254.17)",
+          "oklch(85% 0.0086 254.17)",
+          "oklch(95% 0.0026 254.17)"
+        ]
+      },
+      "border-strong": {
+        "role": "neutral",
+        "displayName": "Border strong",
+        "tonalRamp": [
+          "oklch(15% 0.0087 255.64)",
+          "oklch(25% 0.0145 255.64)",
+          "oklch(36% 0.0217 255.64)",
+          "oklch(48% 0.0290 255.64)",
+          "oklch(60% 0.0290 255.64)",
+          "oklch(73% 0.0217 255.64)",
+          "oklch(85% 0.0116 255.64)",
+          "oklch(95% 0.0035 255.64)"
+        ]
+      },
+      "text-bright": {
+        "role": "neutral",
+        "displayName": "Text bright",
+        "tonalRamp": [
+          "oklch(15% 0.0014 258.32)",
+          "oklch(25% 0.0023 258.32)",
+          "oklch(36% 0.0034 258.32)",
+          "oklch(48% 0.0046 258.32)",
+          "oklch(60% 0.0046 258.32)",
+          "oklch(73% 0.0034 258.32)",
+          "oklch(85% 0.0018 258.32)",
+          "oklch(95% 0.0005 258.32)"
+        ]
+      },
+      "text": {
+        "role": "neutral",
+        "displayName": "Text",
+        "tonalRamp": [
+          "oklch(15% 0.0046 260.73)",
+          "oklch(25% 0.0077 260.73)",
+          "oklch(36% 0.0115 260.73)",
+          "oklch(48% 0.0153 260.73)",
+          "oklch(60% 0.0153 260.73)",
+          "oklch(73% 0.0115 260.73)",
+          "oklch(85% 0.0061 260.73)",
+          "oklch(95% 0.0018 260.73)"
+        ]
+      },
+      "text-body": {
+        "role": "neutral",
+        "displayName": "Text body",
+        "tonalRamp": [
+          "oklch(15% 0.0053 256.29)",
+          "oklch(25% 0.0089 256.29)",
+          "oklch(36% 0.0133 256.29)",
+          "oklch(48% 0.0177 256.29)",
+          "oklch(60% 0.0177 256.29)",
+          "oklch(73% 0.0133 256.29)",
+          "oklch(85% 0.0071 256.29)",
+          "oklch(95% 0.0021 256.29)"
+        ]
+      },
+      "text-muted": {
+        "role": "neutral",
+        "displayName": "Text muted",
+        "tonalRamp": [
+          "oklch(15% 0.0067 259.19)",
+          "oklch(25% 0.0112 259.19)",
+          "oklch(36% 0.0168 259.19)",
+          "oklch(48% 0.0223 259.19)",
+          "oklch(60% 0.0223 259.19)",
+          "oklch(73% 0.0168 259.19)",
+          "oklch(85% 0.0089 259.19)",
+          "oklch(95% 0.0027 259.19)"
+        ]
+      },
+      "text-faint": {
+        "role": "neutral",
+        "displayName": "Text faint",
+        "tonalRamp": [
+          "oklch(15% 0.0073 258.37)",
+          "oklch(25% 0.0122 258.37)",
+          "oklch(36% 0.0182 258.37)",
+          "oklch(48% 0.0243 258.37)",
+          "oklch(60% 0.0243 258.37)",
+          "oklch(73% 0.0182 258.37)",
+          "oklch(85% 0.0097 258.37)",
+          "oklch(95% 0.0029 258.37)"
+        ]
+      },
+      "connection": {
+        "role": "primary",
+        "displayName": "Connection",
+        "tonalRamp": [
+          "oklch(15% 0.0539 256.21)",
+          "oklch(25% 0.0898 256.21)",
+          "oklch(36% 0.1346 256.21)",
+          "oklch(48% 0.1795 256.21)",
+          "oklch(60% 0.1795 256.21)",
+          "oklch(73% 0.1346 256.21)",
+          "oklch(85% 0.0718 256.21)",
+          "oklch(95% 0.0215 256.21)"
+        ]
+      },
+      "operation-border": {
+        "role": "neutral",
+        "displayName": "Operation border",
+        "tonalRamp": [
+          "oklch(15% 0.0188 250.75)",
+          "oklch(25% 0.0313 250.75)",
+          "oklch(36% 0.0470 250.75)",
+          "oklch(48% 0.0627 250.75)",
+          "oklch(60% 0.0627 250.75)",
+          "oklch(73% 0.0470 250.75)",
+          "oklch(85% 0.0251 250.75)",
+          "oklch(95% 0.0075 250.75)"
+        ]
+      },
+      "diagram-border": {
+        "role": "neutral",
+        "displayName": "Diagram border",
+        "tonalRamp": [
+          "oklch(15% 0.0171 247.58)",
+          "oklch(25% 0.0285 247.58)",
+          "oklch(36% 0.0428 247.58)",
+          "oklch(48% 0.0570 247.58)",
+          "oklch(60% 0.0570 247.58)",
+          "oklch(73% 0.0428 247.58)",
+          "oklch(85% 0.0228 247.58)",
+          "oklch(95% 0.0068 247.58)"
+        ]
+      },
+      "operation-active": {
+        "role": "primary",
+        "displayName": "Operation active",
+        "tonalRamp": [
+          "oklch(15% 0.0602 256.70)",
+          "oklch(25% 0.1003 256.70)",
+          "oklch(36% 0.1505 256.70)",
+          "oklch(48% 0.2007 256.70)",
+          "oklch(60% 0.2007 256.70)",
+          "oklch(73% 0.1505 256.70)",
+          "oklch(85% 0.0803 256.70)",
+          "oklch(95% 0.0241 256.70)"
+        ]
+      },
+      "operation-panel": {
+        "role": "neutral",
+        "displayName": "Operation panel",
+        "tonalRamp": [
+          "oklch(15% 0.0072 251.59)",
+          "oklch(25% 0.0120 251.59)",
+          "oklch(36% 0.0180 251.59)",
+          "oklch(48% 0.0240 251.59)",
+          "oklch(60% 0.0240 251.59)",
+          "oklch(73% 0.0180 251.59)",
+          "oklch(85% 0.0096 251.59)",
+          "oklch(95% 0.0029 251.59)"
+        ]
+      },
+      "operation-divider": {
+        "role": "neutral",
+        "displayName": "Operation divider",
+        "tonalRamp": [
+          "oklch(15% 0.0127 247.91)",
+          "oklch(25% 0.0211 247.91)",
+          "oklch(36% 0.0317 247.91)",
+          "oklch(48% 0.0423 247.91)",
+          "oklch(60% 0.0423 247.91)",
+          "oklch(73% 0.0317 247.91)",
+          "oklch(85% 0.0169 247.91)",
+          "oklch(95% 0.0051 247.91)"
+        ]
+      },
+      "event-selected": {
+        "role": "neutral",
+        "displayName": "Event selected",
+        "tonalRamp": [
+          "oklch(15% 0.0176 254.28)",
+          "oklch(25% 0.0293 254.28)",
+          "oklch(36% 0.0439 254.28)",
+          "oklch(48% 0.0586 254.28)",
+          "oklch(60% 0.0586 254.28)",
+          "oklch(73% 0.0439 254.28)",
+          "oklch(85% 0.0234 254.28)",
+          "oklch(95% 0.0070 254.28)"
+        ]
+      },
+      "event-hover": {
+        "role": "neutral",
+        "displayName": "Event hover",
+        "tonalRamp": [
+          "oklch(15% 0.0134 250.86)",
+          "oklch(25% 0.0224 250.86)",
+          "oklch(36% 0.0336 250.86)",
+          "oklch(48% 0.0448 250.86)",
+          "oklch(60% 0.0448 250.86)",
+          "oklch(73% 0.0336 250.86)",
+          "oklch(85% 0.0179 250.86)",
+          "oklch(95% 0.0054 250.86)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Left-aligned operation-flow headline."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section headings."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Subsection titles with local size variants."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Narrative paragraphs."
+      },
+      "button": {
+        "displayName": "Button",
+        "purpose": "Primary and secondary labels."
+      },
+      "navigation": {
+        "displayName": "Navigation",
+        "purpose": "Desktop navigation."
+      },
+      "caption": {
+        "displayName": "Caption",
+        "purpose": "Capture provenance."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "color-transition",
+        "value": "180ms ease",
+        "purpose": "Color, background-color and border-color states; disabled for reduced motion."
+      },
+      {
+        "name": "scene-reveal",
+        "value": "240ms cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Stage scene reveals from opacity 0.7 and clip-path inset(0 0 6% 0); reduced motion disables it."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide-navigation-min",
+        "value": "1300px"
+      },
+      {
+        "name": "operation-compact-max",
+        "value": "1250px"
+      },
+      {
+        "name": "content-compact-max",
+        "value": "1100px"
+      },
+      {
+        "name": "operation-stack-max",
+        "value": "1000px"
+      },
+      {
+        "name": "mobile-navigation-max",
+        "value": "900px"
+      },
+      {
+        "name": "single-column-max",
+        "value": "600px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Current shared primary marketing action.",
+      "html": "<a href=\"#\" class=\"ds-button ds-primary ds-focus\">Solicitar demonstracao<svg width=\"17\" height=\"17\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14M12 5l7 7-7 7\"/></svg></a>",
+      "css": ".ds-button{display:inline-flex;align-items:center;justify-content:center;gap:20px;min-height:48px;padding:13px 24px;border:1px solid transparent;border-radius:7px;font-family:var(--font-sans);font-size:14px;font-weight:700;text-align:center;text-decoration:none;transition:color 180ms ease,background-color 180ms ease,border-color 180ms ease;}.ds-button svg{flex-shrink:0;}.ds-focus:focus-visible{outline:2px solid var(--color-brand);outline-offset:5px;}@media(prefers-reduced-motion:reduce){.ds-button{transition:none;}}.ds-primary{background:var(--color-brand);color:var(--color-brand-ink);}.ds-primary:hover{background:var(--color-brand-hover);}"
+    },
+    {
+      "name": "Secondary button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Current shared secondary marketing action.",
+      "html": "<a href=\"#\" class=\"ds-button ds-secondary ds-focus\">Explorar a plataforma</a>",
+      "css": ".ds-button{display:inline-flex;align-items:center;justify-content:center;gap:20px;min-height:48px;padding:13px 24px;border:1px solid transparent;border-radius:7px;font-family:var(--font-sans);font-size:14px;font-weight:700;text-align:center;text-decoration:none;transition:color 180ms ease,background-color 180ms ease,border-color 180ms ease;}.ds-button svg{flex-shrink:0;}.ds-focus:focus-visible{outline:2px solid var(--color-brand);outline-offset:5px;}@media(prefers-reduced-motion:reduce){.ds-button{transition:none;}}.ds-secondary{background:transparent;color:var(--color-text-bright);border-color:var(--color-border-strong);}.ds-secondary:hover{background:var(--color-surface);border-color:var(--color-brand);}"
+    },
+    {
+      "name": "Desktop navigation",
+      "kind": "nav",
+      "refersTo": "navigation",
+      "description": "Current desktop links; locale and console controls sit alongside.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Navegacao\"><a class=\"ds-focus\" href=\"#\">Plataforma</a><a class=\"ds-focus\" href=\"#\">Solucoes</a><a class=\"ds-focus\" href=\"#\">Recursos</a><a class=\"ds-focus\" href=\"#\">Empresa</a></nav>",
+      "css": ".ds-nav{display:flex;align-items:center;gap:30px;min-height:72px;background:var(--color-bg);font-family:var(--font-sans);font-size:14px;}.ds-nav a{padding-block:25px;color:var(--color-text);text-decoration:none;transition:color 180ms ease;}.ds-nav a:hover{color:var(--color-brand);}.ds-focus:focus-visible{outline:2px solid var(--color-brand);outline-offset:5px;}@media(max-width:1100px){.ds-nav{gap:20px;}}@media(prefers-reduced-motion:reduce){.ds-nav a{transition:none;}}"
+    },
+    {
+      "name": "Architecture content panel",
+      "kind": "card",
+      "refersTo": "content-panel",
+      "description": "A specimen of the architecture container; adjacent cells share dividers.",
+      "html": "<section class=\"ds-panel\"><h3>Contexto compartilhado</h3><p>Deteccao, investigacao e resposta.</p></section>",
+      "css": ".ds-panel{padding:26px;border:1px solid var(--color-border);border-radius:12px;background:var(--color-bg-alt);color:var(--color-text);font-family:var(--font-sans);}.ds-panel h3{font-size:18px;font-weight:650;line-height:1.35;letter-spacing:-.02em;color:var(--color-text-bright);margin:0 0 12px;}.ds-panel p{font-size:14px;line-height:1.75;margin:0;}"
+    },
+    {
+      "name": "Detail list",
+      "kind": "custom",
+      "description": "Divided capability details with SVG checks.",
+      "html": "<ul class=\"ds-details\"><li><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M20 6 9 17l-5-5\"/></svg><span>Deteccao com contexto</span></li><li><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M20 6 9 17l-5-5\"/></svg><span>Investigacao e resposta</span></li></ul>",
+      "css": ".ds-details{list-style:none;margin:22px 0 0;padding:0;font-family:var(--font-sans);color:var(--color-text);}.ds-details li{display:flex;align-items:start;gap:12px;padding:12px 0;border-bottom:1px solid var(--color-border-soft);font-size:14px;line-height:1.65;}.ds-details svg{flex-shrink:0;margin-top:4px;color:var(--color-brand);}"
+    },
+    {
+      "name": "Operation stage",
+      "kind": "custom",
+      "refersTo": "operation-node",
+      "description": "Selected investigation specimen. The application supplies four-tab navigation, scene state, and measured SVG connections.",
+      "html": "<button type=\"button\" class=\"ds-stage ds-focus\" aria-pressed=\"true\"><span class=\"ds-node\"><svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"11\" cy=\"11\" r=\"7\"/><path d=\"m21 21-4.3-4.3\"/></svg></span><strong>Investigacao</strong><span class=\"ds-summary\">Contexto para cada evento.</span></button>",
+      "css": ".ds-stage{border:0;background:transparent;text-align:left;padding-right:18px;font-family:var(--font-sans);cursor:pointer;}.ds-node{width:57px;height:57px;display:grid;place-items:center;border:1px solid #456383;border-radius:50%;color:var(--color-text-bright);background:var(--color-bg);margin-bottom:13px;transition:background-color 180ms ease,border-color 180ms ease;}.ds-stage strong{display:block;font-size:15px;color:var(--color-text-bright);}.ds-summary{display:block;max-width:164px;margin-top:4px;font-size:12px;line-height:1.6;color:var(--color-text-body);}.ds-stage[aria-pressed=\"true\"] .ds-node{background:#0876ee;border-color:#91bfff;outline:3px solid #173a5e;}.ds-stage:hover .ds-node{border-color:var(--color-brand);}.ds-focus:focus-visible{outline:2px solid var(--color-brand);outline-offset:5px;}@media(max-width:600px){.ds-node{width:45px;height:45px;}.ds-node svg{width:20px;height:20px;}.ds-stage strong{font-size:11px;}.ds-summary{display:none;}}@media(prefers-reduced-motion:reduce){.ds-node{transition:none;}}"
+    },
+    {
+      "name": "Illustrative event row",
+      "kind": "custom",
+      "refersTo": "event-row-selected",
+      "description": "Selected example event; application selection updates the adjacent live-region evidence. This specimen is illustrative, not telemetry.",
+      "html": "<button type=\"button\" class=\"ds-event ds-focus\" aria-pressed=\"true\"><time>10:24</time><svg width=\"19\" height=\"19\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M14 2H5v20h14V7zM14 2v5h5M8 11h8M8 15h8M8 18h5\"/></svg><span><strong>Evento ilustrativo</strong><small>192.0.2.10</small></span></button>",
+      "css": ".ds-event{display:grid;grid-template-columns:35px 21px minmax(0,1fr);gap:9px;align-items:start;width:100%;min-height:44px;padding:6px;text-align:left;border:1px solid transparent;border-radius:8px;color:var(--color-text);font-family:var(--font-sans);background:transparent;cursor:pointer;transition:background-color 180ms ease,border-color 180ms ease;}.ds-event time{font-size:10px;color:var(--color-text-muted);font-variant-numeric:tabular-nums;}.ds-event strong{display:block;font-size:10.5px;font-weight:600;line-height:1.4;color:var(--color-text-bright);}.ds-event small{display:block;color:var(--color-text-muted);font-size:10px;line-height:1.5;margin-top:3px;overflow-wrap:anywhere;}.ds-event[aria-pressed=\"true\"]{background:#1a314d;border-color:#244665;}.ds-event:hover{background:#172a3e;}.ds-focus:focus-visible{outline:2px solid var(--color-brand);outline-offset:5px;}@media(max-width:600px){.ds-event{min-height:55px;grid-template-columns:40px 22px minmax(0,1fr);gap:11px;padding:10px 7px;}.ds-event strong{font-size:12px;}.ds-event small,.ds-event time{font-size:11px;}}@media(prefers-reduced-motion:reduce){.ds-event{transition:none;}}"
+    },
+    {
+      "name": "Agent capability link",
+      "kind": "custom",
+      "description": "Semantic destination beside the conceptual laptop illustration.",
+      "html": "<a href=\"#\" class=\"ds-agent-link ds-focus\"><svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"11\" cy=\"11\" r=\"7\"/><path d=\"m21 21-4.3-4.3\"/></svg><span><strong>Investigacao</strong><small>Contexto compartilhado</small></span></a>",
+      "css": ".ds-agent-link{display:flex;align-items:center;gap:12px;background:#111923;border:1px solid #34516c;border-radius:8px;min-height:48px;padding:7px 12px;font-family:var(--font-sans);color:var(--color-text);text-decoration:none;transition:border-color 180ms ease;}.ds-agent-link svg{width:20px;height:20px;flex-shrink:0;}.ds-agent-link strong{display:block;font-size:12px;color:var(--color-text-bright);}.ds-agent-link small{display:block;font-size:10px;color:var(--color-text-body);margin-top:3px;}.ds-agent-link:hover{border-color:var(--color-brand);}.ds-focus:focus-visible{outline:2px solid var(--color-brand);outline-offset:5px;}@media(max-width:600px){.ds-agent-link{padding:10px;gap:8px;}}@media(prefers-reduced-motion:reduce){.ds-agent-link{transition:none;}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Observatorio de seguranca",
+    "overview": "The security operation becomes an inspectable path: endpoint telemetry, detection, investigation, and response share a dark graphite field. Pale blue actions, functional blue connections, Manrope typography, and quiet borders carry the official application identity into the marketing website.\n\nThe owner approved the dark operation-flow reference in `.impeccable/mocks/flow-dark/approved.png`, replacing the centered homepage. The new surface pairs a left-aligned headline with selectable operation stages, an illustrative event-and-evidence panel, and a conceptual laptop illustration. The durable system keeps interactions explicit and distinguishes explanatory illustrations from real product evidence on Platform.",
+    "keyCharacteristics": [
+      "Dark graphite with pale blue actions and brighter functional connections.",
+      "Manrope for headings, narrative, navigation, and controls.",
+      "Semantic diagrams and selectable examples with visible state.",
+      "Official logo, conceptual illustration, and real anonymized captures with distinct provenance."
+    ],
+    "rules": [
+      {
+        "name": "The Application Identity Rule",
+        "body": "Use pale blue for calls to action, saturated blue for operation selection and connections, and preserve the supplied logo colors.",
+        "section": "colors"
+      },
+      {
+        "name": "The Flat Surface Rule",
+        "body": "Separate content with tonal backgrounds, spacing, and thin borders; the current interface has no drop shadows.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do use current website tokens and self-hosted Manrope.",
+      "Do preserve the official application logo geometry and uncropped wordmark.",
+      "Do label illustrative scenarios and retain their links to real Platform evidence.",
+      "Do preserve real anonymized captures, their proportions, and full-size access.",
+      "Do retain visible focus, keyboard tab navigation, selectable events, live evidence announcements, and reduced-motion support.",
+      "Do keep Portuguese and English routes and layouts equally usable."
+    ],
+    "donts": [
+      "Don't describe illustrative event data as live telemetry or operate real endpoints from the marketing example.",
+      "Don't turn screenshot metrics into guarantees or invent customers, performance, or certification claims.",
+      "Don't replace real product captures with generated dashboards; the generated laptop is a conceptual illustration.",
+      "Don't inherit unused centered-hero, old workflow, uppercase eyebrow, or legacy card styles.",
+      "Don't promote compact example-panel text sizes into general body typography."
+    ]
+  }
+}

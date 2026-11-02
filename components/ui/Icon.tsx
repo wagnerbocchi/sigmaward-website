@@ -7,6 +7,37 @@ const paths: Record<string, React.ReactNode> = {
       <path d="M12 9v4M12 17h.01" />
     </>
   ),
+  laptop: (
+    <>
+      <path d="M5 4h14v12H5z" />
+      <path d="M3 19h18l-2-3H5z" />
+    </>
+  ),
+  monitor: (
+    <>
+      <rect x="3" y="3" width="18" height="13" rx="1" />
+      <path d="M12 16v5M8 21h8" />
+    </>
+  ),
+  server: (
+    <>
+      <rect x="5" y="2" width="14" height="20" rx="2" />
+      <path d="M5 9h14M5 15h14M8 6h.01M8 12h.01M8 18h.01M12 6h4M12 12h4M12 18h4" />
+    </>
+  ),
+  "file-text": (
+    <>
+      <path d="M14 2H5v20h14V7zM14 2v5h5M8 11h8M8 15h8M8 18h5" />
+    </>
+  ),
+  settings: (
+    <>
+      <path d="m9 3 1-1h4l1 3 3 1 2-1 2 4-2 2v3l2 2-2 4-3-1-2 1-1 2h-4l-1-2-3-1-2 1-2-4 2-2v-3L2 9l2-4 3 1 2-1z" />
+      <circle cx="12" cy="12" r="3" />
+    </>
+  ),
+  "chevron-left": <path d="m14 5-7 7 7 7" />,
+  "chevron-right": <path d="m10 5 7 7-7 7" />,
   check: <path d="M20 6 9 17l-5-5" />,
   "arrow-down": (
     <>

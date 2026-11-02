@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Logo from "@/components/ui/Logo";
+import Brand from "@/components/ui/Brand";
 import LocaleToggle from "@/components/layout/LocaleToggle";
 import MobileMenu from "@/components/layout/MobileMenu";
 import { getDictionary, localizePath, type Locale } from "@/lib/i18n";
@@ -16,8 +16,7 @@ export default function Nav({ locale }: { locale: Locale }) {
           className="wordmark"
           aria-label="Sigmaward"
         >
-          <Logo size={38} />
-          <span>Sigmaward</span>
+          <Brand />
         </Link>
         <nav className="desktop-navigation" aria-label={d.product.navigation}>
           {(["platform", "solutions", "resources", "company"] as const).map(
@@ -30,7 +29,9 @@ export default function Nav({ locale }: { locale: Locale }) {
         </nav>
         <div className="desktop-controls">
           <LocaleToggle />
-          <Link href={localizePath("/login/", locale)}>{d.nav.login}</Link>
+          <Link className="console-link" href={localizePath("/login/", locale)}>
+            {d.nav.login}
+          </Link>
         </div>
         <MobileMenu locale={locale} />
       </div>

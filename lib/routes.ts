@@ -29,11 +29,11 @@ export function pageMetadata(route: string, locale: Locale): PageMeta {
     case "/solutions/":
       return { title: `${d.solutions.badge} — Sigmaward`, description: d.solutions.heroSub };
     case "/pricing/":
-      return { title: `${d.pricing.badge} — Sigmaward`, description: d.pricing.heroSub };
+      return { title: `${d.nav.pricing} — Sigmaward`, description: d.site.pricingIntro };
     case "/resources/":
-      return { title: `${d.resources.badge} — Sigmaward`, description: d.resources.heroSub };
+      return { title: `${d.nav.resources} — Sigmaward`, description: d.site.resourcesIntro };
     case "/company/":
-      return { title: `${d.company.badge} — Sigmaward`, description: d.company.heroSub };
+      return { title: `${d.nav.company} — Sigmaward`, description: d.site.companyIntro };
     case "/login/":
       return { title: `${d.login.badge} — Sigmaward`, description: d.login.heroSub };
     default:

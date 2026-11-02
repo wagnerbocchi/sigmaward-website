@@ -1,0 +1,103 @@
+{
+  "viewports": [
+    {
+      "width": 360,
+      "path": "/",
+      "overflow": false,
+      "selected": 1,
+      "heading": "Do primeiro\nsinal \u00e0 resposta.",
+      "copyBottom": 412.28125,
+      "panelTop": 553.78125
+    },
+    {
+      "width": 360,
+      "path": "/en/",
+      "overflow": false,
+      "selected": 1,
+      "heading": "From the first signal\nto response.",
+      "copyBottom": 412.28125,
+      "panelTop": 553.78125
+    },
+    {
+      "width": 768,
+      "path": "/",
+      "overflow": false,
+      "selected": 1,
+      "heading": "Do primeiro\nsinal \u00e0 resposta.",
+      "copyBottom": 370.8125,
+      "panelTop": 589.6875
+    },
+    {
+      "width": 768,
+      "path": "/en/",
+      "overflow": false,
+      "selected": 1,
+      "heading": "From the first signal\nto response.",
+      "copyBottom": 370.8125,
+      "panelTop": 589.6875
+    },
+    {
+      "width": 1024,
+      "path": "/",
+      "overflow": false,
+      "selected": 1,
+      "heading": "Do primeiro\nsinal \u00e0 resposta.",
+      "copyBottom": 416.234375,
+      "panelTop": 372
+    },
+    {
+      "width": 1024,
+      "path": "/en/",
+      "overflow": false,
+      "selected": 1,
+      "heading": "From the first signal\nto response.",
+      "copyBottom": 416.234375,
+      "panelTop": 372
+    },
+    {
+      "width": 1101,
+      "path": "/",
+      "overflow": false,
+      "selected": 1,
+      "heading": "Do primeiro\nsinal \u00e0 resposta.",
+      "copyBottom": 362.15625,
+      "panelTop": 372
+    },
+    {
+      "width": 1101,
+      "path": "/en/",
+      "overflow": false,
+      "selected": 1,
+      "heading": "From the first signal\nto response.",
+      "copyBottom": 416.234375,
+      "panelTop": 372
+    },
+    {
+      "width": 1540,
+      "path": "/",
+      "overflow": false,
+      "selected": 1,
+      "heading": "Do primeiro\nsinal \u00e0 resposta.",
+      "copyBottom": 407.9375,
+      "panelTop": 352
+    },
+    {
+      "width": 1540,
+      "path": "/en/",
+      "overflow": false,
+      "selected": 1,
+      "heading": "From the first signal\nto response.",
+      "copyBottom": 478.40625,
+      "panelTop": 352
+    }
+  ],
+  "checks": [
+    "ArrowRight changes stage and moves focus",
+    "End and Home select last/first stage",
+    "Previous/next wrap through all stages",
+    "Event selection updates evidence and pressed state",
+    "English mobile event selection uses English content",
+    "Selected-stage connector follows the active node"
+  ],
+  "passed": true
+}

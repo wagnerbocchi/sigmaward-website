@@ -2,48 +2,55 @@ import Nav from "@/components/layout/Nav";
 import Footer from "@/components/layout/Footer";
 import PageHero from "@/components/sections/PageHero";
 import FinalCta from "@/components/sections/FinalCta";
-import PlatformShot from "@/components/mocks/PlatformShot";
-import { getDictionary, type Locale } from "@/lib/i18n";
-
-// One real product capture per solution block (order mirrors dict.solutions.blocks).
-const CAPTURES = [
-  { src: "/screenshots/current/fleet.jpg", alt: "Sigmaward — fleet management with anonymized identifiers" },
-  { src: "/screenshots/current/case-detail.jpg", alt: "Sigmaward — case investigation" },
-  { src: "/screenshots/current/watchfloor.jpg", alt: "Sigmaward — Watchfloor" },
-  { src: "/screenshots/current/cases.jpg", alt: "Sigmaward — cases and SLA" },
-] as const;
-
+import DetailList from "@/components/ui/DetailList";
+import TextLink from "@/components/ui/TextLink";
+import { getDictionary, localizePath, type Locale } from "@/lib/i18n";
+const anchors = ["mssp", "soc", "risk", "compliance"];
+const modules = ["governance", "investigation", "detection", "governance"];
 export default function SolutionsPage({ locale }: { locale: Locale }) {
   const dict = getDictionary(locale);
-  const s = dict.solutions;
-
   return (
     <>
       <Nav locale={locale} />
       <main id="main-content">
-        <PageHero badge={s.badge} title={s.heroTitle} sub={s.heroSub} />
-        {s.blocks.map((block, i) => (
-          <section
-            key={block.eyebrow}
-            className={i % 2 === 0 ? "surface-section" : "site-container feature-split"}
-          >
-            <div className={i % 2 === 0 ? "site-container feature-split" : ""}>
-              <div>
-                <p className="eyebrow">{block.eyebrow}</p>
-                <h2>{block.title}</h2>
-                <p>{block.body}</p>
-                <ul className="detail-list">
-                  {block.bullets.map((b) => (
-                    <li key={b}>{b}</li>
-                  ))}
-                </ul>
+        <PageHero
+          locale={locale}
+          badge={dict.nav.solutions}
+          title={dict.solutions.heroTitle}
+          sub={dict.solutions.heroSub}
+        />
+        <nav
+          className="site-container section-nav"
+          aria-label={dict.nav.solutions}
+        >
+          {dict.solutions.blocks.map((block, i) => (
+            <a key={anchors[i]} href={`#${anchors[i]}`}>
+              {block.eyebrow}
+            </a>
+          ))}
+        </nav>
+        <div className="site-container">
+          {dict.solutions.blocks.map((block, i) => (
+            <section
+              key={anchors[i]}
+              id={anchors[i]}
+              className="solution-block"
+            >
+              <h2>{block.title}</h2>
+              <div className="solution-layout">
+                <div>
+                  <p>{block.body}</p>
+                  <TextLink
+                    href={`${localizePath("/platform/", locale)}#${modules[i]}`}
+                  >
+                    {dict.site.explore}
+                  </TextLink>
+                </div>
+                <DetailList items={block.bullets} />
               </div>
-              <div>
-                <PlatformShot src={CAPTURES[i].src} alt={CAPTURES[i].alt} />
-              </div>
-            </div>
-          </section>
-        ))}
+            </section>
+          ))}
+        </div>
         <FinalCta dict={dict} locale={locale} />
       </main>
       <Footer locale={locale} />

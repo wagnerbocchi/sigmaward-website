@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Logo from "@/components/ui/Logo";
+import Brand from "@/components/ui/Brand";
 import { getDictionary, localizePath, type Locale } from "@/lib/i18n";
 export default function Footer({ locale }: { locale: Locale }) {
   const d = getDictionary(locale);
@@ -9,8 +9,7 @@ export default function Footer({ locale }: { locale: Locale }) {
         <div className="footer-top">
           <div>
             <Link className="wordmark" href={localizePath("/", locale)}>
-              <Logo size={32} />
-              <span>Sigmaward</span>
+              <Brand />
             </Link>
             <a className="company-credit" href="https://bocchi.company/">
               {d.product.companyLink}
