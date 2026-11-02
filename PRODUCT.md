@@ -122,3 +122,9 @@ palette change on every refinement.
    guarantees or independent validation.
 4. Preserve Portuguese-first access and English parity throughout evaluation.
 5. Make product evaluation, contact, and access to the existing console clear.
+
+## Operation-flow revision (2026-11-02)
+
+The owner approved the dark operation-flow composition after comparing light and dark variants. This supersedes the centered Home composition. The Home explains the product through interactive stages and a clearly disclosed illustrative scenario; deeper pages retain actual application captures and product descriptions. The endpoint agent remains the central product relationship.
+
+The owner explicitly authorized pushing the completed website to GitHub and will perform deployment on Hostinger. Preserve static export, PT/EN parity, existing contact/console destinations, and the distinction between conceptual illustration, example events and actual product evidence.

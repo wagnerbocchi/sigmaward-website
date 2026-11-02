@@ -1,132 +1,142 @@
 {
   "tool": "comp-spec",
   "version": 1,
-  "createdAt": "2026-11-02T02:04:53.497Z",
-  "comp": ".impeccable/mocks/decision/canon.png",
-  "warnings": [],
+  "createdAt": "2026-11-02T03:07:19.737Z",
+  "comp": ".impeccable/mocks/flow-dark/approved.png",
+  "warnings": [
+    "region nav: \"codeDrawn\": true set in the regions file (the painted-material refusal is overridden: code draws this region)",
+    "region stages: \"codeDrawn\": true set in the regions file (the painted-material refusal is overridden: code draws this region)",
+    "region endpoint-map: \"codeDrawn\": true set in the regions file (the painted-material refusal is overridden: code draws this region)",
+    "region panel: \"codeDrawn\": true set in the regions file (the painted-material refusal is overridden: code draws this region)",
+    "region laptop: \"bleed\": true set in the regions file (the clipped-artwork refusal is overridden: the page crops it there)",
+    "region capability-links: \"codeDrawn\": true set in the regions file (the painted-material refusal is overridden: code draws this region)"
+  ],
   "uncoveredInkCells": [
-    "D3",
+    "A2",
+    "B2",
+    "C2",
+    "D2",
     "E3",
     "F3",
-    "D8"
+    "G3",
+    "H3",
+    "A7",
+    "B7"
   ],
   "compSize": {
-    "width": 1536,
-    "height": 1024
+    "width": 1540,
+    "height": 1021
   },
-  "aspect": 1.5,
+  "aspect": 1.5083,
   "orientation": "landscape",
   "palette": [
     {
-      "hex": "#0c1818",
-      "coverage": 0.6346
+      "hex": "#091818",
+      "coverage": 0.7855
     },
     {
-      "hex": "#121323",
-      "coverage": 0.3093
+      "hex": "#121829",
+      "coverage": 0.1646
     },
     {
-      "hex": "#2a3541",
-      "coverage": 0.0287
+      "hex": "#f2f3f4",
+      "coverage": 0.0239
     },
     {
-      "hex": "#edf0f6",
-      "coverage": 0.0214
+      "hex": "#2f3a49",
+      "coverage": 0.0158
     },
     {
-      "hex": "#818a97",
-      "coverage": 0.006
+      "hex": "#92979f",
+      "coverage": 0.0102
     }
   ],
   "bands": [
     {
       "y": 0.0235,
-      "strength": 0.235
+      "strength": 0.3305
     },
     {
-      "y": 0.1176,
-      "strength": 0.4025
-    },
-    {
-      "y": 0.1529,
-      "strength": 0.5439
+      "y": 0.1647,
+      "strength": 0.2694
     },
     {
       "y": 0.1882,
-      "strength": 0.72
+      "strength": 0.4216
     },
     {
-      "y": 0.2235,
-      "strength": 0.7253
+      "y": 0.2353,
+      "strength": 0.3823
     },
     {
-      "y": 0.2706,
-      "strength": 0.2151
+      "y": 0.3059,
+      "strength": 0.245
     },
     {
-      "y": 0.2941,
-      "strength": 0.2787
+      "y": 0.3765,
+      "strength": 0.209
     },
     {
-      "y": 0.3412,
-      "strength": 0.2497
+      "y": 0.8235,
+      "strength": 0.4268
     },
     {
-      "y": 0.8941,
-      "strength": 0.4143
+      "y": 0.8588,
+      "strength": 0.5025
     },
     {
-      "y": 0.9176,
-      "strength": 0.4113
+      "y": 0.9529,
+      "strength": 0.3077
     },
     {
       "y": 0.9882,
-      "strength": 0.3199
+      "strength": 0.3844
     }
   ],
   "regions": [
     {
       "id": "nav",
       "kind": "chrome",
-      "note": "Navigation with official logo and page links",
+      "note": "Semantic HTML controls, labels and countable SVG paths.",
       "grid": null,
+      "codeDrawn": true,
       "box": {
-        "x": 0.084,
-        "y": 0.0146,
-        "w": 0.832,
-        "h": 0.041
+        "x": 0.0312,
+        "y": 0.0137,
+        "w": 0.9318,
+        "h": 0.0392
       },
       "px": {
-        "x": 129,
-        "y": 15,
-        "w": 1278,
-        "h": 42
+        "x": 48,
+        "y": 14,
+        "w": 1435,
+        "h": 40
       },
-      "aspect": 30.4286,
+      "aspect": 35.875,
       "palette": [
         {
-          "hex": "#0e1718",
-          "coverage": 0.9504
+          "hex": "#081818",
+          "coverage": 0.9389
         },
         {
-          "hex": "#f0f2f3",
-          "coverage": 0.0259
+          "hex": "#edeef0",
+          "coverage": 0.0214
         },
         {
-          "hex": "#617179",
-          "coverage": 0.0093
+          "hex": "#8b8f93",
+          "coverage": 0.0163
         },
         {
-          "hex": "#c7cbcc",
-          "coverage": 0.0079
+          "hex": "#54585e",
+          "coverage": 0.0163
         },
         {
-          "hex": "#53596e",
-          "coverage": 0.0065
+          "hex": "#bbc0c6",
+          "coverage": 0.0072
         }
       ],
       "detail": {
-        "energy": 21.3476
+        "energy": 23.5941
       },
       "medium": "semantic",
       "plate": null,
@@ -139,45 +149,45 @@
     {
       "id": "headline",
       "kind": "text",
-      "note": "Toda a operação. Uma visão de segurança.",
+      "note": "Live readable text or link.",
       "grid": null,
       "box": {
-        "x": 0.2539,
-        "y": 0.1016,
-        "w": 0.4909,
-        "h": 0.1221
+        "x": 0.0318,
+        "y": 0.1058,
+        "w": 0.3182,
+        "h": 0.1273
       },
       "px": {
-        "x": 390,
-        "y": 104,
-        "w": 754,
-        "h": 125
+        "x": 49,
+        "y": 108,
+        "w": 490,
+        "h": 130
       },
-      "aspect": 6.032,
+      "aspect": 3.7692,
       "palette": [
         {
-          "hex": "#0b1718",
-          "coverage": 0.7318
+          "hex": "#0a1618",
+          "coverage": 0.6899
         },
         {
-          "hex": "#edf1f8",
-          "coverage": 0.2335
+          "hex": "#f6f7f7",
+          "coverage": 0.2585
         },
         {
-          "hex": "#949ca3",
-          "coverage": 0.014
+          "hex": "#babcc2",
+          "coverage": 0.0192
         },
         {
-          "hex": "#c9ced9",
-          "coverage": 0.0118
+          "hex": "#363940",
+          "coverage": 0.0174
         },
         {
-          "hex": "#666a75",
-          "coverage": 0.0089
+          "hex": "#64686f",
+          "coverage": 0.015
         }
       ],
       "detail": {
-        "energy": 91.4358
+        "energy": 73.7009
       },
       "medium": "semantic",
       "plate": null,
@@ -189,99 +199,93 @@
       "type": {
         "comp": {
           "lines": 2,
-          "glyphs": 31,
-          "capHeightPx": 47.5,
+          "glyphs": 19,
+          "capHeightPx": 52.2,
           "inkIsDark": false,
           "allCaps": false,
-          "advance": 0.6542,
-          "advTall": 0.7053,
-          "advX": 0.6542,
-          "gap": 0.084,
-          "xRatio": 0.7153,
-          "stemW": 0.2134,
-          "contrast": 1.2404,
-          "serif": 1.6649,
-          "densTall": 0.5964,
-          "densX": 0.651,
-          "weight": 0.5964
+          "advance": 0.6295,
+          "advTall": 0.1731,
+          "advX": 0.6704,
+          "gap": 0.0577,
+          "xRatio": 0.7223,
+          "stemW": 0.1867,
+          "contrast": 1.1392,
+          "serif": 0.9877,
+          "densTall": 0.8836,
+          "densX": 0.5965,
+          "weight": 0.8836
         },
         "widthClass": "normal",
-        "weightClass": "bold",
+        "weightClass": "black",
         "chosen": {
-          "family": "Signika Negative",
+          "family": "Amiko",
           "weight": 700,
-          "fontSizePx": 68,
+          "fontSizePx": 69,
           "source": "index",
           "fp": {
             "lines": 1,
-            "glyphs": 13,
-            "capHeightPx": 47,
+            "glyphs": 10,
+            "capHeightPx": 52.2,
             "inkIsDark": true,
             "allCaps": false,
-            "advance": 0.6383,
-            "advTall": 0.6489,
-            "advX": 0.6383,
-            "gap": 0.0851,
-            "xRatio": 0.7234,
-            "stemW": 0.2194,
-            "contrast": 1.318,
-            "serif": 1.7021,
-            "densTall": 0.5964,
-            "densX": 0.658,
-            "weight": 0.5964
+            "advance": 0.6317,
+            "advTall": 0.1723,
+            "advX": 0.6605,
+            "gap": 0.1914,
+            "xRatio": 0.6892,
+            "stemW": 0.1767,
+            "contrast": 1.1499,
+            "serif": 1,
+            "densTall": 0.8489,
+            "densX": 0.5768,
+            "weight": 0.8489
           },
-          "stamp": "0bf881f0ed63"
+          "stamp": "8b63b93005e1"
         }
-      },
-      "implementationFont": {
-        "family": "Manrope Variable",
-        "weight": 750,
-        "fontSizePx": 68,
-        "reason": "Contracted self-hosted type; retained matching sans character reviewed against comp. fontMatch.chosen remains diagnostic, not an implementation token."
       }
     },
     {
       "id": "intro",
       "kind": "text",
-      "note": "Detecção, investigação, resposta e saúde dos endpoints no mesmo ambiente.",
+      "note": "Live readable text or link.",
       "grid": null,
       "box": {
-        "x": 0.1868,
-        "y": 0.2471,
-        "w": 0.6263,
-        "h": 0.0293
+        "x": 0.0318,
+        "y": 0.2566,
+        "w": 0.3247,
+        "h": 0.049
       },
       "px": {
-        "x": 287,
-        "y": 253,
-        "w": 962,
-        "h": 30
+        "x": 49,
+        "y": 262,
+        "w": 500,
+        "h": 50
       },
-      "aspect": 32.0667,
+      "aspect": 10,
       "palette": [
         {
-          "hex": "#0b1619",
-          "coverage": 0.8669
+          "hex": "#0b1517",
+          "coverage": 0.8448
         },
         {
-          "hex": "#b2bdca",
-          "coverage": 0.0543
+          "hex": "#e9ecee",
+          "coverage": 0.0473
         },
         {
-          "hex": "#313343",
-          "coverage": 0.034
+          "hex": "#adb1b7",
+          "coverage": 0.0466
         },
         {
-          "hex": "#344242",
-          "coverage": 0.0225
+          "hex": "#707578",
+          "coverage": 0.0315
         },
         {
-          "hex": "#7b868e",
-          "coverage": 0.0222
+          "hex": "#34393f",
+          "coverage": 0.0297
         }
       ],
       "detail": {
-        "energy": 45.7016
+        "energy": 62.2689
       },
       "medium": "semantic",
       "plate": null,
@@ -292,22 +296,22 @@
       },
       "type": {
         "comp": {
-          "lines": 1,
-          "glyphs": 61,
-          "capHeightPx": 16.5,
+          "lines": 2,
+          "glyphs": 67,
+          "capHeightPx": 14.8,
           "inkIsDark": false,
           "allCaps": false,
-          "advance": 0.6058,
-          "advTall": 0.5755,
-          "advX": 0.6058,
-          "gap": 0.1212,
-          "xRatio": 0.7125,
-          "stemW": 0.1375,
-          "contrast": 1.1275,
-          "serif": 0.3755,
-          "densTall": 0.4615,
-          "densX": 0.5058,
-          "weight": 0.4615
+          "advance": 0.6005,
+          "advTall": 0.5222,
+          "advX": 0.6147,
+          "gap": 0.135,
+          "xRatio": 0.7154,
+          "stemW": 0.1485,
+          "contrast": 1.0591,
+          "serif": 0.3231,
+          "densTall": 0.4728,
+          "densX": 0.5405,
+          "weight": 0.4728
         },
         "widthClass": "normal",
         "weightClass": "regular"
@@ -316,45 +320,45 @@
     {
       "id": "primary",
       "kind": "control",
-      "note": "Solicitar demonstração primary link",
+      "note": "Live readable text or link.",
       "grid": null,
       "box": {
-        "x": 0.3516,
-        "y": 0.292,
-        "w": 0.1497,
-        "h": 0.0469
+        "x": 0.0325,
+        "y": 0.331,
+        "w": 0.1695,
+        "h": 0.05
       },
       "px": {
-        "x": 540,
-        "y": 299,
-        "w": 230,
-        "h": 48
+        "x": 50,
+        "y": 338,
+        "w": 261,
+        "h": 51
       },
-      "aspect": 4.7917,
+      "aspect": 5.1176,
       "palette": [
         {
-          "hex": "#579af8",
-          "coverage": 0.8388
+          "hex": "#7aaff7",
+          "coverage": 0.8409
         },
         {
-          "hex": "#26395c",
-          "coverage": 0.074
+          "hex": "#374e76",
+          "coverage": 0.0782
         },
         {
-          "hex": "#0a111b",
-          "coverage": 0.0362
+          "hex": "#7fb3e2",
+          "coverage": 0.0336
         },
         {
-          "hex": "#3c6daf",
-          "coverage": 0.0296
+          "hex": "#0d0f15",
+          "coverage": 0.0267
         },
         {
-          "hex": "#61afee",
-          "coverage": 0.0214
+          "hex": "#5377ac",
+          "coverage": 0.0206
         }
       ],
       "detail": {
-        "energy": 23.8322
+        "energy": 28.6758
       },
       "medium": "semantic",
       "plate": null,
@@ -367,45 +371,45 @@
     {
       "id": "secondary",
       "kind": "control",
-      "note": "Conheça a plataforma secondary link",
+      "note": "Live readable text or link.",
       "grid": null,
       "box": {
-        "x": 0.5137,
-        "y": 0.292,
-        "w": 0.1354,
-        "h": 0.0469
+        "x": 0.211,
+        "y": 0.331,
+        "w": 0.1344,
+        "h": 0.05
       },
       "px": {
-        "x": 789,
-        "y": 299,
-        "w": 208,
-        "h": 48
+        "x": 325,
+        "y": 338,
+        "w": 207,
+        "h": 51
       },
-      "aspect": 4.3333,
+      "aspect": 4.0588,
       "palette": [
         {
-          "hex": "#091518",
-          "coverage": 0.7899
+          "hex": "#091616",
+          "coverage": 0.819
         },
         {
-          "hex": "#34394b",
-          "coverage": 0.1404
+          "hex": "#192434",
+          "coverage": 0.0736
         },
         {
-          "hex": "#678ab7",
-          "coverage": 0.0335
+          "hex": "#59799c",
+          "coverage": 0.0577
         },
         {
-          "hex": "#8abdea",
-          "coverage": 0.0199
+          "hex": "#f3f4f4",
+          "coverage": 0.0266
         },
         {
-          "hex": "#495d79",
-          "coverage": 0.0163
+          "hex": "#8a8c92",
+          "coverage": 0.0231
         }
       ],
       "detail": {
-        "energy": 24.7424
+        "energy": 36.4734
       },
       "medium": "semantic",
       "plate": null,
@@ -416,94 +420,48 @@
       }
     },
     {
-      "id": "product",
-      "kind": "image",
-      "note": "Illustrative application replaced with existing real anonymized product screenshot at user request; user-authorized actual screenshot replaces illustrative generated interface; native resolution retained.",
+      "id": "stages",
+      "kind": "chrome",
+      "note": "Semantic HTML controls, labels and countable SVG paths.",
       "grid": null,
+      "codeDrawn": true,
       "box": {
-        "x": 0.084,
-        "y": 0.3535,
-        "w": 0.8307,
-        "h": 0.4746
+        "x": 0.3799,
+        "y": 0.1009,
+        "w": 0.5961,
+        "h": 0.2311
       },
       "px": {
-        "x": 129,
-        "y": 362,
-        "w": 1276,
-        "h": 486
+        "x": 585,
+        "y": 103,
+        "w": 918,
+        "h": 236
       },
-      "aspect": 2.6255,
+      "aspect": 3.8898,
       "palette": [
         {
-          "hex": "#161821",
-          "coverage": 0.9193
+          "hex": "#091818",
+          "coverage": 0.8993
         },
         {
-          "hex": "#2b3543",
-          "coverage": 0.0611
+          "hex": "#101425",
+          "coverage": 0.0703
         },
         {
-          "hex": "#838e9b",
-          "coverage": 0.0105
+          "hex": "#1f2f44",
+          "coverage": 0.0103
         },
         {
-          "hex": "#56606c",
-          "coverage": 0.0054
+          "hex": "#086bf8",
+          "coverage": 0.0103
         },
         {
-          "hex": "#aab5c1",
-          "coverage": 0.0037
+          "hex": "#90949b",
+          "coverage": 0.0098
         }
       ],
       "detail": {
-        "energy": 13.2523
-      },
-      "medium": "raster",
-      "plate": "public/screenshots/current/watchfloor.jpg",
-      "text": null
-    },
-    {
-      "id": "caption",
-      "kind": "text",
-      "note": "Real interface provenance caption",
-      "grid": null,
-      "box": {
-        "x": 0.4466,
-        "y": 0.8398,
-        "w": 0.1087,
-        "h": 0.0127
-      },
-      "px": {
-        "x": 686,
-        "y": 860,
-        "w": 167,
-        "h": 13
-      },
-      "aspect": 12.8462,
-      "palette": [
-        {
-          "hex": "#091718",
-          "coverage": 0.8107
-        },
-        {
-          "hex": "#8895a3",
-          "coverage": 0.0821
-        },
-        {
-          "hex": "#56616b",
-          "coverage": 0.0679
-        },
-        {
-          "hex": "#383e46",
-          "coverage": 0.0357
-        },
-        {
-          "hex": "#b8c8d8",
-          "coverage": 0.0036
-        }
-      ],
-      "detail": {
-        "energy": 27.8697
+        "energy": 17.1216
       },
       "medium": "semantic",
       "plate": null,
@@ -511,72 +469,103 @@
       "surface": {
         "flat": false,
         "rules": false
-      },
-      "type": {
-        "comp": {
-          "lines": 1,
-          "glyphs": 14,
-          "capHeightPx": 9.1,
-          "inkIsDark": false,
-          "allCaps": false,
-          "advance": 0.5518,
-          "advTall": 0.2759,
-          "advX": 0.607,
-          "gap": 0.0736,
-          "xRatio": 0.7143,
-          "stemW": 0.1852,
-          "contrast": 1.214,
-          "serif": 0.2637,
-          "densTall": 0.5776,
-          "densX": 0.6251,
-          "weight": 0.5776
-        },
-        "widthClass": "normal",
-        "weightClass": "bold"
       }
     },
     {
-      "id": "next-heading",
-      "kind": "text",
-      "note": "Do sinal à resposta, com contexto.",
+      "id": "endpoint-map",
+      "kind": "chrome",
+      "note": "Semantic HTML controls, labels and countable SVG paths.",
       "grid": null,
+      "codeDrawn": true,
       "box": {
-        "x": 0.2409,
-        "y": 0.8857,
-        "w": 0.5176,
-        "h": 0.0391
+        "x": 0.0312,
+        "y": 0.4398,
+        "w": 0.487,
+        "h": 0.2008
       },
       "px": {
-        "x": 370,
-        "y": 907,
-        "w": 795,
-        "h": 40
+        "x": 48,
+        "y": 449,
+        "w": 750,
+        "h": 205
       },
-      "aspect": 19.875,
+      "aspect": 3.6585,
       "palette": [
         {
-          "hex": "#0a1618",
-          "coverage": 0.7411
+          "hex": "#091818",
+          "coverage": 0.6404
         },
         {
-          "hex": "#eff2f5",
-          "coverage": 0.2024
+          "hex": "#161728",
+          "coverage": 0.3141
         },
         {
-          "hex": "#333743",
-          "coverage": 0.0227
+          "hex": "#253a51",
+          "coverage": 0.0381
         },
         {
-          "hex": "#687179",
+          "hex": "#f4f4f4",
+          "coverage": 0.0041
+        },
+        {
+          "hex": "#285893",
+          "coverage": 0.0033
+        }
+      ],
+      "detail": {
+        "energy": 13.0589
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      }
+    },
+    {
+      "id": "panel",
+      "kind": "chrome",
+      "note": "Semantic HTML controls, labels and countable SVG paths.",
+      "grid": null,
+      "codeDrawn": true,
+      "box": {
+        "x": 0.5623,
+        "y": 0.3565,
+        "w": 0.3974,
+        "h": 0.3369
+      },
+      "px": {
+        "x": 866,
+        "y": 364,
+        "w": 612,
+        "h": 344
+      },
+      "aspect": 1.7791,
+      "palette": [
+        {
+          "hex": "#09181b",
+          "coverage": 0.8519
+        },
+        {
+          "hex": "#182944",
+          "coverage": 0.0883
+        },
+        {
+          "hex": "#3d495e",
+          "coverage": 0.0246
+        },
+        {
+          "hex": "#747e8c",
           "coverage": 0.0211
         },
         {
-          "hex": "#b3b5c1",
-          "coverage": 0.0127
+          "hex": "#a8b2ba",
+          "coverage": 0.0141
         }
       ],
       "detail": {
-        "energy": 126.8959
+        "energy": 19.5186
       },
       "medium": "semantic",
       "plate": null,
@@ -584,72 +573,50 @@
       "surface": {
         "flat": false,
         "rules": false
-      },
-      "type": {
-        "comp": {
-          "lines": 1,
-          "glyphs": 23,
-          "capHeightPx": 30.7,
-          "inkIsDark": false,
-          "allCaps": false,
-          "advance": 0.6514,
-          "advTall": 0.57,
-          "advX": 0.6514,
-          "gap": 0.0651,
-          "xRatio": 0.7166,
-          "stemW": 0.2049,
-          "contrast": 1.2252,
-          "serif": 0.4663,
-          "densTall": 0.5715,
-          "densX": 0.6383,
-          "weight": 0.5715
-        },
-        "widthClass": "normal",
-        "weightClass": "bold"
       }
     },
     {
-      "id": "next-intro",
+      "id": "shared-heading",
       "kind": "text",
-      "note": "Unified endpoint telemetry and operational workflow",
+      "note": "Live readable text or link.",
       "grid": null,
       "box": {
-        "x": 0.1979,
-        "y": 0.9434,
-        "w": 0.6048,
-        "h": 0.0449
+        "x": 0.0325,
+        "y": 0.7659,
+        "w": 0.3571,
+        "h": 0.0921
       },
       "px": {
-        "x": 304,
-        "y": 966,
-        "w": 929,
-        "h": 46
+        "x": 50,
+        "y": 782,
+        "w": 550,
+        "h": 94
       },
-      "aspect": 20.1957,
+      "aspect": 5.8511,
       "palette": [
         {
-          "hex": "#0b1518",
-          "coverage": 0.8297
+          "hex": "#0a1618",
+          "coverage": 0.7422
         },
         {
-          "hex": "#d0d5dc",
-          "coverage": 0.0596
+          "hex": "#f1f2f5",
+          "coverage": 0.2028
         },
         {
-          "hex": "#353942",
-          "coverage": 0.0448
+          "hex": "#373b46",
+          "coverage": 0.0215
         },
         {
-          "hex": "#8d939b",
-          "coverage": 0.0368
+          "hex": "#b4b7c1",
+          "coverage": 0.0213
         },
         {
-          "hex": "#5e656c",
-          "coverage": 0.0291
+          "hex": "#707080",
+          "coverage": 0.0122
         }
       ],
       "detail": {
-        "energy": 52.7691
+        "energy": 84.2526
       },
       "medium": "semantic",
       "plate": null,
@@ -661,30 +628,203 @@
       "type": {
         "comp": {
           "lines": 2,
-          "glyphs": 132,
-          "capHeightPx": 14,
+          "glyphs": 23,
+          "capHeightPx": 36.7,
           "inkIsDark": false,
           "allCaps": false,
-          "advance": 0.5877,
-          "advTall": 0.4284,
-          "advX": 0.6042,
-          "gap": 0.1422,
-          "xRatio": 0.7105,
-          "stemW": 0.1497,
-          "contrast": 1.1384,
-          "serif": 0.3619,
-          "densTall": 0.4611,
-          "densX": 0.5153,
-          "weight": 0.4611
+          "advance": 0.7327,
+          "advTall": 0.7945,
+          "advX": 0.7225,
+          "gap": 0.0548,
+          "xRatio": 0.732,
+          "stemW": 0.1888,
+          "contrast": 1.154,
+          "serif": 0.7932,
+          "densTall": 0.5091,
+          "densX": 0.5956,
+          "weight": 0.5091
+        },
+        "widthClass": "wide",
+        "weightClass": "medium"
+      }
+    },
+    {
+      "id": "shared-body",
+      "kind": "text",
+      "note": "Live readable text or link.",
+      "grid": null,
+      "box": {
+        "x": 0.0325,
+        "y": 0.8834,
+        "w": 0.4039,
+        "h": 0.094
+      },
+      "px": {
+        "x": 50,
+        "y": 902,
+        "w": 622,
+        "h": 96
+      },
+      "aspect": 6.4792,
+      "palette": [
+        {
+          "hex": "#0c1618",
+          "coverage": 0.8468
+        },
+        {
+          "hex": "#c0c2c8",
+          "coverage": 0.0543
+        },
+        {
+          "hex": "#63686e",
+          "coverage": 0.0367
+        },
+        {
+          "hex": "#383b43",
+          "coverage": 0.0341
+        },
+        {
+          "hex": "#eef0f3",
+          "coverage": 0.0281
+        }
+      ],
+      "detail": {
+        "energy": 50.2902
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
+      },
+      "type": {
+        "comp": {
+          "lines": 3,
+          "glyphs": 159,
+          "capHeightPx": 14.5,
+          "inkIsDark": false,
+          "allCaps": false,
+          "advance": 0.5848,
+          "advTall": 0.4274,
+          "advX": 0.6055,
+          "gap": 0.13,
+          "xRatio": 0.7068,
+          "stemW": 0.1504,
+          "contrast": 1.0966,
+          "serif": 0.3926,
+          "densTall": 0.4813,
+          "densX": 0.5284,
+          "weight": 0.4813
         },
         "widthClass": "normal",
-        "weightClass": "regular"
+        "weightClass": "medium"
+      }
+    },
+    {
+      "id": "laptop",
+      "kind": "image",
+      "note": "Conceptual laptop product illustration.",
+      "grid": null,
+      "bleed": true,
+      "box": {
+        "x": 0.5136,
+        "y": 0.7463,
+        "w": 0.2961,
+        "h": 0.2507
+      },
+      "px": {
+        "x": 791,
+        "y": 762,
+        "w": 456,
+        "h": 256
+      },
+      "aspect": 1.7813,
+      "palette": [
+        {
+          "hex": "#0c161f",
+          "coverage": 0.8816
+        },
+        {
+          "hex": "#092347",
+          "coverage": 0.0343
+        },
+        {
+          "hex": "#b6bcc3",
+          "coverage": 0.0281
+        },
+        {
+          "hex": "#0f3c78",
+          "coverage": 0.0281
+        },
+        {
+          "hex": "#404552",
+          "coverage": 0.028
+        }
+      ],
+      "detail": {
+        "energy": 18.4566
+      },
+      "medium": "raster",
+      "plate": "public/illustrations/agent-laptop.png",
+      "text": null
+    },
+    {
+      "id": "capability-links",
+      "kind": "chrome",
+      "note": "Semantic HTML controls, labels and countable SVG paths.",
+      "grid": null,
+      "codeDrawn": true,
+      "box": {
+        "x": 0.8331,
+        "y": 0.7493,
+        "w": 0.137,
+        "h": 0.2321
+      },
+      "px": {
+        "x": 1283,
+        "y": 765,
+        "w": 211,
+        "h": 237
+      },
+      "aspect": 0.8903,
+      "palette": [
+        {
+          "hex": "#161727",
+          "coverage": 0.5729
+        },
+        {
+          "hex": "#0a1919",
+          "coverage": 0.2961
+        },
+        {
+          "hex": "#253343",
+          "coverage": 0.0883
+        },
+        {
+          "hex": "#848e9d",
+          "coverage": 0.0252
+        },
+        {
+          "hex": "#e8eaec",
+          "coverage": 0.0175
+        }
+      ],
+      "detail": {
+        "energy": 21.5421
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "surface": {
+        "flat": false,
+        "rules": false
       }
     }
   ],
-  "compSha256": "5770d0aa1b9086769d441abeafacb190c8530f45f97dfb4c5b119c8f35d2f016",
+  "compSha256": "3e439f691a9118d3c19a5584a8d31b3574606d3e2e9ed23d52762d6af004ced9",
   "regionsSource": {
     "path": ".impeccable/build/regions.json",
-    "sha256": "df78fde4f5a5fb990630634b32e5639c42d338ed1b8a32b180cd38263bd7794c"
+    "sha256": "952e21d902fcac90b329561740acc2abe5c22307187e8087ae4937d5a4af321a"
   }
 }

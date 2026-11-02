@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-02T02:32:04.885895+00:00",
+  "generatedAt": "2026-11-02T03:15:21.513149+00:00",
   "title": "Design System: Sigmaward",
   "extensions": {
     "colorMeta": {
@@ -213,12 +213,124 @@
           "oklch(85% 0.0097 258.37)",
           "oklch(95% 0.0029 258.37)"
         ]
+      },
+      "connection": {
+        "role": "primary",
+        "displayName": "Connection",
+        "tonalRamp": [
+          "oklch(15% 0.0539 256.21)",
+          "oklch(25% 0.0898 256.21)",
+          "oklch(36% 0.1346 256.21)",
+          "oklch(48% 0.1795 256.21)",
+          "oklch(60% 0.1795 256.21)",
+          "oklch(73% 0.1346 256.21)",
+          "oklch(85% 0.0718 256.21)",
+          "oklch(95% 0.0215 256.21)"
+        ]
+      },
+      "operation-border": {
+        "role": "neutral",
+        "displayName": "Operation border",
+        "tonalRamp": [
+          "oklch(15% 0.0188 250.75)",
+          "oklch(25% 0.0313 250.75)",
+          "oklch(36% 0.0470 250.75)",
+          "oklch(48% 0.0627 250.75)",
+          "oklch(60% 0.0627 250.75)",
+          "oklch(73% 0.0470 250.75)",
+          "oklch(85% 0.0251 250.75)",
+          "oklch(95% 0.0075 250.75)"
+        ]
+      },
+      "diagram-border": {
+        "role": "neutral",
+        "displayName": "Diagram border",
+        "tonalRamp": [
+          "oklch(15% 0.0171 247.58)",
+          "oklch(25% 0.0285 247.58)",
+          "oklch(36% 0.0428 247.58)",
+          "oklch(48% 0.0570 247.58)",
+          "oklch(60% 0.0570 247.58)",
+          "oklch(73% 0.0428 247.58)",
+          "oklch(85% 0.0228 247.58)",
+          "oklch(95% 0.0068 247.58)"
+        ]
+      },
+      "operation-active": {
+        "role": "primary",
+        "displayName": "Operation active",
+        "tonalRamp": [
+          "oklch(15% 0.0602 256.70)",
+          "oklch(25% 0.1003 256.70)",
+          "oklch(36% 0.1505 256.70)",
+          "oklch(48% 0.2007 256.70)",
+          "oklch(60% 0.2007 256.70)",
+          "oklch(73% 0.1505 256.70)",
+          "oklch(85% 0.0803 256.70)",
+          "oklch(95% 0.0241 256.70)"
+        ]
+      },
+      "operation-panel": {
+        "role": "neutral",
+        "displayName": "Operation panel",
+        "tonalRamp": [
+          "oklch(15% 0.0072 251.59)",
+          "oklch(25% 0.0120 251.59)",
+          "oklch(36% 0.0180 251.59)",
+          "oklch(48% 0.0240 251.59)",
+          "oklch(60% 0.0240 251.59)",
+          "oklch(73% 0.0180 251.59)",
+          "oklch(85% 0.0096 251.59)",
+          "oklch(95% 0.0029 251.59)"
+        ]
+      },
+      "operation-divider": {
+        "role": "neutral",
+        "displayName": "Operation divider",
+        "tonalRamp": [
+          "oklch(15% 0.0127 247.91)",
+          "oklch(25% 0.0211 247.91)",
+          "oklch(36% 0.0317 247.91)",
+          "oklch(48% 0.0423 247.91)",
+          "oklch(60% 0.0423 247.91)",
+          "oklch(73% 0.0317 247.91)",
+          "oklch(85% 0.0169 247.91)",
+          "oklch(95% 0.0051 247.91)"
+        ]
+      },
+      "event-selected": {
+        "role": "neutral",
+        "displayName": "Event selected",
+        "tonalRamp": [
+          "oklch(15% 0.0176 254.28)",
+          "oklch(25% 0.0293 254.28)",
+          "oklch(36% 0.0439 254.28)",
+          "oklch(48% 0.0586 254.28)",
+          "oklch(60% 0.0586 254.28)",
+          "oklch(73% 0.0439 254.28)",
+          "oklch(85% 0.0234 254.28)",
+          "oklch(95% 0.0070 254.28)"
+        ]
+      },
+      "event-hover": {
+        "role": "neutral",
+        "displayName": "Event hover",
+        "tonalRamp": [
+          "oklch(15% 0.0134 250.86)",
+          "oklch(25% 0.0224 250.86)",
+          "oklch(36% 0.0336 250.86)",
+          "oklch(48% 0.0448 250.86)",
+          "oklch(60% 0.0448 250.86)",
+          "oklch(73% 0.0336 250.86)",
+          "oklch(85% 0.0179 250.86)",
+          "oklch(95% 0.0054 250.86)"
+        ]
       }
     },
     "typographyMeta": {
       "display": {
         "displayName": "Display",
-        "purpose": "Homepage headline."
+        "purpose": "Left-aligned operation-flow headline."
       },
       "headline": {
         "displayName": "Headline",
@@ -253,22 +365,34 @@
         "purpose": "Color, background-color and border-color states; disabled for reduced motion."
       },
       {
-        "name": "context-arrive",
-        "value": "260ms cubic-bezier(0.16, 1, 0.3, 1)",
-        "purpose": "Workflow panel enters from translateY(5px) and clip-path inset(0 0 12% 0); disabled for reduced motion."
+        "name": "scene-reveal",
+        "value": "240ms cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Stage scene reveals from opacity 0.7 and clip-path inset(0 0 6% 0); reduced motion disables it."
       }
     ],
     "breakpoints": [
       {
-        "name": "compact-desktop",
+        "name": "wide-navigation-min",
+        "value": "1300px"
+      },
+      {
+        "name": "operation-compact-max",
+        "value": "1250px"
+      },
+      {
+        "name": "content-compact-max",
         "value": "1100px"
       },
       {
-        "name": "mobile-navigation",
+        "name": "operation-stack-max",
+        "value": "1000px"
+      },
+      {
+        "name": "mobile-navigation-max",
         "value": "900px"
       },
       {
-        "name": "single-column",
+        "name": "single-column-max",
         "value": "600px"
       }
     ]
@@ -314,47 +438,64 @@
       "css": ".ds-details{list-style:none;margin:22px 0 0;padding:0;font-family:var(--font-sans);color:var(--color-text);}.ds-details li{display:flex;align-items:start;gap:12px;padding:12px 0;border-bottom:1px solid var(--color-border-soft);font-size:14px;line-height:1.65;}.ds-details svg{flex-shrink:0;margin-top:4px;color:var(--color-brand);}"
     },
     {
-      "name": "Workflow step",
+      "name": "Operation stage",
       "kind": "custom",
-      "refersTo": "workflow-node",
-      "description": "Selected-step visual specimen; the React workflow supplies complete tab selection and keyboard behavior.",
-      "html": "<div class=\"ds-step\" role=\"tablist\" aria-label=\"Exemplo visual\"><button class=\"ds-tab ds-focus\" role=\"tab\" aria-selected=\"true\" type=\"button\"><span class=\"ds-node\"><svg width=\"21\" height=\"21\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z M9 12l2 2 4-4\"/></svg></span><span>Resposta</span></button></div>",
-      "css": ".ds-step{background:var(--color-bg);}.ds-tab{display:flex;flex-direction:column;align-items:center;gap:13px;padding:0 12px 20px;border:0;border-bottom:1px solid var(--color-border);background:transparent;color:var(--color-text-muted);font:16px var(--font-sans);cursor:pointer;transition:color 180ms ease;}.ds-node{display:grid;place-items:center;width:49px;height:49px;border:1px solid var(--color-border-strong);border-radius:50%;background:var(--color-bg);}.ds-tab[aria-selected=\"true\"]{border-bottom-color:var(--color-brand);color:var(--color-text-bright);}.ds-tab[aria-selected=\"true\"] .ds-node{background:var(--color-brand);color:var(--color-brand-ink);border-color:var(--color-brand);}.ds-tab:hover{color:var(--color-brand);}.ds-focus:focus-visible{outline:2px solid var(--color-brand);outline-offset:5px;}@media(max-width:600px){.ds-tab{font-size:12px;padding-inline:2px;gap:12px;}.ds-node{width:42px;height:42px;}}@media(prefers-reduced-motion:reduce){.ds-tab{transition:none;}}"
+      "refersTo": "operation-node",
+      "description": "Selected investigation specimen. The application supplies four-tab navigation, scene state, and measured SVG connections.",
+      "html": "<button type=\"button\" class=\"ds-stage ds-focus\" aria-pressed=\"true\"><span class=\"ds-node\"><svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"11\" cy=\"11\" r=\"7\"/><path d=\"m21 21-4.3-4.3\"/></svg></span><strong>Investigacao</strong><span class=\"ds-summary\">Contexto para cada evento.</span></button>",
+      "css": ".ds-stage{border:0;background:transparent;text-align:left;padding-right:18px;font-family:var(--font-sans);cursor:pointer;}.ds-node{width:57px;height:57px;display:grid;place-items:center;border:1px solid #456383;border-radius:50%;color:var(--color-text-bright);background:var(--color-bg);margin-bottom:13px;transition:background-color 180ms ease,border-color 180ms ease;}.ds-stage strong{display:block;font-size:15px;color:var(--color-text-bright);}.ds-summary{display:block;max-width:164px;margin-top:4px;font-size:12px;line-height:1.6;color:var(--color-text-body);}.ds-stage[aria-pressed=\"true\"] .ds-node{background:#0876ee;border-color:#91bfff;outline:3px solid #173a5e;}.ds-stage:hover .ds-node{border-color:var(--color-brand);}.ds-focus:focus-visible{outline:2px solid var(--color-brand);outline-offset:5px;}@media(max-width:600px){.ds-node{width:45px;height:45px;}.ds-node svg{width:20px;height:20px;}.ds-stage strong{font-size:11px;}.ds-summary{display:none;}}@media(prefers-reduced-motion:reduce){.ds-node{transition:none;}}"
+    },
+    {
+      "name": "Illustrative event row",
+      "kind": "custom",
+      "refersTo": "event-row-selected",
+      "description": "Selected example event; application selection updates the adjacent live-region evidence. This specimen is illustrative, not telemetry.",
+      "html": "<button type=\"button\" class=\"ds-event ds-focus\" aria-pressed=\"true\"><time>10:24</time><svg width=\"19\" height=\"19\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M14 2H5v20h14V7zM14 2v5h5M8 11h8M8 15h8M8 18h5\"/></svg><span><strong>Evento ilustrativo</strong><small>192.0.2.10</small></span></button>",
+      "css": ".ds-event{display:grid;grid-template-columns:35px 21px minmax(0,1fr);gap:9px;align-items:start;width:100%;min-height:44px;padding:6px;text-align:left;border:1px solid transparent;border-radius:8px;color:var(--color-text);font-family:var(--font-sans);background:transparent;cursor:pointer;transition:background-color 180ms ease,border-color 180ms ease;}.ds-event time{font-size:10px;color:var(--color-text-muted);font-variant-numeric:tabular-nums;}.ds-event strong{display:block;font-size:10.5px;font-weight:600;line-height:1.4;color:var(--color-text-bright);}.ds-event small{display:block;color:var(--color-text-muted);font-size:10px;line-height:1.5;margin-top:3px;overflow-wrap:anywhere;}.ds-event[aria-pressed=\"true\"]{background:#1a314d;border-color:#244665;}.ds-event:hover{background:#172a3e;}.ds-focus:focus-visible{outline:2px solid var(--color-brand);outline-offset:5px;}@media(max-width:600px){.ds-event{min-height:55px;grid-template-columns:40px 22px minmax(0,1fr);gap:11px;padding:10px 7px;}.ds-event strong{font-size:12px;}.ds-event small,.ds-event time{font-size:11px;}}@media(prefers-reduced-motion:reduce){.ds-event{transition:none;}}"
+    },
+    {
+      "name": "Agent capability link",
+      "kind": "custom",
+      "description": "Semantic destination beside the conceptual laptop illustration.",
+      "html": "<a href=\"#\" class=\"ds-agent-link ds-focus\"><svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"11\" cy=\"11\" r=\"7\"/><path d=\"m21 21-4.3-4.3\"/></svg><span><strong>Investigacao</strong><small>Contexto compartilhado</small></span></a>",
+      "css": ".ds-agent-link{display:flex;align-items:center;gap:12px;background:#111923;border:1px solid #34516c;border-radius:8px;min-height:48px;padding:7px 12px;font-family:var(--font-sans);color:var(--color-text);text-decoration:none;transition:border-color 180ms ease;}.ds-agent-link svg{width:20px;height:20px;flex-shrink:0;}.ds-agent-link strong{display:block;font-size:12px;color:var(--color-text-bright);}.ds-agent-link small{display:block;font-size:10px;color:var(--color-text-body);margin-top:3px;}.ds-agent-link:hover{border-color:var(--color-brand);}.ds-focus:focus-visible{outline:2px solid var(--color-brand);outline-offset:5px;}@media(max-width:600px){.ds-agent-link{padding:10px;gap:8px;}}@media(prefers-reduced-motion:reduce){.ds-agent-link{transition:none;}}"
     }
   ],
   "narrative": {
     "northStar": "Observatorio de seguranca",
-    "overview": "The real security product leads a precise, restrained presentation. Dark graphite surfaces, pale blue actions, Manrope typography, and quiet dividers carry the approved application identity into the marketing website.\n\nThe owner approved this replacement world on 2026-11-01: a dark centered homepage combined with the agent-to-response flow. The centered composition belongs to that surface; the durable system is readable hierarchy, authentic product evidence, and clear access to deeper evaluation pages. Components are flat, softly rounded, and explicit about their interactive state.",
+    "overview": "The security operation becomes an inspectable path: endpoint telemetry, detection, investigation, and response share a dark graphite field. Pale blue actions, functional blue connections, Manrope typography, and quiet borders carry the official application identity into the marketing website.\n\nThe owner approved the dark operation-flow reference in `.impeccable/mocks/flow-dark/approved.png`, replacing the centered homepage. The new surface pairs a left-aligned headline with selectable operation stages, an illustrative event-and-evidence panel, and a conceptual laptop illustration. The durable system keeps interactions explicit and distinguishes explanatory illustrations from real product evidence on Platform.",
     "keyCharacteristics": [
-      "Dark graphite with pale blue actions and visible focus.",
+      "Dark graphite with pale blue actions and brighter functional connections.",
       "Manrope for headings, narrative, navigation, and controls.",
-      "Thin dividers and tonal surfaces instead of decorative elevation.",
-      "Official application logo and real anonymized product captures."
+      "Semantic diagrams and selectable examples with visible state.",
+      "Official logo, conceptual illustration, and real anonymized captures with distinct provenance."
     ],
     "rules": [
       {
         "name": "The Application Identity Rule",
-        "body": "Use pale blue for website actions and selection; preserve the official logo colors inside the supplied asset.",
+        "body": "Use pale blue for calls to action, saturated blue for operation selection and connections, and preserve the supplied logo colors.",
         "section": "colors"
       },
       {
         "name": "The Flat Surface Rule",
-        "body": "Separate content with tonal backgrounds, spacing, and thin borders; the current system has no drop shadows.",
+        "body": "Separate content with tonal backgrounds, spacing, and thin borders; the current interface has no drop shadows.",
         "section": "elevation"
       }
     ],
     "dos": [
-      "Do use the current website tokens and self-hosted Manrope.",
-      "Do preserve the official application logo geometry and its uncropped wordmark.",
-      "Do use real anonymized captures, honest captions, and full-size access.",
-      "Do retain visible focus, keyboard-operable tabs, reduced-motion support, and mobile navigation.",
-      "Do keep Portuguese and English layouts equally readable."
+      "Do use current website tokens and self-hosted Manrope.",
+      "Do preserve the official application logo geometry and uncropped wordmark.",
+      "Do label illustrative scenarios and retain their links to real Platform evidence.",
+      "Do preserve real anonymized captures, their proportions, and full-size access.",
+      "Do retain visible focus, keyboard tab navigation, selectable events, live evidence announcements, and reduced-motion support.",
+      "Do keep Portuguese and English routes and layouts equally usable."
     ],
     "donts": [
-      "Don't turn screenshot metrics into live measurements, guarantees, or invented performance claims.",
-      "Don't recolor real product captures or replace them with fabricated dashboards.",
-      "Don't revive the previous teal action palette, uppercase eyebrows, glow effects, or obsolete card styling.",
-      "Don't invent input, chip, or modal patterns that the current website does not contain."
+      "Don't describe illustrative event data as live telemetry or operate real endpoints from the marketing example.",
+      "Don't turn screenshot metrics into guarantees or invent customers, performance, or certification claims.",
+      "Don't replace real product captures with generated dashboards; the generated laptop is a conceptual illustration.",
+      "Don't inherit unused centered-hero, old workflow, uppercase eyebrow, or legacy card styles.",
+      "Don't promote compact example-panel text sizes into general body typography."
     ]
   }
 }

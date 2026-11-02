@@ -55,3 +55,9 @@ claims or assets:
 - https://www.splunk.com/en_us/products/enterprise-security.html
 - https://www.microsoft.com/en-us/security/business/siem-and-xdr/microsoft-sentinel-siem
 - https://cloud.google.com/security/products/security-operations
+
+## Approved operation-flow composition (2026-11-02)
+
+The owner selected the dark flow concept and explicitly authorized implementation and GitHub push, reserving Hostinger deployment for themselves. The Home now contains semantic, interactive Agente/Detecção/Investigação/Resposta stages and a clearly labeled illustrative event scenario. The example address uses RFC 5737 documentation space (198.51.100.24), and LAB-0142 is synthetic. Timeline events and actions do not connect to the product backend.
+
+`public/illustrations/agent-laptop.png` is a generated transparent conceptual laptop illustration, derived from the approved comp. It is not a real UI capture and makes no measured operational claim. Its exact generation prompt is retained in `.impeccable/mocks/flow-dark/laptop-prompt.txt` and embedded in the PNG. Text outside the illustration is localized HTML; its only rendered wordmark is Sigmaward. Existing real anonymized application captures remain unchanged on Platform pages.

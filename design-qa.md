@@ -1,6 +1,26 @@
 # Design QA
 
-## Current redesign, 2026-11-02
+## Approved operation-flow version, 2026-11-02
+
+The owner approved `.impeccable/mocks/flow-dark/approved.png` and explicitly authorized implementation and GitHub push. Hostinger deployment remains owner-operated. This revision supersedes the centered homepage reviewed below.
+
+### Current implementation and validation
+
+- Left-led dark Home with semantic stage tabs, measured selected-stage connector, double-hexagon processing node, selectable illustrative timeline/evidence and a transparent conceptual laptop illustration. Real product screenshots remain on detailed Platform pages.
+- Production static build passed under Node.js 24.21.0; all 14 localized marketing routes exported. Typecheck and all 6 unit tests passed.
+- 28 route/viewport checks passed at 1440px and 390px. Another 10 Home viewport/language checks passed at 360, 768, 1024, 1101 and 1540px. No horizontal overflow.
+- Arrow/Home/End stage selection and focus, previous/next wrapping, event detail selection, English mobile content and dynamic connector changes passed in-browser.
+- 545 local asset/link/anchor references resolved; PT/EN dictionary shapes match.
+- Ten valid screenshots are retained under `.impeccable/review/flow-dark/`. The final compact-desktop correction was recaptured at 1101px: all three processing labels occupy exactly one 27px line.
+- Independent review: connector, hexagonal node, laptop footprint and compact-desktop labels resolved. No visual or functional fixes remain from that review.
+
+### Formal comparison limitation
+
+Final full-viewport comparison score: 0.7216, above the 0.72 overall threshold, while the comparison still classifies regional differences as drift. The laptop raster check passed. The Impeccable phase chain remains open because its separate component-plan approval record is absent; it refused to record the hero gate for this reason. The owner's explicit composition approval and push authorization are preserved, and no duplicate confirmation or fabricated approval record was introduced. Actual finish disposition: `fix`, procedural only. This is not a claim that every automated fidelity phase passed.
+
+The latest manual verdict is `.impeccable/review/flow-dark/finish-review.md`; functional evidence is in that directory. Standalone legacy `next lint`, exhaustive assistive-technology/cross-browser checks and production hosting were not executed.
+
+## Previous centered redesign, 2026-11-02
 
 Implementation and functional checks passed. The automated Impeccable comp-reproduction gate remains open; it is not a passing pixel-fidelity result.
 

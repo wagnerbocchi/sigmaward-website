@@ -2,23 +2,23 @@
 version: 1
 slug: "components-pages-homepage-tsx"
 primary_target: "components/pages/HomePage.tsx"
-related_targets: ["components/pages/PlatformPage.tsx","components/pages/SolutionsPage.tsx","components/pages/CompanyPage.tsx","components/pages/ResourcesPage.tsx","components/pages/PricingPage.tsx","app/globals.css"]
+related_targets: ["components/sections/Hero.tsx", "components/sections/AgentBridge.tsx", "app/globals.css"]
 ---
 
-# Website redesign
+# Sigmaward operation flow homepage
 
-Mode: Persuade. Scope: bilingual multi-page marketing website, with a concise homepage and deeper Platform, Solutions, Resources, Company/About and Pricing pages. Existing routes, static export and contact destinations remain.
+Mode: Persuade. Preserve the bilingual multi-page website and static export.
 
-## Direction contract
+THESIS: Show the shared path from endpoint telemetry to response before asking the visitor to explore deeper product pages.
 
-THESIS: Explain the unified security operation through the real product, with a short homepage leading to dedicated evaluation pages.
+OWN-WORLD: User-approved dark graphite, official Sigmaward logo, pale blue calls to action, blue functional connections, self-hosted Manrope and quiet borders.
 
-OWN-WORLD: Dark graphite from the live application, pale blue actions, the official turquoise/violet Sigma mark, Manrope narrative type, quiet thin dividers and clear focus states.
+STORY: Explain the offer at left, explore four operation stages at right, inspect the illustrative timeline, understand the shared native agent, then follow capabilities and audience links to detailed pages.
 
-STORY: Understand the offer, inspect the product, follow the agent-to-response relationship, explore module and audience pages, request a demonstration.
+FIRST VIEWPORT: Left-aligned two-line headline and paired actions; four connected stages across the upper right; endpoint/rule/alert map under the headline; interactive illustrative panel at lower right. The next section pairs shared-context text with the transparent laptop illustration and real capability links. Mobile stacks these in reading order. Keyboard users can switch stages and select evidence.
 
-FIRST VIEWPORT: Centered two-line headline and concise introduction, paired actions, then a broad real product exhibit. The following section carries the first proposal's four-step agent/detection/investigation/response map. The active step reveals its explanation and a contextual link to detailed evidence on Platform; the Home keeps one primary product exhibit, honoring the requested summary. Keyboard and touch have equal access; motion is one brief selection transition.
+FORM: Approved composition `.impeccable/mocks/flow-dark/approved.png`, selected after the owner requested a light/dark comparison. This supersedes the centered dark comp. The earlier concept seed remains provenance: seed:bc6e75994f4e9445. Exact approval: "Eu amei essa versão e pode seguir com ela." User also explicitly authorized GitHub push and retained Hostinger deployment responsibility.
 
-FORM: User combined the dark conventional composition with the assigned engineering dossier (grounded list position 4); seed:bc6e75994f4e9445. Approved reference: .impeccable/mocks/decision/canon.png; flow reference: .impeccable/mocks/decision/dossier.png. Approval: "gostei dessa opção com a primeira. fundo escuro". Official logo and real anonymized imagery supersede generated interface details by the user's explicit request.
+TRUTH: The interactive scenario is labeled illustrative, uses documentation-only network addresses, and never operates on real endpoints. Actual product screenshots stay available on Platform. The laptop is a conceptual raster illustration; diagram nodes, connectors, controls and text are semantic UI. Preserve original product identity and all existing PT/EN routes.
 
-FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
+FINISH: Check rendered desktop/mobile, interaction, static export and localized links; run independent finish review, document the actual system and push only checked task-owned commits. Preserve any unresolved automated fidelity result honestly.

@@ -1,104 +1,143 @@
 {
+  "allowUncovered": true,
   "regions": [
     {
       "id": "nav",
       "kind": "chrome",
       "pixelBox": {
-        "x": 129,
-        "y": 15,
-        "w": 1278,
-        "h": 42
+        "x": 48,
+        "y": 14,
+        "w": 1435,
+        "h": 40
       },
-      "note": "Navigation with official logo and page links"
+      "note": "Semantic HTML controls, labels and countable SVG paths.",
+      "codeDrawn": true
     },
     {
       "id": "headline",
       "kind": "text",
       "pixelBox": {
-        "x": 390,
-        "y": 104,
-        "w": 754,
-        "h": 125
+        "x": 49,
+        "y": 108,
+        "w": 490,
+        "h": 130
       },
-      "note": "Toda a opera\u00e7\u00e3o. Uma vis\u00e3o de seguran\u00e7a."
+      "note": "Live readable text or link."
     },
     {
       "id": "intro",
       "kind": "text",
       "pixelBox": {
-        "x": 287,
-        "y": 253,
-        "w": 962,
-        "h": 30
+        "x": 49,
+        "y": 262,
+        "w": 500,
+        "h": 50
       },
-      "note": "Detec\u00e7\u00e3o, investiga\u00e7\u00e3o, resposta e sa\u00fade dos endpoints no mesmo ambiente."
+      "note": "Live readable text or link."
     },
     {
       "id": "primary",
       "kind": "control",
       "pixelBox": {
-        "x": 540,
-        "y": 299,
-        "w": 230,
-        "h": 48
+        "x": 50,
+        "y": 338,
+        "w": 261,
+        "h": 51
       },
-      "note": "Solicitar demonstra\u00e7\u00e3o primary link"
+      "note": "Live readable text or link."
     },
     {
       "id": "secondary",
       "kind": "control",
       "pixelBox": {
-        "x": 789,
-        "y": 299,
-        "w": 208,
-        "h": 48
+        "x": 325,
+        "y": 338,
+        "w": 207,
+        "h": 51
       },
-      "note": "Conhe\u00e7a a plataforma secondary link"
+      "note": "Live readable text or link."
     },
     {
-      "id": "product",
+      "id": "stages",
+      "kind": "chrome",
+      "pixelBox": {
+        "x": 585,
+        "y": 103,
+        "w": 918,
+        "h": 236
+      },
+      "note": "Semantic HTML controls, labels and countable SVG paths.",
+      "codeDrawn": true
+    },
+    {
+      "id": "endpoint-map",
+      "kind": "chrome",
+      "pixelBox": {
+        "x": 48,
+        "y": 449,
+        "w": 750,
+        "h": 205
+      },
+      "note": "Semantic HTML controls, labels and countable SVG paths.",
+      "codeDrawn": true
+    },
+    {
+      "id": "panel",
+      "kind": "chrome",
+      "pixelBox": {
+        "x": 866,
+        "y": 364,
+        "w": 612,
+        "h": 344
+      },
+      "note": "Semantic HTML controls, labels and countable SVG paths.",
+      "codeDrawn": true
+    },
+    {
+      "id": "shared-heading",
+      "kind": "text",
+      "pixelBox": {
+        "x": 50,
+        "y": 782,
+        "w": 550,
+        "h": 94
+      },
+      "note": "Live readable text or link."
+    },
+    {
+      "id": "shared-body",
+      "kind": "text",
+      "pixelBox": {
+        "x": 50,
+        "y": 902,
+        "w": 622,
+        "h": 96
+      },
+      "note": "Live readable text or link."
+    },
+    {
+      "id": "laptop",
       "kind": "image",
       "pixelBox": {
-        "x": 129,
-        "y": 362,
-        "w": 1276,
-        "h": 486
+        "x": 791,
+        "y": 762,
+        "w": 456,
+        "h": 256
       },
-      "note": "Illustrative application replaced with existing real anonymized product screenshot at user request"
+      "note": "Conceptual laptop product illustration.",
+      "bleed": true
     },
     {
-      "id": "caption",
-      "kind": "text",
+      "id": "capability-links",
+      "kind": "chrome",
       "pixelBox": {
-        "x": 686,
-        "y": 860,
-        "w": 167,
-        "h": 13
+        "x": 1283,
+        "y": 765,
+        "w": 211,
+        "h": 237
       },
-      "note": "Real interface provenance caption"
-    },
-    {
-      "id": "next-heading",
-      "kind": "text",
-      "pixelBox": {
-        "x": 370,
-        "y": 907,
-        "w": 795,
-        "h": 40
-      },
-      "note": "Do sinal \u00e0 resposta, com contexto."
-    },
-    {
-      "id": "next-intro",
-      "kind": "text",
-      "pixelBox": {
-        "x": 304,
-        "y": 966,
-        "w": 929,
-        "h": 46
-      },
-      "note": "Unified endpoint telemetry and operational workflow"
+      "note": "Semantic HTML controls, labels and countable SVG paths.",
+      "codeDrawn": true
     }
-  ],
-  "allowUncovered": true
+  ]
 }

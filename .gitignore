@@ -21,3 +21,5 @@ yarn-error.log*
 .impeccable/build/comp-grid.png
 .impeccable/build/font-match/
 .impeccable/review/diff/
+
+.impeccable/review/**/diff/

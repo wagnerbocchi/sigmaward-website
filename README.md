@@ -41,7 +41,27 @@ npm test              # vitest run (i18n unit tests)
 1. Edit `SITE_URL` in `lib/site.ts` to the real production domain.
 2. Rebuild: `npm run build`.
 
-## Deploy to Hostinger
+## Deploy from GitHub to Hostinger
+
+The approved dark flow design is on branch `codex/website-redesign` in [wagnerbocchi/sigmaward-website](https://github.com/wagnerbocchi/sigmaward-website/tree/codex/website-redesign).
+
+For Hostinger's GitHub-connected build flow, select this repository and branch, then use:
+
+| Setting | Value |
+| --- | --- |
+| Framework | Next.js, frontend/static export |
+| Root directory | Repository root (`.`) |
+| Node.js | 24.x (validated locally) |
+| Package manager | npm; install with `npm ci` |
+| Build command | `npm run build` |
+| Output directory | `out` |
+| Environment variables | None required for this marketing website |
+
+The output is static HTML. Do not use `npm start` / `next start` to serve this export. The build produces every PT/EN route as a directory with an `index.html`; all product images and fonts are included. Authentication stays at `app.sigmaward.com` and demonstration requests use the existing email contact.
+
+Hostinger documents its [GitHub build flow](https://www.hostinger.com/support/how-to-deploy-a-nodejs-website-in-hostinger/) and [the `out` directory for Next.js static exports](https://www.hostinger.com/my/tutorials/how-to-deploy-react-app/). If the hosting plan only offers file upload or basic Git checkout, use the manual static deployment below; uploading only source files does not build the website.
+
+## Deploy to Hostinger manually
 
 The site is a static export (no server, no middleware, no server actions) — it can be hosted on any static file server, including Hostinger shared hosting.
 
