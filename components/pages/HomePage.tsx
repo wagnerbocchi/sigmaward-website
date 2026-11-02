@@ -1,7 +1,7 @@
 import Nav from "@/components/layout/Nav";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/sections/Hero";
-import Workflow from "@/components/sections/Workflow";
+import AgentBridge from "@/components/sections/AgentBridge";
 import ProductOverview from "@/components/sections/ProductOverview";
 import FinalCta from "@/components/sections/FinalCta";
 import TextLink from "@/components/ui/TextLink";
@@ -13,7 +13,7 @@ export default function HomePage({ locale }: { locale: Locale }) {
       <Nav locale={locale} />
       <main id="main-content">
         <Hero dict={dict} locale={locale} />
-        <Workflow copy={dict.site} locale={locale} />
+        <AgentBridge dict={dict} locale={locale} />
         <ProductOverview dict={dict} locale={locale} />
         <section className="surface-section">
           <div className="site-container audience-section">
