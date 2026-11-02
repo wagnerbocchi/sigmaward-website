@@ -4,7 +4,7 @@ import { getDictionary } from "@/lib/i18n";
 
 export const metadata: Metadata = {
   title: "Preços — Sigmaward",
-  description: getDictionary("pt").pricing.heroSub,
+  description: getDictionary("pt").site.pricingIntro,
 };
 
 export default function Page() {

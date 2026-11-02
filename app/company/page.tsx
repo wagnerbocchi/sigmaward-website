@@ -4,7 +4,7 @@ import { getDictionary } from "@/lib/i18n";
 
 export const metadata: Metadata = {
   title: "Empresa — Sigmaward",
-  description: getDictionary("pt").company.heroSub,
+  description: getDictionary("pt").site.companyIntro,
 };
 
 export default function Page() {

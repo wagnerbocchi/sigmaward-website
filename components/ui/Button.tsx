@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Icon from "@/components/ui/Icon";
 export default function Button({
   href,
   variant,
@@ -13,7 +14,7 @@ export default function Button({
   return (
     <Link href={href} className={`site-button site-button-${variant}`}>
       {children}
-      {withArrow && <span aria-hidden="true">&rarr;</span>}
+      {withArrow && <Icon name="arrow-right" size={17} />}
     </Link>
   );
 }

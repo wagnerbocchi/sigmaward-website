@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Icon from "@/components/ui/Icon";
 import { Dictionary, Locale, localizePath } from "@/lib/i18n";
 export default function ProductOverview({
   dict,
@@ -7,27 +8,24 @@ export default function ProductOverview({
   dict: Dictionary;
   locale: Locale;
 }) {
-  const p = dict.product;
   return (
-    <section className="site-container product-overview">
+    <section className="site-container home-capabilities">
       <div className="section-heading">
-        <p className="eyebrow">{p.overviewLabel}</p>
-        <h2>{p.overviewTitle}</h2>
-        <p>{p.overviewBody}</p>
+        <h2>{dict.site.overviewTitle}</h2>
+        <p>{dict.site.overviewBody}</p>
       </div>
       <div className="capability-list">
-        {p.features.map((f) => (
+        {dict.site.shortFeatures.map((feature, index) => (
           <Link
-            href={`${localizePath("/platform/", locale)}#${f.id}`}
             className="capability"
-            key={f.id}
+            key={feature.title}
+            href={`${localizePath("/platform/", locale)}#${dict.product.features[index].id}`}
           >
-            <span className="eyebrow">{f.tag}</span>
-            <h3>{f.title}</h3>
-            <p>{f.desc}</p>
-            <span className="capability-arrow" aria-hidden="true">
-              &#8599;
-            </span>
+            <div className="capability-title">
+              <h3>{feature.title}</h3>
+              <Icon name="arrow-right" size={18} />
+            </div>
+            <p>{feature.body}</p>
           </Link>
         ))}
       </div>

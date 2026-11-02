@@ -1,46 +1,56 @@
 import Nav from "@/components/layout/Nav";
 import Footer from "@/components/layout/Footer";
 import PageHero from "@/components/sections/PageHero";
-import Pillar from "@/components/sections/Pillar";
 import FinalCta from "@/components/sections/FinalCta";
-import PlatformShot from "@/components/mocks/PlatformShot";
-import { getDictionary } from "@/lib/i18n";
-import type { Locale } from "@/lib/i18n";
-
-// Um screenshot real por bloco de solução (ordem espelha dict.solutions.blocks:
-// MSSP · Blue teams · Gestão de risco · Conformidade).
-const MOCKS = [
-  <PlatformShot key="mssp" src="/screenshots/current/fleet.jpg" alt="Sigmaward — gestão de agentes com identificadores anonimizados" />,
-  <PlatformShot
-    key="blue"
-    src="/screenshots/current/case-detail.jpg"
-    alt="Sigmaward — investigação de caso"
-  />,
-  <PlatformShot key="risk" src="/screenshots/current/watchfloor.jpg" alt="Sigmaward — Watchfloor" />,
-  <PlatformShot key="compliance" src="/screenshots/current/cases.jpg" alt="Sigmaward — casos e SLA" />,
-];
-
+import DetailList from "@/components/ui/DetailList";
+import TextLink from "@/components/ui/TextLink";
+import { getDictionary, localizePath, type Locale } from "@/lib/i18n";
+const anchors = ["mssp", "soc", "risk", "compliance"];
+const modules = ["governance", "investigation", "detection", "governance"];
 export default function SolutionsPage({ locale }: { locale: Locale }) {
   const dict = getDictionary(locale);
-
   return (
     <>
       <Nav locale={locale} />
       <main id="main-content">
         <PageHero
-          badge={dict.solutions.badge}
+          locale={locale}
+          badge={dict.nav.solutions}
           title={dict.solutions.heroTitle}
           sub={dict.solutions.heroSub}
         />
-        {dict.solutions.blocks.map((block, i) => (
-          <Pillar
-            key={block.eyebrow}
-            data={block}
-            mock={MOCKS[i]}
-            mockSide={i % 2 === 0 ? "right" : "left"}
-            bg={i % 2 === 0 ? "bg" : "bg-alt"}
-          />
-        ))}
+        <nav
+          className="site-container section-nav"
+          aria-label={dict.nav.solutions}
+        >
+          {dict.solutions.blocks.map((block, i) => (
+            <a key={anchors[i]} href={`#${anchors[i]}`}>
+              {block.eyebrow}
+            </a>
+          ))}
+        </nav>
+        <div className="site-container">
+          {dict.solutions.blocks.map((block, i) => (
+            <section
+              key={anchors[i]}
+              id={anchors[i]}
+              className="solution-block"
+            >
+              <h2>{block.title}</h2>
+              <div className="solution-layout">
+                <div>
+                  <p>{block.body}</p>
+                  <TextLink
+                    href={`${localizePath("/platform/", locale)}#${modules[i]}`}
+                  >
+                    {dict.site.explore}
+                  </TextLink>
+                </div>
+                <DetailList items={block.bullets} />
+              </div>
+            </section>
+          ))}
+        </div>
         <FinalCta dict={dict} locale={locale} />
       </main>
       <Footer locale={locale} />

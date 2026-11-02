@@ -4,7 +4,7 @@ import { getDictionary } from "@/lib/i18n";
 
 export const metadata: Metadata = {
   title: "Recursos — Sigmaward",
-  description: getDictionary("pt").resources.heroSub,
+  description: getDictionary("pt").site.resourcesIntro,
 };
 
 export default function Page() {

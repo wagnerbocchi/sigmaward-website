@@ -540,7 +540,7 @@
         {
           "icon": "target",
           "title": "Foco no analista",
-          "desc": "Menos triagem manual, mais caça à ameaça. A plataforma trabalha para quem opera."
+          "desc": "Decisões informadas, contexto acessível e controle sobre a resposta."
         }
       ],
       "contactHead": {
@@ -601,7 +601,7 @@
         {
           "id": "detection",
           "tag": "01 / DETECTAR",
-          "title": "Detecção com contexto, não apenas volume.",
+          "title": "Detecção orientada a contexto.",
           "desc": "Regras Sigma, correlação multiestágio e análise comportamental ajudam a priorizar sinais. O risco por entidade conecta eventos que isoladamente poderiam passar despercebidos.",
           "details": [
             "Catálogo SigmaHQ e estúdio de regras",
@@ -695,6 +695,236 @@
       "footerNavigation": "Navegação do rodapé",
       "menu": "Menu",
       "closeMenu": "Fechar"
+    },
+    "site": {
+      "home": "Início",
+      "demo": "Solicitar demonstração",
+      "explore": "Explorar a plataforma",
+      "learnMore": "Ver detalhes",
+      "fullCapture": "Ampliar captura",
+      "heroCaption": "Watchfloor do Sigmaward. Captura real anonimizada; recorte da tela.",
+      "captureNote": "Interface real anonimizada. Dados ilustram a captura de outubro de 2026, não métricas em tempo real.",
+      "flowLabel": "Etapas da operação de segurança",
+      "flowTitle": "Do sinal à resposta, com contexto.",
+      "flowIntro": "Uma fonte de telemetria. Um caminho conectado para detectar, investigar e agir.",
+      "flow": [
+        {
+          "id": "agent",
+          "label": "Agente",
+          "title": "O contexto começa no endpoint.",
+          "body": "O agente Sigmaward reúne eventos de segurança, inventário e saúde do host. A telemetria normalizada em ECS alimenta a operação.",
+          "href": "agent"
+        },
+        {
+          "id": "detection",
+          "label": "Detecção",
+          "title": "Transforme eventos em sinais.",
+          "body": "Regras Sigma, correlação multiestágio e análise comportamental conectam sinais para orientar a triagem e a priorização por risco.",
+          "href": "detection"
+        },
+        {
+          "id": "investigation",
+          "label": "Investigação",
+          "title": "Conecte evidências e decisões.",
+          "body": "Do alerta ao caso, reúna observáveis, relações entre entidades, responsáveis e uma linha do tempo da investigação.",
+          "href": "investigation"
+        },
+        {
+          "id": "response",
+          "label": "Resposta",
+          "title": "Aja com controle e rastreabilidade.",
+          "body": "Playbooks organizam etapas e aprovações. O agente permite isolar hosts, encerrar processos e coletar evidências para triagem.",
+          "href": "response"
+        }
+      ],
+      "overviewTitle": "A profundidade que sua operação precisa.",
+      "overviewBody": "Da engenharia de detecção à saúde dos ativos, cada capacidade tem seu lugar. Explore como elas se conectam na plataforma.",
+      "shortFeatures": [
+        {
+          "title": "Detecção Sigma",
+          "body": "Regras, correlação e risco por entidade para orientar a triagem."
+        },
+        {
+          "title": "Investigação e casos",
+          "body": "Evidências, grafo e hunting no contexto de cada investigação."
+        },
+        {
+          "title": "Resposta orquestrada",
+          "body": "Playbooks e ações no endpoint, com aprovação humana."
+        },
+        {
+          "title": "Monitoramento NOC",
+          "body": "Saúde de CPU, memória, disco e rede ao lado da operação SOC."
+        },
+        {
+          "title": "IA assistiva",
+          "body": "Contexto operacional para preparar consultas, casos e regras."
+        },
+        {
+          "title": "Governança e MSSP",
+          "body": "Isolamento por tenant, acesso por função e auditoria verificável."
+        }
+      ],
+      "audienceTitle": "Para quem opera. Para quem entrega segurança.",
+      "audiences": [
+        {
+          "id": "soc",
+          "title": "Equipes de segurança internas",
+          "body": "Conecte detecção, investigação e resposta à realidade dos seus endpoints.",
+          "link": "Conheça a solução para SOCs"
+        },
+        {
+          "id": "mssp",
+          "title": "Provedores de serviços gerenciados",
+          "body": "Coordene a operação de múltiplos clientes com isolamento e governança.",
+          "link": "Conheça a solução para MSSPs"
+        }
+      ],
+      "architectureTitle": "Uma fonte própria. Uma operação conectada.",
+      "architectureBody": "O agente envia a telemetria para a plataforma. Os eventos ficam em um índice por tenant; casos, observáveis e auditoria mantêm o contexto da operação.",
+      "architecture": [
+        {
+          "title": "Coleta no endpoint",
+          "body": "Agente próprio para Windows, Linux e macOS. Eventos, inventário e métricas com entrega durável e identidade autenticada."
+        },
+        {
+          "title": "Detecção e contexto",
+          "body": "Eventos em ECS no OpenSearch, regras Sigma e correlação. Casos e observáveis são mantidos no Postgres, separados por tenant."
+        },
+        {
+          "title": "Decisão e resposta",
+          "body": "Analistas investigam os sinais, organizam a resposta em playbooks e acompanham ações e aprovações na trilha de auditoria."
+        }
+      ],
+      "agentTitle": "Um agente para segurança e saúde dos ativos.",
+      "agentIntro": "O Agente Sigmaward coleta a telemetria que abastece o SOC e o NOC. O conjunto de coletores varia por sistema operacional; o monitoramento da frota acompanha a disponibilidade e o consumo do agente.",
+      "osHeading": "Sistema",
+      "collectorsHeading": "Exemplos de coleta",
+      "agentPlatforms": [
+        {
+          "os": "Windows",
+          "body": "Windows Event Log, Sysmon/PowerShell quando disponíveis, processos, integridade de arquivos e inventário."
+        },
+        {
+          "os": "Linux",
+          "body": "journald, execução de processos via tracefs, integridade de arquivos, inventário e métricas do host."
+        },
+        {
+          "os": "macOS",
+          "body": "Unified Log, processos, integridade de arquivos e métricas nativas de CPU, memória, disco e rede."
+        }
+      ],
+      "agentNote": "A coleta depende da configuração, das permissões e dos recursos disponíveis no sistema operacional.",
+      "governanceLayers": [
+        {
+          "title": "Dados por tenant",
+          "body": "RLS no Postgres e índice de eventos dedicado por tenant separam os dados das operações."
+        },
+        {
+          "title": "Identidade e acesso",
+          "body": "Keycloak, SSO e permissões por função organizam o acesso. O suporte temporário mantém rastreabilidade."
+        },
+        {
+          "title": "Evidência e continuidade",
+          "body": "Auditoria com cadeia HMAC, relatórios e backups criptografados por tenant apoiam a governança."
+        }
+      ],
+      "platformFaqTitle": "Antes de avaliar a plataforma.",
+      "platformFaq": [
+        {
+          "q": "De onde vem a telemetria do Sigmaward?",
+          "a": "Do Agente Sigmaward, instalado nos endpoints. MISP, provedores de IA e canais de notificação têm funções específicas; não são fontes genéricas de ingestão de logs."
+        },
+        {
+          "q": "Qual é o papel da inteligência artificial?",
+          "a": "Apoiar a investigação e a engenharia de detecção com contexto do tenant. A interface oferece consultas Lucene, explicação e criação de regras Sigma e criação de casos. As propostas precisam ser revisadas antes da execução."
+        },
+        {
+          "q": "O monitoramento substitui a investigação de segurança?",
+          "a": "As duas visões se complementam. CPU, memória, disco e rede mostram a saúde operacional; alertas, casos e evidências sustentam a investigação de segurança."
+        },
+        {
+          "q": "Os relatórios representam uma certificação?",
+          "a": "Não. Relatórios e trilhas de auditoria ajudam a organizar evidências para programas de conformidade; não equivalem à certificação do produto."
+        }
+      ],
+      "companyTitle": "Construído para conectar a operação de segurança.",
+      "companyIntro": "Sigmaward é a plataforma comercial de segurança da Bocchi Company. Um produto em desenvolvimento que reúne detecção, investigação, resposta e monitoramento de endpoints.",
+      "companyStoryTitle": "O contexto faz parte da solução.",
+      "companyStory": [
+        "Um alerta é apenas o início. Para decidir o próximo passo, a equipe precisa entender o ativo, os eventos relacionados, a investigação em curso e as ações disponíveis.",
+        "O Sigmaward aproxima essas etapas com agente próprio, regras Sigma, gestão de casos e monitoramento de infraestrutura. A proposta é manter o contexto acessível a quem precisa investigar e responder."
+      ],
+      "companyPrinciplesTitle": "Princípios que orientam o produto.",
+      "contactTitle": "Vamos olhar para a sua operação.",
+      "contactBody": "Solicite uma demonstração ou converse sobre o cenário que você quer avaliar. O contato é direto com a equipe da Bocchi Company.",
+      "contactPrepTitle": "Uma conversa com contexto.",
+      "contactPrep": [
+        "Seu cenário: equipe interna ou operação MSSP",
+        "Sistemas operacionais e quantidade de endpoints",
+        "Fluxos de investigação, resposta e monitoramento",
+        "Requisitos de acesso, infraestrutura e suporte"
+      ],
+      "contactAction": "Enviar solicitação por e-mail",
+      "companyWebsite": "Conheça a Bocchi Company",
+      "resourcesTitle": "Entenda os conceitos. Explore o produto.",
+      "resourcesIntro": "Um ponto de partida para avaliar o Sigmaward e os padrões usados na plataforma.",
+      "resources": [
+        {
+          "title": "Conheça a plataforma",
+          "body": "Explore detecção, investigação, resposta, monitoramento, IA e governança com capturas reais.",
+          "link": "Explorar os módulos",
+          "href": "/platform/",
+          "external": false
+        },
+        {
+          "title": "Agente e telemetria",
+          "body": "Entenda de onde vêm os eventos, quais sistemas são atendidos e como o agente se conecta à operação.",
+          "link": "Entender a coleta",
+          "href": "/platform/#agent",
+          "external": false
+        },
+        {
+          "title": "Regras Sigma",
+          "body": "Conheça o padrão de detecção e o repositório de regras mantido pela comunidade SigmaHQ.",
+          "link": "Visitar o SigmaHQ",
+          "href": "https://github.com/SigmaHQ/sigma",
+          "external": true
+        },
+        {
+          "title": "Cenários de operação",
+          "body": "Veja como equipes internas e MSSPs podem organizar a investigação e a resposta.",
+          "link": "Explorar soluções",
+          "href": "/solutions/",
+          "external": false
+        },
+        {
+          "title": "Avaliação e demonstração",
+          "body": "Converse sobre seu ambiente, seus ativos e as capacidades que você quer avaliar.",
+          "link": "Solicitar demonstração",
+          "href": "/company/#contato",
+          "external": false
+        }
+      ],
+      "pricingTitle": "Uma proposta para o seu cenário.",
+      "pricingIntro": "Dimensione a avaliação com a equipe: endpoints, tenants, infraestrutura e suporte. As condições comerciais são definidas em conversa.",
+      "pricingScopeTitle": "O que precisamos entender.",
+      "pricingScope": [
+        {
+          "title": "Sua operação",
+          "body": "Equipe de segurança interna, provedor MSSP ou operação com múltiplas unidades e responsabilidades."
+        },
+        {
+          "title": "Seus ativos",
+          "body": "Quantidade de endpoints, sistemas operacionais, perfil de telemetria e necessidades de monitoramento."
+        },
+        {
+          "title": "Seus requisitos",
+          "body": "Infraestrutura, controle de acesso, suporte e fluxos que precisam fazer parte da avaliação."
+        }
+      ],
+      "breadcrumb": "Localização",
+      "contactSubject": "Demonstração do Sigmaward"
     }
   },
   "en": {
@@ -1237,7 +1467,7 @@
         {
           "icon": "target",
           "title": "Analyst-focused",
-          "desc": "Less manual triage, more threat hunting. The platform works for whoever operates it."
+          "desc": "Informed decisions, accessible context and control over response."
         }
       ],
       "contactHead": {
@@ -1298,7 +1528,7 @@
         {
           "id": "detection",
           "tag": "01 / DETECT",
-          "title": "Detection with context, beyond volume.",
+          "title": "Context-driven detection.",
           "desc": "Sigma rules, multistage correlation and behavioral analytics help prioritize signals. Entity risk connects events that might otherwise go unnoticed.",
           "details": [
             "SigmaHQ catalog and rule studio",
@@ -1392,6 +1622,236 @@
       "footerNavigation": "Footer navigation",
       "menu": "Menu",
       "closeMenu": "Close"
+    },
+    "site": {
+      "home": "Home",
+      "demo": "Request a demo",
+      "explore": "Explore the platform",
+      "learnMore": "View details",
+      "fullCapture": "View full capture",
+      "heroCaption": "Sigmaward Watchfloor. Real anonymized capture; partial view.",
+      "captureNote": "Real anonymized interface. Data reflects the October 2026 capture, not live measurements.",
+      "flowLabel": "Security operations stages",
+      "flowTitle": "From signal to response, with context.",
+      "flowIntro": "One source of telemetry. A connected path to detect, investigate and act.",
+      "flow": [
+        {
+          "id": "agent",
+          "label": "Agent",
+          "title": "Context starts at the endpoint.",
+          "body": "The Sigmaward agent gathers security events, inventory and host health. ECS-normalized telemetry feeds your operation.",
+          "href": "agent"
+        },
+        {
+          "id": "detection",
+          "label": "Detection",
+          "title": "Turn events into signals.",
+          "body": "Sigma rules, multi-stage correlation and behavioral analysis connect signals to support triage and risk-based prioritization.",
+          "href": "detection"
+        },
+        {
+          "id": "investigation",
+          "label": "Investigation",
+          "title": "Connect evidence and decisions.",
+          "body": "From alert to case, bring together observables, entity relationships, ownership and an investigation timeline.",
+          "href": "investigation"
+        },
+        {
+          "id": "response",
+          "label": "Response",
+          "title": "Act with control and traceability.",
+          "body": "Playbooks organize steps and approvals. The agent supports host isolation, process termination and triage evidence collection.",
+          "href": "response"
+        }
+      ],
+      "overviewTitle": "The depth your operation needs.",
+      "overviewBody": "From detection engineering to asset health, every capability has a role. Explore how they work together in the platform.",
+      "shortFeatures": [
+        {
+          "title": "Sigma detection",
+          "body": "Rules, correlation and entity risk to inform triage."
+        },
+        {
+          "title": "Investigation and cases",
+          "body": "Evidence, graphs and hunting in the context of each investigation."
+        },
+        {
+          "title": "Orchestrated response",
+          "body": "Playbooks and endpoint actions with human approval."
+        },
+        {
+          "title": "NOC monitoring",
+          "body": "CPU, memory, disk and network health alongside SOC operations."
+        },
+        {
+          "title": "Assistive AI",
+          "body": "Operational context to prepare queries, cases and rules."
+        },
+        {
+          "title": "Governance and MSSP",
+          "body": "Tenant isolation, role-based access and verifiable audit trails."
+        }
+      ],
+      "audienceTitle": "For those who operate. For those who deliver security.",
+      "audiences": [
+        {
+          "id": "soc",
+          "title": "Internal security teams",
+          "body": "Connect detection, investigation and response to the reality of your endpoints.",
+          "link": "Explore the SOC solution"
+        },
+        {
+          "id": "mssp",
+          "title": "Managed service providers",
+          "body": "Coordinate multiple client operations with isolation and governance.",
+          "link": "Explore the MSSP solution"
+        }
+      ],
+      "architectureTitle": "One owned source. One connected operation.",
+      "architectureBody": "The agent sends telemetry to the platform. Events live in a tenant-specific index; cases, observables and audit records retain operational context.",
+      "architecture": [
+        {
+          "title": "Endpoint collection",
+          "body": "A native agent for Windows, Linux and macOS. Events, inventory and metrics with durable delivery and authenticated identity."
+        },
+        {
+          "title": "Detection and context",
+          "body": "ECS events in OpenSearch, Sigma rules and correlation. Cases and observables are stored in Postgres, separated by tenant."
+        },
+        {
+          "title": "Decision and response",
+          "body": "Analysts investigate signals, organize response in playbooks and track actions and approvals in the audit trail."
+        }
+      ],
+      "agentTitle": "One agent for security and asset health.",
+      "agentIntro": "The Sigmaward Agent collects the telemetry behind SOC and NOC operations. Available collectors vary by operating system; fleet monitoring tracks availability and agent resource use.",
+      "osHeading": "System",
+      "collectorsHeading": "Collection examples",
+      "agentPlatforms": [
+        {
+          "os": "Windows",
+          "body": "Windows Event Log, Sysmon/PowerShell when available, processes, file integrity and inventory."
+        },
+        {
+          "os": "Linux",
+          "body": "journald, process execution through tracefs, file integrity, inventory and host metrics."
+        },
+        {
+          "os": "macOS",
+          "body": "Unified Log, processes, file integrity and native CPU, memory, disk and network metrics."
+        }
+      ],
+      "agentNote": "Collection depends on configuration, permissions and the capabilities available on each operating system.",
+      "governanceLayers": [
+        {
+          "title": "Data per tenant",
+          "body": "Postgres RLS and a dedicated event index per tenant separate operational data."
+        },
+        {
+          "title": "Identity and access",
+          "body": "Keycloak, SSO and role-based permissions organize access. Temporary support access remains traceable."
+        },
+        {
+          "title": "Evidence and continuity",
+          "body": "HMAC-chained audit records, reports and encrypted tenant backups support governance."
+        }
+      ],
+      "platformFaqTitle": "Before you evaluate the platform.",
+      "platformFaq": [
+        {
+          "q": "Where does Sigmaward telemetry come from?",
+          "a": "From the Sigmaward Agent installed on endpoints. MISP, AI providers and notification channels have specific roles; they are not generic log ingestion sources."
+        },
+        {
+          "q": "What is the role of artificial intelligence?",
+          "a": "Support investigation and detection engineering with tenant context. The interface offers Lucene queries, Sigma rule explanation and creation, and case creation. Proposals need review before execution."
+        },
+        {
+          "q": "Does monitoring replace security investigation?",
+          "a": "The two views complement each other. CPU, memory, disk and network describe operational health; alerts, cases and evidence support security investigation."
+        },
+        {
+          "q": "Do reports represent a certification?",
+          "a": "No. Reports and audit trails help organize evidence for compliance programs; they do not certify the product."
+        }
+      ],
+      "companyTitle": "Built to connect security operations.",
+      "companyIntro": "Sigmaward is Bocchi Company's commercial security platform. A product in development bringing together detection, investigation, response and endpoint monitoring.",
+      "companyStoryTitle": "Context is part of the solution.",
+      "companyStory": [
+        "An alert is only the beginning. To decide what comes next, the team needs to understand the asset, related events, the ongoing investigation and available actions.",
+        "Sigmaward brings these stages together with its own agent, Sigma rules, case management and infrastructure monitoring. Its purpose is to keep context accessible to the people investigating and responding."
+      ],
+      "companyPrinciplesTitle": "Principles behind the product.",
+      "contactTitle": "Let's look at your operation.",
+      "contactBody": "Request a demonstration or discuss the scenario you want to evaluate. You will speak directly with the Bocchi Company team.",
+      "contactPrepTitle": "A conversation with context.",
+      "contactPrep": [
+        "Your scenario: internal team or MSSP operation",
+        "Operating systems and number of endpoints",
+        "Investigation, response and monitoring workflows",
+        "Access, infrastructure and support requirements"
+      ],
+      "contactAction": "Send a request by email",
+      "companyWebsite": "Meet Bocchi Company",
+      "resourcesTitle": "Understand the concepts. Explore the product.",
+      "resourcesIntro": "A starting point to evaluate Sigmaward and the standards used in the platform.",
+      "resources": [
+        {
+          "title": "Meet the platform",
+          "body": "Explore detection, investigation, response, monitoring, AI and governance through real captures.",
+          "link": "Explore the modules",
+          "href": "/platform/",
+          "external": false
+        },
+        {
+          "title": "Agent and telemetry",
+          "body": "Understand where events come from, which systems are supported and how the agent connects to operations.",
+          "link": "Understand collection",
+          "href": "/platform/#agent",
+          "external": false
+        },
+        {
+          "title": "Sigma rules",
+          "body": "Discover the detection standard and the community-maintained SigmaHQ rule repository.",
+          "link": "Visit SigmaHQ",
+          "href": "https://github.com/SigmaHQ/sigma",
+          "external": true
+        },
+        {
+          "title": "Operational scenarios",
+          "body": "See how internal teams and MSSPs can organize investigation and response.",
+          "link": "Explore solutions",
+          "href": "/solutions/",
+          "external": false
+        },
+        {
+          "title": "Evaluation and demo",
+          "body": "Discuss your environment, assets and the capabilities you want to evaluate.",
+          "link": "Request a demo",
+          "href": "/company/#contato",
+          "external": false
+        }
+      ],
+      "pricingTitle": "A proposal for your scenario.",
+      "pricingIntro": "Scope the evaluation with the team: endpoints, tenants, infrastructure and support. Commercial terms are discussed directly.",
+      "pricingScopeTitle": "What we need to understand.",
+      "pricingScope": [
+        {
+          "title": "Your operation",
+          "body": "An internal security team, an MSSP or an operation with multiple units and responsibilities."
+        },
+        {
+          "title": "Your assets",
+          "body": "Endpoint count, operating systems, telemetry profile and monitoring requirements."
+        },
+        {
+          "title": "Your requirements",
+          "body": "Infrastructure, access controls, support and workflows that need to be part of the evaluation."
+        }
+      ],
+      "breadcrumb": "Breadcrumb",
+      "contactSubject": "Sigmaward demonstration"
     }
   }
 }

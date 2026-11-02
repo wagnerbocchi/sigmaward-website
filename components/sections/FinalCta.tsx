@@ -10,7 +10,6 @@ export default function FinalCta({
   return (
     <section className="site-container final-cta">
       <div>
-        <p className="eyebrow">Sigmaward</p>
         <h2>{dict.cta.title}</h2>
         <p>{dict.cta.sub}</p>
       </div>
@@ -19,7 +18,7 @@ export default function FinalCta({
         variant="primary"
         withArrow
       >
-        {dict.product.secondary}
+        {dict.site.demo}
       </Button>
     </section>
   );
