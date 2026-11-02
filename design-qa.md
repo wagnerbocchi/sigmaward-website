@@ -31,7 +31,7 @@ The reviewer confirmed all ten captures valid. The spacing correction, concise-f
 
 ### Remaining limits
 
-After the review correction, the final comp-diff score is 0.7176 (drift), below the skill's 0.72 reproduction threshold. Its raster-plate stage expects generated imagery at higher resolution than the existing application captures. The state remains open at `plates`; no fabricated screenshot or forced passing score was substituted. Functional and responsive evidence is separate from this unresolved automated mockup-fidelity gate.
+After the review correction, the final comp-diff score is 0.7176 (drift), below the skill's 0.72 reproduction threshold. The raster-plate check was executed during the completion pass and failed for two concrete reasons: it only decodes PNG while the preserved Watchfloor capture is JPEG, and its separate component-plan approval record is absent. The state remains open at `plates`; no fabricated screenshot or forced passing score was substituted. The actual final disposition was recorded with `build-phase finish --disposition fix` on 2026-11-02. Functional and responsive evidence is separate from this unresolved automated mockup-fidelity gate.
 
 No mail was sent, authenticated console action executed, push, deployment or publication performed. No exhaustive screen-reader or cross-browser audit was performed. The standalone legacy `next lint` script was not used; no separate lint pass is claimed.
 
