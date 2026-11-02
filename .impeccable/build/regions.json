@@ -1,0 +1,104 @@
+{
+  "regions": [
+    {
+      "id": "nav",
+      "kind": "chrome",
+      "pixelBox": {
+        "x": 129,
+        "y": 15,
+        "w": 1278,
+        "h": 42
+      },
+      "note": "Navigation with official logo and page links"
+    },
+    {
+      "id": "headline",
+      "kind": "text",
+      "pixelBox": {
+        "x": 390,
+        "y": 104,
+        "w": 754,
+        "h": 125
+      },
+      "note": "Toda a opera\u00e7\u00e3o. Uma vis\u00e3o de seguran\u00e7a."
+    },
+    {
+      "id": "intro",
+      "kind": "text",
+      "pixelBox": {
+        "x": 287,
+        "y": 253,
+        "w": 962,
+        "h": 30
+      },
+      "note": "Detec\u00e7\u00e3o, investiga\u00e7\u00e3o, resposta e sa\u00fade dos endpoints no mesmo ambiente."
+    },
+    {
+      "id": "primary",
+      "kind": "control",
+      "pixelBox": {
+        "x": 540,
+        "y": 299,
+        "w": 230,
+        "h": 48
+      },
+      "note": "Solicitar demonstra\u00e7\u00e3o primary link"
+    },
+    {
+      "id": "secondary",
+      "kind": "control",
+      "pixelBox": {
+        "x": 789,
+        "y": 299,
+        "w": 208,
+        "h": 48
+      },
+      "note": "Conhe\u00e7a a plataforma secondary link"
+    },
+    {
+      "id": "product",
+      "kind": "image",
+      "pixelBox": {
+        "x": 129,
+        "y": 362,
+        "w": 1276,
+        "h": 486
+      },
+      "note": "Illustrative application replaced with existing real anonymized product screenshot at user request"
+    },
+    {
+      "id": "caption",
+      "kind": "text",
+      "pixelBox": {
+        "x": 686,
+        "y": 860,
+        "w": 167,
+        "h": 13
+      },
+      "note": "Real interface provenance caption"
+    },
+    {
+      "id": "next-heading",
+      "kind": "text",
+      "pixelBox": {
+        "x": 370,
+        "y": 907,
+        "w": 795,
+        "h": 40
+      },
+      "note": "Do sinal \u00e0 resposta, com contexto."
+    },
+    {
+      "id": "next-intro",
+      "kind": "text",
+      "pixelBox": {
+        "x": 304,
+        "y": 966,
+        "w": 929,
+        "h": 46
+      },
+      "note": "Unified endpoint telemetry and operational workflow"
+    }
+  ],
+  "allowUncovered": true
+}

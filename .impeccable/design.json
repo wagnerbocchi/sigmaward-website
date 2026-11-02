@@ -1,285 +1,261 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-30T13:56:37.906197+00:00",
+  "generatedAt": "2026-11-02T02:32:04.885895+00:00",
   "title": "Design System: Sigmaward",
   "extensions": {
     "colorMeta": {
       "brand": {
         "role": "primary",
-        "displayName": "Turquesa de sinal",
-        "canonical": "#40c6c3",
+        "displayName": "Pale application blue",
         "tonalRamp": [
-          "oklch(15.0% 0.0424 192.85)",
-          "oklch(25.0% 0.0707 192.85)",
-          "oklch(36.0% 0.1018 192.85)",
-          "oklch(48.0% 0.1131 192.85)",
-          "oklch(60.0% 0.1131 192.85)",
-          "oklch(73.0% 0.1018 192.85)",
-          "oklch(85.0% 0.0565 192.85)",
-          "oklch(95.0% 0.0188 192.85)"
+          "oklch(15% 0.0291 258.65)",
+          "oklch(25% 0.0485 258.65)",
+          "oklch(36% 0.0728 258.65)",
+          "oklch(48% 0.0970 258.65)",
+          "oklch(60% 0.0970 258.65)",
+          "oklch(73% 0.0728 258.65)",
+          "oklch(85% 0.0388 258.65)",
+          "oklch(95% 0.0116 258.65)"
         ]
       },
       "brand-hover": {
         "role": "primary",
-        "displayName": "Brand hover",
-        "canonical": "#73dad4",
+        "displayName": "Pale blue hover",
         "tonalRamp": [
-          "oklch(15.0% 0.0363 190.48)",
-          "oklch(25.0% 0.0605 190.48)",
-          "oklch(36.0% 0.0872 190.48)",
-          "oklch(48.0% 0.0968 190.48)",
-          "oklch(60.0% 0.0968 190.48)",
-          "oklch(73.0% 0.0872 190.48)",
-          "oklch(85.0% 0.0484 190.48)",
-          "oklch(95.0% 0.0161 190.48)"
+          "oklch(15% 0.0189 260.28)",
+          "oklch(25% 0.0316 260.28)",
+          "oklch(36% 0.0474 260.28)",
+          "oklch(48% 0.0632 260.28)",
+          "oklch(60% 0.0632 260.28)",
+          "oklch(73% 0.0474 260.28)",
+          "oklch(85% 0.0253 260.28)",
+          "oklch(95% 0.0076 260.28)"
         ]
       },
       "brand-ink": {
         "role": "primary",
-        "displayName": "Brand ink",
-        "canonical": "#071c1d",
+        "displayName": "Dark action ink",
         "tonalRamp": [
-          "oklch(15.0% 0.0101 199.49)",
-          "oklch(25.0% 0.0169 199.49)",
-          "oklch(36.0% 0.0243 199.49)",
-          "oklch(48.0% 0.0270 199.49)",
-          "oklch(60.0% 0.0270 199.49)",
-          "oklch(73.0% 0.0243 199.49)",
-          "oklch(85.0% 0.0135 199.49)",
-          "oklch(95.0% 0.0045 199.49)"
-        ]
-      },
-      "violet": {
-        "role": "secondary",
-        "displayName": "Violet",
-        "canonical": "#9fcac6",
-        "tonalRamp": [
-          "oklch(15.0% 0.0171 189.26)",
-          "oklch(25.0% 0.0286 189.26)",
-          "oklch(36.0% 0.0411 189.26)",
-          "oklch(48.0% 0.0457 189.26)",
-          "oklch(60.0% 0.0457 189.26)",
-          "oklch(73.0% 0.0411 189.26)",
-          "oklch(85.0% 0.0228 189.26)",
-          "oklch(95.0% 0.0076 189.26)"
+          "oklch(15% 0.0019 271.04)",
+          "oklch(25% 0.0032 271.04)",
+          "oklch(36% 0.0048 271.04)",
+          "oklch(48% 0.0064 271.04)",
+          "oklch(60% 0.0064 271.04)",
+          "oklch(73% 0.0048 271.04)",
+          "oklch(85% 0.0025 271.04)",
+          "oklch(95% 0.0008 271.04)"
         ]
       },
       "bg": {
         "role": "neutral",
-        "displayName": "Grafite esverdeado",
-        "canonical": "#101719",
+        "displayName": "Graphite",
         "tonalRamp": [
-          "oklch(15.0% 0.0042 217.07)",
-          "oklch(25.0% 0.0070 217.07)",
-          "oklch(36.0% 0.0101 217.07)",
-          "oklch(48.0% 0.0113 217.07)",
-          "oklch(60.0% 0.0113 217.07)",
-          "oklch(73.0% 0.0101 217.07)",
-          "oklch(85.0% 0.0056 217.07)",
-          "oklch(95.0% 0.0019 217.07)"
+          "oklch(15% 0.0036 254.12)",
+          "oklch(25% 0.0060 254.12)",
+          "oklch(36% 0.0090 254.12)",
+          "oklch(48% 0.0120 254.12)",
+          "oklch(60% 0.0120 254.12)",
+          "oklch(73% 0.0090 254.12)",
+          "oklch(85% 0.0048 254.12)",
+          "oklch(95% 0.0014 254.12)"
         ]
       },
       "bg-alt": {
         "role": "neutral",
         "displayName": "Bg alt",
-        "canonical": "#141e21",
         "tonalRamp": [
-          "oklch(15.0% 0.0058 218.19)",
-          "oklch(25.0% 0.0097 218.19)",
-          "oklch(36.0% 0.0139 218.19)",
-          "oklch(48.0% 0.0155 218.19)",
-          "oklch(60.0% 0.0155 218.19)",
-          "oklch(73.0% 0.0139 218.19)",
-          "oklch(85.0% 0.0077 218.19)",
-          "oklch(95.0% 0.0026 218.19)"
+          "oklch(15% 0.0042 253.14)",
+          "oklch(25% 0.0071 253.14)",
+          "oklch(36% 0.0106 253.14)",
+          "oklch(48% 0.0141 253.14)",
+          "oklch(60% 0.0141 253.14)",
+          "oklch(73% 0.0106 253.14)",
+          "oklch(85% 0.0057 253.14)",
+          "oklch(95% 0.0017 253.14)"
         ]
       },
       "bg-footer": {
         "role": "neutral",
         "displayName": "Bg footer",
-        "canonical": "#0d1416",
         "tonalRamp": [
-          "oklch(15.0% 0.0043 217.14)",
-          "oklch(25.0% 0.0071 217.14)",
-          "oklch(36.0% 0.0103 217.14)",
-          "oklch(48.0% 0.0114 217.14)",
-          "oklch(60.0% 0.0114 217.14)",
-          "oklch(73.0% 0.0103 217.14)",
-          "oklch(85.0% 0.0057 217.14)",
-          "oklch(95.0% 0.0019 217.14)"
+          "oklch(15% 0.0032 248.44)",
+          "oklch(25% 0.0053 248.44)",
+          "oklch(36% 0.0079 248.44)",
+          "oklch(48% 0.0105 248.44)",
+          "oklch(60% 0.0105 248.44)",
+          "oklch(73% 0.0079 248.44)",
+          "oklch(85% 0.0042 248.44)",
+          "oklch(95% 0.0013 248.44)"
         ]
       },
       "surface": {
         "role": "neutral",
         "displayName": "Surface",
-        "canonical": "#172125",
         "tonalRamp": [
-          "oklch(15.0% 0.0061 224.39)",
-          "oklch(25.0% 0.0101 224.39)",
-          "oklch(36.0% 0.0145 224.39)",
-          "oklch(48.0% 0.0162 224.39)",
-          "oklch(60.0% 0.0162 224.39)",
-          "oklch(73.0% 0.0145 224.39)",
-          "oklch(85.0% 0.0081 224.39)",
-          "oklch(95.0% 0.0027 224.39)"
+          "oklch(15% 0.0032 260.69)",
+          "oklch(25% 0.0053 260.69)",
+          "oklch(36% 0.0079 260.69)",
+          "oklch(48% 0.0106 260.69)",
+          "oklch(60% 0.0106 260.69)",
+          "oklch(73% 0.0079 260.69)",
+          "oklch(85% 0.0042 260.69)",
+          "oklch(95% 0.0013 260.69)"
         ]
       },
       "border": {
         "role": "neutral",
         "displayName": "Border",
-        "canonical": "#334246",
         "tonalRamp": [
-          "oklch(15.0% 0.0077 215.79)",
-          "oklch(25.0% 0.0128 215.79)",
-          "oklch(36.0% 0.0185 215.79)",
-          "oklch(48.0% 0.0205 215.79)",
-          "oklch(60.0% 0.0205 215.79)",
-          "oklch(73.0% 0.0185 215.79)",
-          "oklch(85.0% 0.0103 215.79)",
-          "oklch(95.0% 0.0034 215.79)"
+          "oklch(15% 0.0080 255.11)",
+          "oklch(25% 0.0133 255.11)",
+          "oklch(36% 0.0199 255.11)",
+          "oklch(48% 0.0265 255.11)",
+          "oklch(60% 0.0265 255.11)",
+          "oklch(73% 0.0199 255.11)",
+          "oklch(85% 0.0106 255.11)",
+          "oklch(95% 0.0032 255.11)"
         ]
       },
       "border-soft": {
         "role": "neutral",
         "displayName": "Border soft",
-        "canonical": "#27363a",
         "tonalRamp": [
-          "oklch(15.0% 0.0079 215.92)",
-          "oklch(25.0% 0.0131 215.92)",
-          "oklch(36.0% 0.0189 215.92)",
-          "oklch(48.0% 0.0210 215.92)",
-          "oklch(60.0% 0.0210 215.92)",
-          "oklch(73.0% 0.0189 215.92)",
-          "oklch(85.0% 0.0105 215.92)",
-          "oklch(95.0% 0.0035 215.92)"
+          "oklch(15% 0.0065 254.17)",
+          "oklch(25% 0.0108 254.17)",
+          "oklch(36% 0.0161 254.17)",
+          "oklch(48% 0.0215 254.17)",
+          "oklch(60% 0.0215 254.17)",
+          "oklch(73% 0.0161 254.17)",
+          "oklch(85% 0.0086 254.17)",
+          "oklch(95% 0.0026 254.17)"
         ]
       },
       "border-strong": {
         "role": "neutral",
         "displayName": "Border strong",
-        "canonical": "#52666c",
         "tonalRamp": [
-          "oklch(15.0% 0.0097 217.94)",
-          "oklch(25.0% 0.0162 217.94)",
-          "oklch(36.0% 0.0233 217.94)",
-          "oklch(48.0% 0.0259 217.94)",
-          "oklch(60.0% 0.0259 217.94)",
-          "oklch(73.0% 0.0233 217.94)",
-          "oklch(85.0% 0.0129 217.94)",
-          "oklch(95.0% 0.0043 217.94)"
+          "oklch(15% 0.0087 255.64)",
+          "oklch(25% 0.0145 255.64)",
+          "oklch(36% 0.0217 255.64)",
+          "oklch(48% 0.0290 255.64)",
+          "oklch(60% 0.0290 255.64)",
+          "oklch(73% 0.0217 255.64)",
+          "oklch(85% 0.0116 255.64)",
+          "oklch(95% 0.0035 255.64)"
         ]
       },
       "text-bright": {
         "role": "neutral",
-        "displayName": "Branco nevoa",
-        "canonical": "#f3f5f4",
+        "displayName": "Text bright",
         "tonalRamp": [
-          "oklch(15.0% 0.0009 165.08)",
-          "oklch(25.0% 0.0016 165.08)",
-          "oklch(36.0% 0.0022 165.08)",
-          "oklch(48.0% 0.0025 165.08)",
-          "oklch(60.0% 0.0025 165.08)",
-          "oklch(73.0% 0.0022 165.08)",
-          "oklch(85.0% 0.0012 165.08)",
-          "oklch(95.0% 0.0004 165.08)"
+          "oklch(15% 0.0014 258.32)",
+          "oklch(25% 0.0023 258.32)",
+          "oklch(36% 0.0034 258.32)",
+          "oklch(48% 0.0046 258.32)",
+          "oklch(60% 0.0046 258.32)",
+          "oklch(73% 0.0034 258.32)",
+          "oklch(85% 0.0018 258.32)",
+          "oklch(95% 0.0005 258.32)"
         ]
       },
       "text": {
         "role": "neutral",
         "displayName": "Text",
-        "canonical": "#c6d0d2",
         "tonalRamp": [
-          "oklch(15.0% 0.0042 211.04)",
-          "oklch(25.0% 0.0071 211.04)",
-          "oklch(36.0% 0.0102 211.04)",
-          "oklch(48.0% 0.0113 211.04)",
-          "oklch(60.0% 0.0113 211.04)",
-          "oklch(73.0% 0.0102 211.04)",
-          "oklch(85.0% 0.0056 211.04)",
-          "oklch(95.0% 0.0019 211.04)"
+          "oklch(15% 0.0046 260.73)",
+          "oklch(25% 0.0077 260.73)",
+          "oklch(36% 0.0115 260.73)",
+          "oklch(48% 0.0153 260.73)",
+          "oklch(60% 0.0153 260.73)",
+          "oklch(73% 0.0115 260.73)",
+          "oklch(85% 0.0061 260.73)",
+          "oklch(95% 0.0018 260.73)"
         ]
       },
       "text-body": {
         "role": "neutral",
         "displayName": "Text body",
-        "canonical": "#b7c2c5",
         "tonalRamp": [
-          "oklch(15.0% 0.0048 215.84)",
-          "oklch(25.0% 0.0081 215.84)",
-          "oklch(36.0% 0.0116 215.84)",
-          "oklch(48.0% 0.0129 215.84)",
-          "oklch(60.0% 0.0129 215.84)",
-          "oklch(73.0% 0.0116 215.84)",
-          "oklch(85.0% 0.0064 215.84)",
-          "oklch(95.0% 0.0021 215.84)"
+          "oklch(15% 0.0053 256.29)",
+          "oklch(25% 0.0089 256.29)",
+          "oklch(36% 0.0133 256.29)",
+          "oklch(48% 0.0177 256.29)",
+          "oklch(60% 0.0177 256.29)",
+          "oklch(73% 0.0133 256.29)",
+          "oklch(85% 0.0071 256.29)",
+          "oklch(95% 0.0021 256.29)"
         ]
       },
       "text-muted": {
         "role": "neutral",
         "displayName": "Text muted",
-        "canonical": "#a8b7bb",
         "tonalRamp": [
-          "oklch(15.0% 0.0066 215.49)",
-          "oklch(25.0% 0.0110 215.49)",
-          "oklch(36.0% 0.0159 215.49)",
-          "oklch(48.0% 0.0176 215.49)",
-          "oklch(60.0% 0.0176 215.49)",
-          "oklch(73.0% 0.0159 215.49)",
-          "oklch(85.0% 0.0088 215.49)",
-          "oklch(95.0% 0.0029 215.49)"
+          "oklch(15% 0.0067 259.19)",
+          "oklch(25% 0.0112 259.19)",
+          "oklch(36% 0.0168 259.19)",
+          "oklch(48% 0.0223 259.19)",
+          "oklch(60% 0.0223 259.19)",
+          "oklch(73% 0.0168 259.19)",
+          "oklch(85% 0.0089 259.19)",
+          "oklch(95% 0.0027 259.19)"
         ]
       },
       "text-faint": {
         "role": "neutral",
         "displayName": "Text faint",
-        "canonical": "#a0b0b5",
         "tonalRamp": [
-          "oklch(15.0% 0.0072 218.44)",
-          "oklch(25.0% 0.0120 218.44)",
-          "oklch(36.0% 0.0174 218.44)",
-          "oklch(48.0% 0.0193 218.44)",
-          "oklch(60.0% 0.0193 218.44)",
-          "oklch(73.0% 0.0174 218.44)",
-          "oklch(85.0% 0.0096 218.44)",
-          "oklch(95.0% 0.0032 218.44)"
+          "oklch(15% 0.0073 258.37)",
+          "oklch(25% 0.0122 258.37)",
+          "oklch(36% 0.0182 258.37)",
+          "oklch(48% 0.0243 258.37)",
+          "oklch(60% 0.0243 258.37)",
+          "oklch(73% 0.0182 258.37)",
+          "oklch(85% 0.0097 258.37)",
+          "oklch(95% 0.0029 258.37)"
         ]
       }
     },
     "typographyMeta": {
       "display": {
-        "displayName": "Display"
+        "displayName": "Display",
+        "purpose": "Homepage headline."
       },
       "headline": {
-        "displayName": "Headline"
+        "displayName": "Headline",
+        "purpose": "Section headings."
       },
       "title": {
-        "displayName": "Title"
+        "displayName": "Title",
+        "purpose": "Subsection titles with local size variants."
       },
       "body": {
-        "displayName": "Body"
-      },
-      "eyebrow": {
-        "displayName": "Eyebrow"
-      },
-      "technical-label": {
-        "displayName": "Technical Label"
+        "displayName": "Body",
+        "purpose": "Narrative paragraphs."
       },
       "button": {
-        "displayName": "Button"
+        "displayName": "Button",
+        "purpose": "Primary and secondary labels."
+      },
+      "navigation": {
+        "displayName": "Navigation",
+        "purpose": "Desktop navigation."
+      },
+      "caption": {
+        "displayName": "Caption",
+        "purpose": "Capture provenance."
       }
     },
-    "shadows": [
-      {
-        "name": "internal-action",
-        "value": "0 10px 30px -10px rgba(32,221,201,0.7)",
-        "purpose": "Existing local contact/login action exception."
-      }
-    ],
+    "shadows": [],
     "motion": [
       {
         "name": "color-transition",
-        "value": "0.18s ease",
-        "purpose": "Color, background, and border transitions; disabled for reduced motion."
+        "value": "180ms ease",
+        "purpose": "Color, background-color and border-color states; disabled for reduced motion."
+      },
+      {
+        "name": "context-arrive",
+        "value": "260ms cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Workflow panel enters from translateY(5px) and clip-path inset(0 0 12% 0); disabled for reduced motion."
       }
     ],
     "breakpoints": [
@@ -302,77 +278,83 @@
       "name": "Primary button",
       "kind": "button",
       "refersTo": "button-primary",
-      "description": "Shared filled action with restrained rounding.",
-      "html": "<a class=\"ds-button ds-primary\" href=\"#\">Conheca a plataforma <span aria-hidden=\"true\">&rarr;</span></a>",
-      "css": ".ds-button {display:inline-flex;align-items:center;justify-content:center;gap:24px;min-height:54px;padding:16px 28px;border:1px solid transparent;border-radius:6px;font-family:var(--font-sans);font-size:15px;font-weight:700;text-align:center;text-decoration:none;transition:color .18s ease,background-color .18s ease,border-color .18s ease;} .ds-button:active {transform:translateY(1px);} .ds-button:focus-visible { outline:2px solid var(--color-brand); outline-offset:2px; border-radius:2px; } @media(prefers-reduced-motion:reduce){.ds-button{transition:none;}} .ds-primary{background:var(--color-brand);color:var(--color-brand-ink);} .ds-primary:hover{background:var(--color-brand-hover);}"
+      "description": "Current shared primary marketing action.",
+      "html": "<a href=\"#\" class=\"ds-button ds-primary ds-focus\">Solicitar demonstracao<svg width=\"17\" height=\"17\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14M12 5l7 7-7 7\"/></svg></a>",
+      "css": ".ds-button{display:inline-flex;align-items:center;justify-content:center;gap:20px;min-height:48px;padding:13px 24px;border:1px solid transparent;border-radius:7px;font-family:var(--font-sans);font-size:14px;font-weight:700;text-align:center;text-decoration:none;transition:color 180ms ease,background-color 180ms ease,border-color 180ms ease;}.ds-button svg{flex-shrink:0;}.ds-focus:focus-visible{outline:2px solid var(--color-brand);outline-offset:5px;}@media(prefers-reduced-motion:reduce){.ds-button{transition:none;}}.ds-primary{background:var(--color-brand);color:var(--color-brand-ink);}.ds-primary:hover{background:var(--color-brand-hover);}"
     },
     {
       "name": "Secondary button",
       "kind": "button",
       "refersTo": "button-secondary",
-      "description": "Outlined action with surface hover.",
-      "html": "<a class=\"ds-button ds-secondary\" href=\"#\">Explorar <span aria-hidden=\"true\">&rarr;</span></a>",
-      "css": ".ds-button {display:inline-flex;align-items:center;justify-content:center;gap:24px;min-height:54px;padding:16px 28px;border:1px solid transparent;border-radius:6px;font-family:var(--font-sans);font-size:15px;font-weight:700;text-align:center;text-decoration:none;transition:color .18s ease,background-color .18s ease,border-color .18s ease;} .ds-button:active {transform:translateY(1px);} .ds-button:focus-visible { outline:2px solid var(--color-brand); outline-offset:2px; border-radius:2px; } @media(prefers-reduced-motion:reduce){.ds-button{transition:none;}} .ds-secondary{border-color:var(--color-border-strong);color:var(--color-text-bright);background:transparent;} .ds-secondary:hover{background:var(--color-surface);}"
+      "description": "Current shared secondary marketing action.",
+      "html": "<a href=\"#\" class=\"ds-button ds-secondary ds-focus\">Explorar a plataforma</a>",
+      "css": ".ds-button{display:inline-flex;align-items:center;justify-content:center;gap:20px;min-height:48px;padding:13px 24px;border:1px solid transparent;border-radius:7px;font-family:var(--font-sans);font-size:14px;font-weight:700;text-align:center;text-decoration:none;transition:color 180ms ease,background-color 180ms ease,border-color 180ms ease;}.ds-button svg{flex-shrink:0;}.ds-focus:focus-visible{outline:2px solid var(--color-brand);outline-offset:5px;}@media(prefers-reduced-motion:reduce){.ds-button{transition:none;}}.ds-secondary{background:transparent;color:var(--color-text-bright);border-color:var(--color-border-strong);}.ds-secondary:hover{background:var(--color-surface);border-color:var(--color-brand);}"
     },
     {
-      "name": "Card",
-      "kind": "card",
-      "refersTo": "card",
-      "description": "Existing shared hover card; sample uses 24px page-owned padding.",
-      "html": "<div class=\"ds-card\"><strong>Contexto compartilhado</strong><p>Deteccao, investigacao e resposta.</p></div>",
-      "css": ".ds-card{background:var(--color-surface);color:var(--color-text);border:1px solid var(--color-border);border-radius:16px;padding:24px;font-family:var(--font-sans);transition:background-color .15s,border-color .15s;} .ds-card:hover{border-color:#2E6E66;background:#121C2C;} .ds-card p{margin:12px 0 0;} @media(prefers-reduced-motion:reduce){.ds-card{transition:none;}}"
-    },
-    {
-      "name": "Navigation",
+      "name": "Desktop navigation",
       "kind": "nav",
       "refersTo": "navigation",
-      "description": "Desktop navigation links; the full header also includes locale and mobile controls.",
-      "html": "<nav class=\"ds-nav\" aria-label=\"Navegacao\"><a href=\"#\">Plataforma</a><a href=\"#\">Solucoes</a><a href=\"#\">Empresa</a></nav>",
-      "css": ".ds-nav{display:flex;align-items:center;gap:32px;min-height:80px;background:#101719f5;font:15px var(--font-sans);} .ds-nav a{color:var(--color-text);text-decoration:none;transition:color .18s ease;} .ds-nav a:hover{color:var(--color-brand);} .ds-nav a:focus-visible { outline:2px solid var(--color-brand); outline-offset:2px; border-radius:2px; } @media(prefers-reduced-motion:reduce){.ds-nav a{transition:none;}}"
+      "description": "Current desktop links; locale and console controls sit alongside.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Navegacao\"><a class=\"ds-focus\" href=\"#\">Plataforma</a><a class=\"ds-focus\" href=\"#\">Solucoes</a><a class=\"ds-focus\" href=\"#\">Recursos</a><a class=\"ds-focus\" href=\"#\">Empresa</a></nav>",
+      "css": ".ds-nav{display:flex;align-items:center;gap:30px;min-height:72px;background:var(--color-bg);font-family:var(--font-sans);font-size:14px;}.ds-nav a{padding-block:25px;color:var(--color-text);text-decoration:none;transition:color 180ms ease;}.ds-nav a:hover{color:var(--color-brand);}.ds-focus:focus-visible{outline:2px solid var(--color-brand);outline-offset:5px;}@media(max-width:1100px){.ds-nav{gap:20px;}}@media(prefers-reduced-motion:reduce){.ds-nav a{transition:none;}}"
     },
     {
-      "name": "Technical label",
-      "kind": "custom",
-      "refersTo": "technical-label",
-      "description": "Non-interactive uppercase mono annotation.",
-      "html": "<span class=\"ds-label\">Plataforma</span>",
-      "css": ".ds-label{font-family:var(--font-mono);font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--color-brand);}"
+      "name": "Architecture content panel",
+      "kind": "card",
+      "refersTo": "content-panel",
+      "description": "A specimen of the architecture container; adjacent cells share dividers.",
+      "html": "<section class=\"ds-panel\"><h3>Contexto compartilhado</h3><p>Deteccao, investigacao e resposta.</p></section>",
+      "css": ".ds-panel{padding:26px;border:1px solid var(--color-border);border-radius:12px;background:var(--color-bg-alt);color:var(--color-text);font-family:var(--font-sans);}.ds-panel h3{font-size:18px;font-weight:650;line-height:1.35;letter-spacing:-.02em;color:var(--color-text-bright);margin:0 0 12px;}.ds-panel p{font-size:14px;line-height:1.75;margin:0;}"
     },
     {
-      "name": "Capability link",
+      "name": "Detail list",
       "kind": "custom",
-      "description": "Numbered, divided editorial row from the homepage.",
-      "html": "<a class=\"ds-capability\" href=\"#\"><span class=\"ds-eyebrow\">01 / DETECTAR</span><h3>Deteccao com contexto.</h3><p>Sinais conectados para orientar a investigacao.</p><span class=\"ds-arrow\" aria-hidden=\"true\">&rarr;</span></a>",
-      "css": ".ds-capability{display:block;position:relative;padding:32px 36px 38px 0;border-top:1px solid var(--color-border);font-family:var(--font-sans);color:var(--color-text);text-decoration:none;} .ds-eyebrow{display:block;margin-bottom:18px;color:var(--color-brand);font-size:10px;font-weight:600;letter-spacing:.17em;} .ds-capability h3{font-size:22px;line-height:1.3;letter-spacing:-.025em;font-weight:650;color:var(--color-text-bright);margin:0 0 15px;} .ds-capability p{font-size:15px;line-height:1.8;max-width:490px;margin:0;} .ds-arrow{position:absolute;right:0;top:30px;color:var(--color-brand);} .ds-capability:hover h3{color:var(--color-brand);} .ds-capability:focus-visible { outline:2px solid var(--color-brand); outline-offset:2px; border-radius:2px; }"
+      "description": "Divided capability details with SVG checks.",
+      "html": "<ul class=\"ds-details\"><li><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M20 6 9 17l-5-5\"/></svg><span>Deteccao com contexto</span></li><li><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M20 6 9 17l-5-5\"/></svg><span>Investigacao e resposta</span></li></ul>",
+      "css": ".ds-details{list-style:none;margin:22px 0 0;padding:0;font-family:var(--font-sans);color:var(--color-text);}.ds-details li{display:flex;align-items:start;gap:12px;padding:12px 0;border-bottom:1px solid var(--color-border-soft);font-size:14px;line-height:1.65;}.ds-details svg{flex-shrink:0;margin-top:4px;color:var(--color-brand);}"
+    },
+    {
+      "name": "Workflow step",
+      "kind": "custom",
+      "refersTo": "workflow-node",
+      "description": "Selected-step visual specimen; the React workflow supplies complete tab selection and keyboard behavior.",
+      "html": "<div class=\"ds-step\" role=\"tablist\" aria-label=\"Exemplo visual\"><button class=\"ds-tab ds-focus\" role=\"tab\" aria-selected=\"true\" type=\"button\"><span class=\"ds-node\"><svg width=\"21\" height=\"21\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z M9 12l2 2 4-4\"/></svg></span><span>Resposta</span></button></div>",
+      "css": ".ds-step{background:var(--color-bg);}.ds-tab{display:flex;flex-direction:column;align-items:center;gap:13px;padding:0 12px 20px;border:0;border-bottom:1px solid var(--color-border);background:transparent;color:var(--color-text-muted);font:16px var(--font-sans);cursor:pointer;transition:color 180ms ease;}.ds-node{display:grid;place-items:center;width:49px;height:49px;border:1px solid var(--color-border-strong);border-radius:50%;background:var(--color-bg);}.ds-tab[aria-selected=\"true\"]{border-bottom-color:var(--color-brand);color:var(--color-text-bright);}.ds-tab[aria-selected=\"true\"] .ds-node{background:var(--color-brand);color:var(--color-brand-ink);border-color:var(--color-brand);}.ds-tab:hover{color:var(--color-brand);}.ds-focus:focus-visible{outline:2px solid var(--color-brand);outline-offset:5px;}@media(max-width:600px){.ds-tab{font-size:12px;padding-inline:2px;gap:12px;}.ds-node{width:42px;height:42px;}}@media(prefers-reduced-motion:reduce){.ds-tab{transition:none;}}"
     }
   ],
   "narrative": {
     "northStar": "Observatorio de seguranca",
-    "overview": "Editorial, precise, and restrained: the real product leads the presentation.\nLarge typography, open spacing, quiet dark surfaces, and authentic interface\ncaptures give the security platform a clear and inspectable presence.\n\nComponents are precise and restrained, with softened corners and clear actions.\nDepth comes primarily from tonal surfaces and dividing lines, with isolated\nshadows on internal pages. These descriptions were confirmed by the owner on\n2026-10-30; they describe the existing website rather than a replacement design.",
+    "overview": "The real security product leads a precise, restrained presentation. Dark graphite surfaces, pale blue actions, Manrope typography, and quiet dividers carry the approved application identity into the marketing website.\n\nThe owner approved this replacement world on 2026-11-01: a dark centered homepage combined with the agent-to-response flow. The centered composition belongs to that surface; the durable system is readable hierarchy, authentic product evidence, and clear access to deeper evaluation pages. Components are flat, softly rounded, and explicit about their interactive state.",
     "keyCharacteristics": [
-      "Dark graphite surfaces with a restrained signal accent.",
-      "Manrope for narrative and JetBrains Mono for technical labels.",
-      "Generous editorial spacing and strong typographic hierarchy.",
-      "Real product imagery with visible provenance captions."
+      "Dark graphite with pale blue actions and visible focus.",
+      "Manrope for headings, narrative, navigation, and controls.",
+      "Thin dividers and tonal surfaces instead of decorative elevation.",
+      "Official application logo and real anonymized product captures."
     ],
     "rules": [
       {
-        "name": "The Effective Token Rule",
-        "body": "Use the final theme values recorded above, not\nthe superseded neon turquoise and navy definitions earlier in the stylesheet.",
+        "name": "The Application Identity Rule",
+        "body": "Use pale blue for website actions and selection; preserve the official logo colors inside the supplied asset.",
         "section": "colors"
+      },
+      {
+        "name": "The Flat Surface Rule",
+        "body": "Separate content with tonal backgrounds, spacing, and thin borders; the current system has no drop shadows.",
+        "section": "elevation"
       }
     ],
     "dos": [
-      "Do use the effective theme tokens and the self-hosted font families.",
-      "Do preserve real captures, their proportions, captions, and full-size access.",
-      "Do use typography, spacing, and quiet dividers to establish hierarchy.",
-      "Do preserve keyboard focus, reduced-motion support, and mobile navigation."
+      "Do use the current website tokens and self-hosted Manrope.",
+      "Do preserve the official application logo geometry and its uncropped wordmark.",
+      "Do use real anonymized captures, honest captions, and full-size access.",
+      "Do retain visible focus, keyboard-operable tabs, reduced-motion support, and mobile navigation.",
+      "Do keep Portuguese and English layouts equally readable."
     ],
     "donts": [
-      "Don't revive superseded theme values by extracting only the first CSS block.",
-      "Don't treat colors inside product screenshots as website tokens.",
-      "Don't spread local glow or legacy hover colors across unrelated components.",
-      "Don't invent input, chip, or modal patterns that the website does not contain."
+      "Don't turn screenshot metrics into live measurements, guarantees, or invented performance claims.",
+      "Don't recolor real product captures or replace them with fabricated dashboards.",
+      "Don't revive the previous teal action palette, uppercase eyebrows, glow effects, or obsolete card styling.",
+      "Don't invent input, chip, or modal patterns that the current website does not contain."
     ]
   }
 }

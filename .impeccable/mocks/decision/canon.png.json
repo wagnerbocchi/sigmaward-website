@@ -1,0 +1,13 @@
+{
+  "prompt": "Create a high-fidelity desktop website homepage design for Sigmaward, landscape 1440x960, edge to edge with readable Portuguese text and no browser or device frame. This is a traditional premium multi-page enterprise cybersecurity marketing site. Homepage is a concise overview linking to detailed Plataforma, Soluções, Recursos and Empresa pages. Sigmaward's own agent connects Sigma detection, investigation, incident response and endpoint infrastructure monitoring. A visitor evaluates the platform and requests a demonstration. Use cool graphite surfaces, pale blue action accents, off-white typography, a refined self-hostable contemporary sans serif and generous spacing. Navigation has Sigmaward wordmark, Plataforma, Soluções, Recursos, Empresa, PT / EN and Entrar. A strong centered headline reads 'Toda a operação. Uma visão de segurança.' Supporting text 'Detecção, investigação, resposta e saúde dos endpoints no mesmo ambiente.' Clear primary action 'Solicitar demonstração' and secondary 'Conheça a plataforma'. Below, a broad restrained product interface exhibit presents a security operations overview without invented numeric metrics; caption 'Prévia ilustrativa'. The first viewport includes the start of the next section 'Do sinal à resposta, com contexto.' Execute the familiar website pattern with excellent typography and hierarchy, avoiding neon, gradients, glass, decorative floating objects, eyebrow labels, fake social proof or testimonials. The final implementation will replace the illustrative interface with real anonymized captures.",
+  "source": "built-in image_gen",
+  "approved": true,
+  "purpose": "Approved dark visual direction combined with dossier flow; illustrative product UI is replaced by existing real captures and original logo.",
+  "approval": "User: gostei dessa opção com a primeira. fundo escuro",
+  "adaptations": [
+    "Combine the dark centered homepage with the first proposal's agent-to-response flow.",
+    "Use the official application logo and palette as explicitly requested.",
+    "Use real anonymized captures instead of illustrative generated UI.",
+    "Keep homepage concise and detail on separate platform, solutions and company pages."
+  ]
+}

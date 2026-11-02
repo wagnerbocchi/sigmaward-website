@@ -1,6 +1,6 @@
 # Sigmaward Website
 
-Marketing website for **Sigmaward**, a commercial SIEM/SOAR/SOC platform with its own multi-OS agents. This is a bilingual (pt-BR default + English) [Next.js 15](https://nextjs.org/) static site — Home, Platform, Solutions, Pricing, Resources, Company and Login — with an editorial dark theme, the original product identity and anonymized screenshots from the live interface, and exported as static HTML for deployment on Hostinger shared hosting.
+Marketing website for **Sigmaward**, a commercial SIEM/SOAR/SOC platform with its own multi-OS agents. This is a bilingual (pt-BR default + English) [Next.js 15](https://nextjs.org/) static site — Home, Platform, Solutions, Pricing, Resources, Company and Login — with a dark product-led theme, the original product identity and anonymized screenshots from the live interface, and exported as static HTML for deployment on Hostinger shared hosting.
 
 ## Tech stack
 
@@ -66,10 +66,10 @@ app/                    # Next.js App Router routes
 
 components/
   layout/                # Nav, Footer, MobileMenu, LocaleToggle
-  sections/               # Page sections (Hero, Problem, Pillar, Capabilities, Architecture, ...)
-  pages/                  # Top-level page compositions (HomePage, PlatformPage, ComingSoonPage)
+  sections/               # Product flow, FAQ and shared page sections
+  pages/                  # Home, Platform, Solutions, Company, Resources, Pricing and Login
   mocks/                  # Screenshot renderer and retained legacy mock components
-  ui/                     # Reusable primitives (Button, Card, Icon, Logo, SectionShell, ...)
+  ui/                     # Reusable primitives (Brand, Button, TextLink, DetailList, Icon, ...)
 
 lib/
   i18n.ts                 # getDictionary, localizePath, getLocaleFromPath

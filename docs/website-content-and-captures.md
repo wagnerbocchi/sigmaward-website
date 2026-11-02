@@ -15,3 +15,43 @@ The product icon is the existing project asset. Product captures were not regene
 Before replacing a capture, inspect the entire visible frame for hostnames, usernames, email addresses, IPs, domains, tenant labels, event payloads and identifiers. Sanitize the presentation before saving to public assets, inspect the result, then update both languages where necessary. Do not use production actions to create staged evidence.
 
 Older captures are archived under `docs/archive/screenshots/`, outside the static public export. They are historical source material, not approved publication assets.
+
+## Redesign evidence, 2026-11-01
+
+The owner requested a concise homepage with detailed information on separate
+Platform, Solutions, Company/About and Resources pages, and identified Cisco
+Splunk, Microsoft Sentinel and Google as the competitive presentation context.
+The selected visual direction combines the dark centered proposal with the
+agent-to-response relationship diagram from the first proposal.
+
+The application README and architecture were re-read through the connected
+GitHub account. The owner also authorized read-only inspection of the open
+application tab. Watchfloor, detection navigation, AI Assist, Playbooks,
+Monitoring and investigation search were inspected. No case, rule, playbook,
+query, detection run, endpoint action, or settings change was submitted.
+
+Observed UI supports ordered playbook steps with human approval; AI assistance
+includes Lucene queries, Sigma rule creation/explanation and case creation.
+Monitoring includes host telemetry, problems, policies and durable agent queue
+status. These observations establish visible capabilities, not performance or
+security certifications. Runtime counts and private host data are not marketing
+claims and were not exported into website content.
+
+The official logo was downloaded from the rendered page's asset inventory at
+https://app.sigmaward.com/logo-full.svg. The local `public/sigmaward-logo.svg`
+preserves its paths and colors; its viewBox width was expanded from 380 to 420
+to avoid clipping the text under browser font fallback. Logo stops are #34E1D4
+and #7C6CFF. The observed application theme uses primary #9AC2FF, hover #BDD6FF,
+base #141619, surface #1C1F24 and text #F0F2F5.
+
+The site continues to use the existing reviewed October captures. The homepage
+shows a proportional partial viewport and explicitly labels the crop; the link
+opens the full, uncropped original. Internal-page captures retain full framing.
+Generated proposals are development-only references and are never shipped as
+product screenshots. No new live-system capture was published.
+
+Competitor reference pages consulted for information architecture, not copied
+claims or assets:
+- https://www.splunk.com/en_us/products/enterprise-security.html
+- https://www.microsoft.com/en-us/security/business/siem-and-xdr/microsoft-sentinel-siem
+- https://cloud.google.com/security/products/security-operations

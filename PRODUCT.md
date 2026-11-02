@@ -38,6 +38,15 @@ and Login. Contact is through `contato@sigmaward.com`; the product console is at
 `https://app.sigmaward.com`. These destinations were previously confirmed by the
 owner in `docs/website-content-and-captures.md`.
 
+On 2026-11-01 the owner explicitly requested a concise homepage and substantial
+information on separate pages, rather than a single-page website. Platform owns
+capabilities and architecture; Solutions owns operational scenarios; Company
+also serves as About and Contact. Portuguese and English have equal coverage.
+
+The owner named Cisco Splunk, Microsoft Sentinel and Google as competitors. Use
+enterprise product clarity, navigation and evidence as the presentation standard;
+this is not authorization for unverified comparative performance claims.
+
 ## Capabilities and Constraints
 
 - Preserve the confirmed commercial product scope: detection, investigation,
@@ -69,6 +78,17 @@ owner in `docs/website-content-and-captures.md`.
 Preserve the Sigmaward name, existing logo assets, and real anonymized product
 captures. Maintain factual, product-grounded communication in both languages.
 The user confirmed these commitments on 2026-10-30.
+
+On 2026-11-01 the owner selected the dark homepage proposal combined with the
+engineering proposal's agent-to-response flow, and explicitly authorized using
+the logo, colors and information from the open authenticated product tab. The
+official full logo is now used as `public/sigmaward-logo.svg`,
+sourced from `https://app.sigmaward.com/logo-full.svg`. Its canvas is widened to
+avoid clipping the wordmark with browser font fallbacks; logo geometry is unchanged.
+It uses turquoise
+`#34E1D4` and violet `#7C6CFF`; the observed dark application theme uses blue
+`#9AC2FF`, hover `#BDD6FF`, base `#141619` and surface `#1C1F24`. The website's
+approved visual expression is dark, with this identity and real product evidence.
 
 On the same date, the owner authorized the color palette of
 `https://github.com/wagnerbocchi/sigmaward` as an optional reference for website

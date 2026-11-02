@@ -1,5 +1,42 @@
 # Design QA
 
+## Current redesign, 2026-11-02
+
+Implementation and functional checks passed. The automated Impeccable comp-reproduction gate remains open; it is not a passing pixel-fidelity result.
+
+Preview: http://127.0.0.1:3000/. Production export: `out/`.
+
+### Approved direction and product adaptations
+
+The user selected `.impeccable/mocks/decision/canon.png` combined with the first proposal's agent-to-response flow: "gostei dessa opção com a primeira. fundo escuro". They also explicitly requested the official logo, product colors, and actual application information, with a concise Home and additional detail on separate pages.
+
+The implementation uses the original Sigma mark and wordmark, the application's pale blue action color, existing anonymized screenshots, and a keyboard-accessible four-step operation flow. The generated fictional dashboard is replaced with a labeled crop of the real Watchfloor. The full screenshot remains linked. This changes the image density and palette from the generated reference intentionally.
+
+### Current evidence
+
+Captures under `.impeccable/review/`: `hero-repro.png` at 1536 x 1024; full Home at 1440, 1101 and 390px; Platform and Company at desktop/mobile; English Home mobile; Solutions desktop. All lazy images were scrolled into view and decoded before the final full-page captures.
+
+- `npm run build`: passed, static export generated.
+- `npm run typecheck`: passed.
+- `npm test`: 6 tests passed.
+- `git diff --check`: passed.
+- 14 localized routes checked at 1440px and 390px: no horizontal overflow or clipped headings/controls, correct page language, one H1 and loaded above-fold images. Results: `.impeccable/review/browser-checks.json`.
+- All local links, fragment targets and assets resolved in the exported marketing pages. PT/EN dictionary structure matches.
+- Workflow arrow/End keyboard navigation, mobile menu Escape/focus return, FAQ disclosure, and locale switch retaining the Platform route were checked in-browser.
+- Original screenshot pixels were compared with the previous commit: unchanged; metadata records provenance only.
+
+### Independent finish review
+
+The reviewer confirmed all ten captures valid. The spacing correction, concise-flow contract and actual asset/font records are resolved; no visual regressions or further visual changes were requested. Final disposition: `fix`, solely because the procedural phase chain remains open. `build-phase finish --disposition ship` refused the open plates, hero, sections, motion and responsive phases. This limitation is disclosed rather than bypassed.
+
+### Remaining limits
+
+After the review correction, the final comp-diff score is 0.7176 (drift), below the skill's 0.72 reproduction threshold. Its raster-plate stage expects generated imagery at higher resolution than the existing application captures. The state remains open at `plates`; no fabricated screenshot or forced passing score was substituted. Functional and responsive evidence is separate from this unresolved automated mockup-fidelity gate.
+
+No mail was sent, authenticated console action executed, push, deployment or publication performed. No exhaustive screen-reader or cross-browser audit was performed. The standalone legacy `next lint` script was not used; no separate lint pass is claimed.
+
+## Previous design review (historical, superseded)
+
 final result: passed
 
 ## Evidence and state

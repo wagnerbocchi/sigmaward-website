@@ -1,0 +1,217 @@
+{
+  "title": "Uma nova apresentação para o Sigmaward",
+  "question": "Compare os caminhos visuais. As imagens são propostas de layout; a implementação usará as capturas reais do produto.",
+  "options": [
+    {
+      "id": "dossier",
+      "kind": "assigned",
+      "label": "Dossiê de engenharia",
+      "thesis": "A plataforma explicada por dentro, com a clareza de uma revisão de engenharia.",
+      "palette": [
+        "#f2f4f7",
+        "#142638",
+        "#2463cb"
+      ],
+      "materials": [
+        "superfície clara",
+        "diagramas funcionais",
+        "capturas anotadas"
+      ],
+      "viewport": "Título integrado a um mapa navegável: agente, detecção, investigação e resposta; uma captura revela a etapa selecionada.",
+      "risk": "Exige equilibrar profundidade técnica com uma leitura inicial simples.",
+      "comp": ".impeccable/mocks/decision/dossier.png",
+      "raised": [
+        {
+          "from": "Cena tipográfica",
+          "raise": "Composição disciplinada: cada elemento precisa explicar uma relação."
+        },
+        {
+          "from": "Instrumentos de laboratório",
+          "raise": "Distinguir claramente exemplos de interface e resultados medidos."
+        },
+        {
+          "from": "Faixas de contexto",
+          "raise": "A relação entre camadas precisa continuar legível sem depender da cor."
+        },
+        {
+          "from": "Rede luminosa",
+          "raise": "Usar o foco da interação para orientar a atenção, sem esconder conteúdo."
+        },
+        {
+          "from": "Superfície cinética",
+          "raise": "A escolha de etapa deve ter retorno visual claro e previsível."
+        },
+        {
+          "from": "Quadro de operações",
+          "raise": "Manter a posição e a identidade de cada etapa durante a exploração."
+        }
+      ]
+    },
+    {
+      "id": "fieldguide",
+      "kind": "pick",
+      "label": "Guia de operações",
+      "kicker": "IMPECCABLE’S PICK",
+      "thesis": "Uma narrativa editorial que acompanha o analista do primeiro sinal à resposta.",
+      "palette": [
+        "#ede9df",
+        "#202721",
+        "#46634f"
+      ],
+      "materials": [
+        "papel claro sem textura",
+        "tipografia editorial",
+        "índice lateral"
+      ],
+      "viewport": "Uma manchete editorial, índice de capítulos e uma grande evidência do produto; o início da próxima seção já explica o agente.",
+      "risk": "É a direção mais familiar; depende da qualidade da composição e do conteúdo para se distinguir.",
+      "comp": ".impeccable/mocks/decision/fieldguide.png"
+    },
+    {
+      "id": "medium-native-ascii-live-scene-render",
+      "kind": "challenger",
+      "catalogId": "medium-native-ascii-live-scene-render",
+      "label": "Cena tipográfica",
+      "verdict": "declined",
+      "thesis": "O fluxo de eventos como campo de caracteres.",
+      "palette": [
+        "#101410",
+        "#8caf71"
+      ],
+      "materials": [
+        "sistema visual alternativo"
+      ],
+      "viewport": "O fluxo de eventos como campo de caracteres.",
+      "case": "A cena em caracteres competiria com a leitura das capturas reais.",
+      "kept": "Composição disciplinada: cada elemento precisa explicar uma relação.",
+      "risk": "A cena em caracteres competiria com a leitura das capturas reais."
+    },
+    {
+      "id": "signals-instruments-nixie-laboratory-counter",
+      "kind": "challenger",
+      "catalogId": "signals-instruments-nixie-laboratory-counter",
+      "label": "Instrumentos de laboratório",
+      "verdict": "declined",
+      "thesis": "Etapas da operação organizadas em bancos de indicadores.",
+      "palette": [
+        "#181818",
+        "#ec8b43"
+      ],
+      "materials": [
+        "sistema visual alternativo"
+      ],
+      "viewport": "Etapas da operação organizadas em bancos de indicadores.",
+      "case": "O contador enfatizaria métricas que ainda não temos como comprovar.",
+      "kept": "Distinguir claramente exemplos de interface e resultados medidos.",
+      "risk": "O contador enfatizaria métricas que ainda não temos como comprovar."
+    },
+    {
+      "id": "generative-art-computational-color-chord-counterpoint",
+      "kind": "challenger",
+      "catalogId": "generative-art-computational-color-chord-counterpoint",
+      "label": "Faixas de contexto",
+      "verdict": "declined",
+      "thesis": "Camadas de telemetria que se encontram visualmente.",
+      "palette": [
+        "#f8f5ec",
+        "#403582",
+        "#ad5144"
+      ],
+      "materials": [
+        "sistema visual alternativo"
+      ],
+      "viewport": "Camadas de telemetria que se encontram visualmente.",
+      "case": "A abstração exige mais esforço que o mapa explícito da plataforma.",
+      "kept": "A relação entre camadas precisa continuar legível sem depender da cor.",
+      "risk": "A abstração exige mais esforço que o mapa explícito da plataforma."
+    },
+    {
+      "id": "dream-surreal-impossible-worlds-luminescent-alien-understory",
+      "kind": "challenger",
+      "catalogId": "dream-surreal-impossible-worlds-luminescent-alien-understory",
+      "label": "Rede luminosa",
+      "verdict": "declined",
+      "thesis": "Uma rede que revela evidências conforme o visitante explora.",
+      "palette": [
+        "#101719",
+        "#97ddd0",
+        "#bda0df"
+      ],
+      "materials": [
+        "sistema visual alternativo"
+      ],
+      "viewport": "Uma rede que revela evidências conforme o visitante explora.",
+      "case": "O universo fantástico distancia o site de uma avaliação técnica.",
+      "kept": "Usar o foco da interação para orientar a atenção, sem esconder conteúdo.",
+      "risk": "O universo fantástico distancia o site de uma avaliação técnica."
+    },
+    {
+      "id": "kinetic-sand-glyphs",
+      "kind": "challenger",
+      "catalogId": "kinetic-sand-glyphs",
+      "label": "Superfície cinética",
+      "verdict": "declined",
+      "thesis": "Recursos organizados em um seletor radial.",
+      "palette": [
+        "#251c15",
+        "#a47735"
+      ],
+      "materials": [
+        "sistema visual alternativo"
+      ],
+      "viewport": "Recursos organizados em um seletor radial.",
+      "case": "O dial adiciona uma convenção de navegação pouco útil para este conteúdo.",
+      "kept": "A escolha de etapa deve ter retorno visual claro e previsível.",
+      "risk": "O dial adiciona uma convenção de navegação pouco útil para este conteúdo."
+    },
+    {
+      "id": "vernacular-ephemera-boarding-pass-and-gate-board",
+      "kind": "challenger",
+      "catalogId": "vernacular-ephemera-boarding-pass-and-gate-board",
+      "label": "Quadro de operações",
+      "verdict": "declined",
+      "thesis": "A jornada de segurança em linhas ordenadas por etapa.",
+      "palette": [
+        "#f6f6f2",
+        "#24282c",
+        "#ce4c34"
+      ],
+      "materials": [
+        "sistema visual alternativo"
+      ],
+      "viewport": "A jornada de segurança em linhas ordenadas por etapa.",
+      "case": "O painel de partidas sugere um produto operacional, não explica suficientemente a plataforma.",
+      "kept": "Manter a posição e a identidade de cada etapa durante a exploração.",
+      "risk": "O painel de partidas sugere um produto operacional, não explica suficientemente a plataforma."
+    }
+  ],
+  "reroll": {
+    "registers": [
+      "safer",
+      "bolder"
+    ]
+  },
+  "buildPath": {
+    "value": "comp",
+    "toggle": true
+  },
+  "canon": true,
+  "canonCard": {
+    "kind": "canon",
+    "label": "Site de tecnologia tradicional",
+    "thesis": "Apresentação familiar, com fundo escuro e destaque para a interface.",
+    "palette": [
+      "#0e141b",
+      "#ecf2f8",
+      "#7fb2f0"
+    ],
+    "materials": [
+      "grafite",
+      "capturas do produto"
+    ],
+    "viewport": "Título, ação de demonstração e captura ampla, seguidos por recursos organizados em seções.",
+    "risk": "Mais familiar, mas também mais próximo de outros sites da categoria.",
+    "comp": ".impeccable/mocks/decision/canon.png"
+  },
+  "steer": true
+}

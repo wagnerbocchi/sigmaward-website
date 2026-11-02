@@ -1,92 +1,103 @@
 ---
 name: Sigmaward
-description: Editorial security marketing grounded in real product evidence.
+description: Dark product-led security marketing with the official application identity.
 colors:
-  brand: "#40c6c3"
-  brand-hover: "#73dad4"
-  brand-ink: "#071c1d"
-  violet: "#9fcac6"
-  bg: "#101719"
-  bg-alt: "#141e21"
-  bg-footer: "#0d1416"
-  surface: "#172125"
-  border: "#334246"
-  border-soft: "#27363a"
-  border-strong: "#52666c"
-  text-bright: "#f3f5f4"
-  text: "#c6d0d2"
-  text-body: "#b7c2c5"
-  text-muted: "#a8b7bb"
-  text-faint: "#a0b0b5"
+  brand: "#9ac2ff"
+  brand-hover: "#bdd6ff"
+  brand-ink: "#101114"
+  bg: "#101419"
+  bg-alt: "#14191f"
+  bg-footer: "#0c1014"
+  surface: "#1c1f24"
+  border: "#303a47"
+  border-soft: "#242c36"
+  border-strong: "#647080"
+  text-bright: "#f0f2f5"
+  text: "#cbd1db"
+  text-body: "#bfc7d2"
+  text-muted: "#adb6c4"
+  text-faint: "#a5afbe"
 typography:
   display:
     fontFamily: '"Manrope Variable", sans-serif'
-    fontWeight: 700
+    fontSize: "clamp(42px, 4.5vw, 68px)"
+    fontWeight: 750
     lineHeight: 1.04
-    letterSpacing: "-0.06em"
+    letterSpacing: "-0.035em"
   headline:
     fontFamily: '"Manrope Variable", sans-serif'
+    fontSize: "clamp(30px, 3.2vw, 44px)"
     fontWeight: 650
-    lineHeight: 1.13
-    letterSpacing: "-0.045em"
+    lineHeight: 1.2
+    letterSpacing: "-0.035em"
   title:
     fontFamily: '"Manrope Variable", sans-serif'
-    fontSize: "22px"
+    fontSize: "21px"
     fontWeight: 650
-    lineHeight: 1.3
-    letterSpacing: "-0.025em"
+    lineHeight: 1.35
+    letterSpacing: "-0.02em"
   body:
     fontFamily: '"Manrope Variable", sans-serif'
     fontSize: "16px"
     fontWeight: 400
-    lineHeight: 1.5
-  eyebrow:
-    fontFamily: '"Manrope Variable", sans-serif'
-    fontSize: "11px"
-    fontWeight: 600
-    letterSpacing: "0.17em"
-  technical-label:
-    fontFamily: '"JetBrains Mono Variable", monospace'
-    fontSize: "11.5px"
-    letterSpacing: "0.22em"
+    lineHeight: 1.75
   button:
     fontFamily: '"Manrope Variable", sans-serif'
-    fontSize: "15px"
+    fontSize: "14px"
     fontWeight: 700
+  navigation:
+    fontFamily: '"Manrope Variable", sans-serif'
+    fontSize: "14px"
+  caption:
+    fontFamily: '"Manrope Variable", sans-serif'
+    fontSize: "12px"
+    lineHeight: 1.6
 rounded:
-  control: "6px"
-  capture: "10px"
-  card: "16px"
+  control: "7px"
+  panel: "12px"
+  workflow-node: "50%"
 spacing:
-  action-gap: "16px"
-  content-gap: "24px"
+  detail-gap: "12px"
+  action-gap: "14px"
   mobile-gutter: "20px"
-  section-gap: "64px"
-  wide-gap: "80px"
+  content-gap: "24px"
+  compact-gap: "30px"
+  split-gap: "64px"
+  section-gap: "72px"
 components:
   button-primary:
     backgroundColor: "{colors.brand}"
     textColor: "{colors.brand-ink}"
     typography: "{typography.button}"
     rounded: "{rounded.control}"
-    padding: "16px 28px"
+    padding: "13px 24px"
   button-primary-hover:
     backgroundColor: "{colors.brand-hover}"
-    textColor: "{colors.brand-ink}"
   button-secondary:
     textColor: "{colors.text-bright}"
     typography: "{typography.button}"
     rounded: "{rounded.control}"
-    padding: "16px 28px"
-  card:
+    padding: "13px 24px"
+  button-secondary-hover:
     backgroundColor: "{colors.surface}"
-    rounded: "{rounded.card}"
   navigation:
+    backgroundColor: "{colors.bg}"
     textColor: "{colors.text}"
-    height: "80px"
-  technical-label:
-    textColor: "{colors.brand}"
-    typography: "{typography.technical-label}"
+    typography: "{typography.navigation}"
+    height: "72px"
+  content-panel:
+    backgroundColor: "{colors.bg-alt}"
+    textColor: "{colors.text}"
+    rounded: "{rounded.panel}"
+    padding: "26px"
+  workflow-node:
+    backgroundColor: "{colors.bg}"
+    rounded: "{rounded.workflow-node}"
+    width: "49px"
+    height: "49px"
+  workflow-node-selected:
+    backgroundColor: "{colors.brand}"
+    textColor: "{colors.brand-ink}"
 ---
 
 # Design System: Sigmaward
@@ -95,152 +106,100 @@ components:
 
 **Creative North Star: "Observatorio de seguranca"**
 
-Editorial, precise, and restrained: the real product leads the presentation.
-Large typography, open spacing, quiet dark surfaces, and authentic interface
-captures give the security platform a clear and inspectable presence.
+The real security product leads a precise, restrained presentation. Dark graphite surfaces, pale blue actions, Manrope typography, and quiet dividers carry the approved application identity into the marketing website.
 
-Components are precise and restrained, with softened corners and clear actions.
-Depth comes primarily from tonal surfaces and dividing lines, with isolated
-shadows on internal pages. These descriptions were confirmed by the owner on
-2026-10-30; they describe the existing website rather than a replacement design.
+The owner approved this replacement world on 2026-11-01: a dark centered homepage combined with the agent-to-response flow. The centered composition belongs to that surface; the durable system is readable hierarchy, authentic product evidence, and clear access to deeper evaluation pages. Components are flat, softly rounded, and explicit about their interactive state.
 
 **Key Characteristics:**
-- Dark graphite surfaces with a restrained signal accent.
-- Manrope for narrative and JetBrains Mono for technical labels.
-- Generous editorial spacing and strong typographic hierarchy.
-- Real product imagery with visible provenance captions.
 
-This record is based on the effective declarations in `app/globals.css`, shared
-components, and computed styles from the rendered homepage. The second theme
-block overrides earlier legacy colors and the old display-font declaration.
+- Dark graphite with pale blue actions and visible focus.
+- Manrope for headings, narrative, navigation, and controls.
+- Thin dividers and tonal surfaces instead of decorative elevation.
+- Official application logo and real anonymized product captures.
+
+This record describes the approved implementation in `app/globals.css`, current shared controls and navigation, and current homepage and internal-page patterns. It replaces the previous visual-system record. The composition contract remains in `.impeccable/surfaces/components-pages-homepage-tsx.md`.
 
 ## Colors
 
 ### Primary
 
-**Turquesa de sinal** (`brand`) marks primary actions, links on hover, focus
-indicators, and capability labels. `brand-hover` lightens an action on hover;
-`brand-ink` provides dark text on filled actions.
-
-### Secondary
-
-The retained `violet` token now contains muted pale teal. It is an existing
-secondary label color, not evidence that the website uses a violet accent.
+**Pale application blue** (`brand`) identifies primary actions, links, keyboard focus, and selected workflow nodes. `brand-hover` lightens filled actions on hover; **dark action ink** (`brand-ink`) keeps labels legible.
 
 ### Neutral
 
-**Grafite esverdeado** (`bg`) is the page foundation. `bg-alt` and `surface`
-separate content regions; `bg-footer` recedes beneath the closing navigation.
-Borders use three strengths for quiet dividers, ordinary separation, and
-interactive outlines. **Branco nevoa** (`text-bright`) carries headings, while
-the text/body/muted/faint roles distinguish prose and supporting metadata.
+**Graphite** (`bg`) is the page and sticky-header foundation. `bg-alt` separates broad content regions; `bg-footer` recedes beneath closing navigation. `surface` provides the secondary action's hover fill. Ordinary, soft, and strong borders distinguish section rules, subordinate dividers, and interactive outlines. Bright text carries headings; text/body/muted/faint roles distinguish narrative, explanations, and captions.
 
-**The Effective Token Rule.** Use the final theme values recorded above, not
-the superseded neon turquoise and navy definitions earlier in the stylesheet.
+**The Application Identity Rule.** Use pale blue for website actions and selection; preserve the official logo colors inside the supplied asset.
 
-The owner also authorized the application's palette as an optional source for
-future variants. Its dark theme uses blue `#7FB2F0`, hover blue `#9EC5F8`, base
-graphite `#0E141B`, surface `#16202B`, and foreground `#ECF2F8`. These are reference
-values, not the current website tokens. Source: [application theme at ab81b5d](https://github.com/wagnerbocchi/sigmaward/blob/ab81b5dfb4b03da2ccab40f8e8943050ce702d95/apps/web/src/theme/tokens.css).
-When a variant adopts this authorized palette, use coherent semantic roles and
-verify contrast; do not replace colors inside real product screenshots.
+The owner authorized the original application's full logo, sourced from `https://app.sigmaward.com/logo-full.svg` and stored at `public/sigmaward-logo.svg`. Its turquoise and violet remain intrinsic asset colors, not competing website action colors. The canvas was widened to prevent fallback-font clipping without changing logo geometry. Screenshot colors are product evidence, not additional website tokens.
 
 ## Typography
 
-Manrope Variable is self-hosted for display and body. JetBrains Mono Variable
-is self-hosted for technical labels. Do not infer Space Grotesk from the obsolete
-declaration: the active display token resolves to Manrope.
+**Display and Body Font:** self-hosted Manrope Variable, with sans-serif fallback. The ramp in the frontmatter is normative. JetBrains Mono remains available in the source but is not a defining type role on the current marketing surfaces.
 
-The homepage display scales from `clamp(48px, 5.7vw, 82px)` on wide screens to
-70px below 1100px, 64px below 900px, and `clamp(38px, 10.3vw, 58px)` below 600px.
-Section headings use `clamp(30px, 4.6vw, 52px)`. Internal-page headings use
-`clamp(40px, 5vw, 68px)`, weight 700, line-height 1.08, and tracking -0.05em.
+The display role is the homepage headline. At 900px and below it becomes `clamp(38px, 6vw, 56px)`; at 600px and below it becomes `clamp(34px, 8.8vw, 48px)` and stops preserving explicit line breaks. Internal-page titles use `clamp(38px, 4.5vw, 64px)`, weight 650, and line-height 1.12; their narrow-screen size is 38px.
 
-Body defaults are recorded in the frontmatter; narrative sections commonly use
-15-18px text with line-heights of 1.7-1.8. Captions use 12px and line-height 1.6.
-Eyebrows are uppercase; editorial labels use Manrope and the shared technical
-label component uses JetBrains Mono. Preserve that distinction.
+Section headings use the headline role. Titles have local size variants for capability links (19px), workflow explanations (22px), and architecture panels (18px). Body prose usually spans 14-18px; the hero introduction scales from 17-21px with line-height 1.5 and becomes 16px on narrow screens. Long explanations are generally limited to 60-75ch. Labels use ordinary sentence case; there is no editorial eyebrow tier to inherit.
 
 ## Layout
 
-The shared container is `min(1320px, calc(100% - 104px))`. Below 1100px its width
-becomes `calc(100% - 80px)`; below 600px it becomes `calc(100% - 40px)`.
-Section spacing commonly spans 64-110px on desktop and 44-64px on mobile.
+The shared container is `min(1248px, calc(100% - 96px))`. At 1100px and below it uses 32px side gutters; at 600px and below it uses 20px side gutters. The sticky header has a minimum height of 72px, with anchor scroll padding of 100px.
 
-The existing homepage combines asymmetric two-column introductions, two-column
-capability lists, and three-column supporting facts. These are observed reusable
-patterns, not a requirement that every page copy the homepage composition.
-At 900px navigation becomes a menu and large feature splits stack. At 600px
-capability lists, supporting facts, and footer groups stack into one column.
-Some internal card grids retain local 640px, 720px, 800px, and 900px breakpoints.
+Reusable layouts include two-column text-and-capture splits, three-column divided capability lists, two-column audience links, and bordered architecture panels. At 900px and below navigation becomes a menu and major text-and-capture splits stack. At 600px and below capability lists, audience links, architecture panels, resource rows, and footer groups stack. Desktop sections commonly use 64px or 72px vertical padding; many sections reduce to 48px on narrow screens.
 
-The header remains sticky and 80px tall. Anchor offsets account for it; preserve
-the skip link and mobile menu's scrolling space when refining navigation.
+The approved homepage is centered above one broad product exhibit. Its introduction uses a 6px top margin, the action row has a 13px bottom margin, and the following workflow starts with 30px top padding on desktop. These are tuned composition values for this surface, not general spacing tokens. The hero exhibit clips its frame at aspect ratios 2.63, 1.9, and 1.45 across desktop, 900px, and 600px layouts; the image itself is not distorted and always links to the complete capture.
+
+The workflow holds four equal-width steps on every layout. Its explanation uses three columns on desktop, two at 1100px, and one at 600px. Preserve readable labels and equal keyboard/touch access.
 
 ## Elevation & Depth
 
-Surfaces are discrete, separated by tones and lines. The shared primary button,
-capture frame, and homepage sections have no drop shadow. The sticky header uses
-an almost opaque base background. Isolated contact and login actions retain
-`0 10px 30px -10px rgba(32,221,201,0.7)` shadows. Record these as local exceptions,
-not a reason to add glow throughout the system.
+**The Flat Surface Rule.** Separate content with tonal backgrounds, spacing, and thin borders; the current system has no drop shadows.
+
+The header is opaque. Product exhibits and architecture panels use subtle outlines; selected workflow nodes use solid accent fill. There is no glass, glow, or raised-card treatment to inherit.
 
 ## Shapes
 
-Controls have gently softened corners, screenshots use wider rounding, and
-shared cards use the largest of the recorded radii. Thin borders and straight
-section dividers provide most structure. The mobile menu trigger uses 4px corners;
-contact/login actions retain local 11px corners. Preserve the original Sigmaward
-mark and do not redraw it to match incidental component geometry.
+Controls and menu triggers use the control radius; captures and bordered content panels use the panel radius. Workflow nodes are circles. Section boundaries and list separators are straight, one-pixel rules. Use the official logo as supplied rather than adapting its geometry to surrounding shapes.
 
 ## Components
 
-### Buttons
+### Buttons and text links
 
-Primary actions use the signal fill and dark ink; secondary actions use bright
-text, a strong outline, and a surface fill on hover. Shared actions have a minimum
-height of 54px, a 24px label/arrow gap, and the padding in the frontmatter. On
-activation they move down 1px. Color transitions use 0.18s ease.
+Primary and secondary actions share a minimum height of 48px and a 20px label-to-icon gap. Primary actions use pale blue with dark ink; secondary actions use bright text and a strong border, adding a surface fill and blue border on hover. Text links use blue, a minimum height of 44px, a 16px arrow gap, and an underline on hover. Icons are inline SVG paths, not text glyphs.
 
-Keyboard focus uses a 2px signal-colored outline with a 2px offset. Reduced-motion
-preferences disable transitions and animations and turn off smooth scrolling.
-
-### Cards
-
-The shared card uses a surface fill, ordinary border, and the card radius.
-Padding belongs to the consuming page, commonly 24-32px. The optional hover
-variant retains local border `#2E6E66` and fill `#121C2C`; this is observed
-implementation, not a new global color pair.
-
-### Labels
-
-Editorial eyebrows are quiet uppercase annotations. The reusable technical
-label supports signal, pale teal, and severity-orange variants. These are labels,
-not interactive chips. The site has no shared form-input component to document.
+All interactive elements retain a 2px blue focus outline with a 5px offset. Color, background-color, and border-color transitions take 180ms with ease timing. There is no button press translation. Reduced-motion preferences disable transitions and animations and replace smooth scrolling with automatic scrolling.
 
 ### Navigation
 
-Desktop links use 15px text and open spacing. Language controls underline the
-current locale. Below 900px, a minimum 44px menu trigger opens a scrollable panel
-below the header. Preserve visible keyboard focus and the existing skip link.
+Desktop navigation uses its named type role and 30px link gaps, reducing to 20px at the compact desktop breakpoint. Locale controls underline the current language. The menu trigger is at least 44px tall; its scrollable panel starts below the header and fits within the available viewport. Preserve the skip link. The stylesheet supports a current-page link state, but the current desktop navigation does not assign `aria-current` to page links.
 
-### Product captures and capability links
+### Content panels and lists
 
-Captures sit within an outlined frame, preserve their intrinsic proportions, and
-link to the full-size image. A short caption identifies the anonymized interface.
-Capability links use a top divider, numbered accent label, heading, prose, and
-arrow; they form a readable list without a filled card around every item.
+Architecture content uses a shared bordered wrapper, the panel radius, alternate background, 26px cell padding, and dividing lines between cells. Login content uses a bordered panel with 36px padding, reduced to 24px on narrow screens. These are functional containers, not a blanket card treatment for every content item.
+
+Capability links are open rows with a top divider, heading, SVG arrow, and muted explanation. Their heading turns blue on hover. Detail lists use 16px check SVGs, the detail gap, 12px vertical row padding, soft bottom dividers, and 14px text with line-height 1.65. The current surfaces have no reusable form-input or chip component to record.
+
+### Product exhibits
+
+Real anonymized captures sit in rounded outlined frames and link to the full image in a new tab. The hero adds a provenance caption and explicit full-capture link. Metrics inside the images are dated examples, never live measurements or performance claims. Preserve original image proportions even when the homepage intentionally clips its exhibit window.
+
+### Agent-to-response workflow
+
+Four circular SVG nodes are connected by a thin line. The selected node uses blue fill and dark ink, with a blue rule below its label. Desktop nodes are 49px, reducing to 42px on narrow screens. The active explanation and contextual Platform link follow the row. Arrow keys, Home, and End move selection through the tabs; inactive tabs leave the tab order. A selection reveals its explanation with a 260ms `cubic-bezier(0.16, 1, 0.3, 1)` animation from 5px below and a 12% lower clip. Reduced motion removes the animation.
 
 ## Do's and Don'ts
 
 ### Do:
-- Do use the effective theme tokens and the self-hosted font families.
-- Do preserve real captures, their proportions, captions, and full-size access.
-- Do use typography, spacing, and quiet dividers to establish hierarchy.
-- Do preserve keyboard focus, reduced-motion support, and mobile navigation.
+
+- Do use the current website tokens and self-hosted Manrope.
+- Do preserve the official application logo geometry and its uncropped wordmark.
+- Do use real anonymized captures, honest captions, and full-size access.
+- Do retain visible focus, keyboard-operable tabs, reduced-motion support, and mobile navigation.
+- Do keep Portuguese and English layouts equally readable.
 
 ### Don't:
-- Don't revive superseded theme values by extracting only the first CSS block.
-- Don't treat colors inside product screenshots as website tokens.
-- Don't spread local glow or legacy hover colors across unrelated components.
-- Don't invent input, chip, or modal patterns that the website does not contain.
+
+- Don't turn screenshot metrics into live measurements, guarantees, or invented performance claims.
+- Don't recolor real product captures or replace them with fabricated dashboards.
+- Don't revive the previous teal action palette, uppercase eyebrows, glow effects, or obsolete card styling.
+- Don't invent input, chip, or modal patterns that the current website does not contain.
